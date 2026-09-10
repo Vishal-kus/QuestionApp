@@ -1,0 +1,191 @@
+:root {
+  --primary: #006699;
+  --primary-dark: #004d73;
+  --primary-light: #e6f0f7;
+  --nta-orange: #f58220;
+  --nta-green: #48bb78;
+  --nta-dark-green: #2f855a;
+  --nta-red: #e53e3e;
+  --nta-purple: #7c3aed;
+  --nta-purple-dark: #5b21b6;
+  --nta-gray: #e2e8f0;
+  --nta-gray-text: #4a5568;
+
+  --bg-main: #f7fafc;
+  --bg-card: #ffffff;
+  --text-main: #1a202c;
+  --text-muted: #4a5568;
+  --border-color: #cbd5e1;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Inter', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.15s ease-in-out;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* NTA Badge & Shapes for Question Palette */
+.palette-btn {
+  width: 38px;
+  height: 34px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  user-select: none;
+}
+
+.palette-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.palette-btn.active {
+  box-shadow: 0 0 0 3px #3b82f6, 0 4px 10px rgba(59, 130, 246, 0.4) !important;
+  z-index: 2;
+}
+
+/* 1. NOT VISITED: Clean rounded box with gray background */
+.status-not-visited {
+  background-color: #e2e8f0;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+
+/* 2. NOT ANSWERED: Red pentagon clipped downwards */
+.status-not-answered {
+  background-color: #dc2626;
+  color: #ffffff;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+  border-radius: 2px 2px 0 0;
+}
+
+/* 3. ANSWERED: Green pentagon clipped upwards */
+.status-answered {
+  background-color: #16a34a;
+  color: #ffffff;
+  clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 100%, 0% 100%);
+  border-radius: 0 0 2px 2px;
+}
+
+/* 4. MARKED FOR REVIEW: Purple circle */
+.status-marked {
+  background-color: #7c3aed;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+/* 5. ANSWERED & MARKED FOR REVIEW: Purple circle with a small green square/dot on bottom right */
+.status-answered-marked {
+  background-color: #7c3aed;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+
+.status-answered-marked::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 11px;
+  height: 11px;
+  background-color: #22c55e;
+  border-radius: 2px;
+  border: 2px solid #ffffff;
+}
+
+/* Legend Mini Icons */
+.legend-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 28px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Modal animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Shimmer / Pulse effects */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+.timer-urgent {
+  animation: pulseGlow 1.2s infinite ease-in-out;
+  color: #dc2626 !important;
+  border-color: #dc2626 !important;
+  background-color: #fef2f2 !important;
+}
