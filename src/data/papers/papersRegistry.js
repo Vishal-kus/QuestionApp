@@ -10,6 +10,11 @@ import ugcNetDec2022Shift2 from './ugc-net-dec-2022-shift2.json';
 import ugcNetSep2022 from './ugc-net-sep-2022.json';
 import ugcNetNov2021 from './ugc-net-nov-2021.json';
 import ugcNetNov2020 from './ugc-net-nov-2020.json';
+import practiceSet1 from './practice-set-1.json';
+import practiceSet2 from './practice-set-2.json';
+import practiceSet3 from './practice-set-3.json';
+import practiceSet4 from './practice-set-4.json';
+import practiceSet5 from './practice-set-5.json';
 
 // Attach source paper name to each question so students know its origin
 const attachPaperSource = (questions, paperTitle) => {
@@ -218,6 +223,96 @@ export const PAPERS = [
     description: 'Shift 2 official paper from the December 2022 cycle featuring advanced database and network protocol questions.',
     topics: ['Full 10 Units', 'Shift 2 PYQ', 'Database Management', 'Networking Protocols'],
     questions: attachPaperSource(ugcNetDec2022Shift2, 'UGC NET Dec 2022 Shift 2')
+  },
+  {
+    id: 'practice-set-1',
+    title: 'Practice Set 1: Calculation & Numerical Heavy Practice',
+    shortTitle: 'Practice Set 1',
+    year: '2025',
+    session: 'Numerical Special',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • NUMERICAL HEAVY',
+    badgeVariant: 'warning',
+    isNew: true,
+    category: 'practice',
+    totalQuestions: practiceSet1.length,
+    totalMarks: practiceSet1.length * 2,
+    durationMinutes: 120,
+    description: 'Calculation & Numerical Heavy Practice. Intensive problem set focusing on mathematical formulas, numerical problem solving, and quantitative calculations.',
+    topics: ['All 10 Units', 'Modular Arithmetic', 'Cache Calculations', 'Pipelining Speedup', 'Subnetting', 'Banker Algorithm'],
+    questions: attachPaperSource(practiceSet1, 'Practice Set 1 (Numerical Heavy)')
+  },
+  {
+    id: 'practice-set-2',
+    title: 'Practice Set 2: Match List, Statement I & II, and Process Orderings',
+    shortTitle: 'Practice Set 2',
+    year: '2025',
+    session: 'Match & Statement',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • MATCH & STATEMENTS',
+    badgeVariant: 'purple',
+    isNew: true,
+    category: 'practice',
+    totalQuestions: practiceSet2.length,
+    totalMarks: practiceSet2.length * 2,
+    durationMinutes: 120,
+    description: 'Match List, Statement I & II, and Process Orderings. Specially curated matching the newest NTA question framing patterns.',
+    topics: ['All 10 Units', 'Match List I & II', 'Statement I & II', 'Chronological Orderings', 'Assertion & Reason'],
+    questions: attachPaperSource(practiceSet2, 'Practice Set 2 (Match & Statements)')
+  },
+  {
+    id: 'practice-set-3',
+    title: 'Practice Set 3: Advanced Full Mock Test',
+    shortTitle: 'Practice Set 3',
+    year: '2025',
+    session: 'Advanced Mock',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • ADVANCED MOCK',
+    badgeVariant: 'primary',
+    isNew: true,
+    category: 'practice',
+    totalQuestions: practiceSet3.length,
+    totalMarks: practiceSet3.length * 2,
+    durationMinutes: 120,
+    description: 'Advanced Full Mock Test. Comprehensive and rigorous 100-question mock test designed to challenge conceptual understanding across all domains.',
+    topics: ['All 10 Units', 'Monoids & Groups', 'Decidability', 'TOC Complexities', 'Advanced AI Search'],
+    questions: attachPaperSource(practiceSet3, 'Practice Set 3 (Advanced Mock)')
+  },
+  {
+    id: 'practice-set-4',
+    title: 'Practice Set 4: Comprehensive Speed & Accuracy Practice',
+    shortTitle: 'Practice Set 4',
+    year: '2025',
+    session: 'Speed & Accuracy',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • SPEED & ACCURACY',
+    badgeVariant: 'success',
+    isNew: true,
+    category: 'practice',
+    totalQuestions: practiceSet4.length,
+    totalMarks: practiceSet4.length * 2,
+    durationMinutes: 120,
+    description: 'Comprehensive Speed & Accuracy Practice. Balanced test set calibrated to refine exam pacing, rapid option elimination, and accuracy.',
+    topics: ['All 10 Units', 'Posets & Lattices', 'Software Metrics', 'Scheduling', 'Graph Search'],
+    questions: attachPaperSource(practiceSet4, 'Practice Set 4 (Speed & Accuracy)')
+  },
+  {
+    id: 'practice-set-5',
+    title: 'Practice Set 5: Grand Final Mock Test',
+    shortTitle: 'Practice Set 5',
+    year: '2025',
+    session: 'Grand Final Mock',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • GRAND FINAL MOCK',
+    badgeVariant: 'primary',
+    isNew: true,
+    category: 'practice',
+    totalQuestions: practiceSet5.length,
+    totalMarks: practiceSet5.length * 2,
+    durationMinutes: 120,
+    description: 'Grand Final Mock Test. High-probability final rehearsal mock test reproducing the exact exam environment, weightage, and standard syllabus balance.',
+    topics: ['All 10 Units', 'Set Functions', 'System Architecture', 'Compilers', 'Computer Networks'],
+    questions: attachPaperSource(practiceSet5, 'Practice Set 5 (Grand Final Mock)')
   }
 ];
 

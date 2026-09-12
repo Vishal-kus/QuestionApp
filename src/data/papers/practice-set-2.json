@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Match List I with List II:\nList I (Concept):\nA. Eulerian Graph\nB. Hamiltonian Graph\nC. Planar Graph\nD. Bipartite Graph\n\nList II (Property):\nI. Can be drawn on a plane without any edges crossing\nII. Contains a closed trail that visits every edge exactly once\nIII. Vertices can be partitioned into two disjoint sets such that every edge connects a vertex in first set to second set\nIV. Contains a closed loop that visits every vertex exactly once\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-IV, C-I, D-III",
+      "B": "A-IV, B-II, C-I, D-III",
+      "C": "A-II, B-I, C-IV, D-III",
+      "D": "A-III, B-IV, C-I, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Eulerian Graph contains a closed trail visiting every edge exactly once (II). B. Hamiltonian Graph contains a cycle visiting every vertex exactly once (IV). C. Planar Graph can be drawn without crossing edges (I). D. Bipartite Graph vertices partition into two sets with edges only between sets (III)."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Given below are two statements:\nStatement I: A relation R on set A is an equivalence relation if and only if it is reflexive, symmetric, and transitive.\nStatement II: Every partial ordering relation on a non-empty set is also an equivalence relation.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true because by definition an equivalence relation must be reflexive, symmetric, and transitive. Statement II is false because a partial order is reflexive, anti-symmetric, and transitive (not symmetric)."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Arrange the following steps in the Simplex Method for solving a Linear Programming Maximization Problem in correct procedural order:\nA. Identify the entering variable corresponding to the most negative indicator in the bottom row.\nB. Construct the initial Simplex Tableau with slack variables.\nC. Perform pivot operations to update table rows.\nD. Identify the leaving variable using the minimum non-negative ratio test.\nE. Check for optimality (all bottom row indicators non-negative).\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, E, A, D, C",
+      "B": "B, A, D, C, E",
+      "C": "A, B, D, C, E",
+      "D": "E, B, A, D, C"
+    },
+    "correct_answer": "A",
+    "explanation": "The standard procedural order is: 1) Construct initial tableau (B), 2) Check for optimality (E), 3) If not optimal, select entering variable (A), 4) Select leaving variable via minimum ratio test (D), 5) Perform row operations/pivoting (C)."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Match List I with List II:\nList I (Boolean Law):\nA. Absorption Law\nB. Idempotent Law\nC. De Morgan's Law\nD. Distributive Law\n\nList II (Equivalence):\nI. x + (y · z) = (x + y) · (x + z)\nII. (x · y)' = x' + y'\nIII. x + x · y = x\nIV. x + x = x\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-IV, B-III, C-II, D-I",
+      "C": "A-III, B-I, C-II, D-IV",
+      "D": "A-I, B-IV, C-II, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Absorption Law: x + x · y = x (III). B. Idempotent Law: x + x = x (IV). C. De Morgan's Law: (x · y)' = x' + y' (II). D. Distributive Law: x + (y · z) = (x + y) · (x + z) (I)."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Given below are two statements:\nStatement I: The maximum number of edges in a simple bipartite graph with n vertices is floor(n^2 / 4).\nStatement II: Every tree with n vertices has exactly n - 1 edges and is a bipartite graph.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Statement I is Mantel's Theorem (Turán's Theorem for K_3-free graphs/bipartite graphs). Statement II is true because trees contain no odd cycles, making every tree bipartite with n - 1 edges."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following statements regarding Group Theory is/are CORRECT?\nA. Every cyclic group is abelian.\nB. The order of a subgroup divides the order of a finite group (Lagrange's Theorem).\nC. The intersection of two subgroups of a group G is always a subgroup of G.\nD. The union of two subgroups of a group G is always a subgroup of G.\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B, and C only",
+      "B": "B, C, and D only",
+      "C": "A and B only",
+      "D": "A, B, C, and D"
+    },
+    "correct_answer": "A",
+    "explanation": "Statements A, B, and C are fundamental algebraic theorems. Statement D is false because the union of two subgroups is a subgroup if and only if one is contained in the other."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Match List I with List II:\nList I (Term in PERT/CPM):\nA. Critical Path\nB. Slack / Float\nC. Dummy Activity\nD. Optimistic Time\n\nList II (Description):\nI. Activity with zero duration used to maintain precedence logic\nII. The minimum possible time required to complete an activity under ideal conditions\nIII. The longest path through a project network determining total completion time\nIV. The maximum time an activity can be delayed without delaying project completion\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-I, D-II",
+      "B": "A-III, B-I, C-IV, D-II",
+      "C": "A-IV, B-III, C-I, D-II",
+      "D": "A-II, B-IV, C-I, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Critical Path: Longest path through network determining project time (III). B. Slack/Float: Max delay without delaying project (IV). C. Dummy Activity: Zero duration precedence link (I). D. Optimistic Time: Minimum time under ideal conditions (II)."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Given below are two statements:\nStatement I: If two events A and B are independent, then P(A ∩ B) = P(A) · P(B).\nStatement II: If two events A and B are mutually exclusive with P(A) > 0 and P(B) > 0, they can also be independent.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is the definition of independent events. Statement II is false because mutually exclusive events have P(A ∩ B) = 0, whereas independent events with non-zero probabilities have P(A ∩ B) = P(A)P(B) > 0. Mutually exclusive non-zero events cannot be independent."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Arrange the following logic gates in increasing order of their functional completeness capability (ability to implement any Boolean function individually):\nA. AND Gate\nB. NAND Gate\nC. NOR Gate\nD. OR Gate\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A and D (non-universal), followed by B and C (universal)",
+      "B": "B and C (non-universal), followed by A and D (universal)",
+      "C": "A, B, C, D all are universal",
+      "D": "None of the above"
+    },
+    "correct_answer": "A",
+    "explanation": "NAND (B) and NOR (C) are universal logic gates capable of implementing any Boolean function alone. AND (A) and OR (D) require NOT gates and are not functionally complete on their own."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Match List I with List II:\nList I (Duality in LPP):\nA. Primal Maximization Objective\nB. Primal Constraint (<=)\nC. Primal Unconstrained Variable\nD. Optimal Primal Objective Value\n\nList II (Dual Counterpart):\nI. Dual Constraint (=)\nII. Dual Minimization Objective\nIII. Equal to Optimal Dual Objective Value\nIV. Dual Variable (>= 0)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-IV, C-I, D-III",
+      "B": "A-II, B-I, C-IV, D-III",
+      "C": "A-IV, B-II, C-I, D-III",
+      "D": "A-III, B-IV, C-I, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Primal Max corresponds to Dual Min (II). B. Primal <= constraint corresponds to non-negative dual variable (IV). C. Unconstrained primal variable corresponds to dual equality constraint (I). D. Strong Duality states primal optimal value equals dual optimal value (III)."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Match List I with List II:\nList I (Addressing Mode):\nA. Immediate Addressing\nB. Register Indirect Addressing\nC. Direct Addressing\nD. PC-Relative Addressing\n\nList II (Operand Location):\nI. Address field contains memory address of the address of operand\nII. Operand value is contained directly inside the instruction\nIII. Effective address is calculated by adding instruction displacement to Program Counter\nIV. Instruction contains memory address of the operand directly\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-I, C-IV, D-III",
+      "B": "A-II, B-IV, C-I, D-III",
+      "C": "A-IV, B-I, C-II, D-III",
+      "D": "A-I, B-II, C-IV, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Immediate: operand inside instruction (II). B. Register Indirect / Indirect: pointer in register/memory (I). C. Direct: instruction holds operand address (IV). D. PC-Relative: address = PC + displacement (III)."
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Given below are two statements:\nStatement I: Cache memory mapping using Set-Associative mapping reduces the conflict miss rate compared to Direct Mapping.\nStatement II: In a Fully Associative Cache, a block from main memory can be placed in any cache line.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Set-associative mapping reduces conflict misses by providing multiple lines per set. Fully associative mapping allows any main memory block to be placed in any cache block."
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Arrange the following computer memory hierarchy levels in increasing order of access time (from fastest to slowest):\nA. Main Memory (DRAM)\nB. Processor Registers\nC. Cache Memory (SRAM)\nD. Secondary Storage (Hard Disk / SSD)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, C, A, D",
+      "B": "C, B, A, D",
+      "C": "B, A, C, D",
+      "D": "D, A, C, B"
+    },
+    "correct_answer": "A",
+    "explanation": "Fastest to slowest access time: Registers (B) < Cache (C) < Main Memory (A) < Secondary Storage (D)."
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Match List I with List II:\nList I (Pipeline Hazard):\nA. Structural Hazard\nB. Data Hazard\nC. Control Hazard\nD. Branch Penalty\n\nList II (Cause / Mitigation):\nI. Caused by branch instructions changing the PC flow; mitigated by branch prediction\nII. Caused by resource conflicts when hardware cannot support all combination of execution\nIII. Time delay incurred due to flushing instructions fetched after an incorrect branch guess\nIV. Occurs when instruction depends on result of previous instruction still in pipeline\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-IV, C-I, D-III",
+      "B": "A-IV, B-II, C-I, D-III",
+      "C": "A-II, B-I, C-IV, D-III",
+      "D": "A-III, B-IV, C-I, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Structural Hazard: Hardware resource conflict (II). B. Data Hazard: Instruction dependency on pending result (IV). C. Control Hazard: Branch decision flow delay (I). D. Branch Penalty: Stall cycles incurred flushing wrong branch path (III)."
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Given below are two statements:\nStatement I: Microprogrammed Control Units are faster than Hardwired Control Units.\nStatement II: Hardwired Control Units are implemented using combinational logic circuits and state machines.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is false but Statement II is true",
+      "D": "Statement I is true but Statement II is false"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is false because Hardwired Control Units are faster than Microprogrammed Control Units (no control memory fetch latency). Statement II is true because hardwired control uses fixed combinational logic and sequential state machines."
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which of the following I/O techniques requires CPU intervention for every single word transferred between I/O device and main memory?\nA. Programmed I/O\nB. Interrupt-Driven I/O\nC. Direct Memory Access (DMA)\nD. Block I/O Transfer\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A and B only",
+      "B": "C only",
+      "C": "A only",
+      "D": "A, B, and C"
+    },
+    "correct_answer": "A",
+    "explanation": "Both Programmed I/O and Interrupt-Driven I/O require the CPU to execute instructions for every word transferred. DMA transfers entire blocks directly between memory and device without CPU intervention per word."
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Match List I with List II:\nList I (Flynn's Architecture Classification):\nA. SISD\nB. SIMD\nC. MISD\nD. MIMD\n\nList II (Example / Paradigm):\nI. Vector / Array Processors\nII. Standard Uniprocessor Systems\nIII. Multi-core processors and Distributed Supercomputers\nIV. Systolic Arrays / Fault-tolerant redundant pipelines\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-I, C-IV, D-III",
+      "B": "A-I, B-II, C-IV, D-III",
+      "C": "A-II, B-IV, C-I, D-III",
+      "D": "A-III, B-I, C-IV, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. SISD: Uniprocessors (II). B. SIMD: Vector/GPU Array Processors (I). C. MISD: Systolic Arrays/Redundant computing (IV). D. MIMD: Multicore / Distributed Supercomputers (III)."
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Given below are two statements:\nStatement I: In RISC architecture, most instructions execute in a single clock cycle.\nStatement II: CISC architecture uses a large number of registers and relies heavily on load/store architecture.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true (RISC emphasizes single-cycle simple instructions). Statement II is false because RISC uses load/store architecture and large register sets; CISC supports complex memory-operand operations."
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Arrange the following steps involved in an Interrupt Handling Cycle in correct sequence:\nA. Save the Program Counter and Processor Status Word (PSW) on stack.\nB. Device issues interrupt signal to CPU control line.\nC. Execute the Interrupt Service Routine (ISR).\nD. Restore saved register state and resume original program.\nE. CPU finishes current instruction and acknowledges interrupt.\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, E, A, C, D",
+      "B": "B, A, E, C, D",
+      "C": "E, B, A, C, D",
+      "D": "A, B, E, C, D"
+    },
+    "correct_answer": "A",
+    "explanation": "Order: 1) Device issues signal (B), 2) CPU completes current instruction and acknowledges (E), 3) Save PC/PSW state (A), 4) Execute ISR (C), 5) Restore state and return (D)."
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which of the following RAID levels uses distributed parity across all disks without relying on a single dedicated parity disk?\nA. RAID 1\nB. RAID 3\nC. RAID 4\nD. RAID 5\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "D only",
+      "B": "C only",
+      "C": "B and C only",
+      "D": "A and D only"
+    },
+    "correct_answer": "A",
+    "explanation": "RAID 5 uses block-level striping with distributed parity across all drive members, avoiding the single parity disk bottleneck of RAID 3 and RAID 4."
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Match List I with List II:\nList I (OOP Concept):\nA. Encapsulation\nB. Polymorphism\nC. Inheritance\nD. Abstraction\n\nList II (Definition):\nI. Ability of different objects to respond to the same message/method call in distinct ways\nII. Hiding internal implementation details and exposing only necessary interfaces\nIII. Binding data and methods operating on that data into a single component\nIV. Mechanism by which a new class derives properties and behavior from an existing class\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-I, C-IV, D-II",
+      "B": "A-III, B-IV, C-I, D-II",
+      "C": "A-II, B-I, C-IV, D-III",
+      "D": "A-I, B-III, C-IV, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Encapsulation: Bundling data and functions (III). B. Polymorphism: Same function call behaving differently (I). C. Inheritance: Deriving new class from existing class (IV). D. Abstraction: Hiding internal implementation details (II)."
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Given below are two statements:\nStatement I: Cohen-Sutherland line clipping algorithm divides the 2D clipping region into 9 regions using 4-bit region codes (outcodes).\nStatement II: If the bitwise AND operation between the region codes of two endpoints of a line segment is non-zero, the line is trivially accepted.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true (9 regions with 4-bit outcodes TOP, BOTTOM, RIGHT, LEFT). Statement II is false because if outcode(A) AND outcode(B) != 0, the line lies completely outside the window and is trivially rejected (not accepted)."
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Arrange the following stages of the 3D Graphics Pipeline in correct order of execution:\nA. Modeling Transformation\nB. Projection Transformation\nC. View Transformation\nD. Rasterization & Display\nE. Clipping\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, C, B, E, D",
+      "B": "A, B, C, E, D",
+      "C": "C, A, B, D, E",
+      "D": "A, C, E, B, D"
+    },
+    "correct_answer": "A",
+    "explanation": "Standard 3D Viewing Pipeline order: 1) Modeling Transformation (Object to World space) (A), 2) View Transformation (World to Eye space) (C), 3) Projection Transformation (B), 4) Clipping (E), 5) Rasterization to viewport (D)."
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Match List I with List II:\nList I (Parameter Passing Method):\nA. Call by Value\nB. Call by Reference\nC. Call by Name\nD. Call by Value-Result\n\nList II (Mechanism):\nI. Actual parameter expression is evaluated afresh every time formal parameter is referenced (Algol thunk)\nII. Copy of actual parameter is passed; modified formal parameter is copied back upon procedure exit\nIII. Address of actual parameter is passed; modifications affect caller's variable immediately\nIV. Value of actual parameter is copied into formal parameter; changes inside function do not affect actual variable\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-III, C-I, D-II",
+      "B": "A-IV, B-I, C-III, D-II",
+      "C": "A-III, B-IV, C-I, D-II",
+      "D": "A-II, B-III, C-I, D-IV"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Call by Value: Copy value, caller unchanged (IV). B. Call by Reference: Pass address, immediate side effect (III). C. Call by Name: Lazy re-evaluation using thunks (I). D. Call by Value-Result: Copy in at start, copy back at exit (II)."
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Given below are two statements:\nStatement I: A Bezier curve always passes through its first and last control points.\nStatement II: The degree of a Bezier curve defined by n + 1 control points is n.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Bezier curves interpolate the endpoint control points P0 and Pn, and the curve degree is n for n + 1 control points."
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which of the following web programming technologies run on the SERVER side?\nA. Servlets\nB. HTML5 Canvas\nC. Java Server Pages (JSP)\nD. JavaScript (Client-side execution in DOM)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A and C only",
+      "B": "B and D only",
+      "C": "A, B, and C only",
+      "D": "A, C, and D only"
+    },
+    "correct_answer": "A",
+    "explanation": "Java Servlets and JSP run on the web application server. HTML5 Canvas and traditional DOM JavaScript execute on the client web browser."
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Match List I with List II:\nList I (Graphics Algorithm):\nA. DDA Algorithm\nB. Liang-Barsky Algorithm\nC. Depth-Buffer (Z-Buffer) Algorithm\nD. Back-Face Culling\n\nList II (Category / Feature):\nI. Image-space hidden surface removal technique storing Z depth values per pixel\nII. Object-space surface removal based on polygon normal vector dot product with view vector\nIII. Line clipping algorithm using parametric equations\nIV. Scan conversion algorithm based on floating-point increments\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-III, C-I, D-II",
+      "B": "A-III, B-IV, C-I, D-II",
+      "C": "A-IV, B-I, C-III, D-II",
+      "D": "A-II, B-III, C-I, D-IV"
+    },
+    "correct_answer": "A",
+    "explanation": "A. DDA: Incremental scan conversion (IV). B. Liang-Barsky: Parametric line clipping (III). C. Z-Buffer: Image-space hidden surface removal (I). D. Back-Face Culling: Normal dot product surface removal (II)."
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Given below are two statements:\nStatement I: Pure virtual functions in C++ have no body in the base class and make the class abstract.\nStatement II: An abstract class in C++ can be instantiated directly using the new operator.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true (pure virtual functions `virtual void f() = 0` make class abstract). Statement II is false because abstract classes cannot be instantiated."
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Arrange the following programming paradigms in historical order of their mainstream emergence:\nA. Assembly Language\nB. Object-Oriented Programming\nC. Machine Language\nD. Procedural High-Level Languages (FORTRAN/C)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "C, A, D, B",
+      "B": "A, C, D, B",
+      "C": "C, D, A, B",
+      "D": "A, D, C, B"
+    },
+    "correct_answer": "A",
+    "explanation": "Historical emergence: 1) Machine Language (1940s) (C), 2) Assembly Language (1950s) (A), 3) Procedural Languages (1950s-70s) (D), 4) Object-Oriented Languages (1980s+) (B)."
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which of the following transformations are RIGID BODY transformations (preserve distances and angles)?\nA. Translation\nB. Rotation\nC. Shearing\nD. Scaling\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A and B only",
+      "B": "A, B, and D only",
+      "C": "C and D only",
+      "D": "A, B, C, and D"
+    },
+    "correct_answer": "A",
+    "explanation": "Rigid body transformations (isometries) preserve distances and angles between lines. Only Translation and Rotation are rigid body transformations. Scaling and Shearing alter shapes or lengths."
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Match List I with List II:\nList I (Normal Form):\nA. First Normal Form (1NF)\nB. Second Normal Form (2NF)\nC. Third Normal Form (3NF)\nD. Boyce-Codd Normal Form (BCNF)\n\nList II (Requirement):\nI. Every non-prime attribute is non-transitively dependent on primary key\nII. For every non-trivial FD X -> Y, X must be a super key\nIII. All attributes contain atomic values only (no repeating groups)\nIV. No partial dependency (every non-prime attribute is fully functionally dependent on primary key)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-I, D-II",
+      "B": "A-III, B-I, C-IV, D-II",
+      "C": "A-IV, B-III, C-I, D-II",
+      "D": "A-III, B-IV, C-II, D-I"
+    },
+    "correct_answer": "A",
+    "explanation": "A. 1NF: Atomic values (III). B. 2NF: No partial dependency (IV). C. 3NF: No transitive dependency (I). D. BCNF: Determinant X is always a super key (II)."
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given below are two statements:\nStatement I: Two-Phase Locking (2PL) protocol guarantees Conflict Serializability of concurrent transaction schedules.\nStatement II: Two-Phase Locking (2PL) protocol completely prevents deadlocks from occurring.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true (basic 2PL guarantees serializability). Statement II is false because basic 2PL does NOT prevent deadlocks (Conservative 2PL prevents deadlocks)."
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Arrange the following Database Architecture levels according to the Three-Schema Architecture (from closest to user down to disk storage):\nA. Conceptual Schema\nB. External Schema (View Level)\nC. Internal Schema (Physical Level)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, A, C",
+      "B": "A, B, C",
+      "C": "C, A, B",
+      "D": "B, C, A"
+    },
+    "correct_answer": "A",
+    "explanation": "Ansi-SPARC 3-Schema Architecture: 1) External Schema (Views for users) (B), 2) Conceptual Schema (Logical structure) (A), 3) Internal Schema (Physical storage layout) (C)."
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Match List I with List II:\nList I (Relational Operator):\nA. Selection (sigma)\nB. Projection (pi)\nC. Cartesian Product (x)\nD. Natural Join (bowtie)\n\nList II (Function):\nI. Combines matching tuples from two relations based on common attribute names\nII. Filters subset of columns from a relation\nIII. Filters subset of rows that satisfy a predicate condition\nIV. Pairs every tuple of first relation with every tuple of second relation\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-II, C-IV, D-I",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-III, B-IV, C-II, D-I",
+      "D": "A-I, B-II, C-IV, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Selection: Row filter (III). B. Projection: Column filter (II). C. Cartesian Product: All pair combinations (IV). D. Natural Join: Matching on common attributes (I)."
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given below are two statements:\nStatement I: In Strict 2PL, a transaction holds all its exclusive locks until it commits or aborts.\nStatement II: Strict 2PL prevents cascading rollbacks (cascadeless schedules).\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Strict 2PL requires holding all exclusive locks until commit, ensuring no uncommitted writes are read by other transactions, preventing cascading rollbacks."
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which of the following ACID properties of a database transaction is maintained by the Recovery Manager using Write-Ahead Logging (WAL)?\nA. Atomicity\nB. Durability\nC. Consistency\nD. Isolation\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A and B only",
+      "B": "C and D only",
+      "C": "B only",
+      "D": "A, B, C, and D"
+    },
+    "correct_answer": "A",
+    "explanation": "Recovery Manager (Log/WAL) ensures Atomicity (undoing uncommitted transactions during crash) and Durability (redoing committed transactions)."
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Match List I with List II:\nList I (NoSQL Database Category):\nA. Document Store\nB. Key-Value Store\nC. Column-Family Store\nD. Graph Database\n\nList II (Example Product):\nI. Neo4j\nII. MongoDB\nIII. Redis\nIV. Apache Cassandra\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-III, C-IV, D-I",
+      "B": "A-III, B-II, C-IV, D-I",
+      "C": "A-II, B-IV, C-III, D-I",
+      "D": "A-I, B-III, C-IV, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Document: MongoDB (II). B. Key-Value: Redis (III). C. Column-Family: Apache Cassandra (IV). D. Graph: Neo4j (I)."
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given below are two statements:\nStatement I: B+ Trees store data pointers only in leaf nodes, making interior nodes smaller and increasing fan-out.\nStatement II: B Trees maintain all leaf nodes at variable depth levels depending on insertion history.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true (B+ Trees keep records/pointers in leaves). Statement II is false because B Trees (like B+ Trees) are height-balanced trees where all leaves are at the exact same depth level."
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Arrange the following steps of SQL Query Execution in order:\nA. Query Optimization\nB. Parsing and Syntax Checking\nC. Execution Plan Generation\nD. Query Execution and Result Fetching\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, A, C, D",
+      "B": "A, B, C, D",
+      "C": "B, C, A, D",
+      "D": "C, B, A, D"
+    },
+    "correct_answer": "A",
+    "explanation": "SQL Execution stages: 1) Syntax Parsing & Validation (B), 2) Query Optimization (A), 3) Execution Plan Generation (C), 4) Plan Execution & Result Fetch (D)."
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which of the following OLAP operations rotates the data axes to view data from a different perspective?\nA. Slice\nB. Dice\nC. Pivot\nD. Drill-down\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "C only",
+      "B": "A and B only",
+      "C": "D only",
+      "D": "A, B, and C"
+    },
+    "correct_answer": "A",
+    "explanation": "Pivot (or Rotation) rotates the data axes in a multidimensional OLAP cube to provide an alternative presentation of data."
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Match List I with List II:\nList I (OS Concept):\nA. Thrashing\nB. Belady's Anomaly\nC. Deadlock\nD. Starvation\n\nList II (Description):\nI. High paging activity where OS spends more time swapping pages than executing instructions\nII. Indefinite delay of a process waiting for a resource due to unfair scheduling\nIII. Page fault rate increases when number of allocated frames increases (FIFO anomaly)\nIV. Circular wait state where two or more processes are permanently blocked waiting for each other\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-I, B-III, C-IV, D-II",
+      "B": "A-III, B-I, C-IV, D-II",
+      "C": "A-I, B-IV, C-III, D-II",
+      "D": "A-II, B-III, C-IV, D-I"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Thrashing: Excessive page swapping (I). B. Belady's Anomaly: Page faults increase with more frames in FIFO (III). C. Deadlock: Permanent circular block (IV). D. Starvation: Indefinite delay (II)."
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Given below are two statements:\nStatement I: A compiler translates source code into machine code line-by-line during runtime.\nStatement II: An assembler translates assembly language program into relocatable machine object code.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is false but Statement II is true",
+      "D": "Statement I is true but Statement II is false"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is false because an interpreter (not compiler) translates line-by-line during execution; a compiler translates the entire program before execution. Statement II is true."
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Arrange the four Coffman conditions for Deadlock in an Operating System:\nA. Hold and Wait\nB. Mutual Exclusion\nC. Circular Wait\nD. No Preemption\n\nWhich of these conditions MUST hold simultaneously for a deadlock to occur?",
+    "options": {
+      "A": "All A, B, C, and D simultaneously",
+      "B": "Any two of A, B, C, D",
+      "C": "B and C only",
+      "D": "A, B, and D only"
+    },
+    "correct_answer": "A",
+    "explanation": "All four Coffman conditions (Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait) must hold simultaneously for deadlock to exist."
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Match List I with List II:\nList I (Page Replacement Algorithm):\nA. FIFO\nB. LRU\nC. Optimal\nD. LFU\n\nList II (Strategy):\nI. Replaces page that will not be used for the longest period of time in future\nII. Replaces page that has not been used for the longest period of time in past\nIII. Replaces oldest loaded page regardless of usage frequency\nIV. Replaces page with the lowest access count frequency\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-II, C-I, D-IV",
+      "B": "A-II, B-III, C-I, D-IV",
+      "C": "A-III, B-I, C-II, D-IV",
+      "D": "A-IV, B-II, C-I, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. FIFO: Oldest loaded page (III). B. LRU: Least recently used in past (II). C. Optimal: Unused for longest time in future (I). D. LFU: Lowest usage frequency (IV)."
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Given below are two statements:\nStatement I: Shortest Remaining Time First (SRTF) is the preemptive version of Shortest Job First (SJF) scheduling.\nStatement II: Round Robin scheduling policy is strictly non-preemptive.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true (SRTF preempts running job if shorter arrival comes). Statement II is false because Round Robin is explicitly preemptive using time quantums."
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which system call in Unix/Linux creates a duplicate child process identical to the parent process?\nA. exec()\nB. fork()\nC. wait()\nD. exit()\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B only",
+      "B": "A only",
+      "C": "C only",
+      "D": "A and B"
+    },
+    "correct_answer": "A",
+    "explanation": "The fork() system call creates a new child process which is a duplicate copy of the calling parent process."
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Match List I with List II:\nList I (Disk Scheduling Algorithm):\nA. FCFS\nB. SSTF\nC. SCAN\nD. C-LOOK\n\nList II (Behavior):\nI. Head services requests in one direction then leaps back to first request without servicing on return\nII. Head services requests with minimum seek time from current position; prone to starvation\nIII. Head moves end-to-end like an elevator servicing requests in both directions\nIV. Services requests in order of arrival; no head optimization\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-II, C-III, D-I",
+      "B": "A-IV, B-III, C-II, D-I",
+      "C": "A-II, B-IV, C-III, D-I",
+      "D": "A-IV, B-II, C-I, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. FCFS: Arrival order (IV). B. SSTF: Shortest seek time, prone to starvation (II). C. SCAN: Elevator moving end-to-end (III). D. C-LOOK: One direction service, jump back to start request (I)."
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Given below are two statements:\nStatement I: Paging suffers from internal fragmentation but eliminates external fragmentation.\nStatement II: Segmentation eliminates internal fragmentation but suffers from external fragmentation.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Fixed-size paging causes internal fragmentation in last frame but avoids external fragmentation. Variable-size segmentation avoids internal fragmentation but leads to external fragmentation."
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Arrange the following process states in chronological order of a standard process lifecycle:\nA. Running\nB. Ready\nC. New\nD. Terminated\nE. Waiting / Blocked\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "C, B, A, E, D",
+      "B": "B, C, A, E, D",
+      "C": "C, A, B, E, D",
+      "D": "C, B, E, A, D"
+    },
+    "correct_answer": "A",
+    "explanation": "Process lifecycle: 1) New (created) (C), 2) Ready (waiting for CPU) (B), 3) Running (executing) (A), 4) Waiting/Blocked (I/O event) (E), 5) Terminated (exit) (D)."
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which component of a two-pass assembler builds the Symbol Table containing symbol names and their corresponding location counter addresses?\nA. Pass 1\nB. Pass 2\nC. Linker\nD. Loader\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A only",
+      "B": "B only",
+      "C": "C only",
+      "D": "D only"
+    },
+    "correct_answer": "A",
+    "explanation": "Pass 1 of a two-pass assembler scans the source program, assigns location counter values, and constructs the Symbol Table. Pass 2 uses the symbol table to generate object code."
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Match List I with List II:\nList I (Cohesion Level):\nA. Functional Cohesion\nB. Coincidental Cohesion\nC. Sequential Cohesion\nD. Temporal Cohesion\n\nList II (Description):\nI. Tasks are grouped together purely because they are executed at the same time (e.g. initialization)\nII. Output of one module element serves as input to the next element\nIII. Lowest and weakest cohesion; elements have no meaningful relationship\nIV. Highest and strongest cohesion; all module elements perform a single well-defined task\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-III, C-II, D-I",
+      "B": "A-IV, B-I, C-II, D-III",
+      "C": "A-III, B-IV, C-II, D-I",
+      "D": "A-IV, B-III, C-I, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Functional: Highest/strongest, single clear task (IV). B. Coincidental: Lowest/weakest, random grouping (III). C. Sequential: Output of one element is input to next (II). D. Temporal: Grouped by time of execution (I)."
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Given below are two statements:\nStatement I: High Coupling and Low Cohesion represent the ideal software architecture design goal.\nStatement II: Content Coupling is the worst and strongest form of coupling between software modules.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is false but Statement II is true",
+      "D": "Statement I is true but Statement II is false"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is false because the ideal software design goal is High Cohesion and Low Coupling. Statement II is true (Content coupling occurs when one module modifies internal data/code of another, which is worst)."
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Arrange the following Software Testing levels in order of execution in the V-Model (from lowest level unit test up to acceptance test):\nA. Integration Testing\nB. Unit Testing\nC. Acceptance Testing\nD. System Testing\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, A, D, C",
+      "B": "A, B, D, C",
+      "C": "B, D, A, C",
+      "D": "C, D, A, B"
+    },
+    "correct_answer": "A",
+    "explanation": "V-Model testing sequence: 1) Unit Testing (B), 2) Integration Testing (A), 3) System Testing (D), 4) Acceptance Testing (C)."
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Match List I with List II:\nList I (Agile Ceremony):\nA. Sprint Planning\nB. Daily Standup\nC. Sprint Review\nD. Sprint Retrospective\n\nList II (Objective):\nI. Short 15-minute daily sync to discuss progress, plan for next 24 hours, and blockers\nII. Team reflects on process improvements, what went well, and what to optimize for next sprint\nIII. Team selects user stories from Product Backlog to commit for upcoming iteration\nIV. Team demonstrates working software increment to stakeholders for feedback\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-I, C-IV, D-II",
+      "B": "A-III, B-IV, C-I, D-II",
+      "C": "A-I, B-III, C-IV, D-II",
+      "D": "A-III, B-I, C-II, D-IV"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Sprint Planning: Commit user stories (III). B. Daily Standup: 15-min daily sync (I). C. Sprint Review: Demo working software increment (IV). D. Retrospective: Reflect on team process improvements (II)."
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Given below are two statements:\nStatement I: Black-box testing techniques assess program code paths and branch conditions directly.\nStatement II: Boundary Value Analysis and Equivalence Partitioning are popular Black-box testing methods.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is false but Statement II is true",
+      "D": "Statement I is true but Statement II is false"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is false because testing code paths/branches is White-box testing. Statement II is true (Boundary Value Analysis and Equivalence Partitioning test input specification boundaries without looking at internal code)."
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which McCall Quality Factor measures the effort required to modify operational software to fix bugs or update functionality?\nA. Maintainability\nB. Flexibility\nC. Testability\nD. Portability\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A only",
+      "B": "B only",
+      "C": "C only",
+      "D": "D only"
+    },
+    "correct_answer": "A",
+    "explanation": "In McCall's Quality Factor model, Maintainability evaluates the effort required to locate and fix faults in operational software."
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Match List I with List II:\nList I (Software Process Model):\nA. Waterfall Model\nB. Prototyping Model\nC. Spiral Model\nD. Agile Model\n\nList II (Key Characteristic):\nI. Iterative development with explicit risk analysis in every cycle\nII. Linear sequential model suitable for well-understood, stable requirements\nIII. Customer feedback on early mock-up helps clarify ambiguous user requirements\nIV. Adaptive development delivering small working software increments frequently\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-III, C-I, D-IV",
+      "B": "A-II, B-I, C-III, D-IV",
+      "C": "A-III, B-II, C-I, D-IV",
+      "D": "A-IV, B-III, C-I, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Waterfall: Linear sequential for stable requirements (II). B. Prototyping: Early mock-ups for ambiguous specs (III). C. Spiral: Risk-driven iterative development (I). D. Agile: Incremental adaptive releases (IV)."
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Given below are two statements:\nStatement I: Reverse Engineering involves analyzing a system to create representations of the system at a higher level of abstraction.\nStatement II: Software Re-engineering includes both Reverse Engineering and Forward Engineering phases.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Reverse engineering extracts design specs from legacy code. Software Re-engineering combines reverse engineering (analysis) with forward engineering (rebuilding)."
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Arrange the phases of the Unified Software Development Process (UP) in correct chronological order:\nA. Elaboration\nB. Inception\nC. Transition\nD. Construction\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, A, D, C",
+      "B": "A, B, D, C",
+      "C": "B, D, A, C",
+      "D": "B, A, C, D"
+    },
+    "correct_answer": "A",
+    "explanation": "Unified Process (UP) standard phases: 1) Inception (B), 2) Elaboration (A), 3) Construction (D), 4) Transition (C)."
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which software maintenance type involves updating software to run in a changed environment (e.g. new operating system or hardware OS upgrade)?\nA. Corrective Maintenance\nB. Adaptive Maintenance\nC. Perfective Maintenance\nD. Preventive Maintenance\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B only",
+      "B": "A only",
+      "C": "C only",
+      "D": "D only"
+    },
+    "correct_answer": "A",
+    "explanation": "Adaptive Maintenance involves modifying software to interface with changes in its execution environment (OS, compiler, hardware)."
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Match List I with List II:\nList I (Data Structure):\nA. Stack\nB. Queue\nC. Binary Search Tree\nD. Priority Queue\n\nList II (Primary Characteristic / Order):\nI. Elements retrieved based on highest or lowest priority key\nII. First-In-First-Out (FIFO) access order\nIII. Left subtree values < Root value < Right subtree values\nIV. Last-In-First-Out (LIFO) access order\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-II, C-III, D-I",
+      "B": "A-IV, B-III, C-II, D-I",
+      "C": "A-II, B-IV, C-III, D-I",
+      "D": "A-IV, B-II, C-I, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Stack: LIFO (IV). B. Queue: FIFO (II). C. BST: Left < Root < Right (III). D. Priority Queue: Priority key retrieval (I)."
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Given below are two statements:\nStatement I: Tree traversal using Inorder traversal on a Binary Search Tree produces elements in sorted ascending order.\nStatement II: Preorder tree traversal visits Root node first, followed by Left subtree, and then Right subtree.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Inorder traversal (Left, Root, Right) on BST yields sorted keys. Preorder traversal visits Root, Left, Right."
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Arrange the following Sorting Algorithms in increasing order of their worst-case time complexity:\nA. Merge Sort\nB. Quick Sort\nC. Heap Sort\nD. Bubble Sort\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A and C: O(n log n), followed by B and D: O(n^2)",
+      "B": "A, B, C: O(n log n), followed by D: O(n^2)",
+      "C": "D: O(n log n), followed by A, B, C: O(n^2)",
+      "D": "None of the above"
+    },
+    "correct_answer": "A",
+    "explanation": "Merge Sort and Heap Sort have O(n log n) guaranteed worst-case complexity. Quick Sort and Bubble Sort have O(n^2) worst-case time complexity."
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Match List I with List II:\nList I (Algorithm Design Technique):\nA. Divide and Conquer\nB. Dynamic Programming\nC. Greedy Approach\nD. Backtracking\n\nList II (Classic Example):\nI. N-Queens Problem\nII. Fractional Knapsack Problem\nIII. Merge Sort\nIV. 0/1 Knapsack Problem\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-III, B-II, C-IV, D-I",
+      "C": "A-IV, B-III, C-II, D-I",
+      "D": "A-III, B-IV, C-I, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Divide & Conquer: Merge Sort (III). B. Dynamic Programming: 0/1 Knapsack (IV). C. Greedy: Fractional Knapsack (II). D. Backtracking: N-Queens (I)."
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Given below are two statements:\nStatement I: Prim's algorithm and Kruskal's algorithm both find the Minimum Spanning Tree (MST) of a connected weighted undirected graph.\nStatement II: Kruskal's algorithm grows a single tree starting from a source vertex, while Prim's algorithm maintains a forest of trees.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true. Statement II is false because Prim's algorithm grows a single tree from a starting vertex, whereas Kruskal's algorithm maintains a forest of trees joining component edges."
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which graph traversal technique uses a Queue data structure and visits all vertices at current depth before moving deeper?\nA. Depth First Search (DFS)\nB. Breadth First Search (BFS)\nC. Topological Sort\nD. Dijkstra's Algorithm\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B only",
+      "B": "A only",
+      "C": "C only",
+      "D": "D only"
+    },
+    "correct_answer": "A",
+    "explanation": "Breadth First Search (BFS) uses a Queue to explore vertices level-by-level in breadth order."
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Match List I with List II:\nList I (Complexity Class):\nA. P\nB. NP\nC. NP-Complete\nD. NP-Hard\n\nList II (Definition):\nI. Problems as hard as any problem in NP, but not necessarily in NP\nII. Problems solvable in polynomial time by a deterministic Turing Machine\nIII. Problems verifiable in polynomial time by a deterministic Turing Machine\nIV. Problems in NP that are also NP-Hard\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-III, C-IV, D-I",
+      "B": "A-III, B-II, C-IV, D-I",
+      "C": "A-II, B-IV, C-III, D-I",
+      "D": "A-I, B-III, C-IV, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. P: Solvable in polynomial time (II). B. NP: Verifiable in polynomial time (III). C. NP-Complete: In NP and NP-Hard (IV). D. NP-Hard: At least as hard as any problem in NP (I)."
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Given below are two statements:\nStatement I: An AVL tree is a self-balancing Binary Search Tree where the heights of left and right subtrees differ by at most 1.\nStatement II: Search, Insertion, and Deletion operations in an AVL tree take O(log n) time in the worst case.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. AVL trees maintain balance factor -1, 0, or 1, guaranteeing O(log n) worst-case time for Search, Insert, and Delete."
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Arrange the following Functions in increasing order of asymptotic growth rate:\nA. f(n) = n log n\nB. f(n) = 2^n\nC. f(n) = n^2\nD. f(n) = log n\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "D, A, C, B",
+      "B": "D, C, A, B",
+      "C": "A, D, C, B",
+      "D": "D, A, B, C"
+    },
+    "correct_answer": "A",
+    "explanation": "Increasing asymptotic growth order: O(log n) (D) < O(n log n) (A) < O(n^2) (C) < O(2^n) (B)."
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which shortest path algorithm handles negative edge weights and detects negative-weight cycles in a weighted directed graph?\nA. Dijkstra's Algorithm\nB. Bellman-Ford Algorithm\nC. Floyd-Warshall Algorithm\nD. Prim's Algorithm\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B and C only",
+      "B": "A only",
+      "C": "B only",
+      "D": "A and D only"
+    },
+    "correct_answer": "A",
+    "explanation": "Both Bellman-Ford (single-source) and Floyd-Warshall (all-pairs) handle negative edge weights and detect negative cycles. Dijkstra fails with negative edge weights."
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Match List I with List II:\nList I (Chomsky Hierarchy Level):\nA. Type 0 Grammar\nB. Type 1 Grammar\nC. Type 2 Grammar\nD. Type 3 Grammar\n\nList II (Automaton / Language):\nI. Regular Grammar / Deterministic Finite Automaton\nII. Unrestricted Grammar / Turing Machine\nIII. Context-Sensitive Grammar / Linear Bounded Automaton\nIV. Context-Free Grammar / Pushdown Automaton\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-III, C-IV, D-I",
+      "B": "A-II, B-IV, C-III, D-I",
+      "C": "A-III, B-II, C-IV, D-I",
+      "D": "A-I, B-III, C-IV, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Type 0: Unrestricted / Turing Machine (II). B. Type 1: Context-Sensitive / LBA (III). C. Type 2: Context-Free / PDA (IV). D. Type 3: Regular / DFA (I)."
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Given below are two statements:\nStatement I: Regular languages are closed under Union, Intersection, Concatenation, and Kleene Star.\nStatement II: Context-Free languages are closed under Intersection and Complementation.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true (Regular languages are closed under all major operations). Statement II is false because Context-Free languages are NOT closed under Intersection or Complementation."
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Arrange the phases of a Compiler in order of execution:\nA. Semantic Analysis\nB. Lexical Analysis\nC. Code Optimization\nD. Syntax Analysis\nE. Intermediate Code Generation\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, D, A, E, C",
+      "B": "B, A, D, E, C",
+      "C": "D, B, A, E, C",
+      "D": "B, D, E, A, C"
+    },
+    "correct_answer": "A",
+    "explanation": "Compiler phases order: 1) Lexical Analysis (B), 2) Syntax Analysis (D), 3) Semantic Analysis (A), 4) Intermediate Code Generation (E), 5) Code Optimization (C)."
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Match List I with List II:\nList I (Parsing Method):\nA. LL(1)\nB. LR(0)\nC. SLR(1)\nD. LALR(1)\n\nList II (Category / Feature):\nI. Top-down parser using 1 lookahead token without backtracking\nII. Bottom-up shift-reduce parser merging LR(1) states with identical core items\nIII. Simple LR parser using FOLLOW sets to resolve reduce conflicts\nIV. Basic bottom-up parser without lookahead\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-I, B-IV, C-III, D-II",
+      "B": "A-I, B-III, C-IV, D-II",
+      "C": "A-IV, B-I, C-III, D-II",
+      "D": "A-I, B-IV, C-II, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. LL(1): Top-down lookahead 1 (I). B. LR(0): Bottom-up no lookahead (IV). C. SLR(1): Uses FOLLOW set lookahead (III). D. LALR(1): Merges LR(1) core item states (II)."
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Given below are two statements:\nStatement I: The Halting Problem for Turing Machines is undecidable.\nStatement II: Post Correspondence Problem (PCP) is decidable for general string alphabets.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true (Turing Halting Problem is proven undecidable). Statement II is false because PCP is a famous undecidable problem."
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which intermediate code representation uses explicit three-address instruction tuples containing Operator, Argument 1, Argument 2, and Result?\nA. Quadruples\nB. Triples\nC. Indirect Triples\nD. Abstract Syntax Tree\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A only",
+      "B": "B only",
+      "C": "C only",
+      "D": "A and B"
+    },
+    "correct_answer": "A",
+    "explanation": "Quadruples store 4 explicit fields: (op, arg1, arg2, result). Triples omit the result field and use array indices instead."
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Match List I with List II:\nList I (Code Optimization Technique):\nA. Loop Invariant Code Motion\nB. Common Subexpression Elimination\nC. Dead Code Elimination\nD. Strength Reduction\n\nList II (Action):\nI. Replacing an expensive operation (e.g. multiplication) with a cheaper operation (e.g. addition/shift)\nII. Removing code statements that can never be executed or whose results are never used\nIII. Moving computation outside a loop if its value does not change across iterations\nIV. Reusing a previously computed identical expression value instead of recomputing\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-III, B-II, C-IV, D-I",
+      "C": "A-IV, B-III, C-II, D-I",
+      "D": "A-I, B-IV, C-II, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Loop Invariant: Move outside loop (III). B. Common Subexpression: Reuse calculated value (IV). C. Dead Code: Remove unreachable/unused code (II). D. Strength Reduction: Replace heavy op with lighter op (I)."
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Given below are two statements:\nStatement I: A grammar is ambiguous if there exists at least one string that has two or more distinct leftmost derivations.\nStatement II: Every ambiguous Context-Free Grammar can be converted into an equivalent unambiguous Context-Free Grammar.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true (definition of ambiguity). Statement II is false because inherently ambiguous Context-Free Languages exist that have no unambiguous CFG."
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Arrange the power of language acceptors in increasing order of computational capability:\nA. Pushdown Automata (PDA)\nB. Deterministic Finite Automata (DFA)\nC. Turing Machine (TM)\nD. Linear Bounded Automata (LBA)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, A, D, C",
+      "B": "A, B, D, C",
+      "C": "B, D, A, C",
+      "D": "B, A, C, D"
+    },
+    "correct_answer": "A",
+    "explanation": "Power hierarchy: DFA (Regular) < PDA (CFL) < LBA (CSL) < Turing Machine (Recursively Enumerable)."
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which parsing technique constructs a parse tree starting from the start symbol down towards the input string tokens?\nA. Top-Down Parsing\nB. Bottom-Up Parsing\nC. Shift-Reduce Parsing\nD. LR Parsing\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A only",
+      "B": "B only",
+      "C": "C and D only",
+      "D": "B, C, and D"
+    },
+    "correct_answer": "A",
+    "explanation": "Top-down parsers (e.g. LL parsers, Recursive Descent) build parse trees starting from the root start symbol deriving down to terminal leaves."
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Match List I with List II:\nList I (OSI Layer):\nA. Physical Layer\nB. Data Link Layer\nC. Network Layer\nD. Transport Layer\n\nList II (Primary Protocol / PDU):\nI. Segment / TCP, UDP\nII. Packet / IP, ICMP\nIII. Bits / Repeaters, Hubs\nIV. Frame / Ethernet, Switches, MAC addresses\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-III, B-II, C-IV, D-I",
+      "C": "A-IV, B-III, C-II, D-I",
+      "D": "A-III, B-IV, C-I, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Physical: Bits / Hubs (III). B. Data Link: Frames / Switches / MAC (IV). C. Network: Packets / IP / ICMP (II). D. Transport: Segments / TCP, UDP (I)."
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Given below are two statements:\nStatement I: TCP is a connection-oriented, reliable protocol providing flow control and congestion control.\nStatement II: UDP is a connectionless, unreliable protocol with low overhead suitable for real-time video streaming.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. TCP provides guaranteed ordered delivery via handshakes. UDP is connectionless with minimal overhead ideal for time-sensitive traffic."
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Arrange the steps involved in a TCP Three-Way Handshake connection establishment in order:\nA. Client sends SYN-ACK acknowledgement back to server.\nB. Server responds with SYN + ACK segment.\nC. Client sends SYN segment to server with initial sequence number.\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "C, B, A",
+      "B": "B, C, A",
+      "C": "C, A, B",
+      "D": "A, B, C"
+    },
+    "correct_answer": "A",
+    "explanation": "TCP 3-Way Handshake: 1) Client sends SYN (C), 2) Server responds with SYN-ACK (B), 3) Client sends ACK (A)."
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Match List I with List II:\nList I (Network Security Concept):\nA. Symmetric Encryption\nB. Asymmetric Encryption\nC. Cryptographic Hash Function\nD. Digital Signature\n\nList II (Feature / Algorithm):\nI. Provides non-repudiation and authentication using private key signing\nII. One-way mathematical function producing fixed-length digest (SHA-256)\nIII. Same secret key used for both encryption and decryption (AES, DES)\nIV. Pair of public and private keys used for key exchange (RSA, ECC)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-III, B-II, C-IV, D-I",
+      "C": "A-IV, B-III, C-II, D-I",
+      "D": "A-I, B-IV, C-II, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Symmetric: Same key (AES/DES) (III). B. Asymmetric: Public/Private pair (RSA) (IV). C. Hash Function: Fixed digest (SHA-256) (II). D. Digital Signature: Non-repudiation private key sign (I)."
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Given below are two statements:\nStatement I: IPv4 addresses are 32 bits long, whereas IPv6 addresses are 128 bits long.\nStatement II: IPv6 relies heavily on ARP (Address Resolution Protocol) for IP-to-MAC resolution.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true. Statement II is false because IPv6 eliminates ARP and uses Neighbor Discovery Protocol (NDP) over ICMPv6."
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which Routing Protocol uses the Dijkstra Shortest Path First algorithm to construct link routing tables?\nA. OSPF (Open Shortest Path First)\nB. RIP (Routing Information Protocol)\nC. BGP (Border Gateway Protocol)\nD. Distance Vector Routing\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A only",
+      "B": "B only",
+      "C": "C only",
+      "D": "B and D"
+    },
+    "correct_answer": "A",
+    "explanation": "OSPF is a Link-State routing protocol that employs Dijkstra's algorithm to compute the shortest path tree."
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Match List I with List II:\nList I (IEEE Standard):\nA. IEEE 802.3\nB. IEEE 802.11\nC. IEEE 802.15\nD. IEEE 802.16\n\nList II (Technology Name):\nI. WiMAX\nII. Bluetooth / WPAN\nIII. Wireless LAN (Wi-Fi)\nIV. Ethernet\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-III, C-II, D-I",
+      "B": "A-IV, B-II, C-III, D-I",
+      "C": "A-III, B-IV, C-II, D-I",
+      "D": "A-I, B-III, C-II, D-IV"
+    },
+    "correct_answer": "A",
+    "explanation": "A. IEEE 802.3: Ethernet (IV). B. IEEE 802.11: Wi-Fi (III). C. IEEE 802.15: Bluetooth (II). D. IEEE 802.16: WiMAX (I)."
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Given below are two statements:\nStatement I: CSMA/CD is the media access control method used in traditional half-duplex Ethernet networks.\nStatement II: Wireless Networks (Wi-Fi 802.11) use CSMA/CD because collision detection is easy to implement in RF air media.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is true. Statement II is false because wireless media cannot detect collisions while transmitting; Wi-Fi uses CSMA/CA (Collision Avoidance), not CSMA/CD."
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Arrange the following Cloud Computing Service Models in increasing order of client control over underlying infrastructure (from least control to most control):\nA. IaaS (Infrastructure as a Service)\nB. SaaS (Software as a Service)\nC. PaaS (Platform as a Service)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, C, A",
+      "B": "A, C, B",
+      "C": "C, B, A",
+      "D": "B, A, C"
+    },
+    "correct_answer": "A",
+    "explanation": "Client control ranking: SaaS (Least control, app user only) (B) < PaaS (App deployment control) (C) < IaaS (Full OS/VM/Network control) (A)."
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which Application Layer protocol translates human-readable domain names (e.g. www.ugcnet.in) into numeric IP addresses?\nA. DNS\nB. DHCP\nC. FTP\nD. SMTP\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A only",
+      "B": "B only",
+      "C": "C only",
+      "D": "D only"
+    },
+    "correct_answer": "A",
+    "explanation": "Domain Name System (DNS) resolves host domain names to IP addresses."
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Match List I with List II:\nList I (AI Search Algorithm):\nA. Breadth-First Search (BFS)\nB. Depth-First Search (DFS)\nC. A* Search\nD. Minimax Algorithm\n\nList II (Property / Data Structure):\nI. Uses Evaluation function f(n) = g(n) + h(n)\nII. Adversarial game tree search technique\nIII. Implemented using FIFO Queue; complete and optimal for step cost 1\nIV. Implemented using LIFO Stack; low memory consumption but not optimal\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-I, D-II",
+      "B": "A-III, B-I, C-IV, D-II",
+      "C": "A-IV, B-III, C-I, D-II",
+      "D": "A-I, B-IV, C-III, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. BFS: FIFO Queue, complete (III). B. DFS: LIFO Stack, low memory (IV). C. A* Search: f(n) = g(n) + h(n) (I). D. Minimax: Adversarial game tree search (II)."
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Given below are two statements:\nStatement I: An heuristic function h(n) is admissible if it never overestimates the cost to reach the goal state.\nStatement II: If an heuristic function is admissible, A* Search is guaranteed to be optimal.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Admissibility requires h(n) <= h*(n). Admissible heuristics guarantee optimality in tree search A*."
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Arrange the steps in the Execution Cycle of a Genetic Algorithm (GA):\nA. Fitness Evaluation\nB. Selection of Parents\nC. Initial Population Generation\nD. Crossover & Mutation Operators\nE. Termination Check\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "C, A, E, B, D",
+      "B": "C, B, A, D, E",
+      "C": "A, C, B, D, E",
+      "D": "C, E, A, B, D"
+    },
+    "correct_answer": "A",
+    "explanation": "Genetic Algorithm cycle: 1) Initialize population (C), 2) Evaluate fitness (A), 3) Check termination condition (E), 4) Select parents (B), 5) Apply Crossover/Mutation (D)."
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Match List I with List II:\nList I (Fuzzy Set Term):\nA. Membership Function\nB. Alpha-Cut (α-cut)\nC. Core\nD. Support\n\nList II (Definition):\nI. Set of elements with membership value greater than zero (μ(x) > 0)\nII. Set of elements with membership value equal to 1 (μ(x) = 1)\nIII. Set of elements with membership value greater than or equal to α (μ(x) >= α)\nIV. Function mapping elements to a continuous degree of membership in [0, 1]\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-III, C-II, D-I",
+      "B": "A-IV, B-II, C-III, D-I",
+      "C": "A-III, B-IV, C-II, D-I",
+      "D": "A-IV, B-III, C-I, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Membership Function: Maps to [0,1] (IV). B. Alpha-Cut: Elements with μ(x) >= α (III). C. Core: Elements with μ(x) = 1 (II). D. Support: Elements with μ(x) > 0 (I)."
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Given below are two statements:\nStatement I: Single-Layer Perceptrons can solve non-linearly separable problems like the XOR function.\nStatement II: Multilayer Perceptrons (MLP) with activation functions can learn non-linear decision boundaries.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is false but Statement II is true",
+      "D": "Statement I is true but Statement II is false"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is false because Single-Layer Perceptrons cannot solve non-linearly separable problems like XOR (Minsky & Papert proof). Statement II is true."
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which Natural Language Processing (NLP) task involves assigning grammatical parts of speech (e.g. Noun, Verb, Adjective) to each word in a sentence?\nA. Lemmatization\nB. POS Tagging\nC. Named Entity Recognition (NER)\nD. Parsing\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B only",
+      "B": "A only",
+      "C": "C only",
+      "D": "D only"
+    },
+    "correct_answer": "A",
+    "explanation": "Part-of-Speech (POS) Tagging assigns grammatical labels (Noun, Verb, Adjective, etc.) to words based on context."
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Match List I with List II:\nList I (Activation Function):\nA. Sigmoid\nB. ReLU\nC. Tanh\nD. Softmax\n\nList II (Formula / Range):\nI. Range (-1, 1)\nII. Formula f(x) = max(0, x)\nIII. Output probabilities summing to 1 across multiple classes\nIV. Range (0, 1) with formula 1 / (1 + e^-x)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-II, C-I, D-III",
+      "B": "A-IV, B-I, C-II, D-III",
+      "C": "A-I, B-II, C-IV, D-III",
+      "D": "A-IV, B-II, C-III, D-I"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Sigmoid: Range (0,1), 1/(1+e^-x) (IV). B. ReLU: max(0, x) (II). C. Tanh: Range (-1,1) (I). D. Softmax: Multi-class probabilities summing to 1 (III)."
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Given below are two statements:\nStatement I: Alpha-Beta pruning changes the final decision value computed by the Minimax algorithm.\nStatement II: Alpha-Beta pruning eliminates branches that cannot possibly influence the final decision, reducing search time.\n\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is false but Statement II is true",
+      "D": "Statement I is true but Statement II is false"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is false because Alpha-Beta pruning produces the exact same result as full Minimax without altering decision values. Statement II is true."
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Arrange the levels of Knowledge Representation in AI from lowest implementation level up to highest conceptual level:\nA. Logic / Symbolic Representation\nB. Direct Binary / Signal Data\nC. Conceptual / Semantic Network Representation\nD. Feature Vector Representation\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, D, A, C",
+      "B": "B, A, D, C",
+      "C": "A, B, C, D",
+      "D": "D, B, A, C"
+    },
+    "correct_answer": "A",
+    "explanation": "Order of abstraction: 1) Raw Signal/Binary (B), 2) Feature Vectors (D), 3) Symbolic Logic (A), 4) Semantic Networks / Conceptual Knowledge (C)."
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which Expert System component contains domain-specific heuristic rules (IF-THEN rules) provided by human domain experts?\nA. Inference Engine\nB. Knowledge Base\nC. User Interface\nD. Explanation Facility\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B only",
+      "B": "A only",
+      "C": "C only",
+      "D": "D only"
+    },
+    "correct_answer": "A",
+    "explanation": "The Knowledge Base in an Expert System stores domain facts and heuristic rules (IF-THEN rules)."
+  }
+]

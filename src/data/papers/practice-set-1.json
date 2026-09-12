@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "What is the remainder when 3^2026 is divided by 7?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "4",
+      "D": "6"
+    },
+    "correct_answer": "C",
+    "explanation": "By Fermat's Little Theorem, 3^6 ≡ 1 (mod 7). 2026 = 6 * 337 + 4. Thus, 3^2026 ≡ (3^6)^337 * 3^4 ≡ 1 * 81 ≡ 4 (mod 7)."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "How many integers between 1 and 1000 (inclusive) are divisible by neither 3 nor 5 nor 7?",
+    "options": {
+      "A": "457",
+      "B": "458",
+      "C": "542",
+      "D": "543"
+    },
+    "correct_answer": "A",
+    "explanation": "Inclusion-Exclusion: |A|=333, |B|=200, |C|=142. |A∩B|=66, |B∩C|=28, |A∩C|=47. |A∩B∩C|=9. At least one = 333+200+142 - (66+28+47) + 9 = 543. Neither = 1000 - 543 = 457."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "A planar graph has 12 vertices, each of degree 3. How many faces (regions) does this graph have?",
+    "options": {
+      "A": "6",
+      "B": "8",
+      "C": "10",
+      "D": "12"
+    },
+    "correct_answer": "B",
+    "explanation": "Handshaking lemma: 2E = 12 * 3 = 36 => E = 18. Euler's formula: V - E + F = 2 => 12 - 18 + F = 2 => F = 8."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Two fair 6-sided dice are rolled. What is the conditional probability that the sum is 8 given that at least one die shows an even number?",
+    "options": {
+      "A": "5 / 27",
+      "B": "5 / 36",
+      "C": "1 / 9",
+      "D": "4 / 27"
+    },
+    "correct_answer": "A",
+    "explanation": "Total outcomes with at least one even die = 36 - 9 (both odd) = 27. Outcomes with sum 8: (2,6),(3,5),(4,4),(5,3),(6,2) - all 5 have at least one even die. P = 5/27."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In a Boolean algebra, simplify the Boolean expression F = AB + A'C + BC.",
+    "options": {
+      "A": "AB + A'C",
+      "B": "AB + BC",
+      "C": "A'C + BC",
+      "D": "A + B + C"
+    },
+    "correct_answer": "A",
+    "explanation": "By Consensus Theorem: AB + A'C + BC = AB + A'C."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Solve the recurrence relation T(n) = 2T(n-1) + 1 with T(0) = 0. What is T(10)?",
+    "options": {
+      "A": "1023",
+      "B": "1024",
+      "C": "2047",
+      "D": "511"
+    },
+    "correct_answer": "A",
+    "explanation": "T(n) = 2^n - 1. For n = 10, T(10) = 2^10 - 1 = 1023."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Consider an LPP: Maximize Z = 3x1 + 5x2 subject to x1 + 2x2 <= 10, 3x1 + x2 <= 15, x1, x2 >= 0. What is the maximum optimal value of Z?",
+    "options": {
+      "A": "25",
+      "B": "27",
+      "C": "29",
+      "D": "30"
+    },
+    "correct_answer": "B",
+    "explanation": "Corner points: (0,0)->0, (5,0)->15, (0,5)->25, (4,3)->3(4)+5(3)=27. Max Z = 27."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "For three activities in a PERT network, Optimistic time (a) = 4, Most Likely time (m) = 7, and Pessimistic time (b) = 16. What are the Expected Time (t_e) and Variance (sigma^2)?",
+    "options": {
+      "A": "t_e = 8, sigma^2 = 4",
+      "B": "t_e = 7, sigma^2 = 2",
+      "C": "t_e = 8, sigma^2 = 2",
+      "D": "t_e = 9, sigma^2 = 4"
+    },
+    "correct_answer": "A",
+    "explanation": "t_e = (a + 4m + b)/6 = (4 + 28 + 16)/6 = 8. sigma = (b-a)/6 = (16-4)/6 = 2. Variance sigma^2 = 4."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "How many reflexive and symmetric relations can be defined on a set S with 4 elements?",
+    "options": {
+      "A": "64",
+      "B": "256",
+      "C": "512",
+      "D": "1024"
+    },
+    "correct_answer": "A",
+    "explanation": "Reflexive requires 4 diagonal pairs. Remaining 4(3)/2 = 6 symmetric pairs. Total relations = 2^6 = 64."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In group theory, what is the order of the element 5 in the multiplicative group Z_13* = {1, 2, ..., 12} modulo 13?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "6",
+      "D": "12"
+    },
+    "correct_answer": "B",
+    "explanation": "5^1=5, 5^2=25≡12, 5^3=60≡8, 5^4=40≡1 (mod 13). Order of 5 is 4."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "A 32-bit byte-addressable computer has a 64 KB 4-way set-associative cache with block size of 16 bytes. How many bits are in Tag, Set Index, and Block Offset fields?",
+    "options": {
+      "A": "Tag: 18 bits, Set Index: 10 bits, Offset: 4 bits",
+      "B": "Tag: 20 bits, Set Index: 8 bits, Offset: 4 bits",
+      "C": "Tag: 16 bits, Set Index: 12 bits, Offset: 4 bits",
+      "D": "Tag: 19 bits, Set Index: 9 bits, Offset: 4 bits"
+    },
+    "correct_answer": "A",
+    "explanation": "Offset = log2(16) = 4. Sets = 64KB / (16 * 4) = 1024 = 2^10 => Index = 10. Tag = 32 - 14 = 18 bits."
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Convert the IEEE 754 single-precision floating-point number represented in hexadecimal as 0xC0400000 into its decimal value.",
+    "options": {
+      "A": "-3.0",
+      "B": "-6.0",
+      "C": "+3.0",
+      "D": "-12.0"
+    },
+    "correct_answer": "A",
+    "explanation": "Sign = 1 (-), Exp = 10000000_2 = 128 - 127 = 1. Mantissa = 1.1_2 = 1.5. Value = -1.5 * 2^1 = -3.0."
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "A 5-stage instruction pipeline has stage delays of 150 ps, 120 ps, 180 ps, 160 ps, and 140 ps. Pipeline register delay is 20 ps. What is clock cycle time and speedup ratio for 1000 instructions?",
+    "options": {
+      "A": "Clock cycle = 200 ps, Speedup = 3.73",
+      "B": "Clock cycle = 180 ps, Speedup = 4.16",
+      "C": "Clock cycle = 200 ps, Speedup = 3.88",
+      "D": "Clock cycle = 160 ps, Speedup = 4.68"
+    },
+    "correct_answer": "A",
+    "explanation": "Clock cycle = max(180) + 20 = 200 ps. Non-pipelined time = 750 ps. Pipelined time = (5 + 1000 - 1) * 200 = 200,800 ps. Speedup = 750,000 / 200,800 = 3.735 ≈ 3.73."
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Represent the decimal number -59 in 8-bit 2's complement binary form.",
+    "options": {
+      "A": "11000101",
+      "B": "11000100",
+      "C": "10111011",
+      "D": "11100101"
+    },
+    "correct_answer": "A",
+    "explanation": "+59 = 00111011. 1's comp = 11000100. 2's comp = 11000101."
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "A main memory system has cycle time 100 ns. Cache access time is 10 ns. If cache hit ratio is 95%, what is the effective memory access time?",
+    "options": {
+      "A": "14.5 ns",
+      "B": "15 ns",
+      "C": "19.5 ns",
+      "D": "20 ns"
+    },
+    "correct_answer": "B",
+    "explanation": "EAT = 0.95 * 10 + 0.05 * (10 + 100) = 9.5 + 5.5 = 15 ns."
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Convert the binary Gray code 110101 into its standard binary equivalent.",
+    "options": {
+      "A": "100110",
+      "B": "101001",
+      "C": "100111",
+      "D": "111000"
+    },
+    "correct_answer": "A",
+    "explanation": "B5=1, B4=1^1=0, B3=0^0=0, B2=0^1=1, B1=1^0=1, B0=1^1=0. Binary = 100110."
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "How many 128 x 8 bit RAM chips are required to construct a 2 KB x 16 bit memory system?",
+    "options": {
+      "A": "16",
+      "B": "32",
+      "C": "64",
+      "D": "128"
+    },
+    "correct_answer": "B",
+    "explanation": "Chips = (2048 / 128) * (16 / 8) = 16 * 2 = 32 chips."
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "A hard disk has 16 recording surfaces, 1024 tracks per surface, and 512 sectors per track. Each sector holds 512 bytes. What is total storage capacity?",
+    "options": {
+      "A": "2 GB",
+      "B": "4 GB",
+      "C": "8 GB",
+      "D": "16 GB"
+    },
+    "correct_answer": "B",
+    "explanation": "Capacity = 16 * 1024 * 512 * 512 = 2^4 * 2^10 * 2^9 * 2^9 = 2^32 bytes = 4 GB."
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "If a control unit has 32 control signals and 8 operational states, how many control bits are needed for horizontal and vertical microprogramming?",
+    "options": {
+      "A": "Horizontal: 32 bits, Vertical: 5 bits",
+      "B": "Horizontal: 32 bits, Vertical: 8 bits",
+      "C": "Horizontal: 16 bits, Vertical: 5 bits",
+      "D": "Horizontal: 8 bits, Vertical: 32 bits"
+    },
+    "correct_answer": "A",
+    "explanation": "Horizontal needs 32 bits (1 bit per signal). Vertical needs ceil(log2 32) = 5 bits."
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "An instruction is stored at address 300 with offset -45. What is the target address using PC-relative mode (1-word instruction length)?",
+    "options": {
+      "A": "255",
+      "B": "256",
+      "C": "254",
+      "D": "345"
+    },
+    "correct_answer": "B",
+    "explanation": "PC during execution = 300 + 1 = 301. Target = 301 - 45 = 256."
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the output of the following C code snippet?\nint a[5] = {10, 20, 30, 40, 50};\nint *p = a + 1;\nprintf(\"%d\", *(p + 1) + *(a + 3));",
+    "options": {
+      "A": "50",
+      "B": "60",
+      "C": "70",
+      "D": "80"
+    },
+    "correct_answer": "C",
+    "explanation": "p points to a[1] (20). *(p + 1) is a[2] = 30. *(a + 3) is a[3] = 40. Sum = 30 + 40 = 70."
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "In Bresenham's line drawing algorithm for a line from (2, 3) to (10, 8), what is the initial decision parameter P0?",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8"
+    },
+    "correct_answer": "A",
+    "explanation": "dx = 10 - 2 = 8, dy = 8 - 3 = 5. Initial decision parameter P0 = 2*dy - dx = 2(5) - 8 = 10 - 8 = 2."
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "A 2D point P(4, 5) is rotated by 90 degrees counterclockwise about the origin, then translated by (2, -3). What are the new coordinates?",
+    "options": {
+      "A": "(-3, 1)",
+      "B": "(-3, 2)",
+      "C": "(7, 1)",
+      "D": "(3, -1)"
+    },
+    "correct_answer": "A",
+    "explanation": "Counterclockwise rotation by 90°: (x, y) -> (-y, x) => (4, 5) -> (-5, 4). Translation by (2, -3): (-5 + 2, 4 - 3) = (-3, 1)."
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "In Cohen-Sutherland line clipping algorithm, what are the region codes for endpoints A(-2, 5) and B(8, 12) with respect to window [Xmin=0, Ymin=0, Xmax=10, Ymax=10]?",
+    "options": {
+      "A": "A: 1001, B: 1000",
+      "B": "A: 0001, B: 1000",
+      "C": "A: 0101, B: 0100",
+      "D": "A: 1001, B: 0010"
+    },
+    "correct_answer": "B",
+    "explanation": "Point A(-2,5): Left=1 => 0001. Point B(8,12): Top=1 => 1000."
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Given 4 control points P0(0,0), P1(1,2), P2(3,2), P3(4,0) for a Cubic Bezier Curve, evaluate the coordinate on the curve at t = 0.5.",
+    "options": {
+      "A": "(2.0, 1.5)",
+      "B": "(2.0, 1.25)",
+      "C": "(2.5, 1.5)",
+      "D": "(1.5, 2.0)"
+    },
+    "correct_answer": "A",
+    "explanation": "At t=0.5: weights = 1/8, 3/8, 3/8, 1/8. X = (0+3+9+4)/8 = 16/8 = 2.0. Y = (0+6+6+0)/8 = 12/8 = 1.5."
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the output of the recursive C function call f(5)?\nint f(int n) {\n    if (n <= 1) return 1;\n    return n * f(n - 2);\n}",
+    "options": {
+      "A": "15",
+      "B": "120",
+      "C": "15",
+      "D": "24"
+    },
+    "correct_answer": "A",
+    "explanation": "f(5) = 5 * f(3) = 5 * 3 * f(1) = 15."
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Calculate the composite 2D transformation matrix for Scaling by factor S(2, 3) followed by Rotation by 180 degrees.",
+    "options": {
+      "A": "[-2 0 0; 0 -3 0; 0 0 1]",
+      "B": "[2 0 0; 0 3 0; 0 0 1]",
+      "C": "[0 -2 0; -3 0 0; 0 0 1]",
+      "D": "[-2 0 0; 0 3 0; 0 0 1]"
+    },
+    "correct_answer": "A",
+    "explanation": "Scaling S = [[2,0],[0,3]]. Rotation R(180°) = [[-1,0],[0,-1]]. Composite M = R * S = [[-2,0],[0,-3]]."
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "How many frame buffer memory bits per pixel are required to store a true color image with 256 levels for each RGB component on a 1024 x 768 display?",
+    "options": {
+      "A": "8 bits/pixel",
+      "B": "16 bits/pixel",
+      "C": "24 bits/pixel",
+      "D": "32 bits/pixel"
+    },
+    "correct_answer": "C",
+    "explanation": "256 levels = 8 bits/channel. 3 channels (R,G,B) = 24 bits/pixel."
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "In Midpoint Circle drawing algorithm for radius R = 10, what is the initial decision parameter P0?",
+    "options": {
+      "A": "-9",
+      "B": "-8",
+      "C": "1",
+      "D": "0"
+    },
+    "correct_answer": "A",
+    "explanation": "P0 = 1 - R = 1 - 10 = -9."
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the output of the following C code snippet?\nint x = 5;\nprintf(\"%d\", x++ + ++x);",
+    "options": {
+      "A": "12",
+      "B": "11",
+      "C": "13",
+      "D": "Undefined in C standard"
+    },
+    "correct_answer": "D",
+    "explanation": "Modifying a variable twice between sequence points causes Undefined Behavior in C."
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given relation schema R(A, B, C, D, E) with Functional Dependencies F = { A -> BC, CD -> E, B -> D, E -> A }. What is the total number of candidate keys for R?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "correct_answer": "C",
+    "explanation": "A+ = ABCDE, E+ = ABCDE, (CD)+ = ABCDE, (BC)+ = ABCDE. Total 4 candidate keys {A, E, CD, BC}."
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A B+ tree of order 100 stores 1,000,000 search key values in leaf nodes. What is the minimum height (number of levels) of the B+ tree?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "correct_answer": "A",
+    "explanation": "Level 1: 99 keys. Level 2: 100*99 = 9,900. Level 3: 100*100*99 = 990,000 keys. Height = 3 levels."
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Relation R(A, B, C, D) has FDs { A -> B, B -> C, C -> D }. In which highest normal form is relation R?",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "BCNF"
+    },
+    "correct_answer": "B",
+    "explanation": "Candidate key is A. Transitive dependencies A -> B -> C -> D exist where B, C are non-prime and not superkeys. Highest NF is 2NF."
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider relation R(A,B,C) with 10 rows and relation S(C,D,E) with 20 rows. What are the minimum and maximum number of rows in R NATURAL JOIN S?",
+    "options": {
+      "A": "Min: 0, Max: 200",
+      "B": "Min: 10, Max: 20",
+      "C": "Min: 0, Max: 20",
+      "D": "Min: 10, Max: 200"
+    },
+    "correct_answer": "A",
+    "explanation": "Min = 0 (no matching C values). Max = 10 * 20 = 200 (all C values match)."
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "In transaction processing using strict 2-Phase Locking (Strict 2PL), when are exclusive locks released?",
+    "options": {
+      "A": "Immediately after write operation",
+      "B": "In shrinking phase before commit",
+      "C": "Only at the end of transaction (Commit/Abort)",
+      "D": "When growing phase completes"
+    },
+    "correct_answer": "C",
+    "explanation": "Strict 2PL holds exclusive locks until transaction completion (commit or abort) to prevent cascading rollbacks."
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given two transactions T1 and T2 with timestamps TS(T1) = 10 and TS(T2) = 20. Under Wait-Die deadlock prevention scheme, what happens when T1 requests a lock held by T2?",
+    "options": {
+      "A": "T1 waits",
+      "B": "T1 dies",
+      "C": "T2 dies",
+      "D": "T2 waits"
+    },
+    "correct_answer": "A",
+    "explanation": "Older transaction T1 (TS=10) requesting lock from younger T2 (TS=20) is allowed to WAIT."
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "How many relational algebra basic operators can be used to define the DIVISION operator (R / S)?",
+    "options": {
+      "A": "Cartesian product, Set difference, Projection",
+      "B": "Selection, Projection, Join",
+      "C": "Union, Intersection, Difference",
+      "D": "Join, Selection, Cartesian product"
+    },
+    "correct_answer": "A",
+    "explanation": "R / S is defined using Projection (π), Set Difference (-), and Cartesian Product (×)."
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database table has 10,000 records stored across 1,000 disk blocks. A non-clustered unspanned B+ tree index is built on a key field. How many block accesses are needed to search a record if index height is 3?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "1000",
+      "D": "10"
+    },
+    "correct_answer": "B",
+    "explanation": "3 accesses to traverse index tree + 1 access to fetch record from main table = 4 block accesses."
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "If relation R(A, B) has 100 tuples with 10 distinct A values, what is the estimated number of tuples returned by SQL query: SELECT * FROM R WHERE A = 5?",
+    "options": {
+      "A": "10",
+      "B": "5",
+      "C": "100",
+      "D": "50"
+    },
+    "correct_answer": "A",
+    "explanation": "Expected tuples = 100 / 10 = 10 tuples."
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which normal form guarantees both Lossless-Join and Dependency-Preserving decomposition for any relation schema?",
+    "options": {
+      "A": "3NF",
+      "B": "BCNF",
+      "C": "4NF",
+      "D": "5NF"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF decomposition always guarantees both Lossless-Join and Dependency Preservation."
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Consider 4 processes P1, P2, P3, P4 with arrival times (0, 1, 2, 3) and burst times (8, 4, 9, 5) scheduled using Shortest Remaining Time First (SRTF). What is average waiting time?",
+    "options": {
+      "A": "6.5 ms",
+      "B": "7.0 ms",
+      "C": "7.75 ms",
+      "D": "8.25 ms"
+    },
+    "correct_answer": "A",
+    "explanation": "WT: P1=9, P2=0, P3=15, P4=2. Avg WT = (9 + 0 + 15 + 2) / 4 = 6.5 ms."
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "A system has 4 processes and 3 resource types (R1, R2, R3) with Total units (10, 5, 7). Allocated matrix: P1(0,1,0), P2(2,0,0), P3(3,0,2), P4(2,1,1). Max matrix: P1(7,5,3), P2(3,2,2), P3(9,0,2), P4(2,2,2). Available resources = (3, 3, 2). Is the system in a safe state, and what is a valid safe sequence?",
+    "options": {
+      "A": "Safe sequence: P2, P4, P1, P3",
+      "B": "Safe sequence: P1, P3, P2, P4",
+      "C": "Unsafe state (Deadlock)",
+      "D": "Safe sequence: P3, P2, P4, P1"
+    },
+    "correct_answer": "A",
+    "explanation": "Need: P1(7,4,3), P2(1,2,2), P3(6,0,0), P4(0,1,1). Available (3,3,2) satisfies P2 -> Avail (5,3,2) satisfies P4 -> Avail (7,4,3) satisfies P1 -> satisfies P3. Safe sequence = P2, P4, P1, P3."
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "A virtual memory system uses 32-bit logical address with page size 4 KB. Page table entry size is 4 bytes. What is the size of a single-level page table?",
+    "options": {
+      "A": "1 MB",
+      "B": "2 MB",
+      "C": "4 MB",
+      "D": "8 MB"
+    },
+    "correct_answer": "C",
+    "explanation": "20 page bits => 2^20 entries * 4 bytes = 4 MB."
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Given reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 and 3 page frames. How many page faults occur using LRU page replacement?",
+    "options": {
+      "A": "8",
+      "B": "9",
+      "C": "10",
+      "D": "11"
+    },
+    "correct_answer": "C",
+    "explanation": "LRU page fault simulation yields 10 page faults."
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "A disk drive has 200 tracks (0 to 199). Disk request queue: 98, 183, 37, 122, 14, 124, 65, 67. Current head position is at track 53 moving towards higher tracks. What is total head movement using SSTF?",
+    "options": {
+      "A": "236 tracks",
+      "B": "208 tracks",
+      "C": "240 tracks",
+      "D": "322 tracks"
+    },
+    "correct_answer": "A",
+    "explanation": "SSTF order: 53 -> 65 -> 67 -> 37 -> 14 -> 98 -> 122 -> 124 -> 183. Total = 12+2+30+23+84+24+2+59 = 236 tracks."
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "In Unix/Linux file system, how many direct, single-indirect, double-indirect, and triple-indirect block pointers are present in a standard inode?",
+    "options": {
+      "A": "12 direct, 1 single, 1 double, 1 triple",
+      "B": "10 direct, 2 single, 1 double, 1 triple",
+      "C": "14 direct, 1 single, 1 double, 0 triple",
+      "D": "8 direct, 2 single, 2 double, 1 triple"
+    },
+    "correct_answer": "A",
+    "explanation": "Standard Unix inode contains 12 direct, 1 single-indirect, 1 double-indirect, and 1 triple-indirect pointers."
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "If page fault service time is 10 ms and memory access time is 100 ns, what maximum page fault rate is allowed to keep effective memory access time within 200 ns?",
+    "options": {
+      "A": "1 in 100,000",
+      "B": "1 in 10,000",
+      "C": "1 in 1,000",
+      "D": "1 in 1,000,000"
+    },
+    "correct_answer": "A",
+    "explanation": "EAT = 100ns + p * 10,000,000ns <= 200ns => p <= 100 / 10,000,000 = 1 in 100,000."
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Consider a counting semaphore S initialized to 10. 6 Wait(P) operations and 4 Signal(V) operations are executed on S. What is the final value of S?",
+    "options": {
+      "A": "8",
+      "B": "12",
+      "C": "10",
+      "D": "6"
+    },
+    "correct_answer": "A",
+    "explanation": "Final value = 10 + 4 - 6 = 8."
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "What is the maximum file size supported by an inode system with 10 direct pointers, 1 single indirect pointer, block size 1 KB, and block pointer size 4 bytes?",
+    "options": {
+      "A": "266 KB",
+      "B": "512 KB",
+      "C": "1024 KB",
+      "D": "2048 KB"
+    },
+    "correct_answer": "A",
+    "explanation": "Direct = 10 KB. Single indirect = 256 * 1 KB = 256 KB. Total = 266 KB."
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "In Round Robin scheduling with time quantum Q = 3 ms, processes P1(burst 10), P2(burst 4), P3(burst 2) arrive at t = 0. What is completion time of P1?",
+    "options": {
+      "A": "16 ms",
+      "B": "14 ms",
+      "C": "15 ms",
+      "D": "12 ms"
+    },
+    "correct_answer": "A",
+    "explanation": "Timeline: P1(0..3), P2(3..6), P3(6..8), P1(8..11), P2(11..12), P1(12..15), P1(15..16). P1 finishes at 16 ms."
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 6: Software Engineering",
+    "question": "A control flow graph of a software program has 14 edges and 10 nodes. What is the Cyclomatic Complexity V(G) of the program?",
+    "options": {
+      "A": "6",
+      "B": "4",
+      "C": "5",
+      "D": "7"
+    },
+    "correct_answer": "A",
+    "explanation": "V(G) = E - N + 2P = 14 - 10 + 2 = 6."
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 6: Software Engineering",
+    "question": "According to Basic COCOMO model for organic software, Effort E = 2.4 * (KLOC)^1.05 person-months. Calculate Effort for a project with 100 KLOC.",
+    "options": {
+      "A": "302.1 PM",
+      "B": "240.0 PM",
+      "C": "300.0 PM",
+      "D": "310.5 PM"
+    },
+    "correct_answer": "A",
+    "explanation": "E = 2.4 * (100)^1.05 = 302.14 person-months."
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 6: Software Engineering",
+    "question": "A software module has 5 input parameters, 3 output parameters, 2 user inquiries, 4 internal logical files, and 1 external interface file. Assuming average complexity weights (Inputs:4, Outputs:5, Inquiries:4, ILF:10, EIF:7), what is Unadjusted Function Point (UFP)?",
+    "options": {
+      "A": "90",
+      "B": "88",
+      "C": "95",
+      "D": "100"
+    },
+    "correct_answer": "A",
+    "explanation": "UFP = (5*4) + (3*5) + (2*4) + (4*10) + (1*7) = 20 + 15 + 8 + 40 + 7 = 90."
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 6: Software Engineering",
+    "question": "If a software system has Mean Time Between Failures (MTBF) = 495 hours and Mean Time To Repair (MTTR) = 5 hours, what is its percentage availability?",
+    "options": {
+      "A": "99.0%",
+      "B": "98.0%",
+      "C": "99.5%",
+      "D": "95.0%"
+    },
+    "correct_answer": "A",
+    "explanation": "Availability = 495 / (495 + 5) = 495 / 500 = 99.0%."
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Arrange the 6 coupling types from weakest (best) to strongest (worst):",
+    "options": {
+      "A": "Data, Stamp, Control, External, Common, Content",
+      "B": "Content, Common, External, Control, Stamp, Data",
+      "C": "Data, Control, Stamp, Common, External, Content",
+      "D": "Stamp, Data, Control, External, Content, Common"
+    },
+    "correct_answer": "A",
+    "explanation": "Coupling order: Data < Stamp < Control < External < Common < Content."
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Arrange the 7 cohesion types from strongest (best) to weakest (worst):",
+    "options": {
+      "A": "Functional, Sequential, Communicational, Procedural, Temporal, Logical, Coincidental",
+      "B": "Coincidental, Logical, Temporal, Procedural, Communicational, Sequential, Functional",
+      "C": "Functional, Communicational, Sequential, Procedural, Logical, Temporal, Coincidental",
+      "D": "Sequential, Functional, Procedural, Communicational, Temporal, Logical, Coincidental"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohesion order: Functional > Sequential > Communicational > Procedural > Temporal > Logical > Coincidental."
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In Halstead's Software Science, if unique operators n1 = 16 and unique operands n2 = 32, what is the Program Vocabulary n?",
+    "options": {
+      "A": "48",
+      "B": "256",
+      "C": "512",
+      "D": "16"
+    },
+    "correct_answer": "A",
+    "explanation": "n = n1 + n2 = 16 + 32 = 48."
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In a software project, total number of defects detected in unit testing is 80, integration testing is 40, and system testing is 30. User acceptance test finds 10 post-release defects. What is Defect Removal Efficiency (DRE)?",
+    "options": {
+      "A": "93.75%",
+      "B": "85.0%",
+      "C": "90.0%",
+      "D": "96.0%"
+    },
+    "correct_answer": "A",
+    "explanation": "DRE = 150 / (150 + 10) = 150 / 160 = 93.75%."
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 6: Software Engineering",
+    "question": "How many independent test paths exist in a code block with 3 sequential IF-THEN-ELSE decision statements?",
+    "options": {
+      "A": "8",
+      "B": "6",
+      "C": "3",
+      "D": "9"
+    },
+    "correct_answer": "A",
+    "explanation": "Total independent paths = 2^3 = 8 paths."
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In Agile Scrum, if a team's velocity is 30 story points per sprint, how many sprints are required to complete a backlog of 145 story points?",
+    "options": {
+      "A": "5 sprints",
+      "B": "4 sprints",
+      "C": "6 sprints",
+      "D": "4.83 sprints"
+    },
+    "correct_answer": "A",
+    "explanation": "Sprints = ceil(145 / 30) = 5 sprints."
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Solve recurrence relation T(n) = 4T(n/2) + n^2 using Master Theorem. What is the asymptotic time complexity?",
+    "options": {
+      "A": "O(n^2 log n)",
+      "B": "O(n^2)",
+      "C": "O(n^3)",
+      "D": "O(n log n)"
+    },
+    "correct_answer": "A",
+    "explanation": "a=4, b=2 => log2(4)=2. f(n)=n^2 => Case 2 => Theta(n^2 log n)."
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Find the length of the Longest Common Subsequence (LCS) between strings S1 = 'ABCBDAB' and S2 = 'BDCABA'.",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "3"
+    },
+    "correct_answer": "A",
+    "explanation": "LCS('ABCBDAB', 'BDCABA') = 'BCBA' of length 4."
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "An AVL tree is constructed by inserting keys: 10, 20, 30, 40, 50 in order. What rotation is performed after inserting key 30?",
+    "options": {
+      "A": "Single Left (RR) Rotation",
+      "B": "Single Right (LL) Rotation",
+      "C": "Left-Right (LR) Rotation",
+      "D": "Right-Left (RL) Rotation"
+    },
+    "correct_answer": "A",
+    "explanation": "Right-skewed insertion (10->20->30) causes -2 balance factor at 10, requiring Single Left (RR) rotation."
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Using Dijkstra's algorithm on a graph with V = 6 vertices and E = 10 edges implemented using Min-Heap priority queue, what is the tightest upper bound time complexity?",
+    "options": {
+      "A": "O(E log V)",
+      "B": "O(V^2)",
+      "C": "O(V E)",
+      "D": "O(V log E)"
+    },
+    "correct_answer": "A",
+    "explanation": "Dijkstra with Min-Heap takes O(E log V)."
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "In a hash table of size 10 using open addressing with quadratic probing h(k, i) = (k + i^2) mod 10, insert keys 22, 32, 42. At which index is key 42 inserted?",
+    "options": {
+      "A": "6",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "correct_answer": "A",
+    "explanation": "Key 22 at 2, Key 32 at 3, Key 42 at (42 + 2^2) mod 10 = 6."
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Four matrices M1(10x20), M2(20x30), M3(30x40), M4(40x30) are multiplied. What is minimum scalar multiplication operations using Matrix Chain Multiplication DP algorithm?",
+    "options": {
+      "A": "30,000",
+      "B": "18,000",
+      "C": "24,000",
+      "D": "36,000"
+    },
+    "correct_answer": "A",
+    "explanation": "Minimum scalar multiplication cost = 30,000 operations."
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "How many spanning trees exist in a complete graph K5 with 5 vertices?",
+    "options": {
+      "A": "125",
+      "B": "100",
+      "C": "256",
+      "D": "64"
+    },
+    "correct_answer": "A",
+    "explanation": "Cayley's formula n^(n-2) = 5^3 = 125."
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case number of comparisons performed by Quick Sort on an array of 8 elements?",
+    "options": {
+      "A": "28",
+      "B": "64",
+      "C": "24",
+      "D": "36"
+    },
+    "correct_answer": "A",
+    "explanation": "Worst case = n(n-1)/2 = 8*7/2 = 28."
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "In 0/1 Knapsack problem with capacity W = 10, items have weights (2, 3, 4, 5) and values (3, 4, 5, 6). What is maximum value achievable?",
+    "options": {
+      "A": "13",
+      "B": "14",
+      "C": "15",
+      "D": "12"
+    },
+    "correct_answer": "A",
+    "explanation": "Items 1, 2, 4 (weights 2+3+5 = 10, values 3+4+6 = 13)."
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "A binary max-heap is created by inserting elements 15, 10, 20, 8, 25 in order. What is the root element of the heap?",
+    "options": {
+      "A": "25",
+      "B": "20",
+      "C": "15",
+      "D": "10"
+    },
+    "correct_answer": "A",
+    "explanation": "Max element 25 is at the root of a max-heap."
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "A Minimal DFA accepting strings over {a, b} containing an even number of a's and an odd number of b's requires how many states?",
+    "options": {
+      "A": "4",
+      "B": "2",
+      "C": "3",
+      "D": "8"
+    },
+    "correct_answer": "A",
+    "explanation": "2 states for parity of a * 2 states for parity of b = 4 states."
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Match the Grammar/Language class in Chomsky Hierarchy with its recognizing Automaton:",
+    "options": {
+      "A": "Type 0: Turing Machine, Type 1: LBA, Type 2: Pushdown Automaton, Type 3: Finite Automaton",
+      "B": "Type 0: LBA, Type 1: Turing Machine, Type 2: Finite Automaton, Type 3: Pushdown Automaton",
+      "C": "Type 0: Pushdown Automaton, Type 1: Finite Automaton, Type 2: LBA, Type 3: Turing Machine",
+      "D": "Type 0: Finite Automaton, Type 1: Pushdown Automaton, Type 2: LBA, Type 3: Turing Machine"
+    },
+    "correct_answer": "A",
+    "explanation": "Type 0->TM, Type 1->LBA, Type 2->PDA, Type 3->FA."
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following problems is DECIDABLE?",
+    "options": {
+      "A": "Emptiness problem for Finite Automata",
+      "B": "Halting problem for Turing Machines",
+      "C": "Post Correspondence Problem (PCP)",
+      "D": "Equivalence problem for Context-Free Grammars"
+    },
+    "correct_answer": "A",
+    "explanation": "FA emptiness is decidable via graph reachability."
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Given context-free grammar G: S -> AB | a, A -> bA | b, B -> c. What are FIRST(S) and FOLLOW(A)?",
+    "options": {
+      "A": "FIRST(S) = {b, a}, FOLLOW(A) = {c}",
+      "B": "FIRST(S) = {a, c}, FOLLOW(A) = {b}",
+      "C": "FIRST(S) = {b}, FOLLOW(A) = {$}",
+      "D": "FIRST(S) = {a}, FOLLOW(A) = {c}"
+    },
+    "correct_answer": "A",
+    "explanation": "FIRST(S) = FIRST(A) U {a} = {b, a}. FOLLOW(A) = FIRST(B) = {c}."
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "A SLR(1) parsing table for a grammar has 12 states and 5 terminal symbols (including $). How many action table entries exist?",
+    "options": {
+      "A": "60",
+      "B": "12",
+      "C": "17",
+      "D": "25"
+    },
+    "correct_answer": "A",
+    "explanation": "Action table entries = 12 * 5 = 60."
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "How many states exist in a minimal DFA accepting language L = { w in {0,1}* | w ends with '101' }?",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "5",
+      "D": "6"
+    },
+    "correct_answer": "A",
+    "explanation": "Minimal DFA for pattern of length k requires k + 1 states = 3 + 1 = 4."
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Convert Context-Free Grammar rule A -> B C D where B -> eps into equivalent null-free rules.",
+    "options": {
+      "A": "A -> B C D | C D",
+      "B": "A -> C D",
+      "C": "A -> B C | B D",
+      "D": "A -> B C D | B C"
+    },
+    "correct_answer": "A",
+    "explanation": "Substituting B = eps generates additional rule A -> C D."
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which parsing technique is a top-down parser that does NOT allow left recursion in grammar?",
+    "options": {
+      "A": "LL(1) Parser",
+      "B": "LR(0) Parser",
+      "C": "SLR(1) Parser",
+      "D": "LALR(1) Parser"
+    },
+    "correct_answer": "A",
+    "explanation": "LL(1) top-down parser cannot handle left-recursive grammars."
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "In compiler design, loop unrolling is an optimization technique aimed at reducing:",
+    "options": {
+      "A": "Loop control overhead and branch instructions",
+      "B": "Code size",
+      "C": "Number of registers used",
+      "D": "Compile time"
+    },
+    "correct_answer": "A",
+    "explanation": "Loop unrolling reduces loop test and branch overhead."
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Regular expression (a + b)* a (a + b) describes which set of strings over {a, b}?",
+    "options": {
+      "A": "All strings having second symbol from last as 'a'",
+      "B": "All strings ending with 'aa'",
+      "C": "All strings starting with 'a'",
+      "D": "All strings having odd length"
+    },
+    "correct_answer": "A",
+    "explanation": "Matches strings where 2nd symbol from the right is 'a'."
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Calculate the network ID and broadcast address for IP address 172.16.45.10 with subnet mask 255.255.240.0 (/20).",
+    "options": {
+      "A": "Network ID: 172.16.32.0, Broadcast: 172.16.47.255",
+      "B": "Network ID: 172.16.45.0, Broadcast: 172.16.45.255",
+      "C": "Network ID: 172.16.32.0, Broadcast: 172.16.63.255",
+      "D": "Network ID: 172.16.16.0, Broadcast: 172.16.31.255"
+    },
+    "correct_answer": "A",
+    "explanation": "Subnet block size = 16. Block = 32 to 47. Net ID = 172.16.32.0, Broadcast = 172.16.47.255."
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In a Stop-and-Wait ARQ protocol, transmission delay T_trans = 2 ms and one-way propagation delay T_prop = 48 ms. What is the channel utilization (efficiency)?",
+    "options": {
+      "A": "2.04%",
+      "B": "4.08%",
+      "C": "2.00%",
+      "D": "5.00%"
+    },
+    "correct_answer": "A",
+    "explanation": "a = 48 / 2 = 24. Efficiency = 1 / (1 + 2*24) = 1 / 49 = 2.04%."
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "An IP datagram of size 4000 bytes (including 20-byte IP header) travels through a router with MTU = 1500 bytes. How many fragments are created, and what is the Fragment Offset of the 3rd fragment?",
+    "options": {
+      "A": "3 fragments, Offset = 370",
+      "B": "3 fragments, Offset = 1480",
+      "C": "4 fragments, Offset = 370",
+      "D": "3 fragments, Offset = 2960"
+    },
+    "correct_answer": "A",
+    "explanation": "3 fragments. 3rd fragment offset = 2960 / 8 = 370."
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "A noisy channel has bandwidth 1 MHz and Signal-to-Noise Ratio (SNR) = 63. What is the maximum channel capacity according to Shannon's Theorem?",
+    "options": {
+      "A": "6 Mbps",
+      "B": "1 Mbps",
+      "C": "63 Mbps",
+      "D": "12 Mbps"
+    },
+    "correct_answer": "A",
+    "explanation": "C = 1 MHz * log2(1 + 63) = 1 * 6 = 6 Mbps."
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Given bit sequence 1101011011 and CRC generator polynomial G(x) = x^3 + x + 1 (1011). What is the 3-bit CRC checksum remainder?",
+    "options": {
+      "A": "100",
+      "B": "011",
+      "C": "111",
+      "D": "010"
+    },
+    "correct_answer": "A",
+    "explanation": "Binary modulo-2 division of 1101011011000 by 1011 gives remainder 100."
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In Go-Back-N ARQ protocol with m-bit sequence numbers, what is the maximum sender window size Ws?",
+    "options": {
+      "A": "2^m - 1",
+      "B": "2^m",
+      "C": "2^(m-1)",
+      "D": "2^m + 1"
+    },
+    "correct_answer": "A",
+    "explanation": "Ws = 2^m - 1 in Go-Back-N ARQ."
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transmission media protocol operates at Layer 3 (Network Layer) of the OSI Model?",
+    "options": {
+      "A": "IPsec (Internet Protocol Security)",
+      "B": "SSL / TLS",
+      "C": "TCP",
+      "D": "HTTP"
+    },
+    "correct_answer": "A",
+    "explanation": "IPsec operates at Network Layer (Layer 3)."
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In Classless Inter-Domain Routing (CIDR), how many usable host addresses exist in a /26 subnet?",
+    "options": {
+      "A": "62",
+      "B": "64",
+      "C": "126",
+      "D": "30"
+    },
+    "correct_answer": "A",
+    "explanation": "Usable hosts = 2^(32-26) - 2 = 64 - 2 = 62 hosts."
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "What is the maximum data rate of a noiseless 4 kHz channel transmitting 4-level digital signals according to Nyquist Theorem?",
+    "options": {
+      "A": "16 kbps",
+      "B": "8 kbps",
+      "C": "32 kbps",
+      "D": "4 kbps"
+    },
+    "correct_answer": "A",
+    "explanation": "Bit Rate = 2 * 4000 * log2(4) = 16,000 bps = 16 kbps."
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In Distance Vector Routing using Bellman-Ford algorithm, what causes the 'Count-to-Infinity' problem?",
+    "options": {
+      "A": "Link failure and slow convergence of bad news",
+      "B": "Routing loops during fast convergence",
+      "C": "High link bandwidth",
+      "D": "Packet collisions"
+    },
+    "correct_answer": "A",
+    "explanation": "Count-to-infinity is caused by slow convergence when bad news (link failure) travels across nodes."
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In A* Search algorithm, path cost g(n) = 5 and heuristic cost h(n) = 3. What is evaluation function f(n), and under what condition is A* guaranteed to be admissible (optimal)?",
+    "options": {
+      "A": "f(n) = 8; Admissible if h(n) <= h*(n) (never overestimates)",
+      "B": "f(n) = 15; Admissible if h(n) >= h*(n)",
+      "C": "f(n) = 2; Admissible if h(n) = 0",
+      "D": "f(n) = 8; Admissible if h(n) >= h*(n)"
+    },
+    "correct_answer": "A",
+    "explanation": "f(n) = 5 + 3 = 8. Admissible if h(n) <= h*(n)."
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Given fuzzy sets A = {(x1, 0.4), (x2, 0.7), (x3, 0.2)} and B = {(x1, 0.8), (x2, 0.5), (x3, 0.9)}. Find fuzzy UNION (A U B).",
+    "options": {
+      "A": "{(x1, 0.8), (x2, 0.7), (x3, 0.9)}",
+      "B": "{(x1, 0.4), (x2, 0.5), (x3, 0.2)}",
+      "C": "{(x1, 0.32), (x2, 0.35), (x3, 0.18)}",
+      "D": "{(x1, 1.0), (x2, 1.0), (x3, 1.0)}"
+    },
+    "correct_answer": "A",
+    "explanation": "Fuzzy union = max(mu_A, mu_B) = {(x1, 0.8), (x2, 0.7), (x3, 0.9)}."
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In Alpha-Beta Pruning minimax algorithm, under what exact mathematical condition is a node pruned?",
+    "options": {
+      "A": "alpha >= beta",
+      "B": "alpha < beta",
+      "C": "alpha == 0",
+      "D": "beta == 0"
+    },
+    "correct_answer": "A",
+    "explanation": "Pruning occurs when alpha >= beta."
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "For a Single-Layer Perceptron with initial weights w1 = 0.2, w2 = -0.4, bias b = 0.1, and learning rate eta = 0.5. Given training input x1 = 1, x2 = 1 with target output y = 1 using step activation (threshold 0). What is updated weight w1 after 1 learning step?",
+    "options": {
+      "A": "0.7",
+      "B": "0.2",
+      "C": "0.5",
+      "D": "-0.3"
+    },
+    "correct_answer": "A",
+    "explanation": "Sum = -0.1 => Output 0. Error = 1. delta_w1 = 0.5 * 1 * 1 = 0.5. New w1 = 0.2 + 0.5 = 0.7."
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Convert First-Order Predicate Logic sentence 'All students love computer science' into formal FOPL expression.",
+    "options": {
+      "A": "forall x (Student(x) -> LovesCS(x))",
+      "B": "exists x (Student(x) AND LovesCS(x))",
+      "C": "forall x (Student(x) AND LovesCS(x))",
+      "D": "exists x (Student(x) -> LovesCS(x))"
+    },
+    "correct_answer": "A",
+    "explanation": "Universal quantification uses implication: forall x (Student(x) -> LovesCS(x))."
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Given fuzzy set A = {(x1, 0.2), (x2, 0.6), (x3, 0.8), (x4, 0.5)}. What is alpha-cut set A_0.5?",
+    "options": {
+      "A": "{x2, x3, x4}",
+      "B": "{x3}",
+      "C": "{x1, x2, x3, x4}",
+      "D": "{x2, x3}"
+    },
+    "correct_answer": "A",
+    "explanation": "Elements with membership >= 0.5: {x2, x3, x4}."
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which activation function outputs values in the range (-1, +1)?",
+    "options": {
+      "A": "Hyperbolic Tangent (tanh)",
+      "B": "Sigmoid",
+      "C": "ReLU",
+      "D": "Binary Step"
+    },
+    "correct_answer": "A",
+    "explanation": "tanh outputs range (-1, +1)."
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In Genetic Algorithms, if population size is N = 50 and crossover probability Pc = 0.8, how many pairs of chromosomes undergo crossover on average?",
+    "options": {
+      "A": "20 pairs",
+      "B": "40 pairs",
+      "C": "25 pairs",
+      "D": "10 pairs"
+    },
+    "correct_answer": "A",
+    "explanation": "50 * 0.8 = 40 chromosomes = 20 pairs."
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "What is the result of unifiers substitution for terms P(x, f(y)) and P(a, f(b))?",
+    "options": {
+      "A": "{ x / a, y / b }",
+      "B": "{ x / b, y / a }",
+      "C": "{ x / f(a), y / b }",
+      "D": "Not Unifiable"
+    },
+    "correct_answer": "A",
+    "explanation": "Unifier substitution theta = { x / a, y / b }."
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which search algorithm is guaranteed to find the optimal path when step costs are non-negative, even if heuristic information is absent?",
+    "options": {
+      "A": "Uniform Cost Search (UCS)",
+      "B": "Greedy Best-First Search",
+      "C": "Depth First Search (DFS)",
+      "D": "Hill Climbing"
+    },
+    "correct_answer": "A",
+    "explanation": "Uniform Cost Search (UCS) is optimal for non-negative step costs without heuristic information."
+  }
+]

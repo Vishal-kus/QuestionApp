@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "If set A has 5 elements and set B has 3 elements, what is the total number of functions from A to B that are onto (surjective)?",
+    "options": {
+      "A": "150",
+      "B": "243",
+      "C": "180",
+      "D": "120"
+    },
+    "correct_answer": "A",
+    "explanation": "Number of onto functions from set A (|A|=m) to B (|B|=n) is given by sum_{k=0}^{n} (-1)^k * C(n, k) * (n-k)^m. For m=5, n=3: C(3,0)*3^5 - C(3,1)*2^5 + C(3,2)*1^5 = 1*243 - 3*32 + 3*1 = 243 - 96 + 3 = 150."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In how many ways can a committee of 4 people be chosen from 6 men and 5 women such that the committee contains at least 2 women?",
+    "options": {
+      "A": "215",
+      "B": "185",
+      "C": "225",
+      "D": "195"
+    },
+    "correct_answer": "A",
+    "explanation": "Cases for women: 2 women (C(5,2)*C(6,2) = 10*15 = 150) + 3 women (C(5,3)*C(6,1) = 10*6 = 60) + 4 women (C(5,4)*C(6,0) = 5*1 = 5). Total = 150 + 60 + 5 = 215."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "What is the maximum number of edges in a simple bipartite graph with 12 vertices?",
+    "options": {
+      "A": "36",
+      "B": "35",
+      "C": "66",
+      "D": "32"
+    },
+    "correct_answer": "A",
+    "explanation": "For a bipartite graph with n vertices partitioned into sets of size k and (n-k), the maximum edges occurs when k = n/2. Here n=12, so k=6 and n-k=6. Max edges = 6 * 6 = 36."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "What is the generating function for the sequence 1, 2, 3, 4, 5, ...?",
+    "options": {
+      "A": "1 / (1 - x)^2",
+      "B": "x / (1 - x)^2",
+      "C": "1 / (1 - x)",
+      "D": "1 / (1 + x)^2"
+    },
+    "correct_answer": "A",
+    "explanation": "1/(1-x)^2 = d/dx (1/(1-x)) = d/dx (1 + x + x^2 + x^3 + ...) = 1 + 2x + 3x^2 + 4x^3 + ..., which gives coefficients 1, 2, 3, 4, 5, ..."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "A fair coin is tossed 6 times. What is the probability of obtaining exactly 4 heads?",
+    "options": {
+      "A": "15/64",
+      "B": "15/32",
+      "C": "5/16",
+      "D": "3/16"
+    },
+    "correct_answer": "A",
+    "explanation": "P(X = 4) = C(6, 4) * (1/2)^4 * (1/2)^2 = 15 * (1/64) = 15/64."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Let G be a group of order 35. According to Lagrange's Theorem, what are the possible orders of proper non-trivial subgroups of G?",
+    "options": {
+      "A": "5 and 7",
+      "B": "2, 5, and 7",
+      "C": "1, 5, 7, and 35",
+      "D": "3, 5, and 7"
+    },
+    "correct_answer": "A",
+    "explanation": "Lagrange's Theorem states that the order of a subgroup must divide the order of the group. Divisors of 35 are 1, 5, 7, 35. Proper non-trivial subgroups must have orders 5 or 7."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following Boolean expressions represents the dual of F = (A + B') . (C + 0)?",
+    "options": {
+      "A": "(A . B') + (C . 1)",
+      "B": "(A . B') + (C . 0)",
+      "C": "(A' + B) . (C' + 1)",
+      "D": "(A . B) + (C . 1)"
+    },
+    "correct_answer": "A",
+    "explanation": "To find the dual of a Boolean expression: swap + with ., . with +, and 0 with 1 (variables and complements remain unchanged). Thus, (A + B') . (C + 0) becomes (A . B') + (C . 1)."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Solve the recurrence relation T(n) = 2T(n/2) + n^2 using Master Theorem. What is the asymptotic time complexity?",
+    "options": {
+      "A": "O(n^2)",
+      "B": "O(n log n)",
+      "C": "O(n)",
+      "D": "O(n^3)"
+    },
+    "correct_answer": "A",
+    "explanation": "a=2, b=2, f(n)=n^2. n^(log_b a) = n^(log_2 2) = n^1. Since f(n) = n^2 = Omega(n^(1+epsilon)) for epsilon=1, and regularity condition holds, T(n) = Theta(f(n)) = Theta(n^2)."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In a Linear Programming Problem (LPP), if the primal problem is unbounded, what can be stated about its dual problem?",
+    "options": {
+      "A": "The dual problem is infeasible",
+      "B": "The dual problem is bounded and feasible",
+      "C": "The dual problem is also unbounded",
+      "D": "The dual problem has multiple optimal solutions"
+    },
+    "correct_answer": "A",
+    "explanation": "By Duality Theory in Linear Programming, if the primal objective function is unbounded, then the dual problem must be infeasible."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "How many total edges exist in a complete graph K_8?",
+    "options": {
+      "A": "28",
+      "B": "56",
+      "C": "32",
+      "D": "64"
+    },
+    "correct_answer": "A",
+    "explanation": "Number of edges in a complete graph K_n is n(n-1)/2. For n=8, edges = 8 * 7 / 2 = 28."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "A system uses a 16-bit physical memory address. If the cache size is 4 KB with block size of 16 bytes and is 2-way set associative, how many bits are used for the Set Index?",
+    "options": {
+      "A": "7 bits",
+      "B": "8 bits",
+      "C": "9 bits",
+      "D": "4 bits"
+    },
+    "correct_answer": "A",
+    "explanation": "Total lines = 4 KB / 16 B = 4096 / 16 = 256 lines. Sets = 256 / 2 = 128 sets. Set index bits = log_2(128) = 7 bits. Offset bits = log_2(16) = 4 bits. Tag = 16 - 7 - 4 = 5 bits."
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "What is the 8-bit sign-magnitude representation of the decimal number -37?",
+    "options": {
+      "A": "10100101",
+      "B": "11011011",
+      "C": "11011010",
+      "D": "00100101"
+    },
+    "correct_answer": "A",
+    "explanation": "Magnitude 37 in 7 binary bits = 0100101. Sign bit for negative is 1. Thus, 8-bit sign-magnitude representation = 10100101."
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "A 5-stage instruction pipeline has stage delays of 120ps, 150ps, 110ps, 180ps, and 140ps. Intermediate pipeline register delay is 10ps. What is the clock cycle time for the pipeline?",
+    "options": {
+      "A": "190 ps",
+      "B": "180 ps",
+      "C": "150 ps",
+      "D": "710 ps"
+    },
+    "correct_answer": "A",
+    "explanation": "Clock cycle time = max(stage delays) + register delay = max(120, 150, 110, 180, 140) + 10 = 180 + 10 = 190 ps."
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "In a DMA transfer, if the DMA controller takes control of the system bus for transferring a full block of memory without giving control back to CPU until complete, the mode is called:",
+    "options": {
+      "A": "Burst Mode",
+      "B": "Cycle Stealing Mode",
+      "C": "Interleaved Mode",
+      "D": "Transparent Mode"
+    },
+    "correct_answer": "A",
+    "explanation": "In DMA Burst Mode (or block transfer mode), the DMA controller retains control of the system bus continuously until the entire data block is transferred."
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Convert decimal fractional number 0.625 into binary.",
+    "options": {
+      "A": "0.101",
+      "B": "0.110",
+      "C": "0.011",
+      "D": "0.111"
+    },
+    "correct_answer": "A",
+    "explanation": "0.625 * 2 = 1.25 (1); 0.25 * 2 = 0.5 (0); 0.5 * 2 = 1.0 (1). So, 0.625_10 = 0.101_2."
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which interrupt architecture uses a specific hardware signal line for each interrupting device to directly identify the interrupt source?",
+    "options": {
+      "A": "Vectored Interrupt",
+      "B": "Polled Interrupt",
+      "C": "Daisy Chaining",
+      "D": "Software Interrupt"
+    },
+    "correct_answer": "A",
+    "explanation": "In a Vectored Interrupt system, the interrupting device provides an interrupt vector (address/code) directly over hardware lines to point the CPU to its specific ISR."
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "In IEEE 754 Single Precision Floating Point standard, what are the bit allocations for Sign, Exponent, and Mantissa (Fraction) respectively?",
+    "options": {
+      "A": "1 bit, 8 bits, 23 bits",
+      "B": "1 bit, 11 bits, 52 bits",
+      "C": "1 bit, 7 bits, 24 bits",
+      "D": "1 bit, 8 bits, 24 bits"
+    },
+    "correct_answer": "A",
+    "explanation": "IEEE 754 32-bit single precision uses: 1 bit for Sign, 8 bits for Exponent (with bias 127), and 23 bits for Mantissa/Fraction."
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "How many 128x8 RAM chips are required to construct a 512x32 memory capacity?",
+    "options": {
+      "A": "16",
+      "B": "8",
+      "C": "32",
+      "D": "4"
+    },
+    "correct_answer": "A",
+    "explanation": "Target capacity = 512 * 32 bits. Available chip = 128 * 8 bits. Number of chips = (512 / 128) * (32 / 8) = 4 * 4 = 16 chips."
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "In microprogrammed control unit, if microinstruction format contains 18 control signals, 4 status bits for condition, and 7 address bits for next microinstruction, what is the width of control memory word?",
+    "options": {
+      "A": "27 bits",
+      "B": "29 bits",
+      "C": "25 bits",
+      "D": "31 bits"
+    },
+    "correct_answer": "A",
+    "explanation": "Control memory word length = Control Signals + Condition Bits + Address Bits = 18 + 2 (log_2(4)=2 condition bits) + 7 = 27 bits."
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which of the following addressing modes computes the effective address by adding a constant displacement to the Program Counter (PC)?",
+    "options": {
+      "A": "PC Relative Addressing Mode",
+      "B": "Base Register Addressing Mode",
+      "C": "Indexed Addressing Mode",
+      "D": "Indirect Addressing Mode"
+    },
+    "correct_answer": "A",
+    "explanation": "In PC Relative Addressing Mode, Effective Address = (Content of Program Counter) + Offset/Displacement."
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the output of the following C code?\n#include <stdio.h>\nint main() {\n  int x = 5, y = 10;\n  int *p1 = &x, *p2 = &y;\n  *p1 = *p2 + 3;\n  printf(\"%d %d\", x, y);\n  return 0;\n}",
+    "options": {
+      "A": "13 10",
+      "B": "5 10",
+      "C": "13 13",
+      "D": "10 13"
+    },
+    "correct_answer": "A",
+    "explanation": "*p2 evaluates to y (10). *p1 = 10 + 3 = 13. *p1 modifies x to 13. y remains 10. Output: 13 10."
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "In Midpoint Circle Drawing Algorithm, what is the initial decision parameter P0 for a circle with radius R?",
+    "options": {
+      "A": "1 - R",
+      "B": "5/4 - R",
+      "C": "3 - 2R",
+      "D": "R - 1"
+    },
+    "correct_answer": "A",
+    "explanation": "In Midpoint Circle Algorithm, the exact initial decision parameter is P0 = 5/4 - R. For integer implementation, it is simplified to 1 - R."
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which parameter in Bezier curve control points determines the tangent direction of the curve at the starting point P0?",
+    "options": {
+      "A": "Vector P1 - P0",
+      "B": "Vector P3 - P2",
+      "C": "Vector P2 - P0",
+      "D": "Vector P3 - P0"
+    },
+    "correct_answer": "A",
+    "explanation": "For a cubic Bezier curve with control points P0, P1, P2, P3, the tangent at starting point t=0 is parallel to the vector P1 - P0."
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "A 2D point (3, 4) is scaled by a factor of 2 along X-axis and 3 along Y-axis, then translated by (1, -2). What are the resulting coordinates?",
+    "options": {
+      "A": "(7, 10)",
+      "B": "(7, 12)",
+      "C": "(6, 10)",
+      "D": "(8, 10)"
+    },
+    "correct_answer": "A",
+    "explanation": "Scaling: x' = 3 * 2 = 6, y' = 4 * 3 = 12. Translation: x'' = 6 + 1 = 7, y'' = 12 + (-2) = 10. Final point = (7, 10)."
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "In C++, which feature allows a function or operator to behave differently based on the data types or number of arguments passed at compile time?",
+    "options": {
+      "A": "Function Overloading",
+      "B": "Virtual Function",
+      "C": "Dynamic Binding",
+      "D": "Late Binding"
+    },
+    "correct_answer": "A",
+    "explanation": "Function overloading allows multiple functions with the same name but different signatures, resolved at compile time (Static Polymorphism)."
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which 3D projection technique preserves true relative proportions of objects regardless of their distance from the viewer?",
+    "options": {
+      "A": "Orthographic Parallel Projection",
+      "B": "Perspective Projection",
+      "C": "Stereoscopic Projection",
+      "D": "Oblique Projection"
+    },
+    "correct_answer": "A",
+    "explanation": "Orthographic parallel projection projects 3D points onto 2D plane along parallel lines perpendicular to the projection plane, preserving exact linear dimensions."
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "In Sutherland-Hodgman Polygon Clipping algorithm, if an edge moves from Outside to Inside the clipping window boundary, what vertex/vertices are added to output?",
+    "options": {
+      "A": "Intersection point AND the terminal vertex",
+      "B": "Only the terminal vertex",
+      "C": "Only the intersection point",
+      "D": "No vertices are added"
+    },
+    "correct_answer": "A",
+    "explanation": "Sutherland-Hodgman clipping rules: Outside to Inside => output both the Intersection point and the second (Inside) vertex."
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the primary role of the Depth Buffer (Z-Buffer) algorithm in computer graphics?",
+    "options": {
+      "A": "Visible surface determination / Hidden surface removal",
+      "B": "Anti-aliasing of polygon borders",
+      "C": "Ray tracing illumination computation",
+      "D": "Texture mapping distortion correction"
+    },
+    "correct_answer": "A",
+    "explanation": "The Z-Buffer algorithm is an image-space algorithm used for hidden surface removal by testing depth value (z-coordinate) at each pixel."
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which storage class in C programming initializes variables to zero by default and retains value across multiple function invocations within the same translation unit?",
+    "options": {
+      "A": "static",
+      "B": "auto",
+      "C": "register",
+      "D": "extern"
+    },
+    "correct_answer": "A",
+    "explanation": "Static storage class variables are stored in data segment, default initialized to 0, and retain values between function calls."
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the perspective transformation matrix property that causes parallel lines in 3D space to converge at a single point on 2D screen?",
+    "options": {
+      "A": "Vanishing Point",
+      "B": "Principal Axes Offset",
+      "C": "Focal Divergence",
+      "D": "Horizon Projection"
+    },
+    "correct_answer": "A",
+    "explanation": "In perspective projection, parallel lines that are not parallel to the projection plane appear to meet at a single point called the Vanishing Point."
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Relation R(A, B, C, D) has Functional Dependencies F = { A -> B, B -> C, C -> D }. In which highest normal form is relation R?",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "BCNF"
+    },
+    "correct_answer": "B",
+    "explanation": "Candidate key is A. Functional dependencies A->B, B->C, C->D contain no partial key dependencies (A is atomic), so 2NF holds. However, B->C is a transitive dependency (B is not a superkey), violating 3NF. Thus, highest normal form is 2NF."
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given two relations R(A, B) with 10 tuples and S(B, C) with 5 tuples. What is the minimum and maximum possible number of tuples in the Natural Join (R NATURAL JOIN S)?",
+    "options": {
+      "A": "0 and 50",
+      "B": "5 and 10",
+      "C": "10 and 50",
+      "D": "0 and 10"
+    },
+    "correct_answer": "A",
+    "explanation": "Min tuples = 0 (if no matching values in joining attribute B). Max tuples = 10 * 5 = 50 (if all tuples in R and S have identical B values)."
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "In Strict Two-Phase Locking (Strict 2PL) protocol, when are the exclusive (write) locks released by a transaction?",
+    "options": {
+      "A": "Only after the transaction commits or aborts",
+      "B": "Immediately after write operation finishes",
+      "C": "At the end of growing phase",
+      "D": "When shrink phase begins"
+    },
+    "correct_answer": "A",
+    "explanation": "Strict 2PL requires that all exclusive (write) locks held by a transaction must be retained until the transaction completes (commits or aborts) to prevent cascading aborts."
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "In Data Warehousing, which schema architecture consists of a central Fact table surrounded by normalized Dimension tables (with multiple levels of hierarchy)?",
+    "options": {
+      "A": "Snowflake Schema",
+      "B": "Star Schema",
+      "C": "Fact Constellation Schema",
+      "D": "Galaxy Schema"
+    },
+    "correct_answer": "A",
+    "explanation": "A Snowflake Schema is a variation of star schema where dimension tables are normalized into sub-dimension tables."
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider a B+ Tree index with block size = 1024 bytes, search key = 10 bytes, block pointer = 6 bytes, and record pointer = 8 bytes. What is the maximum order p of an internal node?",
+    "options": {
+      "A": "64",
+      "B": "63",
+      "C": "65",
+      "D": "128"
+    },
+    "correct_answer": "A",
+    "explanation": "Internal node formula: p * P_block + (p - 1) * K_key <= Block_size. p * 6 + (p - 1) * 10 <= 1024 => 16p - 10 <= 1024 => 16p <= 1034 => p <= 64.62. Max order p = 64."
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which SQL constraint enforces that the value in a column must exist in a designated column of another referenced table?",
+    "options": {
+      "A": "FOREIGN KEY",
+      "B": "PRIMARY KEY",
+      "C": "UNIQUE",
+      "D": "CHECK"
+    },
+    "correct_answer": "A",
+    "explanation": "FOREIGN KEY constraint maintains Referential Integrity between two tables by ensuring referencing column values match existing primary key/unique values in referenced table."
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "In Concurrency Control, if a transaction T1 attempts to write a data item X while transaction T2 holds a Shared (S) lock on X, what happens?",
+    "options": {
+      "A": "T1 is granted lock immediately",
+      "B": "T1 must wait until T2 releases lock",
+      "C": "T2's lock is automatically upgraded",
+      "D": "T1 aborts T2"
+    },
+    "correct_answer": "B",
+    "explanation": "Shared (S) and Exclusive (X) locks are incompatible. T1 requesting X lock must wait until T2 releases its S lock."
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which relational algebra operation selects rows from a table that satisfy a given conditional predicate?",
+    "options": {
+      "A": "Selection (sigma)",
+      "B": "Projection (pi)",
+      "C": "Cartesian Product (x)",
+      "D": "Rename (rho)"
+    },
+    "correct_answer": "A",
+    "explanation": "Selection operator (sigma) filters rows (tuples) based on a specified boolean predicate condition."
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "What concurrency control anomaly occurs when a transaction reads data modified by an uncommitted concurrent transaction that subsequently rolls back?",
+    "options": {
+      "A": "Dirty Read (Uncommitted Dependency)",
+      "B": "Non-Repeatable Read",
+      "C": "Phantom Read",
+      "D": "Lost Update"
+    },
+    "correct_answer": "A",
+    "explanation": "Dirty Read occurs when T1 modifies data, T2 reads this modified data before T1 commits, and T1 then aborts."
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "In NoSQL databases, MongoDB belongs to which database model family?",
+    "options": {
+      "A": "Document Store",
+      "B": "Key-Value Store",
+      "C": "Column-Family Store",
+      "D": "Graph Database"
+    },
+    "correct_answer": "A",
+    "explanation": "MongoDB is a Document-Oriented NoSQL database that stores data in JSON-like flexible BSON documents."
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Consider 4 processes P1, P2, P3, P4 with CPU burst times 6ms, 8ms, 2ms, 4ms arriving at t=0. What is the average waiting time using Shortest Job First (SJF) non-preemptive scheduling?",
+    "options": {
+      "A": "7 ms",
+      "B": "5 ms",
+      "C": "6 ms",
+      "D": "8 ms"
+    },
+    "correct_answer": "B",
+    "explanation": "Execution order (SJF): P3(2ms) -> P4(4ms) -> P1(6ms) -> P2(8ms). Completion times: P3=2, P4=6, P1=12, P2=20. Waiting times: P3=0, P4=2, P1=6, P2=12. Average waiting time = (0 + 2 + 6 + 12) / 4 = 20 / 4 = 5 ms."
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "A system has 4 processes and 3 resource units of a single type. Each process needs at most 2 resource units. Is the system guaranteed to be deadlock-free?",
+    "options": {
+      "A": "Yes, always deadlock-free",
+      "B": "No, deadlock can occur",
+      "C": "Only if FCFS scheduling is used",
+      "D": "Depends on process execution speed"
+    },
+    "correct_answer": "B",
+    "explanation": "Condition for deadlock freedom with N processes each requiring max R resources: Total resources >= N*(R - 1) + 1. Here N=4, R=2. Required resources = 4*(2 - 1) + 1 = 5. Since system has only 3 resources, deadlock CAN occur."
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "In a inverted page table architecture, what are the primary key components of a entry in the table?",
+    "options": {
+      "A": "Process ID (PID) and Virtual Page Number (VPN)",
+      "B": "Physical Frame Number and Offset",
+      "C": "Segment Number and Offset",
+      "D": "Disk Sector Number and PID"
+    },
+    "correct_answer": "A",
+    "explanation": "An inverted page table has one entry for each physical frame in memory, indexed by Frame Number, and contains (Process ID, Virtual Page Number)."
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "What is Belady's Anomaly in operating systems memory management?",
+    "options": {
+      "A": "Page fault rate increases when allocated frame count increases in FIFO page replacement",
+      "B": "Page fault rate decreases when frame count decreases in LRU replacement",
+      "C": "Disk thrashing occurs when CPU utilization reaches 100%",
+      "D": "Process waiting time increases indefinitely in Round Robin"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly is the phenomenon where increasing the number of page frames results in an increased number of page faults for certain access patterns under FIFO algorithm."
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Disk request queue: 23, 89, 132, 42, 10, 150. Initial head position = 50. Using Shortest Seek Time First (SSTF) disk scheduling, what is the total head movement?",
+    "options": {
+      "A": "180 tracks",
+      "B": "162 tracks",
+      "C": "200 tracks",
+      "D": "140 tracks"
+    },
+    "correct_answer": "A",
+    "explanation": "Head at 50. Path: 50->42 (8) ->23 (19) ->10 (13) ->89 (79) ->132 (43) ->150 (18). Total movement = 8 + 19 + 13 + 79 + 43 + 18 = 180 tracks."
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which Unix system call creates a new child process that is an exact duplicate of the calling parent process?",
+    "options": {
+      "A": "fork()",
+      "B": "exec()",
+      "C": "clone()",
+      "D": "wait()"
+    },
+    "correct_answer": "A",
+    "explanation": "fork() creates a new child process by duplicating the parent's address space, file descriptors, and execution state."
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "What is the function of a Counting Semaphore initialized to value S = 5 after executing 3 wait() (P) operations and 1 signal() (V) operation?",
+    "options": {
+      "A": "3",
+      "B": "2",
+      "C": "4",
+      "D": "5"
+    },
+    "correct_answer": "A",
+    "explanation": "Initial S = 5. Executing 3 wait() operations: S = 5 - 3 = 2. Executing 1 signal() operation: S = 2 + 1 = 3. Final value = 3."
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "In a Linux file system, an inode contains all of the following file metadata EXCEPT:",
+    "options": {
+      "A": "File Name",
+      "B": "File Size",
+      "C": "Owner User ID (UID)",
+      "D": "Block Pointers"
+    },
+    "correct_answer": "A",
+    "explanation": "In Unix/Linux, the File Name is stored in directory entries (dentry), NOT inside the file's inode structure itself."
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "When high paging activity causes the operating system to spend more time swapping pages in and out than executing application instructions, the system state is called:",
+    "options": {
+      "A": "Thrashing",
+      "B": "Segmentation Fault",
+      "C": "Deadlock",
+      "D": "Fragmentation"
+    },
+    "correct_answer": "A",
+    "explanation": "Thrashing occurs when a system spends more time servicing page faults than performing productive computation due to insufficient physical memory."
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which file allocation method suffers from external fragmentation and requires knowing file size in advance?",
+    "options": {
+      "A": "Contiguous Allocation",
+      "B": "Linked Allocation",
+      "C": "Indexed Allocation",
+      "D": "Inverted Allocation"
+    },
+    "correct_answer": "A",
+    "explanation": "Contiguous allocation requires allocating consecutive disk blocks, leading to external fragmentation when files are deleted and created."
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which software development life cycle (SDLC) model is most suitable for projects with high risk, complex requirements, and requiring frequent risk evaluation phases?",
+    "options": {
+      "A": "Spiral Model",
+      "B": "Waterfall Model",
+      "C": "RAD Model",
+      "D": "V-Model"
+    },
+    "correct_answer": "A",
+    "explanation": "The Spiral Model is a risk-driven SDLC model that combines iterative development with systematic risk assessment at every loop phase."
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 6: Software Engineering",
+    "question": "What is the Cyclomatic Complexity V(G) of a program module with 15 Edges (E) and 11 Nodes (N) in its control flow graph?",
+    "options": {
+      "A": "6",
+      "B": "4",
+      "C": "5",
+      "D": "8"
+    },
+    "correct_answer": "A",
+    "explanation": "Formula V(G) = E - N + 2P. For single module (P=1): V(G) = 15 - 11 + 2 = 6."
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which form of module cohesion occurs when functions are grouped together because they operate on the same data structures or input/output stream?",
+    "options": {
+      "A": "Communicational Cohesion",
+      "B": "Sequential Cohesion",
+      "C": "Procedural Cohesion",
+      "D": "Coincidental Cohesion"
+    },
+    "correct_answer": "A",
+    "explanation": "Communicational Cohesion occurs when elements of a module operate on the same input or produce the same output data."
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In Software Testing, equivalence partitioning and boundary value analysis belong to which testing classification?",
+    "options": {
+      "A": "Black-Box Testing",
+      "B": "White-Box Testing",
+      "C": "Structural Testing",
+      "D": "Code Coverage Testing"
+    },
+    "correct_answer": "A",
+    "explanation": "Equivalence Partitioning and Boundary Value Analysis are specification-based Black-Box testing techniques."
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In Basic COCOMO model, effort E in person-months for an organic software mode is given by E = 2.4 * (KLOC)^1.05. If KLOC = 100, what is the estimated effort?",
+    "options": {
+      "A": "~302 Person-Months",
+      "B": "~240 Person-Months",
+      "C": "~150 Person-Months",
+      "D": "~500 Person-Months"
+    },
+    "correct_answer": "A",
+    "explanation": "100^1.05 = 125.89. E = 2.4 * 125.89 = 302.13 Person-Months."
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which CMMI (Capability Maturity Model Integration) level is characterized by quantitatively measured processes using statistical controls?",
+    "options": {
+      "A": "Level 4 (Quantitatively Managed)",
+      "B": "Level 3 (Defined)",
+      "C": "Level 2 (Managed)",
+      "D": "Level 5 (Optimizing)"
+    },
+    "correct_answer": "A",
+    "explanation": "CMMI Level 4 (Quantitatively Managed) establishes quantitative performance objectives using statistical and quantitative metrics."
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In Object-Oriented Software Design, which SOLID principle states that high-level modules should not depend on low-level modules, but both should depend on abstractions?",
+    "options": {
+      "A": "Dependency Inversion Principle",
+      "B": "Single Responsibility Principle",
+      "C": "Liskov Substitution Principle",
+      "D": "Interface Segregation Principle"
+    },
+    "correct_answer": "A",
+    "explanation": "Dependency Inversion Principle (DIP) specifies that high-level modules should depend on interfaces/abstractions rather than concrete implementations."
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Software maintenance performed to adapt software to changes in its operating environment (e.g. OS upgrade, database update) is categorized as:",
+    "options": {
+      "A": "Adaptive Maintenance",
+      "B": "Corrective Maintenance",
+      "C": "Perfective Maintenance",
+      "D": "Preventive Maintenance"
+    },
+    "correct_answer": "A",
+    "explanation": "Adaptive Maintenance modifies software to keep it usable in a changed or changing environment (hardware, OS, rules)."
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 6: Software Engineering",
+    "question": "What software architecture diagram model in UML represents the runtime physical hardware deployment nodes and software execution artifacts?",
+    "options": {
+      "A": "Deployment Diagram",
+      "B": "Component Diagram",
+      "C": "Class Diagram",
+      "D": "Sequence Diagram"
+    },
+    "correct_answer": "A",
+    "explanation": "UML Deployment Diagrams show the physical architecture of hardware nodes and the software artifacts deployed on them."
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In Agile Scrum development, who is responsible for managing the Product Backlog and prioritizing customer requirements?",
+    "options": {
+      "A": "Product Owner",
+      "B": "Scrum Master",
+      "C": "Development Team",
+      "D": "Agile Coach"
+    },
+    "correct_answer": "A",
+    "explanation": "The Product Owner is responsible for defining user stories, maintaining, and prioritizing the Product Backlog."
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case time complexity of Quick Sort algorithm when pivot selection is worst (e.g. smallest/largest element always chosen)?",
+    "options": {
+      "A": "O(n^2)",
+      "B": "O(n log n)",
+      "C": "O(n)",
+      "D": "O(n log^2 n)"
+    },
+    "correct_answer": "A",
+    "explanation": "In worst case (e.g. sorted array with first element as pivot), recurrence is T(n) = T(n-1) + O(n) = O(n^2)."
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "In an AVL Tree, what is the maximum allowed difference between heights of left and right subtrees for any node (Balance Factor)?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "2",
+      "D": "3"
+    },
+    "correct_answer": "A",
+    "explanation": "AVL property requires Balance Factor = |Height(Left) - Height(Right)| <= 1 for every node."
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which algorithm design paradigm is used in Floyd-Warshall All-Pairs Shortest Path algorithm?",
+    "options": {
+      "A": "Dynamic Programming",
+      "B": "Greedy Choice",
+      "C": "Divide and Conquer",
+      "D": "Backtracking"
+    },
+    "correct_answer": "A",
+    "explanation": "Floyd-Warshall algorithm uses Dynamic Programming with state relation d_ij^(k) = min(d_ij^(k-1), d_ik^(k-1) + d_kj^(k-1))."
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the time complexity to insert an element into a Max-Binary Heap containing n elements?",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(1)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correct_answer": "A",
+    "explanation": "Insertion adds element at end and performs percolate-up along heap height, taking O(log n) time."
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the postfix evaluation of expression: 5 3 + 8 2 / * ?",
+    "options": {
+      "A": "32",
+      "B": "24",
+      "C": "16",
+      "D": "40"
+    },
+    "correct_answer": "A",
+    "explanation": "5 3 + = 8. 8 2 / = 4. 8 * 4 = 32. Evaluation result = 32."
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "In Open Addressing hash tables with Quadratic Probing, what is the sequence of hash slot indices generated for key k with hash function h'(k) and table size m?",
+    "options": {
+      "A": "(h'(k) + c1*i + c2*i^2) mod m",
+      "B": "(h'(k) + i) mod m",
+      "C": "(h1(k) + i * h2(k)) mod m",
+      "D": "(h'(k) * i^2) mod m"
+    },
+    "correct_answer": "A",
+    "explanation": "Quadratic probing uses probe function h(k, i) = (h'(k) + c1*i + c2*i^2) mod m for i=0,1,2,..."
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which graph algorithm uses Minimum Spanning Tree (MST) principles with Prim's algorithm using Fibonacci Heap to achieve O(E + V log V) complexity?",
+    "options": {
+      "A": "Prim's Algorithm",
+      "B": "Kruskal's Algorithm",
+      "C": "Dijkstra's Algorithm",
+      "D": "Bellman-Ford Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Prim's MST algorithm implemented with Fibonacci Heap achieves running time O(E + V log V)."
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the height of a complete binary tree with 127 nodes?",
+    "options": {
+      "A": "6",
+      "B": "7",
+      "C": "8",
+      "D": "5"
+    },
+    "correct_answer": "A",
+    "explanation": "For complete binary tree with n nodes, height h = floor(log_2 n) = floor(log_2 127) = floor(6.98) = 6 (if root at height 0)."
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the optimal substructure greedy strategy used in Huffman Coding for data compression?",
+    "options": {
+      "A": "Combine two smallest frequency nodes repeatedly",
+      "B": "Combine two largest frequency nodes",
+      "C": "Sort array in descending order",
+      "D": "Partition data into equal halves"
+    },
+    "correct_answer": "A",
+    "explanation": "Huffman Coding builds a prefix code tree greedily by repeatedly merging the two nodes with the lowest frequencies."
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the tightest worst-case running time of Breadth-First Search (BFS) on an adjacency list graph G(V, E)?",
+    "options": {
+      "A": "O(V + E)",
+      "B": "O(V^2)",
+      "C": "O(E log V)",
+      "D": "O(V * E)"
+    },
+    "correct_answer": "A",
+    "explanation": "BFS visits every vertex once and scans every adjacency list edge once, taking O(V + E) time."
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "According to Chomsky Hierarchy, Context-Sensitive Languages (Type 1) are recognized by which abstract machine automaton?",
+    "options": {
+      "A": "Linear Bounded Automaton (LBA)",
+      "B": "Deterministic Finite Automaton (DFA)",
+      "C": "Pushdown Automaton (PDA)",
+      "D": "Turing Machine"
+    },
+    "correct_answer": "A",
+    "explanation": "Chomsky Hierarchy: Type 3 (Regular) -> DFA, Type 2 (Context-Free) -> PDA, Type 1 (Context-Sensitive) -> LBA, Type 0 (Unrestricted) -> Turing Machine."
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following problems is UNDECIDABLE for Context-Free Grammars (CFG)?",
+    "options": {
+      "A": "Determining whether L(G1) INTERSECT L(G2) is empty",
+      "B": "Determining whether a string w belongs to L(G)",
+      "C": "Determining whether L(G) is empty",
+      "D": "Determining whether L(G) is finite"
+    },
+    "correct_answer": "A",
+    "explanation": "The Intersection Emptiness problem for two Context-Free Grammars (is L(G1) n L(G2) = empty?) is undecidable."
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "In Compiler Design, which phase performs type checking and semantic consistency verification?",
+    "options": {
+      "A": "Semantic Analysis",
+      "B": "Lexical Analysis",
+      "C": "Syntax Analysis",
+      "D": "Intermediate Code Generation"
+    },
+    "correct_answer": "A",
+    "explanation": "Semantic Analysis checks source code for type compatibility, variable declaration compliance, and semantic rules."
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "In LR parsing techniques, which parser is the most powerful bottom-up parser capable of handling the largest class of deterministic context-free grammars?",
+    "options": {
+      "A": "CLR(1) / Canonical LR(1)",
+      "B": "SLR(1)",
+      "C": "LALR(1)",
+      "D": "LR(0)"
+    },
+    "correct_answer": "A",
+    "explanation": "CLR(1) (Canonical LR) uses full lookahead sets and is the most powerful deterministic bottom-up parser class."
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Convert Context-Free Grammar production A -> A alpha | beta (where alpha, beta do not start with A) into equivalent non-left-recursive productions.",
+    "options": {
+      "A": "A -> beta A', A' -> alpha A' | epsilon",
+      "B": "A -> alpha A', A' -> beta A' | epsilon",
+      "C": "A -> beta A', A' -> A alpha | epsilon",
+      "D": "A -> A' beta, A' -> alpha"
+    },
+    "correct_answer": "A",
+    "explanation": "Elimination of immediate left recursion A -> A alpha | beta yields: A -> beta A' and A' -> alpha A' | epsilon."
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which Regular Expression generates the language over {a, b} consisting of all strings ending with 'ab'?",
+    "options": {
+      "A": "(a + b)* ab",
+      "B": "ab (a + b)*",
+      "C": "(a + b)* ab (a + b)*",
+      "D": "a* b* ab"
+    },
+    "correct_answer": "A",
+    "explanation": "(a + b)* represents any string of 'a' and 'b'. Appending 'ab' ensures the string ends with 'ab'."
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "In compiler optimization, replacing expensive operations like exponentiation x**2 with cheaper multiplication x*x is called:",
+    "options": {
+      "A": "Strength Reduction",
+      "B": "Constant Folding",
+      "C": "Dead Code Elimination",
+      "D": "Loop Unrolling"
+    },
+    "correct_answer": "A",
+    "explanation": "Strength Reduction replaces a CPU-expensive operation (like multiplication/exponentiation) with an equivalent cheaper operation (like addition/multiplication)."
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for Regular Languages is primarily used to:",
+    "options": {
+      "A": "Prove that a given language is NOT regular",
+      "B": "Construct a minimal DFA",
+      "C": "Prove that a language is regular",
+      "D": "Convert NFA to DFA"
+    },
+    "correct_answer": "A",
+    "explanation": "Pumping Lemma is a necessary condition for regularity; it is used as a proof technique by contradiction to show a language is NOT regular."
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "What is the token classification produced by a Lexical Analyzer for string 'int count = 10;'?",
+    "options": {
+      "A": "Keyword, Identifier, Assign_Op, Constant, Semicolon",
+      "B": "Identifier, Keyword, Operator, Digit",
+      "C": "Statement, Expression, Semicolon",
+      "D": "Variable, Operator, Literal"
+    },
+    "correct_answer": "A",
+    "explanation": "Lexical analyzer breaks code into tokens: 'int' (Keyword), 'count' (Identifier), '=' (Assignment Operator), '10' (Integer Constant), ';' (Punctuation/Semicolon)."
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "The Halting Problem of Turing Machines is categorized as:",
+    "options": {
+      "A": "Undecidable but Recursively Enumerable (Semi-decidable)",
+      "B": "Decidable and Recursive",
+      "C": "Not Recursively Enumerable",
+      "D": "Strictly Context-Free"
+    },
+    "correct_answer": "A",
+    "explanation": "The Halting Problem H is undecidable, but it is Recursively Enumerable (Turing recognizable) because a TM can halt and accept if it halts, but may loop forever if it doesn't."
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which layer of the OSI 7-layer reference model is responsible for end-to-end process-to-process communication and flow/error control across ports?",
+    "options": {
+      "A": "Transport Layer",
+      "B": "Network Layer",
+      "C": "Data Link Layer",
+      "D": "Session Layer"
+    },
+    "correct_answer": "A",
+    "explanation": "The Transport Layer (e.g. TCP/UDP) handles end-to-end process-to-process communication using port numbers."
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "An IP host has address 172.16.45.10 with subnet mask 255.255.240.0 (/20). What is the Network ID?",
+    "options": {
+      "A": "172.16.32.0",
+      "B": "172.16.45.0",
+      "C": "172.16.16.0",
+      "D": "172.16.40.0"
+    },
+    "correct_answer": "A",
+    "explanation": "Subnet mask 255.255.240.0 => 3rd octet block size = 256 - 240 = 16. Subnet multiples: .0, .16, .32, .48... 45 falls in block 32-47. Network ID = 172.16.32.0."
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which line coding digital transmission scheme transitions at the middle of every bit interval, with a low-to-high transition representing binary 1 and high-to-low representing binary 0?",
+    "options": {
+      "A": "Manchester Encoding",
+      "B": "NRZ-L",
+      "C": "AMI (Alternate Mark Inversion)",
+      "D": "Differential Manchester"
+    },
+    "correct_answer": "A",
+    "explanation": "Manchester encoding features a mandatory mid-bit transition used for clock synchronization (Low-to-High = 1, High-to-Low = 0)."
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "What is the maximum window size for a sender in Go-Back-N ARQ protocol using m bits for sequence numbers?",
+    "options": {
+      "A": "2^m - 1",
+      "B": "2^m",
+      "C": "2^(m-1)",
+      "D": "2^m + 1"
+    },
+    "correct_answer": "A",
+    "explanation": "In Go-Back-N ARQ, to avoid receiver ambiguity with sequence numbers modulo 2^m, sender window size = 2^m - 1."
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In cryptography, the RSA public-key algorithm security relies on the mathematical difficulty of:",
+    "options": {
+      "A": "Prime Factorization of large composite numbers",
+      "B": "Discrete Logarithm problem",
+      "C": "Elliptic Curve Discrete Logarithm",
+      "D": "Matrix Inversion"
+    },
+    "correct_answer": "A",
+    "explanation": "RSA algorithm security is based on the computational difficulty of factoring the product of two large prime numbers."
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which Routing Protocol uses the Dijkstra Algorithm to build shortest path tree routes based on link status updates?",
+    "options": {
+      "A": "OSPF (Open Shortest Path First)",
+      "B": "RIP (Routing Information Protocol)",
+      "C": "BGP (Border Gateway Protocol)",
+      "D": "EIGRP"
+    },
+    "correct_answer": "A",
+    "explanation": "OSPF is a Link-State routing protocol that uses Dijkstra's Shortest Path First (SPF) algorithm."
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which TCP congestion control state doubles the Congestion Window (CWND) size every Round Trip Time (RTT) until reaching ssthresh threshold?",
+    "options": {
+      "A": "Slow Start",
+      "B": "Congestion Avoidance",
+      "C": "Fast Recovery",
+      "D": "Fast Retransmit"
+    },
+    "correct_answer": "A",
+    "explanation": "During TCP Slow Start, CWND grows exponentially (doubling every RTT) until it reaches slow start threshold (ssthresh)."
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In IPv4 Header format, what is the unit measurement of Time to Live (TTL) field?",
+    "options": {
+      "A": "Hops (Router counts)",
+      "B": "Seconds",
+      "C": "Milliseconds",
+      "D": "Bytes"
+    },
+    "correct_answer": "A",
+    "explanation": "Although named Time To Live, in modern networking TTL represents the maximum number of Router Hops before packet is discarded."
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In wireless LAN IEEE 802.11 standard, what mechanism is used to avoid packet collisions on the shared medium?",
+    "options": {
+      "A": "CSMA/CA (Collision Avoidance)",
+      "B": "CSMA/CD (Collision Detection)",
+      "C": "Token Passing",
+      "D": "Slotted ALOHA"
+    },
+    "correct_answer": "A",
+    "explanation": "IEEE 802.11 wireless networks use CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) because collision detection (CSMA/CD) is difficult over wireless radio."
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In Network Security, what type of attack involves an attacker placing themselves between two communicating parties to secretly intercept or modify traffic?",
+    "options": {
+      "A": "Man-in-the-Middle (MitM) Attack",
+      "B": "Denial of Service (DoS)",
+      "C": "SQL Injection",
+      "D": "Buffer Overflow"
+    },
+    "correct_answer": "A",
+    "explanation": "A Man-in-the-Middle (MitM) attack intercepts communication between two endpoints without either party knowing."
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In AI Search Algorithms, a heuristic function h(n) is called Admissible if for all nodes n:",
+    "options": {
+      "A": "h(n) <= h*(n) (never overestimates true cost to goal)",
+      "B": "h(n) >= h*(n) (never underestimates true cost)",
+      "C": "h(n) = g(n) + h*(n)",
+      "D": "h(n) is always constant"
+    },
+    "correct_answer": "A",
+    "explanation": "A heuristic h(n) is admissible if it never overestimates the actual minimal cost h*(n) to reach the goal node, guaranteeing A* tree search optimality."
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In Game Playing, Alpha-Beta Pruning optimizes Minimax search tree by pruning branches. What condition triggers an Alpha Cutoff at a Min node?",
+    "options": {
+      "A": "Beta <= Alpha",
+      "B": "Alpha > Beta + 1",
+      "C": "Alpha = 0",
+      "D": "Beta = Infinity"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off further exploration of a node whenever beta <= alpha."
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Let Fuzzy set A = { (x1, 0.4), (x2, 0.7), (x3, 0.9) } and B = { (x1, 0.6), (x2, 0.5), (x3, 0.8) }. What is the Fuzzy Set Union (A U B)?",
+    "options": {
+      "A": "{ (x1, 0.6), (x2, 0.7), (x3, 0.9) }",
+      "B": "{ (x1, 0.4), (x2, 0.5), (x3, 0.8) }",
+      "C": "{ (x1, 1.0), (x2, 1.2), (x3, 1.7) }",
+      "D": "{ (x1, 0.24), (x2, 0.35), (x3, 0.72) }"
+    },
+    "correct_answer": "A",
+    "explanation": "Fuzzy Set Union uses max operator: mu_AUB(x) = max(mu_A(x), mu_B(x)). x1: max(0.4, 0.6)=0.6; x2: max(0.7, 0.5)=0.7; x3: max(0.9, 0.8)=0.9."
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which logic programming language uses Horn Clauses and First-Order Predicate Logic for declarative problem solving?",
+    "options": {
+      "A": "PROLOG",
+      "B": "LISP",
+      "C": "Python",
+      "D": "Haskell"
+    },
+    "correct_answer": "A",
+    "explanation": "PROLOG (Programming in Logic) is a declarative language based on Horn clauses and SLD resolution in First-Order Logic."
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In Genetic Algorithms, which operator swaps segments of genetic code between two parent chromosomes to generate new offspring?",
+    "options": {
+      "A": "Crossover Operator",
+      "B": "Mutation Operator",
+      "C": "Selection Operator",
+      "D": "Inversion Operator"
+    },
+    "correct_answer": "A",
+    "explanation": "Crossover (recombination) combines genetic material from two parent chromosomes to produce offspring."
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "What is the Activation Function output range for standard Logistic Sigmoid activation function f(x) = 1 / (1 + e^-x)?",
+    "options": {
+      "A": "(0, 1)",
+      "B": "(-1, 1)",
+      "C": "(0, infinity)",
+      "D": "[-1, 0]"
+    },
+    "correct_answer": "A",
+    "explanation": "The Logistic Sigmoid function maps any real input x to an output value strictly bounded between 0 and 1."
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In Artificial Neural Networks, which learning rule updates weights based on error gradient descent: Delta w = n * (t - y) * x?",
+    "options": {
+      "A": "Delta Rule / Widrow-Hoff Rule",
+      "B": "Hebb's Rule",
+      "C": "Competitive Learning",
+      "D": "Hopfield Rule"
+    },
+    "correct_answer": "A",
+    "explanation": "The Delta Rule (or Widrow-Hoff / LMS rule) updates weights proportional to the product of error (t - y) and input x."
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In Knowledge Representation, an Agent that maintains an explicit internal state model of the world to handle partial observability is called:",
+    "options": {
+      "A": "Model-Based Reflex Agent",
+      "B": "Simple Reflex Agent",
+      "C": "Goal-Based Agent",
+      "D": "Utility-Based Agent"
+    },
+    "correct_answer": "A",
+    "explanation": "A Model-Based Reflex Agent maintains internal state representing unobserved aspects of the current environment state."
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In Natural Language Processing (NLP), which parsing algorithm uses Dynamic Programming to parse Context-Free Grammars in O(n^3) time?",
+    "options": {
+      "A": "CYK (Cocke-Younger-Kasami) Algorithm",
+      "B": "Viterbi Algorithm",
+      "C": "Forward-Backward Algorithm",
+      "D": "Minimax Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "The CYK algorithm is a dynamic programming algorithm for parsing grammars in Chomsky Normal Form (CNF) in O(n^3) time."
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In Reinforcement Learning, the Q-learning algorithm attempts to learn which function?",
+    "options": {
+      "A": "Action-Value Function Q(s, a)",
+      "B": "State Transition Probability P(s'|s, a)",
+      "C": "Reward Function R(s)",
+      "D": "Policy Function Pi(s)"
+    },
+    "correct_answer": "A",
+    "explanation": "Q-Learning is a model-free reinforcement learning algorithm that learns the Action-Value Function Q(s, a), representing expected return of taking action a in state s."
+  }
+]

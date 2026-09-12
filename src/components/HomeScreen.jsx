@@ -33,8 +33,9 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
     return allPapers.filter((paper) => {
       // Tab filter
       if (selectedFilter === 'NEW' && !paper.isNew) return false;
+      if (selectedFilter === 'PRACTICE_SETS' && paper.category !== 'practice') return false;
       if (selectedFilter === 'RECENT' && !['2025', '2024'].includes(paper.year)) return false;
-      if (selectedFilter === 'PYQ' && paper.id === 'ugc-net-2025-mock') return false;
+      if (selectedFilter === 'PYQ' && (paper.category === 'practice' || paper.id === 'ugc-net-2025-mock')) return false;
 
       // Search query
       if (searchQuery.trim()) {
@@ -134,7 +135,7 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
             lineHeight: 1.6,
             margin: '0 0 22px 0'
           }}>
-            Practice with authentic UGC NET Previous Year Question papers and all 10 unit-wise syllabus modules. Choose between authentic 2-hour CBT exam simulation or infinite instant-feedback practice mode with verified step-by-step solutions.
+            Practice with authentic UGC NET Previous Year Question papers, 5 specialized high-yield practice sets, and all 10 unit-wise syllabus modules. Experience the authentic 2-hour CBT exam simulation or infinite instant-feedback practice mode.
           </p>
 
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
@@ -164,6 +165,31 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
             </button>
 
             <button
+              id="btn-hero-practice-sets"
+              onClick={() => setSelectedFilter('PRACTICE_SETS')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '10px',
+                padding: '13px 22px',
+                borderRadius: '8px',
+                backgroundColor: '#7c3aed',
+                color: '#ffffff',
+                fontSize: '14px',
+                fontWeight: 800,
+                boxShadow: '0 4px 14px rgba(124, 58, 237, 0.35)',
+                transition: 'all 0.2s ease',
+                cursor: 'pointer',
+                border: 'none'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+            >
+              <Zap size={17} />
+              <span>Special Practice Sets (5)</span>
+            </button>
+
+            <button
               id="btn-hero-topic-practice"
               onClick={() => setSelectedFilter('TOPIC')}
               style={{
@@ -186,27 +212,6 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
             >
               <Target size={17} />
               <span>Unit-wise Practice (Instant Answers)</span>
-            </button>
-
-            <button
-              id="btn-hero-guidelines"
-              onClick={onOpenInstructions}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                padding: '13px 18px',
-                borderRadius: '8px',
-                backgroundColor: 'rgba(255, 255, 255, 0.16)',
-                color: '#ffffff',
-                fontSize: '14px',
-                fontWeight: 600,
-                border: '1px solid rgba(255, 255, 255, 0.35)',
-                cursor: 'pointer'
-              }}
-            >
-              <HelpCircle size={16} />
-              <span>Instructions</span>
             </button>
           </div>
         </div>
@@ -238,7 +243,7 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
               <Layers size={22} color="#ffffff" />
             </div>
             <div>
-              <div style={{ fontSize: '11px', opacity: 0.85, fontWeight: 700, letterSpacing: '0.5px' }}>AVAILABLE PAPERS</div>
+              <div style={{ fontSize: '11px', opacity: 0.85, fontWeight: 700, letterSpacing: '0.5px' }}>TOTAL QUESTION SETS</div>
               <div style={{ fontSize: '20px', fontWeight: 800 }}>{allPapers.length} Official Sets</div>
             </div>
           </div>
@@ -325,6 +330,21 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
                     10 Units • Instant Solutions
                   </span>
                 </>
+              ) : selectedFilter === 'PRACTICE_SETS' ? (
+                <>
+                  <span>5 Specialized High-Yield Practice Sets</span>
+                  <span style={{
+                    fontSize: '12px',
+                    fontWeight: 700,
+                    color: '#7c3aed',
+                    backgroundColor: '#f5f3ff',
+                    padding: '3px 10px',
+                    borderRadius: '12px',
+                    border: '1px solid #ddd6fe'
+                  }}>
+                    5 Sets • 500 Questions
+                  </span>
+                </>
               ) : (
                 <>
                   <span>Select Full Question Paper</span>
@@ -337,7 +357,7 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
                     borderRadius: '12px',
                     border: '1px solid #bfdbfe'
                   }}>
-                    {filteredPapers.length} of {allPapers.length} Papers
+                    {filteredPapers.length} of {allPapers.length} Sets
                   </span>
                 </>
               )}
@@ -345,6 +365,8 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
             <p style={{ fontSize: '13px', color: '#64748b', margin: '4px 0 0' }}>
               {selectedFilter === 'TOPIC'
                 ? 'Practice any unit with questions pooled from all papers. Instant correct/wrong check and full explanation on click.'
+                : selectedFilter === 'PRACTICE_SETS'
+                ? '5 targeted 100-question papers: Numerical Heavy, Match List / Statements, Advanced Mock, Speed & Accuracy, and Grand Final Mock.'
                 : 'Select an official NTA paper to experience the timed 2-hour Computer Based Test simulator.'}
             </p>
           </div>
@@ -409,14 +431,15 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
           </span>
 
           {[
-            { id: 'ALL', label: 'All Full Papers (11)' },
+            { id: 'ALL', label: `All Papers (${allPapers.length})` },
+            { id: 'PRACTICE_SETS', label: '⚡ Specialized Practice Sets (5)', highlightPurple: true },
             { id: 'TOPIC', label: '🎯 Topic-wise Practice (All 10 Units)', highlightGreen: true },
-            { id: 'NEW', label: '✨ Newly Added Papers (3)' },
-            { id: 'RECENT', label: '2024 - 2025 Sessions' },
-            { id: 'PYQ', label: 'Official PYQs (2020 - 2023)' }
+            { id: 'NEW', label: '✨ Newly Added' },
+            { id: 'PYQ', label: 'Official PYQs (2020 - 2024)' }
           ].map((tab) => {
             const isActive = selectedFilter === tab.id;
             const isGreen = tab.highlightGreen;
+            const isPurple = tab.highlightPurple;
             return (
               <button
                 key={tab.id}
@@ -429,19 +452,25 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
                   fontWeight: isActive ? 700 : 600,
                   cursor: 'pointer',
                   border: isActive
-                    ? (isGreen ? '1.5px solid #16a34a' : '1.5px solid #0284c7')
+                    ? (isGreen ? '1.5px solid #16a34a' : isPurple ? '1.5px solid #7c3aed' : '1.5px solid #0284c7')
                     : isGreen
                     ? '1.5px solid #86efac'
+                    : isPurple
+                    ? '1.5px solid #ddd6fe'
                     : '1px solid #e2e8f0',
                   backgroundColor: isActive
-                    ? (isGreen ? '#16a34a' : '#0284c7')
+                    ? (isGreen ? '#16a34a' : isPurple ? '#7c3aed' : '#0284c7')
                     : isGreen
                     ? '#f0fdf4'
+                    : isPurple
+                    ? '#f5f3ff'
                     : '#ffffff',
                   color: isActive
                     ? '#ffffff'
                     : isGreen
                     ? '#15803d'
+                    : isPurple
+                    ? '#6d28d9'
                     : '#475569',
                   transition: 'all 0.15s ease',
                   boxShadow: isActive ? '0 2px 6px rgba(0, 0, 0, 0.15)' : 'none'
