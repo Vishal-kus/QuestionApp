@@ -144,7 +144,7 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Ask AI (Gemini) handler
+  // Ask AI (ChatGPT Auto-Search & Explain) handler
   const handleAskAI = async () => {
     if (!currentQuestion) return;
 
@@ -172,21 +172,19 @@ Please teach this in an extremely simple, easy-to-understand manner:
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         await navigator.clipboard.writeText(promptText);
-        setToastMessage('✨ Question copied to clipboard! Just press Ctrl+V in the new Gemini tab to get a simple explanation.');
-      } else {
-        setToastMessage('✨ Opening Gemini in a new tab...');
       }
-    } catch (err) {
-      setToastMessage('✨ Opening Gemini in a new tab...');
-    }
+    } catch (err) {}
 
-    // Open Gemini in a new tab
-    window.open('https://gemini.google.com/app', '_blank');
+    setToastMessage('🚀 Opening ChatGPT in a new tab with automatic explanation...');
 
-    // Auto-dismiss toast after 6 seconds
+    // Open ChatGPT with auto-filled prompt via query parameter
+    const chatGptUrl = `https://chatgpt.com/?q=${encodeURIComponent(promptText)}`;
+    window.open(chatGptUrl, '_blank');
+
+    // Auto-dismiss toast after 4 seconds
     setTimeout(() => {
       setToastMessage(null);
-    }, 6000);
+    }, 4000);
   };
 
   const accuracy = (correctCount + incorrectCount) > 0
@@ -499,8 +497,9 @@ Please teach this in an extremely simple, easy-to-understand manner:
             </div>
 
             {/* Ask AI (Gemini) Action Button */}
+            {/* Ask AI (ChatGPT Auto-Explain) Action Button */}
             <button
-              id="btn-ask-ai-gemini-header"
+              id="btn-ask-ai-header"
               onClick={handleAskAI}
               style={{
                 display: 'inline-flex',
@@ -508,27 +507,27 @@ Please teach this in an extremely simple, easy-to-understand manner:
                 gap: '7px',
                 padding: '6px 14px',
                 borderRadius: '20px',
-                background: 'linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%)',
+                background: 'linear-gradient(135deg, #059669 0%, #10a37f 50%, #0d9488 100%)',
                 color: '#ffffff',
                 fontSize: '12px',
                 fontWeight: 800,
                 border: 'none',
                 cursor: 'pointer',
-                boxShadow: '0 2px 8px rgba(124, 58, 237, 0.35)',
+                boxShadow: '0 2px 8px rgba(16, 163, 127, 0.35)',
                 transition: 'transform 0.15s, box-shadow 0.15s'
               }}
               onMouseOver={(e) => {
                 e.currentTarget.style.transform = 'translateY(-1px)';
-                e.currentTarget.style.boxShadow = '0 4px 12px rgba(124, 58, 237, 0.45)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(16, 163, 127, 0.45)';
               }}
               onMouseOut={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 2px 8px rgba(124, 58, 237, 0.35)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(16, 163, 127, 0.35)';
               }}
-              title="Open Gemini in new tab with beginner-friendly explanation prompt copied"
+              title="Open ChatGPT in new tab with auto-submitted beginner-friendly explanation"
             >
               <Sparkles size={14} />
-              <span>Ask AI (Gemini)</span>
+              <span>Ask AI (ChatGPT Auto-Explain)</span>
               <ExternalLink size={12} style={{ opacity: 0.8 }} />
             </button>
           </div>
@@ -775,7 +774,7 @@ Please teach this in an extremely simple, easy-to-understand manner:
 
                       {/* Ask AI Helper in Explanation Box */}
                       <button
-                        id="btn-ask-ai-gemini-explanation"
+                        id="btn-ask-ai-explanation"
                         onClick={handleAskAI}
                         style={{
                           display: 'inline-flex',
@@ -784,23 +783,23 @@ Please teach this in an extremely simple, easy-to-understand manner:
                           padding: '4px 10px',
                           borderRadius: '6px',
                           backgroundColor: '#ffffff',
-                          border: '1px solid #fcd34d',
-                          color: '#7c3aed',
+                          border: '1px solid #a7f3d0',
+                          color: '#059669',
                           fontSize: '11px',
                           fontWeight: 700,
                           cursor: 'pointer',
                           transition: 'all 0.15s ease'
                         }}
                         onMouseOver={(e) => {
-                          e.currentTarget.style.backgroundColor = '#ede9fe';
+                          e.currentTarget.style.backgroundColor = '#ecfdf5';
                         }}
                         onMouseOut={(e) => {
                           e.currentTarget.style.backgroundColor = '#ffffff';
                         }}
-                        title="Don't understand this explanation? Ask Gemini to explain in simple terms"
+                        title="Don't understand this explanation? Ask ChatGPT to explain automatically in simple terms"
                       >
-                        <Sparkles size={12} color="#7c3aed" />
-                        <span>Still confused? Ask AI (Gemini)</span>
+                        <Sparkles size={12} color="#059669" />
+                        <span>Still confused? Ask AI (ChatGPT)</span>
                         <ExternalLink size={10} />
                       </button>
                     </div>
@@ -841,7 +840,7 @@ Please teach this in an extremely simple, easy-to-understand manner:
             <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
               {/* Ask AI secondary button */}
               <button
-                id="btn-ask-ai-gemini-bottom"
+                id="btn-ask-ai-bottom"
                 onClick={handleAskAI}
                 style={{
                   display: 'inline-flex',
@@ -850,26 +849,26 @@ Please teach this in an extremely simple, easy-to-understand manner:
                   padding: '9px 16px',
                   borderRadius: '8px',
                   backgroundColor: '#ffffff',
-                  border: '1.5px solid #c7d2fe',
-                  color: '#4f46e5',
+                  border: '1.5px solid #a7f3d0',
+                  color: '#047857',
                   fontSize: '13px',
                   fontWeight: 700,
                   cursor: 'pointer',
                   transition: 'all 0.15s ease'
                 }}
                 onMouseOver={(e) => {
-                  e.currentTarget.style.backgroundColor = '#f5f3ff';
-                  e.currentTarget.style.borderColor = '#818cf8';
+                  e.currentTarget.style.backgroundColor = '#ecfdf5';
+                  e.currentTarget.style.borderColor = '#6ee7b7';
                 }}
                 onMouseOut={(e) => {
                   e.currentTarget.style.backgroundColor = '#ffffff';
-                  e.currentTarget.style.borderColor = '#c7d2fe';
+                  e.currentTarget.style.borderColor = '#a7f3d0';
                 }}
-                title="Explain question in simple beginner terms on Gemini"
+                title="Explain question automatically in simple beginner terms on ChatGPT"
               >
-                <Sparkles size={15} color="#6366f1" />
-                <span>Ask AI (Gemini)</span>
-                <ExternalLink size={12} color="#6366f1" />
+                <Sparkles size={15} color="#10a37f" />
+                <span>Ask AI (ChatGPT)</span>
+                <ExternalLink size={12} color="#10a37f" />
               </button>
 
               {/* Next Question button */}
