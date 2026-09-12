@@ -569,7 +569,7 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
                   Endless Topic Practice • 2,100+ Questions Across All 21 Sets Combined
                 </h3>
                 <p style={{ fontSize: '13px', color: '#166534', margin: 0 }}>
-                  Instant correct/wrong feedback on click with step-by-step verified explanations. Practice across all 10 units, or focus specifically on the Final Real Mocks or Specialized Sets.
+                  Click any option for instant correct/wrong feedback and verified step-by-step explanations. Practice all 10 units combined or focus on official past papers.
                 </p>
               </div>
             </div>
@@ -582,7 +582,7 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '8px',
-                  padding: '10px 18px',
+                  padding: '10px 20px',
                   borderRadius: '8px',
                   backgroundColor: '#16a34a',
                   color: '#ffffff',
@@ -593,52 +593,29 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
                   boxShadow: '0 3px 8px rgba(22, 163, 74, 0.35)'
                 }}
               >
-                <span>All 10 Units (2,100+ Qs)</span>
+                <span>All 10 Units Mixed (2,100+ Qs)</span>
                 <ArrowRight size={15} />
               </button>
 
               <button
-                id="btn-start-final-mocks-practice"
-                onClick={() => onStartPractice && onStartPractice('FINAL_MOCKS')}
+                id="btn-start-official-pyqs-practice"
+                onClick={() => onStartPractice && onStartPractice('OFFICIAL_PYQS')}
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '8px',
                   padding: '10px 18px',
                   borderRadius: '8px',
-                  backgroundColor: '#ea580c',
+                  backgroundColor: '#0284c7',
                   color: '#ffffff',
                   fontSize: '13px',
                   fontWeight: 800,
                   border: 'none',
                   cursor: 'pointer',
-                  boxShadow: '0 3px 8px rgba(234, 88, 12, 0.35)'
+                  boxShadow: '0 3px 8px rgba(2, 132, 199, 0.35)'
                 }}
               >
-                <Flame size={15} />
-                <span>Final Real Mocks (500 Qs)</span>
-              </button>
-
-              <button
-                id="btn-start-practice-sets-practice"
-                onClick={() => onStartPractice && onStartPractice('PRACTICE_SETS')}
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  padding: '10px 18px',
-                  borderRadius: '8px',
-                  backgroundColor: '#7c3aed',
-                  color: '#ffffff',
-                  fontSize: '13px',
-                  fontWeight: 800,
-                  border: 'none',
-                  cursor: 'pointer',
-                  boxShadow: '0 3px 8px rgba(124, 58, 237, 0.35)'
-                }}
-              >
-                <Zap size={15} />
-                <span>Specialized Sets (500 Qs)</span>
+                <span>📜 Official PYQs (1,100 Qs)</span>
               </button>
             </div>
           </div>
