@@ -475,10 +475,21 @@ export const TOPIC_UNITS = [
   }
 ];
 
-// Helper: Get all questions across all 11 papers
+// Helper: Get all questions across all 21 papers
 export const getAllPaperQuestions = () => {
   const all = [];
   PAPERS.forEach((p) => {
+    p.questions.forEach((q) => {
+      all.push(q);
+    });
+  });
+  return all;
+};
+
+// Helper: Get questions for a specific category ('final_mock', 'practice', 'pyq')
+export const getQuestionsByCategory = (category) => {
+  const all = [];
+  PAPERS.filter((p) => p.category === category).forEach((p) => {
     p.questions.forEach((q) => {
       all.push(q);
     });

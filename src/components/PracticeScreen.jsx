@@ -20,7 +20,7 @@ import {
   Copy
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { TOPIC_UNITS, getQuestionsByUnit, getAllPaperQuestions } from '../data/papers/papersRegistry';
+import { TOPIC_UNITS, getQuestionsByUnit, getAllPaperQuestions, getQuestionsByCategory, getPaperById } from '../data/papers/papersRegistry';
 
 // Fisher-Yates shuffle
 const shuffleArray = (arr) => {
@@ -33,8 +33,8 @@ const shuffleArray = (arr) => {
 };
 
 export default function PracticeScreen({ initialUnit, onBackToHome }) {
-  // Currently selected unit ('ALL' or specific unit name)
-  const [selectedUnit, setSelectedUnit] = useState(initialUnit || TOPIC_UNITS[0].unit);
+  // Currently selected unit ('ALL', 'FINAL_MOCKS', 'PRACTICE_SETS', 'OFFICIAL_PYQS', 'PAPER_...', or specific unit name)
+  const [selectedUnit, setSelectedUnit] = useState(initialUnit || 'ALL');
 
   // Question pool for the selected unit
   const [questionPool, setQuestionPool] = useState([]);
@@ -60,6 +60,16 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
     let list = [];
     if (selectedUnit === 'ALL') {
       list = getAllPaperQuestions();
+    } else if (selectedUnit === 'FINAL_MOCKS') {
+      list = getQuestionsByCategory('final_mock');
+    } else if (selectedUnit === 'PRACTICE_SETS') {
+      list = getQuestionsByCategory('practice');
+    } else if (selectedUnit === 'OFFICIAL_PYQS') {
+      list = getQuestionsByCategory('pyq');
+    } else if (selectedUnit.startsWith('PAPER_')) {
+      const pId = selectedUnit.replace('PAPER_', '');
+      const paper = getPaperById(pId);
+      list = paper ? paper.questions : [];
     } else {
       list = getQuestionsByUnit(selectedUnit);
     }
@@ -284,12 +294,36 @@ Please teach this in an extremely simple, easy-to-understand manner:
                 marginTop: '3px'
               }}
             >
-              <option value="ALL">All 10 Units Mixed (1,100+ Questions)</option>
-              {TOPIC_UNITS.map((unit) => (
-                <option key={unit.unit} value={unit.unit}>
-                  {unit.unit} ({getQuestionsByUnit(unit.unit).length} Qs)
-                </option>
-              ))}
+              <optgroup label="🌟 Combined & Series Practice">
+                <option value="ALL">All 10 Units Mixed (2,100+ Questions)</option>
+                <option value="FINAL_MOCKS">🔥 Final Real Mock Series (5) (500 Qs)</option>
+                <option value="PRACTICE_SETS">⚡ Specialized Practice Sets (5) (500 Qs)</option>
+                <option value="OFFICIAL_PYQS">📜 Official Exam PYQs (11) (1,100 Qs)</option>
+              </optgroup>
+
+              <optgroup label="🔥 Final Real Mock Tests (Individual Sets)">
+                <option value="PAPER_final-real-mock-1">Part 1: Comprehensive Simulation (100 Qs)</option>
+                <option value="PAPER_final-real-mock-2">Part 2: High-Yield Grand Simulation (100 Qs)</option>
+                <option value="PAPER_final-real-mock-3">Part 3: Core Concepts & Formulas Mock (100 Qs)</option>
+                <option value="PAPER_final-real-mock-4">Part 4: Speed & Accuracy Mastery Mock (100 Qs)</option>
+                <option value="PAPER_final-real-mock-5">Part 5: Grand All-India Final Rehearsal (100 Qs)</option>
+              </optgroup>
+
+              <optgroup label="⚡ Specialized Practice Sets (Individual Sets)">
+                <option value="PAPER_practice-set-1">Practice Set 1: Calculation & Numerical Heavy (100 Qs)</option>
+                <option value="PAPER_practice-set-2">Practice Set 2: Match List & Statements (100 Qs)</option>
+                <option value="PAPER_practice-set-3">Practice Set 3: Advanced Full Mock (100 Qs)</option>
+                <option value="PAPER_practice-set-4">Practice Set 4: Speed & Accuracy Practice (100 Qs)</option>
+                <option value="PAPER_practice-set-5">Practice Set 5: Grand Final Mock (100 Qs)</option>
+              </optgroup>
+
+              <optgroup label="🎯 Topic-Wise Units (All 21 Sets Combined)">
+                {TOPIC_UNITS.map((unit) => (
+                  <option key={unit.unit} value={unit.unit}>
+                    {unit.unit} ({getQuestionsByUnit(unit.unit).length} Qs)
+                  </option>
+                ))}
+              </optgroup>
             </select>
           </div>
         </div>
