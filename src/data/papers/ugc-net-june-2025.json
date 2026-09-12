@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In a pack of 42 cards, 3 cards are chosen one after the other. Find the number of ways this can be done without replacement:",
+    "options": {
+      "A": "1722",
+      "B": "1752",
+      "C": "68880",
+      "D": "6880"
+    },
+    "correct_answer": "C",
+    "explanation": "This is a permutation problem where order matters and there is no replacement. Choosing 3 distinct cards from 42 gives P(42, 3) = 42 * 41 * 40 = 68,880 ways."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Once the process is allocated CPU and executing, which of the following events could not occur?\nA. The process could issue an I/O request and then be placed in the Ready Queue\nB. The process could create new subprocesses & wait for the termination of the subprocesses\nC. The time slice of the process expires and it may join the waiting queue\nD. The process is forcibly removed from the CPU and is put in the Waiting queue due to arrival of an interrupt\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B Only",
+      "B": "D Only",
+      "C": "A and C Only",
+      "D": "A, C and D Only"
+    },
+    "correct_answer": "D",
+    "explanation": "Statement A is wrong because an I/O request puts the process in the Waiting (Blocked) queue, not the Ready queue. Statement C is wrong because time-slice expiration puts the process in the Ready queue. Statement D is wrong because interrupt preemption puts the process in the Ready queue. Thus A, C, and D cannot occur."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Match List I with List II:\nList I:\nA. Count to infinity problem\nB. IEEE 802.16\nC. IEEE 802.15\nD. AODV protocol\n\nList II:\nI. Mobile Adhoc Networks\nII. Distance vector routing\nIII. WiMAX\nIV. Bluetooth\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-III, C-I, D-IV",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-II, B-IV, C-III, D-I",
+      "D": "A-IV, B-III, C-I, D-II"
+    },
+    "correct_answer": "B",
+    "explanation": "A matches II (Count to infinity in Distance Vector Routing). B matches III (IEEE 802.16 is WiMAX). C matches IV (IEEE 802.15 is Bluetooth). D matches I (AODV is used in MANETs)."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "What shall be the average waiting time per process if we know that 10 processes (on average) arrive every second and there are normally 20 processes in the queue?",
+    "options": {
+      "A": "03 seconds",
+      "B": "02 seconds",
+      "C": "18 seconds",
+      "D": "09 seconds"
+    },
+    "correct_answer": "B",
+    "explanation": "By Little's Law, L = lambda * W. Given L = 20 processes and lambda = 10 processes/sec, the average waiting time W = L / lambda = 20 / 10 = 2 seconds."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Consider the following statements regarding Agent systems:\nA. Agent system comprises of an agent and an environment on which it acts\nB. The controller part of an agent receives percepts from its body and sends commands to the environment\nC. Agents act in the world through actuators which are non-noisy and always reliable\nD. The actuators of an agent convert stimuli into percepts\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B Only",
+      "B": "B, D Only",
+      "C": "C, D Only",
+      "D": "B, C, D Only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statements A and B are correct descriptions of agent architectures. Statement C is incorrect because real-world actuators are often noisy. Statement D is incorrect because sensors (not actuators) convert stimuli into percepts."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "The transformation of data from main memory to cache memory is referred to as:",
+    "options": {
+      "A": "Data exchange",
+      "B": "Data transformation",
+      "C": "Mapping",
+      "D": "Matching"
+    },
+    "correct_answer": "C",
+    "explanation": "The technique of transferring and locating data blocks from main memory into cache memory is called mapping (e.g. direct, associative, set-associative)."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Consider the following steps used by a knowledge base designer to represent a world:\nA. Selects atoms to represent propositions\nB. Ask questions about intended interpretation\nC. Choose a task domain\nD. Axiomatizing the domain\nChoose the correct order of the above steps:",
+    "options": {
+      "A": "C -> A -> D -> B",
+      "B": "C -> A -> B -> D",
+      "C": "B -> C -> A -> D",
+      "D": "A -> C -> B -> D"
+    },
+    "correct_answer": "A",
+    "explanation": "The standard knowledge engineering sequence is: First choose a domain (C), select atomic propositions (A), write axioms for the domain (D), and finally ask questions to verify the intended interpretation (B)."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What will be the output of the following C programming code:\n\nint i, j;\nfor(i=1; i<5; i+=2)\n    for(j=1; j<i; j+=2)\n        printf(\"%d\", j);",
+    "options": {
+      "A": "1",
+      "B": "1 2",
+      "C": "1 3",
+      "D": "1 1 3"
+    },
+    "correct_answer": "A",
+    "explanation": "Outer loop runs for i = 1 and i = 3. For i = 1: inner loop condition (j=1 < 1) is false. For i = 3: inner loop runs for j = 1, prints 1, then increments to j = 3 (3 < 3 false). Thus, output is 1."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Consider the Boolean expression A(x, y, z) = x(y' z)'. Which of the following is the complete sum-of-products form of the given Boolean expression?",
+    "options": {
+      "A": "xyz + x'yz' + x'y'z'",
+      "B": "xyz' + x'yz' + x'y'z'",
+      "C": "xyz' + xy'z + x'y'z'",
+      "D": "xyz + xyz' + xy'z'"
+    },
+    "correct_answer": "D",
+    "explanation": "A(x,y,z) = x(y'z)' = x(y + z') = xy + xz'. Expanding into canonical SOP form: xy(z+z') + xz'(y+y') = xyz + xyz' + xy'z'."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Match List I with List II:\nList I (Software Quality Characteristic):\nA. Reliability\nB. Efficiency\nC. Maintainability\nD. Portability\n\nList II (Description):\nI. Ability to transfer the software from one organization or hardware/software environment to another.\nII. Capability of software to maintain its level of performance under stated conditions for a stated period of time.\nIII. Relationship between performance level and resources used.\nIV. Effort needed to make modifications.\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-III, C-I, D-IV",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-III, B-II, C-I, D-IV",
+      "D": "A-IV, B-II, C-I, D-III"
+    },
+    "correct_answer": "B",
+    "explanation": "Reliability is II (maintaining performance level), Efficiency is III (resource usage ratio), Maintainability is IV (effort for modifications), and Portability is I (ease of transferring environments)."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Match List I with List II:\nList I:\nA. Address Space\nB. Memory Space\nC. Cache Memory\nD. Segmented Program\n\nList II:\nI. Associative Mapping\nII. Logical address\nIII. Physical address\nIV. Virtual address\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-III, C-I, D-II",
+      "B": "A-I, B-II, C-IV, D-III",
+      "C": "A-III, B-IV, C-I, D-II",
+      "D": "A-II, B-IV, C-I, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "Address Space refers to virtual/logical address space generated by CPU (IV). Memory Space refers to physical memory locations (III). Cache Memory uses mapping schemes like Associative Mapping (I). Segmented program generates logical address tuples (II)."
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Match List I with List II:\nList I:\nA. Digital Signature\nB. Hash Function\nC. AES\nD. RSA\n\nList II:\nI. Asymmetric encryption algorithm\nII. Confirms authenticity and integrity\nIII. Produces a fixed-size digest\nIV. Symmetric encryption algorithm\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-III, C-I, D-IV",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-III, B-II, C-I, D-IV",
+      "D": "A-IV, B-II, C-I, D-III"
+    },
+    "correct_answer": "B",
+    "explanation": "Digital Signature confirms authenticity and integrity (II). Hash Function produces a fixed-size message digest (III). AES is a symmetric encryption algorithm (IV). RSA is an asymmetric public-key encryption algorithm (I)."
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What would be the equivalent pointer expression for referring the array element ar[m][n][0]?",
+    "options": {
+      "A": "*(*(*(ar) + m + n) + 0)",
+      "B": "(*(*(*ar + m) + n) + 0)",
+      "C": "(*(*(ar + m) + n) + 0)",
+      "D": "*(*(*(ar + m) + n) + 0)"
+    },
+    "correct_answer": "D",
+    "explanation": "For a 3D array ar[m][n][0], ar + m points to row block m, *(ar + m) dereferences to 2D array, *(ar + m) + n moves to row n, *(*(ar + m) + n) gives pointer to first element, and adding + 0 and dereferencing gives *(*(*(ar + m) + n) + 0)."
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following Grammars is/are only Context Free (and not regular)?\nGrammar C: S -> AS | aA, A -> a\nGrammar D: S -> Ab | aA, A -> a",
+    "options": {
+      "A": "A, B Only",
+      "B": "C, D Only",
+      "C": "C, E Only",
+      "D": "A, B, D, E Only"
+    },
+    "correct_answer": "B",
+    "explanation": "Grammars C and D contain productions like S -> AS and S -> Ab that violate regular grammar forms (LHS/RHS non-terminal placements) but satisfy Context-Free Grammar rules."
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "CB84000D001C001C is the content of a UDP header in hexadecimal format. What is the source port number in decimal?",
+    "options": {
+      "A": "52100",
+      "B": "13",
+      "C": "28",
+      "D": "52000"
+    },
+    "correct_answer": "A",
+    "explanation": "The first 2 bytes (4 hex characters) of a UDP header represent the source port: CB84. Converting CB84 from hexadecimal to decimal: C*16^3 + B*16^2 + 8*16^1 + 4*16^0 = 12*4096 + 11*256 + 128 + 4 = 52100."
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Match List I with List II (GA termination criteria):\nList I:\nA. Worst Individual\nB. Best Individual\nC. Sum of Fitness\nD. Median Fitness\n\nList II:\nI. At least half of individuals meet/exceed convergence value\nII. Guarantees virtually all individuals are within fitness range\nIII. Guarantees entire population meets minimum standard\nIV. Faster search convergence, guaranteeing at least one best solution\n\nChoose the correct answer:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-IV, B-III, C-I, D-II",
+      "C": "A-II, B-I, C-III, D-IV",
+      "D": "A-II, B-III, C-IV, D-I"
+    },
+    "correct_answer": "A",
+    "explanation": "Terminating on Worst Individual ensures entire population standard (III). Best Individual focuses on optimal solution convergence (IV). Sum of Fitness indicates narrow population variance (II). Median Fitness ensures half population standards (I)."
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider three relations Employee(eid, eName), Comp(cid, cName), Own(eid, cid). Which relational algebra expression returns the eids who own all brands?",
+    "options": {
+      "A": "pi_eid(pi_eid,cid(Own) / pi_cid(Comp))",
+      "B": "(Own x Comp)_eid",
+      "C": "(Own x Comp) / pi_cid",
+      "D": "pi_eid(Own) x pi_cid(Comp)"
+    },
+    "correct_answer": "A",
+    "explanation": "Finding entities that are associated with ALL elements of a relation corresponds directly to the Relational Division operation: pi_{eid,cid}(Own) ÷ pi_{cid}(Comp)."
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 6: Software Engineering",
+    "question": "The process followed in order to find difficult, unknown and hidden information about a software system is called:",
+    "options": {
+      "A": "Software Engineering",
+      "B": "Software Re-Engineering",
+      "C": "Reverse Engineering",
+      "D": "Inverse Engineering"
+    },
+    "correct_answer": "C",
+    "explanation": "Reverse engineering is the process of analyzing a system to identify its components and interrelationships to create representations of the system at a higher level of abstraction."
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which of the following shows the correct hierarchy of a layered file system in an operating system?\nA. Logical File System\nB. File Organization Module\nC. Basic File System\nD. I/O Control\nE. Application Programs",
+    "options": {
+      "A": "A -> B -> D -> C -> E",
+      "B": "D -> E -> C -> A -> B",
+      "C": "E -> A -> B -> C -> D",
+      "D": "E -> C -> B -> A -> D"
+    },
+    "correct_answer": "C",
+    "explanation": "The top-down layered file system architecture is: Application Programs -> Logical File System -> File Organization Module -> Basic File System -> I/O Control."
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which of the following is NOT a software characteristic?",
+    "options": {
+      "A": "Software does not wear out",
+      "B": "Software is flexible",
+      "C": "Software is not manufactured",
+      "D": "Software is always correct"
+    },
+    "correct_answer": "D",
+    "explanation": "Software is not inherently always correct; software is prone to bugs, defects, and logical errors requiring testing, verification, and maintenance."
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which of the following cohesions are better than Procedural Cohesion?\nA. Functional Cohesion\nB. Sequential Cohesion\nC. Temporal Cohesion\nD. Communicational Cohesion\nE. Logical Cohesion",
+    "options": {
+      "A": "A and D Only",
+      "B": "A, B and D Only",
+      "C": "C, D and E Only",
+      "D": "A, D and E Only"
+    },
+    "correct_answer": "B",
+    "explanation": "Cohesion levels from highest (best) to lowest (worst): Functional -> Sequential -> Communicational -> Procedural -> Temporal -> Logical -> Coincidental. Thus, Functional, Sequential, and Communicational are better than Procedural."
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Consider the infix expression Q: ((A + B) * D) ^ (E - F). What is the equivalent postfix expression of Q?",
+    "options": {
+      "A": "AB + D * EF ^ -",
+      "B": "AB + D * EF - ^",
+      "C": "AB + DE * F - ^",
+      "D": "AB + D * EF - ^"
+    },
+    "correct_answer": "D",
+    "explanation": "Convert inside parentheses first: (A + B) -> AB+, (E - F) -> EF-. Then multiplication: (AB+) * D -> AB+D*. Finally exponentiation: (AB+D*) ^ (EF-) -> AB+D*EF-^."
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which of the following trees are height balanced?\nA. Binary Search Tree\nB. AVL Tree\nC. Red-Black Tree\nD. B Tree",
+    "options": {
+      "A": "A and D Only",
+      "B": "A, B and D Only",
+      "C": "C and D Only",
+      "D": "B, C and D Only"
+    },
+    "correct_answer": "D",
+    "explanation": "AVL trees, Red-Black trees, and B Trees maintain structural invariants that guarantee height balance (O(log n)). A standard BST can degenerate to O(n) height."
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In a Stop-and-wait system, the bandwidth of the line is 1 Mbps, and 1 bit takes 30 milliseconds to make a round trip. The bandwidth-delay product is:",
+    "options": {
+      "A": "15,000 bits",
+      "B": "20,000 bits",
+      "C": "30,000 bits",
+      "D": "60,000 bits"
+    },
+    "correct_answer": "C",
+    "explanation": "Bandwidth-Delay Product = Bandwidth * Round Trip Time = (1 * 10^6 bits/sec) * (30 * 10^-3 sec) = 30,000 bits."
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which of the following belongs to McCall's quality factors?\nA. Maintainability\nB. Usability\nC. Integrity\nD. Functionality",
+    "options": {
+      "A": "A and D Only",
+      "B": "A, B and D Only",
+      "C": "C and D Only",
+      "D": "A, B and C Only"
+    },
+    "correct_answer": "D",
+    "explanation": "McCall's 11 quality factors include Maintainability, Usability, and Integrity. Functionality is an ISO 9126 characteristic, not part of McCall's original 11 factors."
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Arrange the process of virtualization in cloud environments:\nA. Hypervisor installed on physical server\nB. Virtual machines created\nC. Resources allocated to Virtual machines\nD. Virtual machines run isolated workloads",
+    "options": {
+      "A": "B, C, A, D",
+      "B": "A, B, C, D",
+      "C": "A, C, B, D",
+      "D": "B, C, D, A"
+    },
+    "correct_answer": "B",
+    "explanation": "First install the hypervisor on the physical server (A), create VMs on the hypervisor (B), allocate CPU/RAM resources to the VMs (C), and run workloads in isolation (D)."
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "A positive integer selected at random from positive integers <= 200. What is the probability that the selected number is divisible by either 2 or 5?",
+    "options": {
+      "A": "2/5",
+      "B": "3/5",
+      "C": "4/5",
+      "D": "1/5"
+    },
+    "correct_answer": "B",
+    "explanation": "Divisible by 2: floor(200/2) = 100. Divisible by 5: floor(200/5) = 40. Divisible by both (10): floor(200/10) = 20. Total = 100 + 40 - 20 = 120. Probability = 120 / 200 = 3/5."
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Match List I with List II:\nList I:\nA. If Indian team wins, then it is raining\nB. If Indian team does not win, then it is not raining\nC. If it is raining, then Indian team wins\nD. If it is not raining, then Indian team does not win\n\nList II:\nI. Inverse\nII. Converse\nIII. Contrapositive\nIV. Conditional",
+    "options": {
+      "A": "A-II, B-I, C-IV, D-III",
+      "B": "A-III, B-I, C-II, D-IV",
+      "C": "A-IV, B-I, C-II, D-III",
+      "D": "A-III, B-II, C-IV, D-I"
+    },
+    "correct_answer": "C",
+    "explanation": "A is P -> Q (Conditional, IV). B is ~P -> ~Q (Inverse, I). C is Q -> P (Converse, II). D is ~Q -> ~P (Contrapositive, III)."
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Binary equivalent to hexadecimal (A0F)_16 is:",
+    "options": {
+      "A": "111000111",
+      "B": "101001111",
+      "C": "101000001111",
+      "D": "111100001010"
+    },
+    "correct_answer": "C",
+    "explanation": "Convert each hex digit to 4-bit binary: A = 1010, 0 = 0000, F = 1111. Concatenating gives 101000001111."
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Arrange interrupt protection levels in Linux in increasing order of priority:\nA. User-Mode Programs\nB. Bottom Half Interrupt Handlers\nC. Top Half Interrupt Handlers\nD. Kernel System Service Routines",
+    "options": {
+      "A": "B -> A -> C -> D",
+      "B": "C -> B -> A -> D",
+      "C": "C -> A -> B -> D",
+      "D": "A -> D -> B -> C"
+    },
+    "correct_answer": "D",
+    "explanation": "Priority increases from User-Mode Programs (A) -> Kernel System Service Routines (D) -> Bottom Half Handlers (B) -> Top Half Handlers (C)."
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which of the following techniques is used for Line Clipping?",
+    "options": {
+      "A": "Stack based Seed",
+      "B": "Scan Line Seed",
+      "C": "Sutherland-Cohen",
+      "D": "Inverse Scaling"
+    },
+    "correct_answer": "C",
+    "explanation": "Sutherland-Cohen is a classic computer graphics algorithm used for clipping line segments against a rectangular window using 4-bit region outcodes."
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Estimation of software development effort for organic software in basic COCOMO is:",
+    "options": {
+      "A": "E = 2.4 * (KLOC)^1.05",
+      "B": "E = 3.4 * (KLOC)^1.06",
+      "C": "E = 2.0 * (KLOC)^1.05",
+      "D": "E = 2.4 * (KLOC)^1.07"
+    },
+    "correct_answer": "A",
+    "explanation": "In basic COCOMO, effort estimation for Organic mode projects is given by E = 2.4 * (KLOC)^1.05 Person-Months."
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider R(A, B, C, D, E) with dependencies C->F, E->A, EC->D, A->B. Which of the following is a candidate key for R?",
+    "options": {
+      "A": "CD",
+      "B": "EC",
+      "C": "AE",
+      "D": "AC"
+    },
+    "correct_answer": "B",
+    "explanation": "Computing attribute closure of EC: (EC)+ = {E, C, A (from E->A), D (from EC->D), B (from A->B)} = {A, B, C, D, E}. Since EC+ contains all attributes, EC is a key."
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Let P denote 'She is intelligent' and Q denote 'She is happy'. Match statements:\n(a) If She is intelligent, then She is unhappy.\n(b) She is neither intelligent nor happy.\n(c) It is necessary to be not intelligent in order to be happy.\n(d) To be not intelligent is to be unhappy.",
+    "options": {
+      "A": "(a) P->~Q; (b) P^~Q; (c) Q->~P; (d) P->~Q",
+      "B": "(a) P->Q; (b) ~P^~Q; (c) ~Q->P; (d) ~P->~Q",
+      "C": "(a) P->~Q; (b) ~P^~Q; (c) Q->~P; (d) ~P->~Q",
+      "D": "(a) P->~Q; (b) P^~Q; (c) Q->P; (d) ~P->~Q"
+    },
+    "correct_answer": "C",
+    "explanation": "(a) P -> ~Q. (b) ~P ^ ~Q. (c) Necessary condition ~P for Q means Q -> ~P. (d) ~P -> ~Q."
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In a group of 120 people: 65 eat Rice, 45 eat bread, 42 eat curd, 20 eat Rice & bread, 25 eat Rice & curd, 15 eat bread & curd, and 8 eat all three. How many eat at least one of the three?",
+    "options": {
+      "A": "56",
+      "B": "100",
+      "C": "92",
+      "D": "65"
+    },
+    "correct_answer": "B",
+    "explanation": "Using Principle of Inclusion-Exclusion: n(R u B u C) = 65 + 45 + 42 - 20 - 25 - 15 + 8 = 152 - 60 + 8 = 100."
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "For a Perceptron model learning logic OR with initial weights w1=0, w2=0 and learning rate eta=0.1, what are final weights after training samples S1(0,0->0), S2(0,1->1), S3(1,0->1), S4(1,1->1)?",
+    "options": {
+      "A": "w1=0.1, w2=0.1",
+      "B": "w1=0.0, w2=0.2",
+      "C": "w1=0.0, w2=0.1",
+      "D": "w1=0.2, w2=0.2"
+    },
+    "correct_answer": "A",
+    "explanation": "Applying perceptron update rule w = w + eta*(target - output)*x: S1 gives no update. S2 updates w2 to 0.1. S3 updates w1 to 0.1. S4 gives output 1 (correct), no update. Final weights w1=0.1, w2=0.1."
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which of the following algorithms use Greedy strategy?\nA. Dijkstra's algorithm\nB. Kruskal's algorithm\nC. Huffman coding\nD. Bellman-Ford algorithm",
+    "options": {
+      "A": "A, B and D Only",
+      "B": "A, B and C Only",
+      "C": "C and D Only",
+      "D": "A and D Only"
+    },
+    "correct_answer": "B",
+    "explanation": "Dijkstra, Kruskal, and Huffman coding are classic greedy algorithms. Bellman-Ford uses dynamic programming to solve single-source shortest paths with negative weights."
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "The packet sent by a node to the source to inform it of network congestion is called:",
+    "options": {
+      "A": "Explicit",
+      "B": "Backpressure",
+      "C": "Choke",
+      "D": "Retransmission"
+    },
+    "correct_answer": "C",
+    "explanation": "A choke packet is a special control packet sent by a router to the source host to advise it to reduce its sending rate due to network congestion."
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which of the following are controlled-access protocols?\nA. Reservation\nB. Polling\nC. TDMA\nD. Token Passing\nE. CSMA/CA",
+    "options": {
+      "A": "A and D Only",
+      "B": "A, B and D Only",
+      "C": "C, D and E Only",
+      "D": "A, D and E Only"
+    },
+    "correct_answer": "B",
+    "explanation": "Controlled-access protocols include Reservation, Polling, and Token Passing. TDMA is a channelization protocol, while CSMA/CA is a random-access protocol."
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Consider steps involved in Genetic Algorithm:\nA. Select pair of parents\nB. Apply mutation\nC. Calculate fitness\nD. Apply crossover\nChoose the correct order:",
+    "options": {
+      "A": "A -> C -> B -> D",
+      "B": "C -> A -> D -> B",
+      "C": "C -> A -> B -> D",
+      "D": "A -> D -> B -> C"
+    },
+    "correct_answer": "B",
+    "explanation": "Standard GA cycle sequence: Calculate fitness of population (C) -> Select parents (A) -> Apply crossover (D) -> Apply mutation (B)."
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "The longest common subsequence of {1,2,3,2,4,1,2} and {2,4,3,1,2,1} is:",
+    "options": {
+      "A": "2,1,2,3",
+      "B": "1,3,2,1",
+      "C": "2,3,2,1",
+      "D": "2,3,1,2,1"
+    },
+    "correct_answer": "C",
+    "explanation": "Tracing the dynamic programming LCS table gives a maximum common subsequence length of 4 with sequence {2, 3, 2, 1}."
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Considering statements about Data Mining and Warehousing:\nA. Data transformation is involved in Data mining\nB. Online database is used in Data warehouse\nC. Classification is a measure of accuracy\nD. K-means minimizes within-cluster variance\nE. Pattern evaluation identifies knowledge based on interestingness\nChoose correct statements:",
+    "options": {
+      "A": "B, C, E Only",
+      "B": "A, D, E Only",
+      "C": "A, C, E Only",
+      "D": "A, C, D Only"
+    },
+    "correct_answer": "B",
+    "explanation": "A, D, and E are correct. Statement B is incorrect because data warehouses use OLAP systems (historical analytical data), not operational OLTP online databases. Statement C is incorrect because classification is a task, not an evaluation metric."
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Match List I with List II:\nList I:\nA. Equivalence Partitioning\nB. Boundary Value Analysis\nC. Cyclomatic Complexity\nD. Decision Table Testing\n\nList II:\nI. Measures independent paths in code\nII. Divides input into valid/invalid sets\nIII. Focuses on limits of input ranges\nIV. Tests combinations of actions under varying conditions",
+    "options": {
+      "A": "A-II, B-III, C-I, D-IV",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-III, B-II, C-I, D-IV",
+      "D": "A-IV, B-II, C-I, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "Equivalence Partitioning matches II. Boundary Value Analysis matches III. Cyclomatic Complexity matches I. Decision Table Testing matches IV."
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Gray code equivalent to decimal number 8 is:",
+    "options": {
+      "A": "1000",
+      "B": "1100",
+      "C": "1010",
+      "D": "1110"
+    },
+    "correct_answer": "B",
+    "explanation": "Decimal 8 in binary is 1000. Convert binary 1000 to Gray code: MSB remains 1; 2nd bit = 1 XOR 0 = 1; 3rd bit = 0 XOR 0 = 0; 4th bit = 0 XOR 0 = 0. Gray code = 1100."
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Match List I with List II (Hashing Collision Handling):\nList I:\nA. Chaining\nB. Linear Probing\nC. Quadratic Probing\nD. Double Hashing\n\nList II:\nI. Check next slot sequentially\nII. Use second hash function\nIII. Linked list at index\nIV. Skip slots using quadratic step",
+    "options": {
+      "A": "A-II, B-III, C-I, D-IV",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-III, B-I, C-IV, D-II",
+      "D": "A-IV, B-II, C-I, D-III"
+    },
+    "correct_answer": "C",
+    "explanation": "Chaining uses linked list at index (III). Linear Probing checks next sequential slot (I). Quadratic Probing uses i^2 steps (IV). Double Hashing uses a second hash function (II)."
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "The write operation in I/O operation does which of the following?",
+    "options": {
+      "A": "Transfer data from I/O device to memory",
+      "B": "Transfer data from memory to I/O device",
+      "C": "Transfer data from CPU register to memory",
+      "D": "Transfer data from CPU register to I/O device"
+    },
+    "correct_answer": "B",
+    "explanation": "An I/O write operation transfers output data from main memory (or CPU) to an I/O peripheral device."
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which of the following is NOT a parent selection technique used in genetic algorithm implementations?",
+    "options": {
+      "A": "Radial",
+      "B": "Tournament",
+      "C": "Boltzmann",
+      "D": "Rank"
+    },
+    "correct_answer": "A",
+    "explanation": "Tournament selection, Boltzmann selection, and Rank selection are standard GA parent selection methods. Radial is not a GA parent selection technique."
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Maintaining a graph in memory by means of its adjacency matrix is known as:",
+    "options": {
+      "A": "Complete Representation",
+      "B": "Linked Representation",
+      "C": "Circular Representation",
+      "D": "Sequential Representation"
+    },
+    "correct_answer": "D",
+    "explanation": "An adjacency matrix is a 2D array stored in contiguous memory blocks, which is a Sequential Representation of graphs."
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Match List I with List II:\nList I:\nA. Circular Queue\nB. Priority Queue\nC. Double Ended Queue\nD. Simple Queue\n\nList II:\nI. Print Queue\nII. CPU Scheduling\nIII. Dijkstra algorithm\nIV. Palindrome checking",
+    "options": {
+      "A": "A-II, B-III, C-I, D-IV",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-III, B-II, C-I, D-IV",
+      "D": "A-IV, B-II, C-I, D-III"
+    },
+    "correct_answer": "B",
+    "explanation": "Circular Queue matches CPU scheduling (Round Robin) (II). Priority Queue matches Dijkstra's shortest path algorithm (III). Deque matches Palindrome checking (IV). Simple Queue matches Print spooling (I)."
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Consider a DFA with transitions over {a, b, c}. Which NFA is valid and equivalent for the given DFA?",
+    "options": {
+      "A": "NFA Option A",
+      "B": "NFA Option B",
+      "C": "NFA Option C",
+      "D": "NFA Option D"
+    },
+    "correct_answer": "D",
+    "explanation": "Applying subset construction algorithm on NFA in Option D yields the exact state set transitions and accepting states corresponding to the given DFA."
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which of the following logic gates do NOT give output 1 when both inputs are 0?\nA. NAND gate\nB. NOR gate\nC. X-OR gate\nD. X-NOR gate",
+    "options": {
+      "A": "A, B Only",
+      "B": "B, C Only",
+      "C": "C, D Only",
+      "D": "C Only"
+    },
+    "correct_answer": "D",
+    "explanation": "NAND(0,0) = 1, NOR(0,0) = 1, XNOR(0,0) = 1. But XOR(0,0) = 0. Therefore, only XOR gate (C Only) gives output 0."
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider relation T1(A,B,C,D,E) with FDs {EB->C, D->E, EA->B} and T2(A,B,C,D) with {C->A, A->B, A->D}. Which statement is TRUE?",
+    "options": {
+      "A": "T1 is in 3NF",
+      "B": "T2 is in 3NF",
+      "C": "T1 is not in 3NF",
+      "D": "T1 is in 2NF"
+    },
+    "correct_answer": "C",
+    "explanation": "Candidate key for T1 is DA. In FD EB->C, EB is not a superkey and C is not a prime attribute, violating 3NF. Thus T1 is not in 3NF."
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Choose the correct statement for a group G:",
+    "options": {
+      "A": "If for all x, y in G, (xy)^2 = x^2 y^2, then G is Commutative",
+      "B": "If for all x in G, x^3 = 1, then G is Commutative",
+      "C": "If for all x in G, x^5 = 1, then G is Commutative",
+      "D": "If G is Commutative, the sub-group of G need not be Commutative"
+    },
+    "correct_answer": "A",
+    "explanation": "In group theory, (xy)^2 = x^2 y^2 implies xyxy = xxyy. Left-multiplying by x^-1 and right-multiplying by y^-1 gives yx = xy, proving G is abelian (commutative)."
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the output of C code: int x=128, y=110; do { if(x>y) x=x-y; else y=y-x; } while(x!=y); printf(\"%d\", x);",
+    "options": {
+      "A": "18",
+      "B": "2",
+      "C": "92",
+      "D": "74"
+    },
+    "correct_answer": "B",
+    "explanation": "This loop implements the Euclidean subtraction algorithm for Greatest Common Divisor (GCD). GCD(128, 110) = 2. When x == y, x becomes 2."
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Arrange steps when a user enters a URL in browser:\nA. DNS resolution\nB. HTTP request sent\nC. URL entered in browser\nD. IP address obtained\nE. Webpage displayed",
+    "options": {
+      "A": "B, A, C, E, D",
+      "B": "C, B, A, E, D",
+      "C": "B, C, D, A, E",
+      "D": "C, A, D, B, E"
+    },
+    "correct_answer": "D",
+    "explanation": "Correct sequence: User enters URL (C) -> Browser performs DNS resolution (A) -> IP address is obtained (D) -> HTTP request sent to IP (B) -> Server responds and webpage is displayed (E)."
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Match List I with List II:\nList I:\nA. Clustered Page Table\nB. Hierarchical Page Table\nC. Segmentation\nD. Inverted Page Table\n\nList II:\nI. Inappropriate for 64-bit architectures\nII. One entry for each real page frame of memory\nIII. Useful for sparse address spaces\nIV. Supports a user view of system",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-III, B-I, C-IV, D-II",
+      "C": "A-II, B-III, C-I, D-IV",
+      "D": "A-IV, B-III, C-II, D-I"
+    },
+    "correct_answer": "B",
+    "explanation": "Clustered Page Table matches III (sparse address spaces). Hierarchical Page Table matches I (inappropriate for 64-bit due to deep levels). Segmentation matches IV (user view). Inverted Page Table matches II (one entry per physical page)."
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Match List I with List II:\nList I:\nA. Overloading\nB. Early binding\nC. Overriding\nD. Late Binding\n\nList II:\nI. Resolved at run time, slower execution\nII. Resolved at compilation time, faster execution\nIII. Supports compile-time polymorphism\nIV. Supports run-time polymorphism",
+    "options": {
+      "A": "A-III, B-II, C-I, D-IV",
+      "B": "A-IV, B-II, C-III, D-I",
+      "C": "A-III, B-II, C-IV, D-I",
+      "D": "A-IV, B-I, C-III, D-II"
+    },
+    "correct_answer": "C",
+    "explanation": "Overloading is compile-time polymorphism (III). Early binding happens at compile time (II). Overriding is run-time polymorphism (IV). Late binding happens at run time (I)."
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Identify correct statements regarding Spinlock Semaphores:\nA. Name refers to busy waiting semaphores\nB. Not useful when locks held for short duration\nC. Require multiple context switches when process waits\nD. Often employed on Uniprocessor systems",
+    "options": {
+      "A": "A Only",
+      "B": "D Only",
+      "C": "B, D Only",
+      "D": "A, C and D Only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement A is correct: Spinlocks continuously loop (busy wait) while holding CPU. Statement B is false because spinlocks ARE useful for short durations to avoid context switches. Statements C and D are false."
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Consider statements for XML:\nA. Users can define custom tags\nB. It is used for Presentation\nC. It is case sensitive\nD. It is dynamic/extensible",
+    "options": {
+      "A": "B, C, D Only",
+      "B": "A, B, D Only",
+      "C": "A, C, D Only",
+      "D": "B, D Only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statements A, C, and D are true. Statement B is false because XML is designed for data transport and storage, whereas HTML/CSS are used for presentation."
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Match List I with List II (Fuzzy Set Operations):\nList I:\nA. Intersection\nB. Bounded Sum\nC. Bounded Difference\nD. Algebraic Sum\n\nList II:\nI. mu_A + mu_B - mu_A * mu_B\nII. max(0, mu_A - mu_B)\nIII. min(1, mu_A + mu_B)\nIV. min(mu_A, mu_B)",
+    "options": {
+      "A": "A-III, B-I, C-II, D-IV",
+      "B": "A-III, B-II, C-IV, D-I",
+      "C": "A-IV, B-III, C-II, D-I",
+      "D": "A-II, B-I, C-III, D-IV"
+    },
+    "correct_answer": "C",
+    "explanation": "Fuzzy Intersection = min(mu_A, mu_B) (IV). Bounded Sum = min(1, mu_A + mu_B) (III). Bounded Difference = max(0, mu_A - mu_B) (II). Algebraic Sum = mu_A + mu_B - mu_A * mu_B (I)."
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which of the following is NOT a characteristic of packet switching?",
+    "options": {
+      "A": "Data is broken into packets",
+      "B": "Each packet may take a different route",
+      "C": "Requires a dedicated path",
+      "D": "Supports dynamic routing"
+    },
+    "correct_answer": "C",
+    "explanation": "Circuit switching requires a dedicated physical path connection, whereas packet switching is connectionless/dynamic and does not reserve dedicated paths."
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "What is total swap time (Swap in + Swap out) for a 15 MB process with transfer rate 30 MBps and latency 12 ms?",
+    "options": {
+      "A": "1.024 sec",
+      "B": "1.00 sec",
+      "C": "0.512 sec",
+      "D": "12 sec"
+    },
+    "correct_answer": "A",
+    "explanation": "Transfer time for 1 swap = 15/30 = 0.5s. Swap in + out transfer = 0.5 * 2 = 1.0s. Latency for 2 swaps = 2 * 12ms = 0.024s. Total time = 1.0 + 0.024 = 1.024 seconds."
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Match List I with List II (Computer Graphics Projections):\nList I:\nA. Oblique Projection\nB. Cavalier Projection\nC. Cabinet Projection\nD. Orthographic Projection\n\nList II:\nI. Perpendicular lines foreshortened by half\nII. No foreshortening of perpendicular lines\nIII. Projectors perpendicular to projection plane\nIV. Projectors not perpendicular to plane",
+    "options": {
+      "A": "A-III, B-II, C-I, D-IV",
+      "B": "A-IV, B-II, C-I, D-III",
+      "C": "A-III, B-I, C-IV, D-II",
+      "D": "A-IV, B-I, C-III, D-II"
+    },
+    "correct_answer": "B",
+    "explanation": "Oblique projection has projectors non-perpendicular (IV). Cavalier projection has no foreshortening (angle 45 deg, scale 1) (II). Cabinet projection foreshortens depth lines by half (scale 0.5) (I). Orthographic projection has perpendicular projectors (III)."
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Match List I with List II:\nList I:\nA. RAID Level 2\nB. RAID Level 3\nC. RAID Level 5\nD. RAID Level 6\n\nList II:\nI. Block interleaved distributed parity\nII. P+Q redundancy scheme\nIII. Bit interleaved parity\nIV. Memory style error correcting code organization",
+    "options": {
+      "A": "A-IV, B-III, C-I, D-II",
+      "B": "A-III, B-IV, C-I, D-II",
+      "C": "A-I, B-III, C-IV, D-II",
+      "D": "A-II, B-IV, C-I, D-III"
+    },
+    "correct_answer": "A",
+    "explanation": "RAID 2 uses Hamming code ECC (IV). RAID 3 uses bit-interleaved parity (III). RAID 5 uses block-level distributed parity (I). RAID 6 uses dual P+Q parity (II)."
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is output of C code: void main() { int *i, a=12, b=2, c; c=(a=a+b, b=a/b, a=a*b, b=a-b); i=&c; printf(\"%d\", --(*i)); }",
+    "options": {
+      "A": "91",
+      "B": "90",
+      "C": "98",
+      "D": "92"
+    },
+    "correct_answer": "B",
+    "explanation": "Evaluating comma expression: a = 12+2=14; b = 14/2=7; a = 14*7=98; b = 98-7=91. So c = 91. Pointer i = &c. Decrementing --(*i) gives 90, which is printed."
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which of the following is NOT a requirement elicitation technique?",
+    "options": {
+      "A": "Interviews",
+      "B": "The use case approach",
+      "C": "FAST (Facilitated Application Specification)",
+      "D": "Data Flow Diagram"
+    },
+    "correct_answer": "D",
+    "explanation": "Data Flow Diagrams (DFDs) are modeling and analysis tools used to represent data flows after requirements have already been elicited."
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Given processes P1(9, arrival 0), P2(30, 0), P3(4, 0), P4(8, 2), P5(11, 6). Which process finishes second last in non-preemptive SJF and Round Robin (TQ=10)?",
+    "options": {
+      "A": "SJF: P4; RR: P4",
+      "B": "SJF: P5; RR: P4",
+      "C": "SJF: P4; RR: P3",
+      "D": "SJF: P5; RR: P5"
+    },
+    "correct_answer": "D",
+    "explanation": "SJF execution order: P3, P4, P1, P5, P2 -> finishing order ends with P5 then P2. RR execution order finishes with P5 then P2. Thus P5 finishes second last in both."
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which of the following are legal pointer arithmetic operations in C?\nA. pointer + number -> pointer\nB. pointer - number -> pointer\nC. pointer + pointer -> pointer\nD. pointer - pointer -> pointer\nE. pointer - pointer -> number",
+    "options": {
+      "A": "A, B, C Only",
+      "B": "A, B, D Only",
+      "C": "A, B Only",
+      "D": "A, B and E Only"
+    },
+    "correct_answer": "D",
+    "explanation": "In C, adding/subtracting an integer to/from a pointer (A, B) is valid. Subtracting two pointers yields an integer difference (E, ptrdiff_t). Adding two pointers or subtracting pointer from pointer to yield pointer is illegal."
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Arrange coupling types in increasing order from lowest (best) to highest (worst) coupling:\nA. Common Coupling\nB. Stamp Coupling\nC. Control Coupling\nD. External Coupling\nE. Content Coupling",
+    "options": {
+      "A": "E, A, C, B, D",
+      "B": "D, B, A, E, C",
+      "C": "B, C, D, A, E",
+      "D": "C, A, B, D, E"
+    },
+    "correct_answer": "C",
+    "explanation": "Coupling ranking from lowest (best) to highest (worst): Data -> Stamp (B) -> Control (C) -> External (D) -> Common (A) -> Content (E)."
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "In a relational database, which one of the following statements is CORRECT?",
+    "options": {
+      "A": "A relation with only two attributes is always in BCNF",
+      "B": "If all attributes are prime, relation is in BCNF",
+      "C": "Every relation has at least one non-prime attribute",
+      "D": "BCNF decomposition preserves functional dependencies"
+    },
+    "correct_answer": "A",
+    "explanation": "Any binary relation R(A, B) is guaranteed to be in Boyce-Codd Normal Form (BCNF) because any non-trivial FD must have a candidate key on the LHS."
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which statement is correct for Pthreads?",
+    "options": {
+      "A": "Refers to POSIX standard IEEE 1002.1c",
+      "B": "Defines API for thread creation only",
+      "C": "This is a specification for thread behavior and not its implementation",
+      "D": "OS like Solaris, Linux implement Pthreads except Tru64"
+    },
+    "correct_answer": "C",
+    "explanation": "Pthreads (POSIX threads) defines a standardized C language thread programming interface specification; implementation details are left to individual operating systems."
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Consider operators in C: A. &&, B. +=, C. >>, D. >=, E. ?:. Arrange in higher to lower precedence:",
+    "options": {
+      "A": "C, D, E, B, A",
+      "B": "C, A, D, E, B",
+      "C": "C, D, A, E, B",
+      "D": "D, C, A, B, E"
+    },
+    "correct_answer": "C",
+    "explanation": "Precedence order in C from highest to lowest: Bitwise Shift '>>' (C) -> Relational '>=' (D) -> Logical AND '&&' (A) -> Ternary Conditional '?:' (E) -> Assignment '+=' (B)."
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Arrange CPU instruction execution steps in correct sequence:\nA. Calculate effective address\nB. Fetch instruction from memory\nC. Decode instruction\nD. Fetch operands from memory\nE. Execute instruction",
+    "options": {
+      "A": "A, B, C, D, E",
+      "B": "B, A, D, A, E",
+      "C": "B, C, A, D, E",
+      "D": "C, B, A, D, E"
+    },
+    "correct_answer": "C",
+    "explanation": "Standard instruction cycle: Fetch instruction (B) -> Decode instruction (C) -> Calculate effective address (A) -> Fetch operands (D) -> Execute instruction (E)."
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which of the following is NOT a valid property over two fuzzy relations R_tilde and S_tilde for lambda-cut defuzzifications?",
+    "options": {
+      "A": "(R_tilde u S_tilde)_lambda = R_tilde_lambda u S_tilde_lambda",
+      "B": "(R_tilde n S_tilde)_lambda = R_tilde_lambda n S_tilde_lambda",
+      "C": "(R_tilde_bar)_lambda != (R_tilde_lambda)_bar except when lambda = 1",
+      "D": "For any lambda <= beta, R_tilde_beta subset R_tilde_lambda"
+    },
+    "correct_answer": "C",
+    "explanation": "Property C is invalid/false because complementation cut properties hold generally across the membership range, not exclusively at lambda = 1."
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Consider a DFA generating strings over {a, b, c}. Which description best describes language L?",
+    "options": {
+      "A": "L = (a* + b* + c*)+",
+      "B": "L = (a+b+c)*(abc)*(a+b+c)*",
+      "C": "L = {Strings starting with a, b, c and ending with c}",
+      "D": "L = {Set of strings having even count (including 0) of substring 'abc'}"
+    },
+    "correct_answer": "D",
+    "explanation": "Every occurrence of 'abc' cycles through 4 states back to initial accepting state q0. Thus, DFA accepts strings with an even number of 'abc' substrings."
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Match List I with List II (Chomsky Grammar Hierarchy):\nList I:\nA. Type 3 Grammar\nB. Type 2 Grammar\nC. Type 1 Grammar\nD. Type 0 Grammar\n\nList II:\nI. V -> (V u Sigma)*\nII. alpha V beta -> alpha (V u Sigma) beta\nIII. (V u Sigma)* -> (V u Sigma)*\nIV. V -> V Sigma | Sigma",
+    "options": {
+      "A": "A-IV, B-I, C-II, D-III",
+      "B": "A-I, B-II, C-III, D-IV",
+      "C": "A-IV, B-II, C-I, D-III",
+      "D": "A-III, B-I, C-II, D-IV"
+    },
+    "correct_answer": "C",
+    "explanation": "Type 3 (Regular) corresponds to IV. Type 2 (Context-Free) corresponds to I. Type 1 (Context-Sensitive) corresponds to II. Type 0 (Unrestricted) corresponds to III."
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider statements on DBMS schedules:\nA. Non-serial schedule conflict serializable if conflict-equivalent to serial schedule\nB. Non-serial schedule view serializable if view-equivalent to serial schedule\nC. Schedule serial if instructions interleaved chronologically\nD. Conflict-serializable schedule is also view-serializable\nChoose correct statements:",
+    "options": {
+      "A": "A, B, C, D",
+      "B": "A, B, C Only",
+      "C": "A, B, D Only",
+      "D": "B, C, D Only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statements A, B, and D are definitionally correct. Statement C is incorrect because a serial schedule executes transactions sequentially without interleaving."
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which statements are TRUE about encryption techniques?\nA. Symmetric cryptography key gen secrecy must be higher than decrypting function\nB. DES takes 64-bit block and 56-bit key\nC. Twofish works on variable key length up to 196 bits\nD. RC4 is a widely used stream cipher",
+    "options": {
+      "A": "B, C Only",
+      "B": "A, D Only",
+      "C": "A, C Only",
+      "D": "B, D Only"
+    },
+    "correct_answer": "D",
+    "explanation": "Statements B (DES 64-bit blocks, 56-bit key) and D (RC4 stream cipher) are true. Statement A is false (symmetric secrecy rests on key, not function secrecy). Twofish key length is up to 256 bits."
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In a Transportation Problem with m sources and n destinations, a feasible solution is non-degenerate if the number of positive allocations is:",
+    "options": {
+      "A": "m + n",
+      "B": "m * n",
+      "C": "m + n - 1",
+      "D": "m + n + 1"
+    },
+    "correct_answer": "C",
+    "explanation": "In an m x n Transportation Problem, a basic feasible solution is non-degenerate if and only if exactly m + n - 1 independent cells are allocated."
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which phase of compiler converts intermediate code representation into target machine code?",
+    "options": {
+      "A": "Code Generation",
+      "B": "Code Optimization",
+      "C": "Semantic Analysis",
+      "D": "Syntax Analysis"
+    },
+    "correct_answer": "A",
+    "explanation": "The Code Generator phase takes intermediate code (e.g. 3-address code) and maps it to target machine assembly or binary instruction set."
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "How many reflexive relations are possible on a set with n elements?",
+    "options": {
+      "A": "2^(n^2)",
+      "B": "2^(n^2 - n)",
+      "C": "2^(n)",
+      "D": "2^(n(n+1)/2)"
+    },
+    "correct_answer": "B",
+    "explanation": "A relation R on set A with n elements has n^2 pairs. A reflexive relation requires all n diagonal pairs (a,a) to be present. The remaining n^2 - n non-diagonal pairs can either be present or absent. Thus, total reflexive relations = 2^(n^2 - n)."
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which normal form deals with multivalued dependencies (MVD)?",
+    "options": {
+      "A": "2NF",
+      "B": "3NF",
+      "C": "4NF",
+      "D": "5NF"
+    },
+    "correct_answer": "C",
+    "explanation": "Fourth Normal Form (4NF) ensures that no non-trivial multivalued dependencies exist in the relation other than candidate key dependencies."
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "When developing a dynamic programming algorithm, what is the correct sequence of steps?\nA. Construct optimal solution\nB. Recursively define value of optimal solution\nC. Characterize structure of optimal solution\nD. Compute value in bottom-up fashion",
+    "options": {
+      "A": "B, C, A, D",
+      "B": "B, A, C, D",
+      "C": "C, B, A, D",
+      "D": "C, B, D, A"
+    },
+    "correct_answer": "D",
+    "explanation": "Dynamic Programming paradigm sequence: Characterize optimal solution structure (C) -> Recursively define value (B) -> Compute value bottom-up (D) -> Construct optimal solution (A)."
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which of the following are examples of line data encoding schemes?\nA. Non-Return to Zero (NRZ)\nB. Manchester Encoding\nC. Amplitude Modulation\nD. Hamming code\nE. Bipolar AMI",
+    "options": {
+      "A": "A, C and D Only",
+      "B": "A, B and D Only",
+      "C": "C, D and E Only",
+      "D": "A, B and E Only"
+    },
+    "correct_answer": "D",
+    "explanation": "NRZ, Manchester, and Bipolar AMI are line digital encoding schemes. Amplitude Modulation is an analog modulation scheme, while Hamming code is an error-correcting channel code."
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Arrange software testing types in order performed in SDLC:\nA. Integration testing\nB. Unit testing\nC. System Testing\nD. Acceptance Testing",
+    "options": {
+      "A": "B, C, A, D",
+      "B": "B, A, C, D",
+      "C": "C, B, A, D",
+      "D": "C, B, D, A"
+    },
+    "correct_answer": "B",
+    "explanation": "Standard V-model testing order: Unit testing (B) -> Integration testing (A) -> System testing (C) -> Acceptance testing (D)."
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Arrange sequence of constructing Huffman tree:\nA. Repeat until root formed\nB. Create leaf nodes\nC. Build priority queue\nD. Combine lowest frequency nodes",
+    "options": {
+      "A": "B, C, A, D",
+      "B": "D, B, A, C",
+      "C": "B, C, D, A",
+      "D": "C, A, B, D"
+    },
+    "correct_answer": "C",
+    "explanation": "Huffman construction sequence: Create leaf nodes (B) -> Insert into min-priority queue (C) -> Combine lowest frequency nodes (D) -> Repeat until single root node formed (A)."
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Let m and n be positive integers. Consider:\n(A) If n != 1, then m < mn\n(B) If k composite, then k = mn where 1 < m, n > k\n(C) If mn = 1, then m = 1 and n = 1\n(D) If k composite, then k = mn where 1 < m, n < k\nWhich are correct?",
+    "options": {
+      "A": "(A), (C), (D)",
+      "B": "(B), (C), (D)",
+      "C": "(A), (B)",
+      "D": "(A), (B), (C)"
+    },
+    "correct_answer": "A",
+    "explanation": "Statements A, C, and D are mathematically correct. Statement B is false because factors m and n of composite k must be strictly smaller than k (1 < m, n < k)."
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Arrange parsers in increasing order of power (least to most powerful):\nA. LR(0), B. LR(1), C. LALR(1), D. LL(0), E. SLR",
+    "options": {
+      "A": "LL(0) -> LR(0) -> SLR -> LR(1) -> LALR(1)",
+      "B": "SLR -> LR(0) -> LL(0) -> LR(1) -> LALR(1)",
+      "C": "LL(0) -> LR(0) -> SLR -> LALR(1) -> LR(1)",
+      "D": "LR(0) -> LL(0) -> SLR -> LR(1) -> LALR(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Hierarchy of parser power: LL(0) < LR(0) < SLR < LALR(1) < LR(1)."
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Sequence of CPU program to input data:\nA. Read status register\nB. Check flag bit\nC. Read data register\nD. Transfer data to memory",
+    "options": {
+      "A": "A, B, C, D",
+      "B": "B, A, C, D",
+      "C": "C, B, A, D",
+      "D": "A, C, B, D"
+    },
+    "correct_answer": "A",
+    "explanation": "Programmed I/O polling sequence: Read status register (A) -> Check flag bit (B) -> Read data register (C) -> Transfer data to memory (D)."
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Right sequence of suboperations performed in floating-point arithmetic pipeline:\nA. Align mantissas\nB. Add/subtract mantissas\nC. Normalize result\nD. Compare exponents",
+    "options": {
+      "A": "D, A, B, C",
+      "B": "D, B, A, C",
+      "C": "B, C, A, D",
+      "D": "B, C, D, A"
+    },
+    "correct_answer": "A",
+    "explanation": "Floating point pipeline stages: Compare exponents (D) -> Align mantissas (A) -> Add or subtract mantissas (B) -> Normalize result (C)."
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "For 3-Address Code (100: t1=y+2, 101: initial=x/t1, 102: limit=10, 103: if i>j goto 105, 104: goto 111, 105: if num>b goto 107, 106: goto 111, 107: num=limit-1, 108: b=y+2, 109: i=i-num, 110: goto 103, 111: j=i-num, 112: k=j+b), what are the LEADERS?",
+    "options": {
+      "A": "100,102,103,104,105,107,110",
+      "B": "100,103,105,107,111,112",
+      "C": "100,103,105,106,107,111",
+      "D": "100,103,104,105,106,107,111"
+    },
+    "correct_answer": "D",
+    "explanation": "Leaders are: 100 (first statement), target of jumps (103, 105, 107, 111), and statements following jumps (104, 106). Thus leaders are 100, 103, 104, 105, 106, 107, 111."
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following is the Optimized version for the given TAC in Q91?",
+    "options": {
+      "A": "Version A",
+      "B": "Version B",
+      "C": "Version C: 100: t1=y+2, 101: limit=10, 102: num=9, 103: b=t1, 104: if i>j goto 106...",
+      "D": "Version D"
+    },
+    "correct_answer": "C",
+    "explanation": "Constant propagation (limit-1 = 9) and common subexpression elimination (b = t1 = y+2) produces the optimized 3-address code block in Option C."
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following is the correct High level code for the TAC given in Q91?",
+    "options": {
+      "A": "High level code with if",
+      "B": "High level code with while ||",
+      "C": "High level code with while num>b",
+      "D": "init = x/(y+2); limit=10; while(i>j && num>b) { num = limit-1; b=y+2; i=i-num; } j = i - num; k = k+b;"
+    },
+    "correct_answer": "D",
+    "explanation": "The jump instructions 103 (if i>j goto 105; else goto 111) and 105 (if num>b goto 107; else goto 111) combined with 110 (goto 103) form a while loop with combined condition (i>j && num>b)."
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "What all blocks do Block 3 and Block 5 dominate in the Flow graph for the TAC given in Q91?",
+    "options": {
+      "A": "Block 3: 3; Block 5: 5",
+      "B": "Block 3: 3,4,5,6; Block 5: 5,6",
+      "C": "Block 3: 3,7; Block 5: 5,7",
+      "D": "Block 3: 3,4,7; Block 5: 5,6,7"
+    },
+    "correct_answer": "A",
+    "explanation": "Because multiple alternate execution paths exist leading to surrounding basic blocks, Block 3 dominates only Block 3 and Block 5 dominates only Block 5."
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following is the correct Flow graph adjacency matrix for the TAC given in Q91?",
+    "options": {
+      "A": "Adjacency Matrix A",
+      "B": "Adjacency Matrix B",
+      "C": "Adjacency Matrix C",
+      "D": "Adjacency Matrix D"
+    },
+    "correct_answer": "A",
+    "explanation": "Constructing the control flow graph matrix M[i][j] from basic block jump targets yields Matrix A."
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Disk Queue requests: 45, 81, 185, 33, 175, 99, 150, 77. Initial head position = 58. What is the 2nd request processed by C-LOOK (Right)?",
+    "options": {
+      "A": "81",
+      "B": "45",
+      "C": "77",
+      "D": "33"
+    },
+    "correct_answer": "A",
+    "explanation": "C-LOOK moving right from 58 visits higher requests in sorted order: 77 (1st), 81 (2nd), 99 (3rd), 150, 175, 185. The 2nd request processed is 81."
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Disk Queue requests: 45, 81, 185, 33, 175, 99, 150, 77. Initial position = 58. What is total head movement for C-SCAN moving right (disk range 0 to 199)?",
+    "options": {
+      "A": "327",
+      "B": "307",
+      "C": "525",
+      "D": "385"
+    },
+    "correct_answer": "D",
+    "explanation": "C-SCAN right from 58: moves 58 -> 199 (movement 141), resets 199 -> 0 (movement 199), then 0 -> 45 (movement 45). Total head movement = 141 + 199 + 45 = 385 cylinders."
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Disk Queue requests: 45, 81, 185, 33, 175, 99, 150, 77. Initial position = 58. What is the 2nd request processed by SCAN (LEFT)?",
+    "options": {
+      "A": "81",
+      "B": "15",
+      "C": "33",
+      "D": "175"
+    },
+    "correct_answer": "C",
+    "explanation": "SCAN moving left from 58 visits lower requests in decreasing order: 45 (1st request), 33 (2nd request). Thus 2nd request processed is 33."
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Disk Queue requests: 45, 81, 185, 33, 175, 99, 150, 77. Initial position = 58. What is total head movement for SSTF?",
+    "options": {
+      "A": "160",
+      "B": "124",
+      "C": "177",
+      "D": "240"
+    },
+    "correct_answer": "C",
+    "explanation": "SSTF sequence from 58: 45 (|13|), 33 (|12|), 77 (|44|), 81 (|4|), 99 (|18|), 150 (|51|), 175 (|25|), 185 (|10|). Total head movement = (58 - 33) + (185 - 33) = 25 + 152 = 177 cylinders."
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Disk Queue requests: 45, 81, 185, 33, 175, 99, 150, 77. Initial position = 58. What is total head movement for FCFS?",
+    "options": {
+      "A": "536",
+      "B": "594",
+      "C": "647",
+      "D": "700"
+    },
+    "correct_answer": "C",
+    "explanation": "FCFS services in arrival order: 58->45(13) -> 81(36) -> 185(104) -> 33(152) -> 175(142) -> 99(76) -> 150(51) -> 77(73). Summing distances = 13 + 36 + 104 + 152 + 142 + 76 + 51 + 73 = 647 cylinders."
+  }
+]

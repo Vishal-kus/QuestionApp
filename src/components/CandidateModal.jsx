@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { User, Clock, Award, CheckCircle2, ShieldAlert, X } from 'lucide-react';
 
-export default function CandidateModal({ isOpen, onClose, onStartTest }) {
+export default function CandidateModal({ isOpen, onClose, onStartTest, paper }) {
   const [name, setName] = useState('');
   const [agreed, setAgreed] = useState(true);
   const [error, setError] = useState('');
@@ -22,6 +22,14 @@ export default function CandidateModal({ isOpen, onClose, onStartTest }) {
     setError('');
     onStartTest(trimmed);
   };
+
+  const paperTitle = paper?.title || 'UGC NET 2025 Mock Test';
+  const paperSubject = paper?.subject || 'Computer Science & Applications (Paper II)';
+  const paperDuration = paper?.durationMinutes 
+    ? (paper.durationMinutes >= 60 ? `${paper.durationMinutes / 60} Hours (${paper.durationMinutes} Mins)` : `${paper.durationMinutes} Mins`)
+    : '2 Hours';
+  const paperQuestions = paper?.totalQuestions || 100;
+  const paperMarks = paper?.totalMarks || (paperQuestions * 2);
 
   return (
     <div style={{
@@ -73,7 +81,7 @@ export default function CandidateModal({ isOpen, onClose, onStartTest }) {
                 Candidate Verification
               </h3>
               <p style={{ fontSize: '11px', margin: 0, opacity: 0.85 }}>
-                UGC NET 2025 Computer Based Test (CBT)
+                {paperTitle}
               </p>
             </div>
           </div>
@@ -104,7 +112,7 @@ export default function CandidateModal({ isOpen, onClose, onStartTest }) {
             marginBottom: '20px'
           }}>
             <div style={{ fontSize: '13px', fontWeight: 700, color: '#1e293b', marginBottom: '8px' }}>
-              Paper: UGC NET 2025 - Computer Science & Applications
+              Paper: {paperTitle}
             </div>
             <div style={{
               display: 'grid',
@@ -115,15 +123,15 @@ export default function CandidateModal({ isOpen, onClose, onStartTest }) {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
                 <Clock size={13} color="#0284c7" />
-                <span><strong>Duration:</strong> 2 Hours</span>
+                <span><strong>Duration:</strong> {paperDuration}</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
                 <Award size={13} color="#16a34a" />
-                <span><strong>Questions:</strong> 100</span>
+                <span><strong>Questions:</strong> {paperQuestions}</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
                 <CheckCircle2 size={13} color="#7c3aed" />
-                <span><strong>Marking:</strong> +2 / 0</span>
+                <span><strong>Marks:</strong> {paperMarks} (+2 / 0)</span>
               </div>
             </div>
           </div>

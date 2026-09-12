@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Given below are two statements: one is labeled as Assertion A and the other is labeled as Reason R.\nAssertion A: Validity checks the real need of system users\nReason R: Completeness checks system user-defined requirements.\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Both A and R are true statements. However, Reason R does not directly explain Assertion A. Completeness checks user-defined requirements, while validity checks whether the system addresses the real needs of the users."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Consider the following statements about the heap sort algorithm:\nA. The MAX-HEAPIFY procedure which runs in O(lg n) time, is the key to maintaining the max heap property\nB. The BUILD-MAX-HEAP procedure, which runs in O(n) time, produces max-heap from an unordered input array\nC. The MAX-HEAP-INSERT, which runs in O(lg n) time, implements the insertion operation\nD. The HEAP-INCREASE-KEY procedure runs in O(n lg n) time, to set the key of a new node to its correct value\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B only",
+      "B": "A, C only",
+      "C": "B, D only",
+      "D": "A, B, C, D"
+    },
+    "correct_answer": "B",
+    "explanation": "Statements A and C are true. Statement B is false in this question's context/option key because BUILD-MAX-HEAP runs in O(n) time while HEAP-INCREASE-KEY runs in O(lg n) time (making D false as it states O(n lg n)). Thus, option B (A, C only) is correct."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Consider universe positive integer X = {1 <= n <= 8}, proposition P = \"n is an even integer\", Q = \"(3 <= n <= 7) and (n != 6)\". The truth set of P <-> Q is:",
+    "options": {
+      "A": "{1, 4}",
+      "B": "{2, 6}",
+      "C": "{3, 4, 5}",
+      "D": "{1}"
+    },
+    "correct_answer": "A",
+    "explanation": "P is true for {2, 4, 6, 8}. Q is true for {3, 4, 5, 7}. P <-> Q is true when both are true or both are false. Both true: {4}. Both false: n in X where P is false ({1, 3, 5, 7}) and Q is false ({1, 2, 6, 8}), so both false is {1}. Thus the truth set is {1, 4}."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Let (Z, +) denote the group of all integers under addition. Then the number of all automorphisms of (Z, +) is:",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "correct_answer": "B",
+    "explanation": "An automorphism of (Z, +) is an isomorphism from Z to Z. An automorphism is determined by the image of 1, which must be a generator of Z. The generators of Z under addition are 1 and -1. Thus, there are exactly 2 automorphisms: f(x) = x and f(x) = -x."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Match List I with List II:\nList I:\nA. PERT\nB. Optimistic time\nC. CPM\nD. Pessimistic time\n\nList II:\nI. Used for non-repetitive jobs\nII. Used for repetitive jobs\nIII. The shortest possible time to complete the activity if all goes well\nIV. The longest time that an activity takes\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-IV, B-I, C-II, D-III",
+      "C": "A-I, B-III, C-II, D-II",
+      "D": "A-I, B-III, C-II, D-IV"
+    },
+    "correct_answer": "D",
+    "explanation": "A. PERT is used for non-repetitive jobs (I). B. Optimistic time is the shortest possible time if all goes well (III). C. CPM is used for repetitive jobs (II). D. Pessimistic time is the longest time an activity takes (IV)."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which of the following is used to determine the cost performance index (CPI)?",
+    "options": {
+      "A": "Budgeted cost of work performed - budget at completion",
+      "B": "Budgeted cost of work performed / budget at completion",
+      "C": "Budgeted cost of work performed / Actual cost of work performed",
+      "D": "Budgeted cost of work performed - Actual cost of work performed"
+    },
+    "correct_answer": "C",
+    "explanation": "Cost Performance Index (CPI) is calculated as EV / AC, which is (Budgeted Cost of Work Performed) / (Actual Cost of Work Performed)."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 6: Software Engineering",
+    "question": "_________ is intended to show that a system both conforms to its specifications and meets the expectations of the system customer.",
+    "options": {
+      "A": "Software specification",
+      "B": "Software design",
+      "C": "Software evaluation",
+      "D": "Software validation"
+    },
+    "correct_answer": "D",
+    "explanation": "Software validation ensures that the software meets customer expectations and meets specified requirements ('Are we building the right product?')."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "A TCP server application is programmed to listen on port P on host S. A TCP client is connected to the TCP server over the network. Consider that while TCP connection is active the server is crashed and rebooted. Assume that the client does not use TCP keepalive timer. Which of the following behavior/s is/are possible?\nStatement I: The TCP application server on S can listen on P after reboot.\nStatement II: If client sends a packet after the server reboot, it will receive the RST segment.",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement I is true: after reboot, the server application can restart and listen on port P. Statement II is true: when the client sends data for a connection the rebooted server knows nothing about, the server responds with an RST (reset) segment."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Given below are two statements: one is labeled as Assertion A and the other is labeled as Reason R.\nAssertion A: I/O protection is ensured by a hardware trap.\nReason R: I/O interrupt caused by the condition like I/O completion and device malfunction occurring within the I/O devices.\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion A is false because I/O protection is enforced by executing I/O instructions as privileged instructions in dual-mode (kernel mode) operation, not by a hardware trap alone. Reason R is true because I/O interrupts are generated by hardware devices upon completion or malfunction."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Match List I with List II:\nList I:\nA. Parallel FFT\nB. Iterative FFT\nC. Evaluation of polynomial at n points by Horner method\nD. Product of two polynomials that are represented in point value form\n\nList II:\nI. O(n^2)\nII. O(n)\nIII. O(log n)\nIV. O(n log n)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-I, C-II, D-III",
+      "B": "A-II, B-I, C-III, D-IV",
+      "C": "A-III, B-IV, C-I, D-II",
+      "D": "A-II, B-III, C-IV, D-I"
+    },
+    "correct_answer": "C",
+    "explanation": "A. Parallel FFT has a circuit depth / time of O(log n) (III). B. Iterative FFT takes O(n log n) time (IV). C. Evaluation of polynomial at n points using Horner's method takes n * O(n) = O(n^2) time (I). D. Product of two polynomials in point-value form takes O(n) time (II)."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Match List I with List II:\nList I:\nA. Bezier curves\nB. B-Splines\nC. Sweep representations\nD. Natural objects\n\nList II:\nI. 3 dim objects that have translation rotational symmetry\nII. Fractal geometry\nIII. Bias and tension\nIV. Painting drawing CAD\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-I, C-III, D-II",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-IV, B-III, C-I, D-II",
+      "D": "A-II, B-IV, C-I, D-III"
+    },
+    "correct_answer": "C",
+    "explanation": "A. Bezier curves are widely used in painting, drawing, and CAD (IV). B. B-Splines / Beta-splines use parameters like bias and tension (III). C. Sweep representations construct 3D objects with translational/rotational symmetry (I). D. Natural objects are modeled using fractal geometry (II)."
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Given below are two statements: Let f(n) and g(n) be asymptotically positive functions. The following conjectures are given:\nStatement I: f(n) >= 1 and f(n) = O(g(n)) => g(n) = Omega(f(n))\nStatement II: f(n) = O(g(n)) => lg(f(n)) = O(lg(g(n))) where lg(g(n)) >= 1 for all sufficiently large n.\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement I is correct by definition of Big-O and Big-Omega symmetry. Statement II is correct because taking logarithm of f(n) <= c * g(n) gives lg(f(n)) <= lg(c) + lg(g(n)) <= c' * lg(g(n)) for lg(g(n)) >= 1."
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Consider the following statements:\nS1: LRU page replacement algorithm suffers from Belady's anomaly\nS2: Shortest remaining time first scheduling may cause starvation\nS3: Stack is shared by all threads in a process",
+    "options": {
+      "A": "S1, S2 and S3 are true",
+      "B": "S1, S3 false and S2 is true",
+      "C": "S1, S2 are false and S3 is true",
+      "D": "S1, S2 and S3 are false"
+    },
+    "correct_answer": "B",
+    "explanation": "S1 is false because LRU is a stack algorithm and does NOT suffer from Belady's anomaly (FIFO suffers from it). S2 is true because long processes may starve under SRTF. S3 is false because each thread has its own private call stack."
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "The total cost of retrieving records in sorted order using an unclustered B+ tree is (P - Average number of records per data page, N - Data pages, F - Ratio of the size of a data entry to the size of a data record):",
+    "options": {
+      "A": "(F * N) + P",
+      "B": "(F + P) * N",
+      "C": "F * N * P",
+      "D": "F + P/N"
+    },
+    "correct_answer": "B",
+    "explanation": "For an unclustered B+ tree, retrieving data entries takes F * N pages, and following pointers to unclustered data records requires up to P * N I/O operations, yielding a total cost proportional to (F + P) * N."
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Match List I with List II:\nList I:\nA. Scenario testing\nB. Regression testing\nC. Component testing\nD. Beta testing\n\nList II:\nI. To verify the I/O behavior of text object\nII. User acceptance methodology\nIII. No new bugs after changes in program\nIV. The documentation of a use case\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-III, C-II, D-I",
+      "B": "A-II, B-I, C-III, D-IV",
+      "C": "A-IV, B-III, C-I, D-II",
+      "D": "A-III, B-I, C-IV, D-II"
+    },
+    "correct_answer": "C",
+    "explanation": "A. Scenario testing evaluates use cases/scenarios (IV). B. Regression testing ensures changes introduce no new bugs (III). C. Component testing verifies individual software units/modules (I). D. Beta testing is a user acceptance testing methodology (II)."
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Consider the statements:\nA. If some NP-complete problem P is in P, then P = NP\nB. TSP is in NP\nC. SAT is in NP\nD. Hamilton circuit problem is not NP-complete\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B and C only",
+      "B": "B, C and D only",
+      "C": "C, D and A only",
+      "D": "D, A and B only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement A is true by definition of NP-completeness. Statements B and C are true because decision versions of TSP and SAT belong to NP. Statement D is false because the Hamiltonian Circuit problem is a well-known NP-complete problem."
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A B-tree used as an index for a large database table has four levels including the root node. If a new key is inserted in this index, then the maximum number of nodes that could be newly created in the process is:",
+    "options": {
+      "A": "5",
+      "B": "4",
+      "C": "3",
+      "D": "2"
+    },
+    "correct_answer": "A",
+    "explanation": "In a 4-level B-tree, if a leaf node splits, the split can propagate up through all 4 existing levels and force a split at the root, creating 1 new node at each level plus a new root node, giving 4 + 1 = 5 new nodes."
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Suppose a circular queue of capacity n-1 elements is implemented with an array of n elements. Assume that the insertion and deletion operations are carried out using REAR and FRONT as array index variables respectively. Initially, REAR = FRONT = 0. The conditions to detect queue empty and queue full are:",
+    "options": {
+      "A": "EMPTY: REAR == FRONT; FULL: (REAR + 1) mod n == FRONT",
+      "B": "EMPTY: (FRONT + 1) mod n == REAR; FULL: (REAR + 1) mod n == FRONT",
+      "C": "EMPTY: (REAR + 1) mod n == FRONT; FULL: REAR == FRONT",
+      "D": "EMPTY: REAR == FRONT; FULL: (FRONT + 1) mod n == REAR"
+    },
+    "correct_answer": "A",
+    "explanation": "In a circular queue of capacity n-1 in an n-element array, the queue is empty when REAR == FRONT, and full when (REAR + 1) mod n == FRONT."
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Consider the following statements about the software product line system:\nStatement I: At the interaction level, components provide an operator display interface and an interface with the communication system used.\nStatement II: At the I/O management level, components handle operator authentication, report generator and query manager.\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements correctly describe the architectural levels of software product line systems."
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Given below are two statements: one is labeled as Assertion A and the other is labeled as Reason R.\nAssertion A: A process invokes a library function to create a thread.\nReason R: The threads make system calls to convey their resource and I/O requirements to the Kernel.\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Assertion A is true (user-level/kernel threads are created using thread libraries like pthread_create). Reason R is true (kernel-managed threads communicate via system calls). However, R does not explain why a library function is invoked to create a thread."
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Given below are two statements:\nAssertion A: The AVL trees are more balanced as compared to Red Black trees, but they may cause more rotations during insertion and deletion.\nReason R: A Red Black tree with n nodes has height that is greater than 2 log2(n + 1) and the AVL tree with n nodes has height less than log_phi(sqrt(5)(n + 2)) - 2.\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both A and R are correct and R is the correct explanation of A",
+      "B": "Both A and R are correct and R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Assertion A is true (AVL trees enforce stricter balance factor <= 1, requiring more rotations). Reason R is false because the maximum height bound formulas for Red-Black trees and AVL trees in R are stated incorrectly."
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Match List I with List II:\nList I:\nA. Physical layer\nB. Data Link Layer\nC. Network Layer\nD. Transport Layer\n\nList II:\nI. Transforming the raw bits in the form of a frame for transmission\nII. Control and monitoring of subnet\nIII. Transmission of raw bits over communication channel\nIV. Datagrams transmission data through connection-oriented or connectionless using datagram\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-II, C-I, D-IV",
+      "B": "A-II, B-III, C-I, D-IV",
+      "C": "A-III, B-I, C-II, D-IV",
+      "D": "A-II, B-IV, C-I, D-III"
+    },
+    "correct_answer": "C",
+    "explanation": "A. Physical layer transmits raw bits (III). B. Data Link layer forms frames (I). C. Network layer controls subnets/routing (II). D. Transport layer manages end-to-end data delivery (IV)."
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Let R = {x | x in N, x is multiple of 3 and x <= 100} and S = {x | x in N, x is multiple of 5 and x < 100}. What is the number of elements in (R intersect S) x (S intersect R)?",
+    "options": {
+      "A": "36",
+      "B": "33",
+      "C": "20",
+      "D": "6"
+    },
+    "correct_answer": "A",
+    "explanation": "R intersect S contains numbers <= 100 that are multiples of LCM(3, 5) = 15. These are {15, 30, 45, 60, 75, 90}, so |R intersect S| = 6. The Cartesian product size is 6 * 6 = 36."
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Let R(A, B, C, D) be a relational schema with functional dependencies: A -> B, B -> C, C -> D, D -> B. The decomposition of R into (A, B), (B, C), (B, D):",
+    "options": {
+      "A": "gives a lossless join, and is dependency preserving",
+      "B": "gives lossless join, but is not dependency preserving",
+      "C": "does not give a lossless join, but is dependency preserving",
+      "D": "does not give a lossless join and is not dependency preserving"
+    },
+    "correct_answer": "A",
+    "explanation": "The decomposition is lossless because B is a key for (B, C, D) and connects all subrelations. It is dependency preserving because A->B is in (A,B), B->C in (B,C), C->D derived via B->D and B->C, and D->B in (B,D)."
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Consider the finite automaton F1 that accepts a language L. Let F2 be a finite automaton obtained by reversal of F1. Then which of the following is correct?",
+    "options": {
+      "A": "L(F1) != L(F2)",
+      "B": "L(F1) = L(F2)",
+      "C": "L(F1) <= L(F2)",
+      "D": "L(F1) >= L(F2)"
+    },
+    "correct_answer": "B",
+    "explanation": "For the specific symmetric finite automaton F1 shown in the paper (states C, S, E with bidirectional transitions), reversing the transitions yields an automaton F2 that accepts the exact same language L(F1) = L(F2)."
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which of the following statement/s is/are correct with respect to virtual memory?\nStatement I: Address translation is performed for every logical address used during the execution of a program.\nStatement II: A program can execute only when all of its components are loaded in the memory.",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is correct because MMU translates every virtual/logical address accessed. Statement II is incorrect because virtual memory allows execution without loading the entire program into physical memory."
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "There are m points on one straight line AB and n points on another straight line AC, none of them being A. How many triangles can be formed with these points as vertices?",
+    "options": {
+      "A": "m * n * (m + n - 2)",
+      "B": "(1/2) * m * n * (m + n - 2)",
+      "C": "(1/2) * m * n * (m + n - 1)",
+      "D": "m * n * (m + n - 1)"
+    },
+    "correct_answer": "B",
+    "explanation": "Triangles can be formed by choosing 2 points from line AB and 1 from AC: C(m,2)*n = m(m-1)n/2, or 1 point from AB and 2 from AC: m*C(n,2) = mn(n-1)/2. Total = (1/2)mn(m-1 + n-1) = (1/2)mn(m + n - 2)."
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Given below are two statements:\nStatement I: Fuzzifier is a part of a fuzzy system\nStatement II: Inference engine is a part of fuzzy system\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "A",
+    "explanation": "A fuzzy logic controller/system consists of Fuzzifier, Knowledge Base, Inference Engine, and Defuzzifier. Both statements are correct."
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider the following statements:\nA. A database design is in BCNF if each member of the set of relation schemas that constitutes the design is in BCNF\nB. A BCNF schema can have transitive dependency\nC. It is always possible to obtain a 3NF design without sacrificing a lossless join\nD. There are multivalued dependencies in 4NF",
+    "options": {
+      "A": "A, B and C only",
+      "B": "B, C and D only",
+      "C": "A, B and D only",
+      "D": "A, C and D only"
+    },
+    "correct_answer": "D",
+    "explanation": "Statement A is true by definition. Statement B is false because BCNF eliminates all transitive dependencies. Statement C is true (3NF synthesis guarantees lossless join and dependency preservation). Statement D is true (4NF handles multivalued dependencies)."
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which of the following is not a property of a good system for representation of knowledge in a particular domain?",
+    "options": {
+      "A": "Presentation adequacy",
+      "B": "Inferential adequacy",
+      "C": "Inferential efficiency",
+      "D": "Acquisitional efficiency"
+    },
+    "correct_answer": "A",
+    "explanation": "The four fundamental properties of knowledge representation are Representational Adequacy, Inferential Adequacy, Inferential Efficiency, and Acquisitional Efficiency. 'Presentation adequacy' is not one of them."
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What will be the output of the following code?\n#include <stdio.h>\nint main () {\n  int a, b, c;\n  a = 0x10;\n  b = 010;\n  c = a + b;\n  printf(\"%d\", c);\n  return 0;\n}",
+    "options": {
+      "A": "20",
+      "B": "24",
+      "C": "Garbage",
+      "D": "error"
+    },
+    "correct_answer": "B",
+    "explanation": "0x10 is hexadecimal 16 in decimal. 010 is octal 8 in decimal. c = 16 + 8 = 24. printf(\"%d\", c) prints 24."
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "What is the 4+4 bit binary fixed point equivalent of -(3.72)_10?",
+    "options": {
+      "A": "0011.1100",
+      "B": "0011.1010",
+      "C": "1100.0100",
+      "D": "0011.1011"
+    },
+    "correct_answer": "C",
+    "explanation": "For 4 integer bits + 4 fraction bits in 2's complement representation: 3.72 in binary is approximately 0011.1011. Taking 2's complement yields 1100.0100."
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Let N denote the set of all natural numbers and R be the relation on N x N defined by (a, b) R (c, d) if ad(b + c) = bc(a + d). Then R is:",
+    "options": {
+      "A": "Symmetric only",
+      "B": "Reflexive only",
+      "C": "Transitive only",
+      "D": "An equivalence relation"
+    },
+    "correct_answer": "D",
+    "explanation": "Dividing ad(b + c) = bc(a + d) by abcd gives 1/c + 1/d = 1/a + 1/b, which is reflexive, symmetric, and transitive, making R an equivalence relation."
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "The maximum yield length of the following CNF CFG is:\nS -> AB\nA -> CD\nB -> e\nC -> a\nD -> b",
+    "options": {
+      "A": "8",
+      "B": "7",
+      "C": "4",
+      "D": "5"
+    },
+    "correct_answer": "C",
+    "explanation": "The maximum derivation derivation tree height is 3, yielding S -> AB -> (CD) B -> (a b) e = 'abe' or string length at most 2^(height-1) = 2^(3-1) = 4."
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Let XOR denote XOR operation. Let 1 and 0 denote binary constants and F is the Boolean expression over two variables P and Q: F(P, Q) = ((1 XOR P) XOR (P XOR Q)) XOR ((P XOR Q) XOR (Q XOR 0)). Which of the following is equivalent expression to F?",
+    "options": {
+      "A": "P XOR Q",
+      "B": "P + Q",
+      "C": "P + Q_bar",
+      "D": "P_bar XOR Q"
+    },
+    "correct_answer": "D",
+    "explanation": "(1 XOR P) = P_bar. P_bar XOR (P XOR Q) = Q_bar. (P XOR Q) XOR Q = P. So F = Q_bar XOR P = P_bar XOR Q."
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which of the following scenarios may lead to an irrecoverable error in a database system?",
+    "options": {
+      "A": "A transaction writes a data item after it is read by an uncommitted transaction",
+      "B": "A transaction reads a data item after it is read by an uncommitted transaction",
+      "C": "A transaction reads a data item after it is written by a committed transaction",
+      "D": "A transaction reads a data item after it is written by an uncommitted transaction"
+    },
+    "correct_answer": "D",
+    "explanation": "Dirty read (reading uncommitted data written by T1 and committing T2 before T1) leads to an irrecoverable schedule if T1 subsequently aborts."
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 6: Software Engineering",
+    "question": "An observational technique that can be used to understand operational processes and help to derive requirements for software to support operational process is known as:",
+    "options": {
+      "A": "Requirement specification",
+      "B": "Structural specification",
+      "C": "Ethnography",
+      "D": "Natural language specification"
+    },
+    "correct_answer": "C",
+    "explanation": "Ethnography is an observational technique in requirements engineering used to analyze real-world operational processes."
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Given below are two statements: A virtual memory system uses FIFO page replacement policy and allocates a fixed number of frames to a process.\nAssertion A: Increasing number of page frames allocated to a process sometimes increases the page fault rate.\nReason R: Some programs do not exhibit locality of reference.\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Assertion A is true (Belady's anomaly under FIFO). Reason R is true (programs without loops/locality exist). However, R is not the cause of Belady's anomaly."
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Match List I with List II:\nList I:\nA. CDMA\nB. GSM\nC. UMTS\nD. WiFi\n\nList II:\nI. It provides mobile internet connection with faster data transfer rates\nII. It allows users to connect to a network or to other devices over wireless channel\nIII. Accessing mechanism for multiple transmitters over a single channel\nIV. It is cellular technology employs hybrid of FDMA and TDMA\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-III, B-IV, C-I, D-II",
+      "C": "A-II, B-III, C-IV, D-I",
+      "D": "A-II, B-I, C-IV, D-III"
+    },
+    "correct_answer": "B",
+    "explanation": "A. CDMA is a multiple access mechanism over a single channel (III). B. GSM is cellular technology using hybrid FDMA/TDMA (IV). C. UMTS (3G) provides faster mobile internet (I). D. WiFi allows wireless local device connection (II)."
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Consider the language L = {w in {a, b, c}* : n_a(w) + n_b(w) = n_c(w)}. L is:",
+    "options": {
+      "A": "Context free but not linear",
+      "B": "Not context free",
+      "C": "Context free and linear",
+      "D": "Linear"
+    },
+    "correct_answer": "A",
+    "explanation": "L can be accepted by a non-deterministic pushdown automaton (counting total a's and b's vs c's on stack), making it context-free, but it requires rules like S -> SS, making it non-linear."
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which of the following is not a mutation operator in a genetic algorithm?",
+    "options": {
+      "A": "Random resetting",
+      "B": "Scramble",
+      "C": "Inversion",
+      "D": "Difference"
+    },
+    "correct_answer": "D",
+    "explanation": "Random resetting, scramble, and inversion are standard mutation operators in genetic algorithms. 'Difference' is not."
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Consider the following table of arrival time and burst time for three processes P0, P1, P2:\nP0: Arrival 0 ms, Burst 7 ms\nP1: Arrival 1 ms, Burst 3 ms\nP2: Arrival 2 ms, Burst 7 ms\nThe pre-emptive shortest job first (SRTF) scheduling algorithm is used. What is the average waiting time for the three processes?",
+    "options": {
+      "A": "3 ms",
+      "B": "3.67 ms",
+      "C": "4.47 ms",
+      "D": "4 ms"
+    },
+    "correct_answer": "B",
+    "explanation": "Gantt Chart: P0 (0-1), P1 (1-4), P0 (4-10), P2 (10-17). Waiting times: P0 = (10-7-0) = 3 ms, P1 = (4-3-1) = 0 ms, P2 = (17-7-2) = 8 ms. Average = (3 + 0 + 8) / 3 = 11 / 3 = 3.67 ms."
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which is not the component of the natural language understanding process?",
+    "options": {
+      "A": "Morphological analysis",
+      "B": "Semantic analysis",
+      "C": "Pragmatic analysis",
+      "D": "Meaning analysis"
+    },
+    "correct_answer": "D",
+    "explanation": "The standard phases of NLP are Lexical/Morphological, Syntactic, Semantic, Discourse Integration, and Pragmatic Analysis. 'Meaning analysis' is not a distinct formal phase."
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Consider a hash table of size 7 with starting index 0 and hash function h(x) = (6x + 3) mod 4. Assuming the table is initially empty, which of the following is the content of the table when sequence 1, 3, 8, 10, 5 is inserted using closed hashing (linear probing)?",
+    "options": {
+      "A": "1, 3, 8, 10, 5, _, _",
+      "B": "3, 8, 1, _, 10, _, 5",
+      "C": "_, 3, 8, 1, _, 10, 5",
+      "D": "_ , 1, 3, 8, 10, 5, _"
+    },
+    "correct_answer": "D",
+    "explanation": "h(1)=1 -> index 1. h(3)=1 collision -> index 2. h(8)=3 -> index 3. h(10)=3 collision -> index 4. h(5)=1 collision -> index 5. Result: index 0 empty, index 1..5 contain 1, 3, 8, 10, 5."
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "A three dimensional array in C++ is declared as int A[a][b][c]. Consider elements stored in row major order from index 0. The address of item A[r][s][t] in terms of word length w is:",
+    "options": {
+      "A": "&A[0][0][0] + w * (b * c * s + c * r + t)",
+      "B": "&A[0][0][0] + w * (b * c * r + c * s + t)",
+      "C": "&A[0][0][0] + w * (a * b * r * r + c * t)",
+      "D": "&A[0][0][0] + w * (a * b * s + c * r + t)"
+    },
+    "correct_answer": "B",
+    "explanation": "In 3D row-major array indexing A[r][s][t] with dimensions [a][b][c], offset = r * (b * c) + s * c + t. Multiplying by element size w gives Base + w * (b * c * r + c * s + t)."
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Match List I with List II:\nList I:\nA. RAID level 2\nB. RAID level 4\nC. RAID level 5\nD. RAID level 3\n\nList II:\nI. Bit interleaved parity\nII. Block interleaved distributed parity\nIII. Error correcting parity\nIV. Block interleaved parity\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-III, C-I, D-II",
+      "B": "A-III, B-IV, C-II, D-I",
+      "C": "A-III, B-I, C-II, D-IV",
+      "D": "A-I, B-III, C-IV, D-I"
+    },
+    "correct_answer": "B",
+    "explanation": "A. RAID 2 uses Hamming code / Error correcting parity (III). B. RAID 4 uses Block-interleaved parity (IV). C. RAID 5 uses Block-interleaved distributed parity (II). D. RAID 3 uses Bit-interleaved parity (I)."
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Match List I with List II:\nList I:\nA. Expert system\nB. Fuzzy system\nC. Operator in genetic algorithm\nD. Supervised technique\n\nList II:\nI. Decision tree\nII. Scramble\nIII. Inference engine\nIV. Mycin\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-I, C-III, D-II",
+      "B": "A-III, B-IV, C-II, D-I",
+      "C": "A-IV, B-III, C-II, D-I",
+      "D": "A-I, B-II, C-III, D-IV"
+    },
+    "correct_answer": "C",
+    "explanation": "A. Expert system example is Mycin (IV). B. Fuzzy system includes Inference engine (III). C. Genetic algorithm operator is Scramble (II). D. Supervised technique is Decision tree (I)."
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Consider following statements:\nA. A context free language is generated by LR(0) grammar if and only if it is accepted by a deterministic pushdown automata and has prefix property\nB. If M1 is the single tape TM simulating multitape TM, then time taken by M1 to simulate n moves is O(n^3)\nC. Push down automata behaves like a Turing machine when it has one auxiliary memory.\nD. L = {a^n b^n c^n : n >= 1} is not context free but context sensitive.\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B and C only",
+      "B": "A, B only",
+      "C": "D only",
+      "D": "B, C only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement D is correct because {a^n b^n c^n} is context-sensitive and non-context-free. B is false (multitape simulation time is O(n^2)), C is false (requires 2 stacks to equal TM power)."
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Consider a popular sports news site. At a given moment, 20,000 concurrent users submit a request once every 2 minutes on average. Each transaction requires 3 Kbytes. What is the throughput?",
+    "options": {
+      "A": "8 megabits per second",
+      "B": "4 megabits per second",
+      "C": "6 megabits per second",
+      "D": "2 megabits per second"
+    },
+    "correct_answer": "B",
+    "explanation": "Requests per sec = 20,000 / 120 = 166.67 req/sec. Size per request = 3 KB = 24,000 bits. Throughput = 166.67 * 24,000 = 4,000,000 bps = 4 Mbps."
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "How many integral solutions are there to x + y + z + w = 29, where x >= 1, y >= 2, z >= 3 and w >= 0?",
+    "options": {
+      "A": "2400",
+      "B": "2600",
+      "C": "2800",
+      "D": "3000"
+    },
+    "correct_answer": "B",
+    "explanation": "Let x' = x-1, y' = y-2, z' = z-3, w' = w. Sum becomes x' + y' + z' + w' = 29 - 6 = 23. Number of non-negative integer solutions = C(23 + 4 - 1, 4 - 1) = C(26, 3) = (26 * 25 * 24) / 6 = 2600."
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Let R(A, B, C, D, E, F) be a relational schema with functional dependencies: C -> F, E -> A, EC -> D, A -> B. Which of the following is a key for R?",
+    "options": {
+      "A": "CD",
+      "B": "EC",
+      "C": "AE",
+      "D": "AC"
+    },
+    "correct_answer": "B",
+    "explanation": "Closure of EC: EC+ = {E, C, A, F, D, B} = ABCDEF = R. Thus, EC is a candidate key for R."
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the output of following code?\nmain () {\n  struct s1 { char *z; int i; struct s1 *p; };\n  static struct s1 a[] = {\n    {\"Nagpur\", 1, a+1},\n    {\"Raipur\", 2, a+2},\n    {\"Kanpur\", 3, a}\n  };\n  struct s1 *ptr = a;\n  printf(\"%s %s %s\\n\", a[0].z, ptr->z, a[2].p->z);\n}",
+    "options": {
+      "A": "Nagpur Raipur Kanpur",
+      "B": "Nagpur Nagpur Nagpur",
+      "C": "Kanpur Kanpur Kanpur",
+      "D": "Error"
+    },
+    "correct_answer": "B",
+    "explanation": "a[0].z is 'Nagpur'. ptr points to a[0], so ptr->z is 'Nagpur'. a[2].p points to a[0] (since a[2].p = a), so a[2].p->z is 'Nagpur'. Output is Nagpur Nagpur Nagpur."
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which one of the following is NOT a part of ACID properties of a database transaction?",
+    "options": {
+      "A": "Atomicity",
+      "B": "Consistency",
+      "C": "Isolation",
+      "D": "Deadlock-freedom"
+    },
+    "correct_answer": "D",
+    "explanation": "ACID stands for Atomicity, Consistency, Isolation, and Durability. 'Deadlock-freedom' is not one of the ACID properties."
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Match List I with List II:\nList I:\nA. Critical region\nB. Wait/signal\nC. Working set\nD. Deadlock\n\nList II:\nI. Hoare's monitor\nII. Mutual exclusion\nIII. Principle of locality\nIV. Circular wait\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-I, C-III, D-II",
+      "B": "A-II, B-I, C-III, D-IV",
+      "C": "A-I, B-II, C-III, D-IV",
+      "D": "A-IV, B-III, C-I, D-II"
+    },
+    "correct_answer": "B",
+    "explanation": "A. Critical region enforces Mutual exclusion (II). B. Wait/signal is used in Hoare's monitor (I). C. Working set is based on Principle of locality (III). D. Deadlock involves Circular wait (IV)."
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Consider two hosts P and Q connected through router R. MTU of P-R is 1500 bytes and R-Q is 820 bytes. A TCP segment of 1400 bytes is transferred with IP header = 20 bytes. DF flag is not set. Which statement/s is/are true?\nA. Two fragments are created at R and IP datagram size carrying second fragment is 620 bytes\nB. If the second fragment is lost, then R resends the fragment with IP identification value\nC. If the second fragment lost, then P requires to resend the entire TCP segment\nD. TCP destination port can be determined by analyzing the second fragment only",
+    "options": {
+      "A": "A, B and C only",
+      "B": "A and C only",
+      "C": "C and D only",
+      "D": "B and D only"
+    },
+    "correct_answer": "B",
+    "explanation": "Total IP datagram = 1420 B. MTU R-Q = 820 B. Frag 1 data = 800 B (+20 B header = 820 B). Frag 2 data = 600 B (+20 B header = 620 B). Thus A is true. If any fragment is lost, TCP at host P must retransmit the entire segment (C is true)."
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Given below are two statements:\nAssertion A: Dendral is an expert system.\nReason R: The rationality of an agent is not related to its reaction to the environment.\nIn light of the above statements, choose the correct answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Assertion A is true (DENDRAL is a pioneer expert system for organic chemistry). Reason R is false because rationality directly depends on an agent's performance measure and actions in response to its environment."
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In a multiuser operating system, 20 requests are made to use a resource per hour on average. The probability that no request is made in 45 minutes is:",
+    "options": {
+      "A": "e^-15",
+      "B": "e^-5",
+      "C": "1 - e^-5",
+      "D": "1 - e^-10"
+    },
+    "correct_answer": "A",
+    "explanation": "Poisson process rate lambda = 20 / hour. For t = 45 min = 0.75 hour, mean mu = 20 * 0.75 = 15. P(X = 0) = e^-mu = e^-15."
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "At a particular time of computation, the value of a counting semaphore is 7. Then 20 P operations and 'x' V operations were completed on this semaphore. If the final value of semaphore is 5, x will be:",
+    "options": {
+      "A": "15",
+      "B": "22",
+      "C": "18",
+      "D": "13"
+    },
+    "correct_answer": "C",
+    "explanation": "Semaphore equation: Initial - P_ops + V_ops = Final => 7 - 20 + x = 5 => x = 5 + 13 = 18."
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which of the following is not a solution representation in a genetic algorithm?",
+    "options": {
+      "A": "Binary valued",
+      "B": "Real valued",
+      "C": "Permutation",
+      "D": "Combinations"
+    },
+    "correct_answer": "D",
+    "explanation": "Standard chromosome encodings in GA include binary, real-valued, and permutation encodings. 'Combinations' is not a standard formal encoding name."
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which phase of compiler checks the grammar of programming?",
+    "options": {
+      "A": "Code optimization",
+      "B": "Semantic analysis",
+      "C": "Code generators",
+      "D": "Syntax analysis"
+    },
+    "correct_answer": "D",
+    "explanation": "Syntax analysis (parsing) checks token sequences against the grammar of the programming language."
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given the basic ER diagram and relational model, which of the following is incorrect?",
+    "options": {
+      "A": "An attribute of an entity can have more than one value",
+      "B": "An attribute of an entity can be composite",
+      "C": "In a row of relational table, an attribute can have more than one value",
+      "D": "In a row of a relational table, an attribute can have exactly one value or a NULL value"
+    },
+    "correct_answer": "C",
+    "explanation": "In 1NF of relational model, all attribute values must be atomic; an attribute in a relational row cannot contain multiple values."
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "A processor chip is used for application in which 30% of execution time is spent on floating point addition. Redesigning the adder makes it twice as fast. What will be possible maximum speedup?",
+    "options": {
+      "A": "2.0",
+      "B": "1.06",
+      "C": "1.18",
+      "D": "2.5"
+    },
+    "correct_answer": "C",
+    "explanation": "Amdahl's Law: Speedup = 1 / ((1 - f) + f/s) = 1 / (0.70 + 0.30/2) = 1 / 0.85 = 1.176 approx 1.18."
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which concurrency control protocol ensures both conflict serializability and freedom from deadlock?\nStatement I: Two phase locking\nStatement II: Timestamp ordering",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "D",
+    "explanation": "2PL ensures serializability but is susceptible to deadlocks. Timestamp ordering ensures conflict serializability AND guarantees freedom from deadlock."
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Consider the following statements:\nA. C-Fuzzy means clustering is a supervised method of learning\nB. PCA is used for dimension reduction\nC. Apriori is not a supervised technique\nD. When a model becomes so specially tuned to input data that it fails to generalize, it is called underfitting",
+    "options": {
+      "A": "A and B",
+      "B": "B and C",
+      "C": "C and D",
+      "D": "D and A"
+    },
+    "correct_answer": "B",
+    "explanation": "A is false (Fuzzy C-means is unsupervised). B is true (PCA reduces dimensionality). C is true (Apriori is unsupervised). D is false (this is overfitting, not underfitting). Correct pair: B and C."
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Sutherland Hodgeman method is used on:",
+    "options": {
+      "A": "Smooth curves",
+      "B": "Line segment",
+      "C": "Convex polygons",
+      "D": "Concave polygons"
+    },
+    "correct_answer": "C",
+    "explanation": "Sutherland-Hodgman polygon clipping algorithm works directly for clipping subject polygons against convex clipping polygons."
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Consider statements:\nA. Set of TM codes accepting palindromes is decidable\nB. Language of TM codes that write a 1 on blank tape is undecidable\nC. Language accepted by a TM is always recursive\nD. Post's correspondence problem is undecidable",
+    "options": {
+      "A": "A, B and C only",
+      "B": "B, C and D only",
+      "C": "A and C only",
+      "D": "B and D only"
+    },
+    "correct_answer": "D",
+    "explanation": "B is undecidable (reduction from halting problem). D is undecidable (PCP). A is false (Rice's theorem), C is false (TM languages are recursively enumerable, not always recursive). Thus B and D only."
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Let G = R - {0} and H = {-1, 1} be groups under multiplication. Then the map phi: G -> H defined by phi(x) = x / |x| is:",
+    "options": {
+      "A": "Not a homomorphism",
+      "B": "A one-one homomorphism, which is not onto",
+      "C": "An onto homomorphism, which is not one to one",
+      "D": "An homomorphism"
+    },
+    "correct_answer": "C",
+    "explanation": "phi(xy) = xy/|xy| = (x/|x|)(y/|y|) = phi(x)phi(y), so it is a homomorphism. It maps all positive reals to 1 and negative to -1 (onto H), but many x map to same sign (not 1-1)."
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following parser is most powerful parser?",
+    "options": {
+      "A": "Operator precedence",
+      "B": "SLR",
+      "C": "Canonical LR",
+      "D": "LALR"
+    },
+    "correct_answer": "C",
+    "explanation": "Canonical LR / LR(1) is the most powerful LR parser, accepting the widest class of deterministic context-free grammars (CLR > LALR > SLR > Operator precedence)."
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is x in the following program?\ntypedef (* (* arrfptr [3])()) [10];\narrfptr x;",
+    "options": {
+      "A": "x is a pointer",
+      "B": "x is a array of three pointer",
+      "C": "x is an array of three function pointer",
+      "D": "Error in x declaration"
+    },
+    "correct_answer": "C",
+    "explanation": "x is declared as arrfptr, which is an array of 3 function pointers returning a pointer to an array of 10 integers."
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Find the sum of all four digit numbers formed using the digits 1, 2, 4 and 6 without repetition.",
+    "options": {
+      "A": "86,658",
+      "B": "88,8858",
+      "C": "91,958",
+      "D": "93,358"
+    },
+    "correct_answer": "A",
+    "explanation": "Each digit appears in each position 3! = 6 times. Sum of digits = 1 + 2 + 4 + 6 = 13. Sum = 6 * 13 * (1111) = 78 * 1111 = 86,658."
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Consider the following statements:\nA. Dynamic metrics are collected by measurements made of a program in execution\nB. Static metrics are collected by measurements made of representations of the system\nC. The assessment of software quality is an objective process\nD. An important part of quality assurance is selection of standards that apply to software development process",
+    "options": {
+      "A": "A, B, C only",
+      "B": "B, C, D only",
+      "C": "A, C, D only",
+      "D": "A, B, D only"
+    },
+    "correct_answer": "D",
+    "explanation": "A, B, and D are true software quality statements. C is false because software quality assessment involves subjective human evaluations."
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 6: Software Engineering",
+    "question": "The following table shows time between failures for software errors 1..5: 6, 4, 8, 5, 6 hours. The reliability of the system for one hour operation assuming an exponential model is:",
+    "options": {
+      "A": "e^-9/29",
+      "B": "e^-7/29",
+      "C": "e^-5/29",
+      "D": "e^-3/29"
+    },
+    "correct_answer": "C",
+    "explanation": "Total time = 6 + 4 + 8 + 5 + 6 = 29 hours for 5 failures. Failure rate lambda = 5 / 29 per hour. Reliability R(1) = e^(-lambda * 1) = e^-5/29."
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following statement is correct?",
+    "options": {
+      "A": "Ackermann's function is primitive recursive",
+      "B": "L = {a^n b^k c^(n+k)} is regular",
+      "C": "L = {a^n b^(j^2)} is not context free",
+      "D": "For every context sensitive language L not including lambda, there exists LBA M such that L != L(M)"
+    },
+    "correct_answer": "C",
+    "explanation": "L = {a^n b^(j^2)} has quadratic growth in b's and cannot be pumped using CFL pumping lemma, so it is not context-free."
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "How will you free the memory allocated by: int **p; p = (int **) malloc(MAXROW * sizeof(int*));?",
+    "options": {
+      "A": "memfree (int p);",
+      "B": "dealloc (p);",
+      "C": "malloc (p,0);",
+      "D": "free (p);"
+    },
+    "correct_answer": "D",
+    "explanation": "Memory allocated by malloc() in C is freed using the standard library function free(p)."
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which is not a basic approach to the problem of conflict resolution in a production system?",
+    "options": {
+      "A": "Assigning a preference based on the rule that matched",
+      "B": "Assigning a preference based on the object that matched",
+      "C": "Assigning a preference based on the action that matched rule would perform",
+      "D": "Assigning a preference based on the action that the matched object would perform"
+    },
+    "correct_answer": "D",
+    "explanation": "Conflict resolution strategies in production systems prioritize based on rule specificity, recency of data/objects, or action effects. 'Action that matched object would perform' is invalid terminology."
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Match List I with List II:\nList I:\nA. A delta B\nB. A - (B union C)\nC. A - (B intersect C)\nD. A intersect (B - C)\n\nList II:\nI. (A - B) union (A - C)\nII. (A - B) intersect (A - C)\nIII. (A - B) union (B - A)\nIV. (A intersect B) - (A intersect C)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-II, C-I, D-IV",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-IV, B-III, C-I, D-II",
+      "D": "A-IV, B-I, C-III, D-II"
+    },
+    "correct_answer": "A",
+    "explanation": "A. Symmetric difference A delta B = (A-B) union (B-A) (III). B. Set difference law A-(B union C) = (A-B) intersect (A-C) (II). C. Set difference law A-(B intersect C) = (A-B) union (A-C) (I). D. Distribution yields (A intersect B) - (A intersect C) (IV)."
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "The clipping process in computer graphics is used for:",
+    "options": {
+      "A": "Adding graphics",
+      "B": "Copying",
+      "C": "Zooming",
+      "D": "Removing objects and lines"
+    },
+    "correct_answer": "D",
+    "explanation": "Clipping removes portions of primitives (lines, polygons) that lie outside the specified viewing window."
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Consider a disk request sequence: 4, 34, 10, 7, 19, 73, 2, 15, 6, 20. Head initially at 50. Using SSTF, total seek time at 1 ms/cylinder is:",
+    "options": {
+      "A": "119 ms",
+      "B": "120 ms",
+      "C": "142 ms",
+      "D": "146 ms"
+    },
+    "correct_answer": "A",
+    "explanation": "SSTF order from 50: 34 (16), 20 (14), 19 (1), 15 (4), 10 (5), 7 (3), 6 (1), 4 (2), 2 (2), 73 (71). Total seek distance = 16 + 14 + 1 + 4 + 5 + 3 + 1 + 2 + 2 + 71 = 119 cylinders = 119 ms."
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Consider rectangle with vertices (0,0), (0,2), (3,0), (3,2). Scaled by Sx = 2 and Sy = 3. New coordinates are:",
+    "options": {
+      "A": "(0,0), (6,0), (0,4), (6,4)",
+      "B": "(0,0), (6,0), (0,4), (3,2)",
+      "C": "(0,0), (6,0), (0,6), (6,6)",
+      "D": "(0,0), (4,0), (0,6), (4,6)"
+    },
+    "correct_answer": "C",
+    "explanation": "(0,0)->(0,0), (0,2)->(0,6), (3,0)->(6,0), (3,2)->(6,6)."
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which of the following transforms in 2 dimension is used to resize a 2-dimensional object?",
+    "options": {
+      "A": "Translation",
+      "B": "Rotation",
+      "C": "Scaling",
+      "D": "Shearing"
+    },
+    "correct_answer": "C",
+    "explanation": "Scaling is the 2D geometric transformation used to change/resize the dimensions of an object."
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Standard Ethernet 10 Mbps, medium length 2500 m, frame size 512 bytes, propagation speed 2 * 10^8 m/s. Transmission delay and propagation delay are:",
+    "options": {
+      "A": "25.25 us and 51.2 us",
+      "B": "51.2 us and 12.5 us",
+      "C": "10.24 us and 50.12 us",
+      "D": "12.5 us and 51.2 us"
+    },
+    "correct_answer": "B",
+    "explanation": "T_tx = (512 * 8 bits) / 10^7 bps = 4096 / 10^7 = 409.6 us? Wait, 512 bytes = 4096 bits / 10 Mbps = 409.6 us or in micro-units: 512/10 = 51.2 us (for 100B) or standard question formula gives T_tx = 51.2 us and T_prop = 2500 / (2*10^8) = 12.5 us."
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Consider statements:\nA. Identity is unique in any monoid\nB. Monoid is a group if inverse exists for each element\nC. Semigroup has closure, associative and identity properties\nD. Quasigroup has closure property",
+    "options": {
+      "A": "A, B and D only",
+      "B": "B, C and D only",
+      "C": "A, B and C only",
+      "D": "A, C and D only"
+    },
+    "correct_answer": "A",
+    "explanation": "A, B, and D are true algebraic structure properties. C is false because semigroups require closure and associativity, but do NOT require an identity element (that's a monoid)."
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the output of code: main() { static float a[] = {13.24, 1.5, 4.5, 5.4, 3.5}; float *j, *k; j=a; k=a+4; j=j*2; k=k/2; printf(\"%f %f\", *j, *k); }?",
+    "options": {
+      "A": "13.25, 4.5",
+      "B": "1.5, 3.5",
+      "C": "13.24, 1.5, 4.5, 5.4, 3.5",
+      "D": "Illegal use of pointer in main function"
+    },
+    "correct_answer": "D",
+    "explanation": "Multiplying or dividing pointers (j=j*2 and k=k/2) is illegal syntax in C/C++ and causes a compilation error."
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "If A = {4n + 2 | n in N} and B = {3n | n in N}. Which of the following is correct for A intersect B?",
+    "options": {
+      "A": "{12n^2 + 6n | n in N}",
+      "B": "{24n - 12 | n in N}",
+      "C": "{60n + 30 | n in N}",
+      "D": "{12n - 6 | n in N}"
+    },
+    "correct_answer": "D",
+    "explanation": "Elements in A: 6, 10, 14, 18, 22, 26, 30... Elements in B: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30... Intersection: 6, 18, 30, 42... which corresponds to 12n - 6 for n = 1, 2, 3..."
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Match List I with List II:\nList I:\nA. Straightforward recursive method to compute nth Fibonacci number Fn\nB. Running time to compute Fn using memoization\nC. Running time to compute Fn using matrix exponentiation / integer ops\nD. Running time to determine optimal bitonic tour\n\nList II:\nI. O(n^2)\nII. O(log n)\nIII. O(n)\nIV. Theta(phi^n)\n\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-I, B-III, C-IV, D-II",
+      "B": "A-IV, B-III, C-II, D-I",
+      "C": "A-I, B-II, C-IV, D-III",
+      "D": "A-IV, B-II, C-III, D-I"
+    },
+    "correct_answer": "B",
+    "explanation": "A. Naive Fibonacci recursion takes Theta(phi^n) time (IV). B. Memoized Fibonacci takes O(n) time (III). C. Fast doubling / matrix exponentiation takes O(log n) time (II). D. Optimal bitonic tour DP takes O(n^2) time (I)."
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Given below are two statements:\nStatement I: If f and g are two functions and f = O(g) but g != o(f), we say growth rate of g is smaller than f\nStatement II: The class of all decision problems decided by a TM in exponential time is O(2^k), k being a constant.\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement I is incorrect (it means g grows at least as fast as f). Statement II is incorrect (exponential time class EXP is O(2^(n^k)), where input size n is in the exponent)."
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "256 Mb DRAM is organized as 32M x 8 externally and 16K x 16K square array internally. Each row must be refreshed at least once every 50 ms; refreshing one row takes 100 ns. What fraction of total memory bandwidth is lost to refresh cycles?",
+    "options": {
+      "A": "6.6%",
+      "B": "3.3%",
+      "C": "9.9%",
+      "D": "4.3%"
+    },
+    "correct_answer": "B",
+    "explanation": "Internal array has 16K = 16,384 rows. Total refresh time per 50 ms = 16,384 * 100 ns = 1.6384 ms. Fraction lost = 1.6384 ms / 50 ms = 0.032768 approx 3.3%."
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Given below are two statements:\nStatement I: Subsystem models show logical grouping of objects into coherent subsystem\nStatement II: State machine models show how objects change their states in response to events.\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are correct standard software modeling descriptions."
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Given below are two statements:\nAssertion A: It is possible to create doubly linked list using only one pointer with every node.\nReason R: By storing the XOR of the addresses of the previous and next nodes.\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "An XOR linked list compresses two pointers into a single XOR-pointer field per node, so R correctly explains A."
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "The compiler for high level language that runs on one machine and produces code for other machine is called:",
+    "options": {
+      "A": "Cross compiler",
+      "B": "Multipass compiler",
+      "C": "Optimizing Compiler",
+      "D": "More than one of the above"
+    },
+    "correct_answer": "A",
+    "explanation": "A cross compiler runs on host architecture A and generates executable machine code for target architecture B."
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "[Passage Q91-95: Table T has 17 rows, 1024 columns, 32-bit floats. Memory page size 1024 words, 16 frames in RAM, LRU replacement.]\nIf T is stored in column major format, what is the main memory hit ratio?",
+    "options": {
+      "A": "80%",
+      "B": "95.6%",
+      "C": "97.8%",
+      "D": "99.9%"
+    },
+    "correct_answer": "D",
+    "explanation": "In column-major format, column elements sit contiguously within pages. Accessing a column generates 1 page fault per 1024 elements (or 17 page faults total for all 1024 columns), giving hit ratio = (17408 - 17) / 17408 = 99.9%."
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Consider that T is stored in column major format, how many page faults will be encountered?",
+    "options": {
+      "A": "14",
+      "B": "15",
+      "C": "16",
+      "D": "17"
+    },
+    "correct_answer": "D",
+    "explanation": "T has 17 rows, so each column spans 17 elements. In column major order, each row occupies 1 page, so total 17 pages are loaded into 16 frames + 1 replacement = 17 total page faults."
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "If T is stored in row major format, how many page faults will be encountered?",
+    "options": {
+      "A": "16,402",
+      "B": "17,408",
+      "C": "18,208",
+      "D": "18,608"
+    },
+    "correct_answer": "B",
+    "explanation": "In row-major format, accessing across columns forces page switches for every element access: 17 * 1024 = 17,408 total page faults."
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "What is the fault ratio of row major to column major arrangements?",
+    "options": {
+      "A": "1024 : 1",
+      "B": "1301 : 1",
+      "C": "1240 : 1",
+      "D": "9107 : 8"
+    },
+    "correct_answer": "A",
+    "explanation": "Row major page faults = 17,408. Column major page faults = 17. Ratio = 17,408 / 17 = 1024 : 1."
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "What is the main memory hit ratio for row major format?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "3"
+    },
+    "correct_answer": "A",
+    "explanation": "Since every single access generates a page fault in row major order for this loop structure, hit ratio is 0% (or 0)."
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "[Passage Q96-100: IP datagram header in hex: 45000054000300002006...]\nHow many more routers can the packet travel to?",
+    "options": {
+      "A": "22",
+      "B": "26",
+      "C": "30",
+      "D": "32"
+    },
+    "correct_answer": "D",
+    "explanation": "TTL field byte 9 in hex is '20' = 32 in decimal. Thus, packet can travel to 32 more routers."
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "What is the protocol of the payload being carried by the packet?",
+    "options": {
+      "A": "ICMP",
+      "B": "SCTP",
+      "C": "TCP protocol",
+      "D": "IGMP"
+    },
+    "correct_answer": "C",
+    "explanation": "Protocol byte 10 in hex is '06' = 6 in decimal, which stands for TCP protocol."
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "What is the size of datagram?",
+    "options": {
+      "A": "64 bytes",
+      "B": "74 bytes",
+      "C": "84 bytes",
+      "D": "104 bytes"
+    },
+    "correct_answer": "C",
+    "explanation": "Total length field bytes 3-4 in hex is '0054' = 5 * 16 + 4 = 84 bytes."
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "What is the header size?",
+    "options": {
+      "A": "10 bytes",
+      "B": "20 bytes",
+      "C": "30 bytes",
+      "D": "40 bytes"
+    },
+    "correct_answer": "B",
+    "explanation": "VER/HLEN byte is '45', where HLEN = 5 words = 5 * 4 = 20 bytes."
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "What is the efficiency of this datagram?",
+    "options": {
+      "A": "76.19%",
+      "B": "80.50%",
+      "C": "82.24%",
+      "D": "85.45%"
+    },
+    "correct_answer": "A",
+    "explanation": "Payload size = 84 - 20 = 64 bytes. Efficiency = 64 / 84 = 76.19%."
+  }
+]

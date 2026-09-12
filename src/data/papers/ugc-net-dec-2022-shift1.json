@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following is NOT logically equivalent to P -> Q?",
+    "options": {
+      "A": "~P v Q",
+      "B": "~Q -> ~P",
+      "C": "~(P ^ ~Q)",
+      "D": "~Q -> P"
+    },
+    "correct_answer": "D",
+    "explanation": "P -> Q is logically equivalent to ~P v Q (Option A), its contrapositive ~Q -> ~P (Option B), and ~(P ^ ~Q) (Option C). Option D (~Q -> P) is equivalent to Q v P, which is not logically equivalent to P -> Q."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Seven people enter a lift. The lift stops only at three floors (which are unspecified). At each of the three floors, no one enters the lift, but at least one person leaves the lift. After the three floor stops, the lift is empty. In how many ways this can happen?",
+    "options": {
+      "A": "1844",
+      "B": "2187",
+      "C": "1806",
+      "D": "343"
+    },
+    "correct_answer": "C",
+    "explanation": "Using Stirling numbers of the second kind S(7,3) to partition 7 distinct people into 3 non-empty sets gives S(7,3) = 301. Since the 3 stops are distinct in order, there are 3! = 6 ways to assign these groups to the floors. Total ways = 301 * 6 = 1806."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "The coefficients of x^2 y^3 z^2 in the expansion of (x + y + z)^7 is:",
+    "options": {
+      "A": "C(7,3) * C(5,2)",
+      "B": "C(7,2) * C(5,3)",
+      "C": "C(7,3) * C(7,2)",
+      "D": "C(5,3) * C(5,2)"
+    },
+    "correct_answer": "B",
+    "explanation": "The coefficient of x^2 y^3 z^2 in (x+y+z)^7 is given by the multinomial coefficient 7! / (2! * 3! * 2!) = 210. In combination form, this is C(7,2) * C(5,3) = 21 * 10 = 210."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "What is the minimum number of students in a discrete mathematics class to be sure that at least six will receive the same grade, if there are seven possible grades: S, A, B, C, D, P and F?",
+    "options": {
+      "A": "7",
+      "B": "13",
+      "C": "36",
+      "D": "14"
+    },
+    "correct_answer": "C",
+    "explanation": "By the Pigeonhole Principle, if each of the 7 grades is assigned to at most 5 students, there can be 7 * 5 = 35 students. Adding 1 more student (total 36) guarantees that at least one grade is assigned to at least 6 students."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "In 16-bit 2's Complement representation, the decimal number 28 is:",
+    "options": {
+      "A": "1111 1111 0001 1100",
+      "B": "1111 1111 1111 0100",
+      "C": "1111 1111 1110 0100",
+      "D": "1111 1111 1110 0011"
+    },
+    "correct_answer": "C",
+    "explanation": "Decimal 28 in 16-bit binary is 0000 0000 0001 1100. Its 1's complement is 1111 1111 1110 0011. Adding 1 gives the 2's complement: 1111 1111 1110 0100."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Simplify the following using K-Map: F(A, B, C, D) = Sum(3, 4, 5, 6, 7, 11, 15)",
+    "options": {
+      "A": "AB + C'D",
+      "B": "A'B + CD",
+      "C": "AC + BD",
+      "D": "A'B + B'C"
+    },
+    "correct_answer": "B",
+    "explanation": "Grouping minterms (4, 5, 6, 7) yields A'B, and grouping minterms (3, 7, 11, 15) yields CD. Combining gives the simplified expression F = A'B + CD."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Consider a 3-bit counter designed using T flip-flops with feedback connections. Assume initial state PQR = 000, what are the next three states?",
+    "options": {
+      "A": "011, 101, 000",
+      "B": "001, 010, 111",
+      "C": "011, 101, 111",
+      "D": "001, 010, 000"
+    },
+    "correct_answer": "A",
+    "explanation": "Following the T flip-flop excitation equations and clock transitions from state 000, the sequential state outputs are 011 -> 101 -> 000."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Let R1 and R2 be two 4-bit registers storing numbers in 2's complement form. For R1 + R2, which values give an arithmetic overflow?",
+    "options": {
+      "A": "R1 = 1011 and R2 = 1110",
+      "B": "R1 = 1100 and R2 = 1010",
+      "C": "R1 = 0011 and R2 = 0100",
+      "D": "R1 = 1001 and R2 = 1111"
+    },
+    "correct_answer": "B",
+    "explanation": "4-bit 2's complement range is -8 to +7. In Option B, R1 = 1100 (-4 in decimal) and R2 = 1010 (-6 in decimal). Their sum is -10, which falls outside the range [-8, +7], causing arithmetic overflow."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "In the context of Binding, which one of the following is incorrect?",
+    "options": {
+      "A": "Static binding is done at Compile Time",
+      "B": "Absolute addresses are known at Load Time",
+      "C": "Internal functions are known at link time",
+      "D": "Target of a function is known at runtime"
+    },
+    "correct_answer": "C",
+    "explanation": "Internal functions (defined within the same source file/module) are resolved at compile time by the compiler, not at link time."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Given int arr[3][4][2] = {{{2,4},{7,8},{3,4},{5,6}}, {{7,6},{3,4},{5,3},{2,3}}, {{8,9},{7,2},{3,4},{5,1}}}; Which pointer expression refers to element 1 (last element)?",
+    "options": {
+      "A": "arr[3][4][2]",
+      "B": "*(*(*(arr + 2) + 3) + 1)",
+      "C": "*(*(arr + 2) + *(arr + 3) + 1)",
+      "D": "arr[2][3][2]"
+    },
+    "correct_answer": "B",
+    "explanation": "*(arr + 2) points to block index 2, + 3 navigates to row index 3, and + 1 points to column index 1. Dereferencing *(*(*(arr + 2) + 3) + 1) accesses element 1 at arr[2][3][1]."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Allowing different derived classes to be used interchangeably through the interface provided by a common base class is called:",
+    "options": {
+      "A": "Derived polymorphism",
+      "B": "Compile time polymorphism",
+      "C": "Static polymorphism",
+      "D": "Run time polymorphism"
+    },
+    "correct_answer": "D",
+    "explanation": "Run-time polymorphism (subtyping or dynamic polymorphism) allows object methods of derived classes to be invoked through base-class pointers or interfaces dynamically at runtime."
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "In _____ curve the last and the first vertices of the polygon lie on the curve and all other vertices define the derivatives, order and shape of the curve.",
+    "options": {
+      "A": "B-Spline Curve",
+      "B": "Boxline curve",
+      "C": "Bezier curve",
+      "D": "Gaussian curve"
+    },
+    "correct_answer": "C",
+    "explanation": "A Bezier curve interpolates its first and last control points while using all intermediate control points to guide the shape, tangents, and derivatives of the curve."
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A _____ operation combines the rows of two relations and outputs a new relation that has both input relations' rows in it (eliminating duplicates).",
+    "options": {
+      "A": "difference",
+      "B": "union",
+      "C": "cartesian product",
+      "D": "project"
+    },
+    "correct_answer": "B",
+    "explanation": "The Relational Algebra UNION operator merges tuples from two union-compatible relations into a single relation with duplicate tuples removed."
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider relation R(P, Q, R, S, T, U, V, W, X, Y) and FDs: {P,Q,S}->T, R->Y, {P,Q}->V, {R,X}->X, Q->U, V->{W,X}. Which of the following is a candidate key?",
+    "options": {
+      "A": "{P, Q, R, S}",
+      "B": "{R, Q, X}",
+      "C": "{V, X}",
+      "D": "None of the above"
+    },
+    "correct_answer": "A",
+    "explanation": "Calculating attribute closure for {P, Q, R, S}+: {P,Q,S}->T gives T; {P,Q}->V gives V; Q->U gives U; V->{W,X} gives W,X; R->Y gives Y. Thus {P,Q,R,S}+ = {P,Q,R,S,T,U,V,W,X,Y}, making it a minimal candidate key."
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which RAID level is appropriate for storing the log file of a ticket booking system where a huge database update is required?",
+    "options": {
+      "A": "Level 0",
+      "B": "Level 1",
+      "C": "Level 2",
+      "D": "Level 3"
+    },
+    "correct_answer": "B",
+    "explanation": "RAID 1 (Mirroring) provides high write performance and complete redundancy without parity overhead, making it ideal for write-heavy, fault-tolerant transaction log storage."
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 6: Software Engineering",
+    "question": "If we convert a decision tree to a set of logical rules, then:",
+    "options": {
+      "A": "The internal nodes in a branch are connected by AND and branches by AND",
+      "B": "The internal nodes in a branch are connected by OR and branches by OR",
+      "C": "The internal nodes in a branch are connected by AND and branches by OR",
+      "D": "The internal nodes in a branch are connected by OR and branches by AND"
+    },
+    "correct_answer": "C",
+    "explanation": "In converting a decision tree to rules, conditions along a single path from root to leaf are combined using conjunction (AND), while different paths leading to the target class are joined by disjunction (OR)."
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Model of protection can be viewed as:",
+    "options": {
+      "A": "Owner matrix",
+      "B": "Domain matrix",
+      "C": "Access Matrix",
+      "D": "Global matrix"
+    },
+    "correct_answer": "C",
+    "explanation": "The Access Matrix model is a standard conceptual framework for computer protection, where rows represent protection domains and columns represent objects with specific rights."
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Processes in memory contain a heap section. What is the primary use of the heap section?",
+    "options": {
+      "A": "Contains temporary data",
+      "B": "Dynamically allocate memory during process run time",
+      "C": "Contains Process priority and pointers to scheduling queues",
+      "D": "Contains amount of CPU and real time use"
+    },
+    "correct_answer": "B",
+    "explanation": "The heap is the region of process memory used for dynamic memory allocation at runtime (e.g., via malloc, calloc, or new)."
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "How many page faults occur for optimal algorithm for reference string 1, 2, 3, 4, 5, 3, 4, 1, 6, 7, 8, 7, 8 with four frames?",
+    "options": {
+      "A": "8",
+      "B": "7",
+      "C": "6",
+      "D": "5"
+    },
+    "correct_answer": "A",
+    "explanation": "Applying Optimal page replacement with 4 frames: 1, 2, 3, 4 (4 faults); 5 replaces 2 (1 fault); 3, 4, 1 hit; 6 replaces 1 (1 fault); 7 replaces 3 (1 fault); 8 replaces 6 (1 fault); 7, 8 hit. Total page faults = 8."
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Degree of concurrency in threads can be arranged in descending order as:",
+    "options": {
+      "A": "one-to-one > many-to-one > many-to-many",
+      "B": "one-to-one > many-to-many > many-to-one",
+      "C": "many-to-many > many-to-one > one-to-one",
+      "D": "None of the above"
+    },
+    "correct_answer": "B",
+    "explanation": "One-to-one threading allows full parallel execution on multiprocessors; Many-to-many provides moderate flexible concurrency; Many-to-one limits concurrency because one blocking kernel call blocks all user threads."
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which of the following is NOT one of the principles of good coding?",
+    "options": {
+      "A": "Create unit tests before you begin coding.",
+      "B": "Create visual layout that aids understanding.",
+      "C": "Refactor the code after you complete the first coding pass.",
+      "D": "Write self-documenting code not program documentation."
+    },
+    "correct_answer": "D",
+    "explanation": "While writing clean, readable code is important, completely neglecting formal program documentation is bad practice because technical documentation communicates system design, architecture, and intent beyond code syntax."
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 6: Software Engineering",
+    "question": "If P is the risk probability and L is the loss, then Risk Exposure (RE) is computed as:",
+    "options": {
+      "A": "RE = P / L",
+      "B": "RE = P + L",
+      "C": "RE = P * L",
+      "D": "RE = 2 + (P * L)"
+    },
+    "correct_answer": "C",
+    "explanation": "Risk Exposure (RE), or risk impact, is mathematically defined as the probability of the risk occurring multiplied by the financial or project loss: RE = P * L."
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which of the following is a technique used for component wrapping?",
+    "options": {
+      "A": "Black-box wrapping",
+      "B": "Clear-box wrapping",
+      "C": "Gray-box wrapping",
+      "D": "White-box wrapping"
+    },
+    "correct_answer": "B",
+    "explanation": "Clear-box wrapping is a software engineering component wrapping technique where the internal structure and logic of the component are visible and accessible to the wrapper."
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 6: Software Engineering",
+    "question": "The cyclomatic complexity metric provides the designer with information regarding the number of:",
+    "options": {
+      "A": "Cycles in the program",
+      "B": "Errors in the program",
+      "C": "Independent logic paths in the program",
+      "D": "Statements in the program"
+    },
+    "correct_answer": "C",
+    "explanation": "McCabe's Cyclomatic Complexity measures the quantitative number of linearly independent paths through a program's control flow graph."
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "In a _____ the left and right subtrees for any given node differ in height by more than one.",
+    "options": {
+      "A": "Balanced Binary Tree",
+      "B": "Weight balanced binary tree",
+      "C": "Height balanced tree",
+      "D": "Unbalanced Binary Tree"
+    },
+    "correct_answer": "D",
+    "explanation": "By definition, if the height difference between the left and right subtrees of any node exceeds 1 (balance factor outside {-1, 0, 1}), the binary tree is unbalanced."
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "FFTs are _____ techniques used to encode digital video/audio information and help analyze signals in the _____ domain.",
+    "options": {
+      "A": "Encryption, time",
+      "B": "Encryption, frequency",
+      "C": "Compression, time",
+      "D": "Compression, frequency"
+    },
+    "correct_answer": "D",
+    "explanation": "Fast Fourier Transforms (FFT) convert time-domain signals into the frequency domain, enabling spectral analysis and lossy compression algorithms in audio/video encoding."
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Given six weights 4, 15, 25, 5, 8, 16, construct a 2-tree (Huffman tree). What is the minimum weighted path length?",
+    "options": {
+      "A": "231",
+      "B": "172",
+      "C": "73",
+      "D": "77"
+    },
+    "correct_answer": "B",
+    "explanation": "Combining two lowest weights repeatedly: (4+5=9), (8+9=17), (15+16=31), (17+25=42), (31+42=73). Sum of intermediate sums = 9 + 17 + 31 + 42 + 73 = 172."
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Suppose we store n keys in a hash table of size m = n^2 using a hash function h randomly chosen from a universal class of hash functions. Then the probability is _____ that there are any collisions.",
+    "options": {
+      "A": "greater than 1/5",
+      "B": "greater than 1/2",
+      "C": "less than 1/2",
+      "D": "less than 1/5"
+    },
+    "correct_answer": "C",
+    "explanation": "For universal hashing with m = n^2, expected number of collisions E[C] = C(n,2)/m = n(n-1)/(2n^2) < 1/2. By Markov's inequality, P(collisions >= 1) <= E[C] < 1/2."
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "In Pumping Lemma for context-free languages, to say a language is satisfying pumping lemma, what is the minimum length of 'vx' together, if you consider the string as 'uvwxy'?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "n"
+    },
+    "correct_answer": "B",
+    "explanation": "The CFL Pumping Lemma conditions state that |vwx| <= p and |vx| >= 1, meaning the pumped substring vx cannot be empty (minimum length 1)."
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following is epsilon-free grammar by default?",
+    "options": {
+      "A": "Type-0",
+      "B": "Type-1",
+      "C": "Type-2",
+      "D": "Type-3"
+    },
+    "correct_answer": "D",
+    "explanation": "Regular Grammars (Type-3) are defined to exclude empty production rules (epsilon productions) in standard context-free Chomsky definitions unless specifically allowed for the start symbol."
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "While processing a string by an LR parser, the reading of the given string by the parser is:",
+    "options": {
+      "A": "From right to left",
+      "B": "From left to right",
+      "C": "Can be either from left to right or right to left",
+      "D": "From the centre of the given string"
+    },
+    "correct_answer": "B",
+    "explanation": "An LR parser stands for Left-to-right scan of the input, producing a Rightmost derivation in reverse."
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "What is the minimum and maximum number of initial, dead, unreachable and final states in a valid 'n' state finite automaton, where the accepted language is not empty?",
+    "options": {
+      "A": "Minimum: 1, 1, 1, 1; Maximum: 1, (n-1), (n-1), n",
+      "B": "Minimum: 1, 0, 0, 0; Maximum: 1, (n-1), (n-1), n",
+      "C": "Minimum: 1, 0, 0, n; Maximum: 1, n, (n-1), (n-1)",
+      "D": "Minimum: 1, 0, 0, 1; Maximum: 1, (n-1), (n-1), n"
+    },
+    "correct_answer": "D",
+    "explanation": "A valid non-empty FA requires at least 1 initial state and at least 1 final state (min dead/unreachable = 0). Maximum: 1 initial, (n-1) dead, (n-1) unreachable, and n final states."
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which protocol is used to acquire the MAC Address of a host whose IP address is known?",
+    "options": {
+      "A": "Dynamic Host Control Protocol",
+      "B": "Address Resolution Protocol",
+      "C": "Reverse Address Resolution Protocol",
+      "D": "User Datagram Protocol"
+    },
+    "correct_answer": "B",
+    "explanation": "ARP (Address Resolution Protocol) resolves a known IPv4 address into its physical MAC address on a local area network."
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In CRC coding if the data word is 111111, divisor is 1010 and the remainder is 110. Which code word is true?",
+    "options": {
+      "A": "011111101",
+      "B": "001010110",
+      "C": "111111110",
+      "D": "110111111"
+    },
+    "correct_answer": "C",
+    "explanation": "The transmitted codeword in CRC is formed by appending the remainder (110) to the original data word (111111), giving 111111110."
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In Go-back-N protocol, the values of Sf = 3 and Sn = 7. After receiving the packet with AckNo. 6, the value of Sn is:",
+    "options": {
+      "A": "6",
+      "B": "7",
+      "C": "5",
+      "D": "4"
+    },
+    "correct_answer": "B",
+    "explanation": "AckNo 6 acknowledges all packets up to 6, so Sf moves to 7. Sn represents the next packet to be sent, which remains at 7 until new packets are transmitted."
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "What is the minimum Hamming Distance in a block code if we want to be able to detect up to S errors?",
+    "options": {
+      "A": "S",
+      "B": "S + 1",
+      "C": "1",
+      "D": "0"
+    },
+    "correct_answer": "B",
+    "explanation": "To detect up to S errors in a block code, the minimum Hamming distance d_min must satisfy d_min >= S + 1."
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which search technique is complete and optimal, when heuristic h(n) is consistent?",
+    "options": {
+      "A": "Best First Search",
+      "B": "Depth First Search",
+      "C": "A* Search",
+      "D": "Breadth First Search"
+    },
+    "correct_answer": "C",
+    "explanation": "A* search is guaranteed to be both complete and optimal when using an admissible/consistent heuristic."
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "What is the process of capturing inference process as a single inference rule?",
+    "options": {
+      "A": "Ponens",
+      "B": "Clauses",
+      "C": "Generalized modus ponens",
+      "D": "Variables"
+    },
+    "correct_answer": "C",
+    "explanation": "Generalized Modus Ponens lifts Modus Ponens to first-order logic with variables, unifying atomic statements in a single inference step."
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Fuzzy logic is a form of:",
+    "options": {
+      "A": "Two valued logic",
+      "B": "Crisp set logic",
+      "C": "Binary set logic",
+      "D": "Many valued logic"
+    },
+    "correct_answer": "D",
+    "explanation": "Fuzzy logic extends Boolean two-valued logic into many-valued logic where truth values range continuously between 0 and 1."
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The 4 Ws problem canvas helps in identifying the key elements related to the problem. 4 Ws problem canvas is a part of:",
+    "options": {
+      "A": "Problem scoping",
+      "B": "Data acquisition",
+      "C": "Data modeling",
+      "D": "Problem Evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "The 4 Ws Problem Canvas (Who, What, Where, Why) is an essential design-thinking framework used during the Problem Scoping stage of AI projects."
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Consider the statements: A. A group can have zero elements. B. A group cannot have any element which is idempotent except identity. C. An isomorphism from <G,*> to <G,*> is called an automorphism. D. If every element is its own inverse, group is abelian.",
+    "options": {
+      "A": "B, C and D are correct",
+      "B": "Only A and C are correct",
+      "C": "Only B and C are correct",
+      "D": "All A, B, C and D are correct."
+    },
+    "correct_answer": "A",
+    "explanation": "A group must have at least 1 element (the identity element), making statement A false. B, C, and D are standard correct algebraic group properties."
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Consider statements: A. Labelled binary trees = (2n)!/(n+1)! B. Binary search trees = (2n)!/((n+1)! n!) C. Unlabeled binary trees = C(2n,n)/(n+1)! D. Simple, undirected, labelled graphs = 2^(n(n-1)/2).",
+    "options": {
+      "A": "(A, B) and (C) are only correct",
+      "B": "(A, B) and (D) are only correct",
+      "C": "(B, C) and (D) are only correct",
+      "D": "(A, C) and (D) are only correct"
+    },
+    "correct_answer": "B",
+    "explanation": "A is correct: (2n)!/(n+1)! = n! * C_n. B is correct (Catalan C_n). D is correct for total simple graphs on n vertices. Statement C is identical to B, but D is explicitly selected in option B."
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "The relation R = {(1,3),(1,1),(3,1),(1,2),(3,3),(4,4)} defined on {1,2,3,4} is:",
+    "options": {
+      "A": "Reflexive, Symmetric but not Transitive",
+      "B": "Symmetric, anti-symmetric and transitive",
+      "C": "Asymmetric, anti-symmetric and not transitive",
+      "D": "Not reflexive, not symmetric and not transitive"
+    },
+    "correct_answer": "D",
+    "explanation": "R lacks (2,2) so not reflexive. (1,2) in R but (2,1) not in R, so not symmetric. (3,1) and (1,2) in R but (3,2) not in R, so not transitive."
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Given F = (X + Y + Z)(X' + Y)(Y' + Z). Which are equivalent to F' (Complement of F)? A. (X' + Y' + Z')(X + Y')(Y + Z') B. XY' + Z' C. (X + Z')(Y' + Z') D. XY' + Y'Z' + X'Y'Z'",
+    "options": {
+      "A": "A, B and C Only",
+      "B": "B, C and D Only",
+      "C": "A, C and D Only",
+      "D": "A, B and D Only"
+    },
+    "correct_answer": "B",
+    "explanation": "F' = (X+Y+Z)' + (X'+Y)' + (Y'+Z)' = X'Y'Z' + XY' + YZ'. Simplifying gives B (XY' + Z'), C ((X+Z')(Y'+Z')), and D (XY' + Y'Z' + X'Y'Z')."
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which of the following statements are True? A. Processor has direct access to both primary and secondary memory B. Primary memory stores active instructions and data C. Secondary memory is used as backup D. Single level memory system.",
+    "options": {
+      "A": "A and B only",
+      "B": "B and C only",
+      "C": "A, B and C only",
+      "D": "A and D Only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement B is true (RAM stores active execution code) and C is true (secondary storage is non-volatile backup). Statements A and D are false because CPU cannot directly access secondary storage and modern memory is multi-level."
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Inheritance provides the benefits of: A. shared interfaces B. run-time polymorphism C. less redundant information D. dynamic binding. Choose the correct answer:",
+    "options": {
+      "A": "A, B, C only",
+      "B": "A, B, D only",
+      "C": "B, C, D only",
+      "D": "A, C, D only"
+    },
+    "correct_answer": "C",
+    "explanation": "Inheritance allows code reuse (less redundant information), enables overriding virtual methods for run-time polymorphism, and facilitates dynamic binding."
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which of the following is correct using C++ std::string constructors? A. string s1; B. string s2(s1); C. string s3{7}; D. string s4{'a'}; E. string s5{7, 'a'};",
+    "options": {
+      "A": "A, B, D, E only",
+      "B": "A, B, C only",
+      "C": "A, B, D only",
+      "D": "A and B only"
+    },
+    "correct_answer": "A",
+    "explanation": "A is default constructor, B is copy constructor, D and E use valid initializer lists for std::string."
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "A corporate website style needs department-specific variations stacked on corporate defaults without duplicate files. Which statements justify this? A. Style sheets cannot stack B. Style sheets can stack C. Style sheets can override D. Style sheets cannot override",
+    "options": {
+      "A": "A, C Only",
+      "B": "B, C Only",
+      "C": "B, D only",
+      "D": "A, D only"
+    },
+    "correct_answer": "B",
+    "explanation": "CSS (Cascading Style Sheets) inherently supports stacking multiple style sheets and overriding default rules with specific department-level rules."
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Let T1 transfer Rs. 50 from A to B: 1.Read(A) 2.A:=A-50 3.Write(A) 4.Read(B) 5.B:=B+50 6.Write(B). What is the database status after step 3 but before step 5?",
+    "options": {
+      "A": "Always consistent",
+      "B": "May be temporarily inconsistent",
+      "C": "Must be abort",
+      "D": "Always rollback"
+    },
+    "correct_answer": "B",
+    "explanation": "After deducting Rs. 50 from account A (step 3) before adding it to account B (step 5), the total money sum in the system is temporarily inconsistent."
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider relation Student(stuid, dept, clsroll) with FDs: FD1: stuid->dept, FD2: dept->stuid, FD3: stuid->clsroll, FD4: clsroll->stuid, FD5: dept->clsroll. Which FDs should be removed for canonical cover?",
+    "options": {
+      "A": "A, B only (FD2 and FD3)",
+      "B": "A, C only (FD2, FD3 or FD5)",
+      "C": "B, C only",
+      "D": "A, B, C only"
+    },
+    "correct_answer": "B",
+    "explanation": "FD2 and FD3 are redundant via transitive closure (stuid->dept->clsroll), so removing FD2 and FD3 yields a minimal canonical cover."
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which statements are true? A. Extremely small time quantum causes high context switch overhead. B. Turnaround time does not always improve with larger quantum. C. Turnaround time improves if processes complete burst in single quantum.",
+    "options": {
+      "A": "A only",
+      "B": "A, B only",
+      "C": "B, C only",
+      "D": "A, B, C"
+    },
+    "correct_answer": "D",
+    "explanation": "All three statements A, B, and C accurately describe CPU scheduling behavior in Round Robin scheduling."
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Processes: A(0,6), B(3,2), C(5,4), D(7,6), E(10,3). Using Shortest Remaining Time First (SRTF), the average process turnaround time is:",
+    "options": {
+      "A": "7.2",
+      "B": "8.2",
+      "C": "6",
+      "D": "9"
+    },
+    "correct_answer": "A",
+    "explanation": "SRTF execution completion times: B=5, A=8, C=12, E=15, D=21. Turnaround times = CT - AT: A=8, B=2, C=7, D=14, E=5. Average TAT = (8 + 2 + 7 + 14 + 5)/5 = 36/5 = 7.2 ms."
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Select the correct order of basic page replacement steps: A. Algorithm used if no free frame B. Instruction restarted C. Desired frame location found on disk D. Page brought into freed frame.",
+    "options": {
+      "A": "A, B, D, C",
+      "B": "C, D, A, B",
+      "C": "C, A, D, B",
+      "D": "A, D, B, C"
+    },
+    "correct_answer": "C",
+    "explanation": "Order: 1. Locate desired page on disk (C) -> 2. Select page replacement algorithm if no free frame (A) -> 3. Read page into freed frame & update tables (D) -> 4. Restart trapped instruction (B)."
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Statement I: Software testing planning must begin at the earliest possible time. Statement II: Cost of software testing is an important contribution in software development costs.",
+    "options": {
+      "A": "Both Statement I and Statement II are true.",
+      "B": "Both Statement I and Statement II are false.",
+      "C": "Statement I is true but Statement II is false.",
+      "D": "Statement I is false but Statement II is true."
+    },
+    "correct_answer": "A",
+    "explanation": "Early testing planning reduces defect fix costs, and verification/validation testing accounts for a major portion (30-50%) of total software development budget."
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which of the following need NOT be assessed during unit testing? A. Algorithmic performance. B. Number of lines of code. C. Error handling. D. Execution paths.",
+    "options": {
+      "A": "A, B, C only",
+      "B": "A, B, D only",
+      "C": "A, C, D only",
+      "D": "B, C, D only"
+    },
+    "correct_answer": "B",
+    "explanation": "Physical line count (B) is not a functional test metric, and broad system algorithmic performance (A) belongs to integration/performance testing rather than isolated unit testing."
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which AVL tree rotations are correctly explained? A. LL: left subtree of left child B. RR: right subtree of right child C. LR: right subtree of left child D. RL: left subtree of right child",
+    "options": {
+      "A": "A, D only",
+      "B": "A, C Only",
+      "C": "A, B, C and D",
+      "D": "B, C Only"
+    },
+    "correct_answer": "C",
+    "explanation": "All four descriptions (LL, RR, LR, RL) accurately state where the newly inserted node causes the critical node imbalance in an AVL tree."
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "In the context of Hamiltonian problems: A. Hamiltonian cycle is NP-Complete B. Bipartite graph with odd vertices is Hamiltonian C. Path problem on DAG D. G^3 graph construction E. If NP-Complete in P, then P=NP.",
+    "options": {
+      "A": "A, B, C only",
+      "B": "B, D, E only",
+      "C": "A, D, E only",
+      "D": "A, C, E only"
+    },
+    "correct_answer": "C",
+    "explanation": "A is true (classic NP-complete problem). B is false because odd bipartite graphs cannot contain Hamiltonian cycles. D and E are standard graph/complexity theory truths."
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "For divide and conquer matrix multiplication: A. T(n) = Theta(n^3) B. T(n) = Theta(n^2 log n) C. T(n) = 8T(n/2) + Theta(n^2) D. T(n) = 8T(2n) + Theta(n^2) E. Master theorem applies.",
+    "options": {
+      "A": "A, C, E only",
+      "B": "A, D, E only",
+      "C": "B, D, E only",
+      "D": "B, C, D only"
+    },
+    "correct_answer": "A",
+    "explanation": "Standard divide-and-conquer matrix multiplication splits matrices into 8 sub-problems of size n/2, giving recurrence T(n) = 8T(n/2) + Theta(n^2), which solves via Master's Theorem to Theta(n^3)."
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which Finite Automaton recognizes the language L = {a, b}*?",
+    "options": {
+      "A": "A and B",
+      "B": "A and D",
+      "C": "A, B and C",
+      "D": "A, B, C and D"
+    },
+    "correct_answer": "D",
+    "explanation": "All four given automata representations transition on all symbols 'a' and 'b' back to accepting states, thus recognizing the universal language {a,b}*."
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which statements are correct for Syntax Directed Translation (SDT)? A. Type Checking B. 3-address code generation C. Construction of syntax tree D. Recognize valid tokens.",
+    "options": {
+      "A": "A, B and C",
+      "B": "A, B, and D",
+      "C": "A, C and D",
+      "D": "B, C and D"
+    },
+    "correct_answer": "A",
+    "explanation": "SDT performs semantic analysis including type checking, intermediate code generation, and syntax tree construction. Token recognition (D) is handled earlier by the lexical analyzer."
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Router R has neighbors X, Y, Z at distances 3, 2, 5. Vectors for P from (X,Y,Z) are (7,6,5). Vectors for Q are (4,6,8). Which are True? A. Distance R to P = 10 B. Distance R to Q = 7 C. Next hop for P is Y D. Next hop for Q is Z.",
+    "options": {
+      "A": "B and C only",
+      "B": "A and C only",
+      "C": "C and D only",
+      "D": "B and D only"
+    },
+    "correct_answer": "A",
+    "explanation": "Distance to P via X=3+7=10, via Y=2+6=8, via Z=5+5=10 -> min=8 via Y (Statement C True). Distance to Q via X=3+4=7, via Y=2+6=8, via Z=5+8=13 -> min=7 via X (Statement B True)."
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Subnets: 12.20.164.0/22, 12.20.170.0/23, 12.20.168.0/23, 12.20.166.0/23. Which CIDR prefixes collectively aggregate all subnets without extra addresses?",
+    "options": {
+      "A": "A and B Only",
+      "B": "A and C Only",
+      "C": "C and D Only",
+      "D": "B and D Only"
+    },
+    "correct_answer": "D",
+    "explanation": "Subnets 12.20.164.0/22 (range .164.0 - .167.255) and 12.20.168.0/22 (range .168.0 - .171.255) together seamlessly aggregate all four subnets."
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Hosts P and Q connect via router R. Link MTU P-R = 1500, R-Q = 820. Datagram size = 1420 bytes (including 20B header). Which statements are NOT true?",
+    "options": {
+      "A": "A and B Only",
+      "B": "A and C Only",
+      "C": "C and D Only",
+      "D": "B and D Only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement A is true (2 fragments created: 820B and 620B). Statement B is false (router R does not retransmit lost IP fragments). Statement C is false (entire TCP segment is retransmitted by P)."
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Consider neural network features: A. Machine learning algorithm B. Useful for large datasets C. Extract features automatically D. Modeled on human brain. Choose correct answer:",
+    "options": {
+      "A": "A Only",
+      "B": "A & B Only",
+      "C": "A, B & C Only",
+      "D": "A, B, C & D"
+    },
+    "correct_answer": "D",
+    "explanation": "All four options (A, B, C, D) are defining characteristics of Artificial Neural Networks."
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Consider drawbacks of Rule-based approach: A. Learning is static B. Changes in original data not considered C. Model cannot improve on feedback.",
+    "options": {
+      "A": "All the above statements are correct",
+      "B": "The statements A & B only are not correct",
+      "C": "The statements B & C only are not correct",
+      "D": "All the above statements are not correct"
+    },
+    "correct_answer": "A",
+    "explanation": "Rule-based expert systems rely on fixed static hand-crafted rules that do not automatically adapt to data changes or feedback."
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Match List I with List II: A. Linear Program I. Prim's Algorithm B. Predicate Logic II. In order C. Tree Traversal III. Simplex Algorithm D. Minimum Spanning Tree IV. First order logic",
+    "options": {
+      "A": "A-IV, B-III, C-I, D-II",
+      "B": "A-III, B-IV, C-II, D-I",
+      "C": "A-II, B-IV, C-I, D-III",
+      "D": "A-III, B-IV, C-I, D-II"
+    },
+    "correct_answer": "B",
+    "explanation": "A-III (Linear Program -> Simplex), B-IV (Predicate Logic -> First order logic), C-II (Tree Traversal -> In order), D-I (MST -> Prim's Algorithm)."
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Match 8085 instructions: A. DAA I. Program Control B. LXI II. Interrupt instruction C. RST III. Data Movement D. JMP IV. Arithmetic Instruction",
+    "options": {
+      "A": "A-IV, B-II, C-I, D-III",
+      "B": "A-IV, B-III, C-II, D-I",
+      "C": "A-IV, B-II, C-III, D-I",
+      "D": "A-III, B-IV, C-II, D-I"
+    },
+    "correct_answer": "B",
+    "explanation": "DAA is Arithmetic (IV), LXI is Data Movement (III), RST is Interrupt (II), JMP is Program Control (I)."
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Match List I with List II: A. 2-D Array Input I. Liquid Crystal Display B. Transmissive device II. Flat-bed scanner C. Binary image III. Camera D. 1-D Array input IV. Inkjet printer",
+    "options": {
+      "A": "A-I, B-III, C-II, D-IV",
+      "B": "A-III, B-I, C-IV, D-II",
+      "C": "A-III, B-I, C-II, D-IV",
+      "D": "A-I, B-II, C-IV, D-III"
+    },
+    "correct_answer": "B",
+    "explanation": "A-III (2D Array -> Camera), B-I (Transmissive -> LCD), C-IV (Binary Image -> Inkjet printer), D-II (1D Array -> Flat-bed scanner)."
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Match DBMS concepts: A. Timestamp protocol B. Strict 2PL C. 2PL D. Lock point. Descriptions: I. Tries to obtain lock II. Final lock III. Deadlock freedom IV. Cascading rollback freedom.",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-III, B-IV, C-I, D-II",
+      "C": "A-IV, B-III, C-II, D-I",
+      "D": "A-IV, B-II, C-I, D-III"
+    },
+    "correct_answer": "B",
+    "explanation": "A-III (Timestamp -> Deadlock freedom), B-IV (Strict 2PL -> Cascading rollback freedom), C-I (2PL -> Growing lock phase), D-II (Lock point -> Final lock of schedule)."
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Match Page Replacement Bits (R, M): A. (0,0) B. (0,1) C. (1,0) D. (1,1). Descriptions: I. Write out before replace II. Used soon & write out III. Best to replace IV. Used soon.",
+    "options": {
+      "A": "A-II, B-I, C-III, D-IV",
+      "B": "A-II, B-I, C-IV, D-III",
+      "C": "A-III, B-I, C-II, D-IV",
+      "D": "A-III, B-I, C-IV, D-II"
+    },
+    "correct_answer": "D",
+    "explanation": "A-III ((0,0) -> Best page to replace), B-I ((0,1) -> Must write out), C-IV ((1,0) -> Probably used soon), D-II ((1,1) -> Used soon & write out)."
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Match Testing techniques: A. Condition coverage B. Equivalence class Partitioning C. Volume testing D. Alpha testing. Types: I. Black box II. System testing III. White box IV. Performance testing.",
+    "options": {
+      "A": "A-II, B-III, C-IV, D-I",
+      "B": "A-III, B-I, C-IV, D-II",
+      "C": "A-IV, B-I, C-II, D-III",
+      "D": "A-III, B-IV, C-I, D-II"
+    },
+    "correct_answer": "B",
+    "explanation": "A-III (Condition coverage -> White box), B-I (Equivalence Partitioning -> Black box), C-IV (Volume testing -> Performance testing), D-II (Alpha testing -> System testing)."
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Match Algorithm strategy: A. 8-Queens problem B. Closest Pair of points C. String Edit problem D. Knapsack problem. Paradigms: I. Divide and conquer II. Dynamic Programming III. Greedy Method IV. Backtracking.",
+    "options": {
+      "A": "A-I, B-II, C-III, D-IV",
+      "B": "A-I, B-IV, C-II, D-III",
+      "C": "A-IV, B-I, C-II, D-III",
+      "D": "A-II, B-III, C-IV, D-I"
+    },
+    "correct_answer": "C",
+    "explanation": "A-IV (8-Queens -> Backtracking), B-I (Closest Pair -> Divide & conquer), C-II (String Edit -> Dynamic Programming), D-III (Knapsack -> Greedy Method)."
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Match Parser Configurations: A. Initial LL B. Final LL C. Initial LR D. Final LR.",
+    "options": {
+      "A": "A-III, B-IV, C-I, D-II",
+      "B": "A-III, B-II, C-I, D-IV",
+      "C": "A-II, B-III, C-IV, D-I",
+      "D": "A-II, B-IV, C-I, D-III"
+    },
+    "correct_answer": "B",
+    "explanation": "A-III (Initial LL: $ S w$), B-II (Final LL: $ $), C-I (Initial LR: $ w$), D-IV (Final LR: $ S $)."
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Match OSI Layers: A. Physical Layer B. Data Link Layer C. Network Layer D. Transport Layer.",
+    "options": {
+      "A": "A-III, B-II, C-I, D-IV",
+      "B": "A-II, B-III, C-I, D-IV",
+      "C": "A-III, B-I, C-II, D-IV",
+      "D": "A-II, B-IV, C-I, D-III"
+    },
+    "correct_answer": "C",
+    "explanation": "A-III (Physical -> Raw bit transmission), B-I (Data Link -> Frames), C-II (Network -> Subnet control & routing), D-IV (Transport -> End-to-end datagrams)."
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Match ML algorithms: A. Regression B. KNN C. Clustering D. Decision Tree into Supervised vs Unsupervised.",
+    "options": {
+      "A": "A-I, B-II, C-I, D-II",
+      "B": "A-II, B-II, C-I, D-II",
+      "C": "A-I, B-II, C-II, D-I",
+      "D": "A-II, B-II, C-II, D-I"
+    },
+    "correct_answer": "B",
+    "explanation": "Regression (Supervised - II), KNN (Supervised - II), Clustering (Unsupervised - I), Decision Tree (Supervised - II)."
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Let 'G' be a simple, undirected graph with n (n > 10) vertices and k connected components. What is the minimum possible number of edges of G?",
+    "options": {
+      "A": "k(n - 1)",
+      "B": "n(k - 1)",
+      "C": "n + k - 2",
+      "D": "n - k"
+    },
+    "correct_answer": "D",
+    "explanation": "A graph with n vertices and k connected components requires at least n - k edges (achieved when all components are tree components)."
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Arrange the sequence of events during a typical fetch operation: A. Memory B. MBR C. MAR D. PC E. IR.",
+    "options": {
+      "A": "A, B, C, D, E",
+      "B": "D, C, A, B, E",
+      "C": "E, D, C, B, A",
+      "D": "D, C, A, E, B"
+    },
+    "correct_answer": "B",
+    "explanation": "Fetch sequence: PC loads address into MAR (D, C) -> MAR reads Memory (A) -> Memory transfers instruction to MBR (B) -> MBR transfers code to IR (E)."
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Arrange in ascending order of worst-case time complexities: A. Merge sort B. Linear Search C. Bubble Sort D. Binary Search.",
+    "options": {
+      "A": "D, B, A, C",
+      "B": "B, D, A, C",
+      "C": "B, D, C, A",
+      "D": "B, A, D, C"
+    },
+    "correct_answer": "A",
+    "explanation": "Worst-case complexities: Binary Search D = O(log n), Linear Search B = O(n), Merge Sort A = O(n log n), Bubble Sort C = O(n^2). Order: D, B, A, C."
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider schedule S with transactions T1, T2, T3, T4. Choose the correct conflict-serializable execution order:",
+    "options": {
+      "A": "T3-T2-T1-T4",
+      "B": "T2-T3-T1-T4",
+      "C": "T2-T4-T3-T1",
+      "D": "T4-T2-T3-T1"
+    },
+    "correct_answer": "B",
+    "explanation": "Precedence graph dependencies yield T2 -> T3 -> T1 -> T4."
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "A disk has 300 cylinders (0-299). Head initially at 101 moving up. C-LOOK request sequence: 123, 45, 197, 87, 250, 198, 280. Total head movement:",
+    "options": {
+      "A": "456",
+      "B": "450",
+      "C": "458",
+      "D": "445"
+    },
+    "correct_answer": "A",
+    "explanation": "C-LOOK servicing moving right: 101->123 (22), ->197 (74), ->198 (1), ->250 (52), ->280 (30). Wraps to lowest request 45 (movement 280-45 = 235), ->87 (42). Total = 22+74+1+52+30+235+42 = 456."
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 6: Software Engineering",
+    "question": "The incremental model of software development is:",
+    "options": {
+      "A": "A reasonable approach when requirements are well defined.",
+      "B": "A good approach when a working core product is required quickly.",
+      "C": "The best approach to use for projects with large development teams.",
+      "D": "A revolutionary model that is not used for commercial products."
+    },
+    "correct_answer": "B",
+    "explanation": "The incremental model delivers early operational releases (core product) to customers quickly before adding secondary modules."
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In the given weighted graph, what is the node traversal order from A to Z using Best First Search?",
+    "options": {
+      "A": "A -> C -> F -> D -> E",
+      "B": "A -> C -> E -> B",
+      "C": "A -> C -> F -> E -> B",
+      "D": "A -> C -> D -> F"
+    },
+    "correct_answer": "A",
+    "explanation": "Greedy Best First Search expands nodes with minimum edge cost step-by-step: A -> C (2) -> F (3) -> D (1) -> E (2) -> Z."
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "The precedence of regular expression operators from lowest to highest precedence is:",
+    "options": {
+      "A": "Star, Concatenation, Union",
+      "B": "Union, Star, Concatenation",
+      "C": "Union, Concatenation, Star",
+      "D": "Star, Union, Concatenation"
+    },
+    "correct_answer": "C",
+    "explanation": "Operator precedence in regular expressions: Union (+) has lowest precedence, followed by Concatenation, and Kleene Star (*) has highest precedence."
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Arrange steps for RSA key generation: A. Choose e B. Compute n = p*q C. Find d = 1/e mod phi D. Choose large primes p, q E. Compute phi(n).",
+    "options": {
+      "A": "A-B-C-D-E",
+      "B": "D-C-B-E-A",
+      "C": "D-B-E-A-C",
+      "D": "A-B-D-E-C"
+    },
+    "correct_answer": "C",
+    "explanation": "RSA steps: Select primes p, q (D) -> Calculate n = p*q (B) -> Calculate phi(n) = (p-1)(q-1) (E) -> Select public e (A) -> Compute private d (C)."
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which sequence correctly represents data flow across layers in a neural network?",
+    "options": {
+      "A": "Only sequence 'A' (Information -> Input layer -> Hidden layer)",
+      "B": "Only sequence 'B' is correct.",
+      "C": "Only sequence 'C' is correct.",
+      "D": "Only sequence 'D' is correct."
+    },
+    "correct_answer": "A",
+    "explanation": "Information enters the network through the Input Layer and is forwarded into Hidden Layer(s) for weight transformation."
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Statement I: Main objective of virtual memory is to increase effective capacity. Statement II: Virtual memory size can be larger than main memory.",
+    "options": {
+      "A": "Both Statement I and Statement II are true.",
+      "B": "Both Statement I and Statement II are false.",
+      "C": "Statement I is true but Statement II is false.",
+      "D": "Statement I is false but Statement II is true."
+    },
+    "correct_answer": "A",
+    "explanation": "Virtual memory abstracts physical RAM using disk backing store, permitting logical memory address spaces significantly larger than physical RAM."
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Statement I: Any query in basic relational algebra can be expressed in relational calculus. Statement II: Any query in relational calculus can be expressed in basic relational algebra.",
+    "options": {
+      "A": "Both Statement I and Statement II are true.",
+      "B": "Both Statement I and Statement II are false.",
+      "C": "Statement I is true but Statement II is false.",
+      "D": "Statement I is false but Statement II is true."
+    },
+    "correct_answer": "A",
+    "explanation": "Codd's Theorem proves that Basic Relational Algebra and Safe Relational Calculus are equivalent in expressive power."
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Primary objectives of SWE-IPT: A. Solicit needs B. Specify requirements C. Generate plans D. Translate requirements to architecture E. Technical data package detail.",
+    "options": {
+      "A": "All the statements are correct.",
+      "B": "Only B & C are correct.",
+      "C": "Only A & E are correct.",
+      "D": "Only C, D & E are correct."
+    },
+    "correct_answer": "A",
+    "explanation": "Software Engineering Integrated Product Teams (SWE-IPT) encompass requirements elicitation, architectural design, technical planning, and execution documentation."
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Consider: (A) For every regular language, we can design a Turing Machine. (B) For every context free language, we can design a Turing Machine.",
+    "options": {
+      "A": "Statement-A is false and Statement-B is true.",
+      "B": "Statement-A and Statement-B both are false.",
+      "C": "Statement-A is true and Statement-B is false.",
+      "D": "Statement-A and Statement-B both are true."
+    },
+    "correct_answer": "D",
+    "explanation": "In Chomsky Hierarchy, Turing Machines recognize Type-0 languages, which are a superset containing both Regular (Type-3) and Context-Free (Type-2) languages."
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Assertion A: Artificial Neural Networks are the backbone of deep learning algorithms. Reason R: Backpropagation is one technique used to train ANN.",
+    "options": {
+      "A": "Both A and R are correct and R is the correct explanation of A.",
+      "B": "Both A and R are correct but R is NOT the correct explanation of A.",
+      "C": "A is correct but R is not correct.",
+      "D": "A is not correct but R is correct."
+    },
+    "correct_answer": "B",
+    "explanation": "Both statements are true facts, but backpropagation being a training algorithm does not intrinsically explain why ANNs form the foundation of deep learning."
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "For fractional knapsack with P = {9, 5, 2, 7, 6, 16, 9} and W = {2, 5, 6, 11, 1, 9, 3}, capacity = 15. What is optimal profit?",
+    "options": {
+      "A": "43",
+      "B": "40",
+      "C": "45",
+      "D": "44"
+    },
+    "correct_answer": "B",
+    "explanation": "Ratios P/W: item5=6, item1=4.5, item7=3, item6=1.77, item2=1. Taking item5(W=1,P=6), item1(W=2,P=9), item7(W=3,P=9), item6(W=9,P=16). Total weight = 15, Total profit = 6+9+9+16 = 40."
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "For fractional knapsack with capacity = 25 using same items, what is maximum profit?",
+    "options": {
+      "A": "48.1",
+      "B": "49",
+      "C": "47.9",
+      "D": "40"
+    },
+    "correct_answer": "A",
+    "explanation": "Taking whole items 5, 1, 7, 6, 2 (weight=20, profit=45). Remaining capacity 5 filled with fraction 5/11 of item 4 (profit 7*5/11 = 3.18). Total profit = 48.18."
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "If new item (P=5, W=2) is added (total items 8), capacity 25, best-case time complexity for fractional knapsack sorting is:",
+    "options": {
+      "A": "O(8)",
+      "B": "O(64)",
+      "C": "O(24)",
+      "D": "O(56)"
+    },
+    "correct_answer": "C",
+    "explanation": "Sorting 8 items using O(n log n) comparison sort takes O(8 * log2(8)) = O(8 * 3) = O(24)."
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "The most efficient solution for fractional knapsack problem is obtained using:",
+    "options": {
+      "A": "Divide and Conquer",
+      "B": "Dynamic Programming",
+      "C": "Greedy Algorithm",
+      "D": "Backtracking"
+    },
+    "correct_answer": "C",
+    "explanation": "Fractional knapsack exhibits optimal substructure and greedy choice property based on profit-to-weight ratio, solved optimally via Greedy Algorithm."
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which statement is correct regarding knapsack problems?",
+    "options": {
+      "A": "0/1 knapsack applies to all problems",
+      "B": "No difference between 0/1 and fractional knapsack",
+      "C": "Greedy for 0/1 and Dynamic Programming for fractional",
+      "D": "In 0/1 knapsack items cannot be divided, while in fractional knapsack items can be divided into proportions."
+    },
+    "correct_answer": "D",
+    "explanation": "0/1 Knapsack requires whole item selection (0 or 1), whereas Fractional Knapsack allows taking fractions of items."
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which SQL query retrieves rollno and name of students enrolled in ALL prerequisite courses of course 324?",
+    "options": {
+      "A": "e.courseid = ANY (select precourseid from prerequisite p where p.courseid = '324')",
+      "B": "e.courseid = ALL (select precourseid from prerequisite p where p.courseid = '324')",
+      "C": "Where NOT EXISTS (select precourseid...) and NOT EXISTS (select * from enrollment...)",
+      "D": "Where EXISTS (select * from prerequisite...) and EXISTS (...)"
+    },
+    "correct_answer": "B",
+    "explanation": "Using the '= ALL' relational subquery comparison enforces universal quantification that the student's enrolled courses match all prerequisites of course 324."
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given query: select s.rollno from student s where s.sex = ALL (select f.sex from professor f where f.empid = s.advisor). Identify TRUE statements: S1. Correlated subquery S2. Uncorrelated S3. Replacing ALL by ANY yields different result S4. Result same.",
+    "options": {
+      "A": "S1 and S3 are true",
+      "B": "S1 and S4 are true",
+      "C": "S2 and S3 are true",
+      "D": "S2 and S4 are true"
+    },
+    "correct_answer": "A",
+    "explanation": "Subquery references outer variable s.advisor (Correlated subquery - S1 True). Replacing ALL with ANY changes semantics when subquery evaluates multiple advisor rows (S3 True)."
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which query computes for each department total credits of all offered courses?",
+    "options": {
+      "A": "select deptid, name, sum(credits) as totalcredits from department, course where deptid=deptno group by deptid, name;",
+      "B": "select deptid, name, count(credits)...",
+      "C": "select deptid, name, sum(credits)... without join condition",
+      "D": "select deptid, name, sum(credits)... having deptid=deptno;"
+    },
+    "correct_answer": "A",
+    "explanation": "Option A correctly joins department and course on deptid=deptno and aggregates SUM(credits) grouped by deptid, name."
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which query retrieves departments where total credits of offered courses is strictly greater than 40?",
+    "options": {
+      "A": "where totalcredits > 40 having deptid=deptno",
+      "B": "where totalcredits > 40 group by deptid, name",
+      "C": "group by deptid, name having deptid=deptno and totalcredits > 40",
+      "D": "where deptid=deptno group by deptid, name having sum(credits) > 40"
+    },
+    "correct_answer": "D",
+    "explanation": "Aggregated condition filtering (sum(credits) > 40) must be placed in the HAVING clause following GROUP BY, while join conditions remain in WHERE."
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given query with nested EXISTS checking enrollment in courses with deptno = 5. What does it retrieve?",
+    "options": {
+      "A": "Students not enrolled for all courses of dept 5",
+      "B": "Students enrolled for all courses of dept 5",
+      "C": "Students enrolled for at least one course offered by department number 5",
+      "D": "Students with at least one course of dept 5 not enrolled"
+    },
+    "correct_answer": "C",
+    "explanation": "The EXISTS clause returns true as soon as a student is enrolled in at least one matching course offered by department 5."
+  }
+]

@@ -26,7 +26,8 @@ export const STATUS = {
 export default function ExamScreen({
   candidateName,
   questions,
-  onFinishExam
+  onFinishExam,
+  paper
 }) {
   // Current active question index (0 to questions.length - 1)
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,8 +44,9 @@ export default function ExamScreen({
     return initial;
   });
 
-  // 2 Hours Timer (120 minutes = 7200 seconds)
-  const TOTAL_DURATION = 120 * 60;
+  // Dynamic Exam Timer (30 mins for 20 Qs, 120 mins for full papers)
+  const durationMinutes = paper?.durationMinutes || (questions.length <= 30 ? 30 : 120);
+  const TOTAL_DURATION = durationMinutes * 60;
   const [timeLeft, setTimeLeft] = useState(TOTAL_DURATION);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
   const [mobilePaletteOpen, setMobilePaletteOpen] = useState(false);
@@ -289,10 +291,10 @@ export default function ExamScreen({
             padding: '2px 8px',
             borderRadius: '4px',
             backgroundColor: '#f1f5f9',
-            color: '#64748b',
-            fontWeight: 600
+            color: '#0284c7',
+            fontWeight: 700
           }}>
-            Paper II: Computer Science
+            {paper?.shortTitle || paper?.title || 'Paper II: Computer Science'}
           </span>
         </div>
 

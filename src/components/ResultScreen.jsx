@@ -15,7 +15,8 @@ import {
   X,
   MinusCircle,
   Layers,
-  BookOpen
+  BookOpen,
+  Home
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
@@ -23,7 +24,9 @@ export default function ResultScreen({
   candidateName,
   questions,
   examResult,
-  onRetakeExam
+  onRetakeExam,
+  paper,
+  onBackToHome
 }) {
   const [filter, setFilter] = useState('ALL'); // 'ALL' | 'CORRECT' | 'INCORRECT' | 'UNATTEMPTED'
   const [expandedExplanations, setExpandedExplanations] = useState({});
@@ -150,14 +153,36 @@ export default function ResultScreen({
               margin: 0,
               fontFamily: 'var(--font-heading)'
             }}>
-              UGC NET 2025 Examination Scorecard
+              {paper?.title || 'UGC NET'} Examination Scorecard
             </h1>
             <p style={{ margin: '4px 0 0', opacity: 0.9, fontSize: '14px' }}>
-              Candidate: <strong>{candidateName || 'Amit Parmar'}</strong> • Paper: Computer Science & Applications
+              Candidate: <strong>{candidateName || 'Amit Parmar'}</strong> • Paper: {paper?.subject || 'Computer Science & Applications'}
             </p>
           </div>
 
-          <div style={{ display: 'flex', gap: '10px' }}>
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            {onBackToHome && (
+              <button
+                id="btn-result-all-papers"
+                onClick={onBackToHome}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  padding: '9px 16px',
+                  backgroundColor: 'rgba(255,255,255,0.2)',
+                  color: '#ffffff',
+                  borderRadius: '6px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  border: '1px solid rgba(255,255,255,0.3)',
+                  cursor: 'pointer'
+                }}
+              >
+                <Home size={16} />
+                <span>All Papers</span>
+              </button>
+            )}
             <button
               onClick={() => window.print()}
               style={{
@@ -170,7 +195,8 @@ export default function ResultScreen({
                 borderRadius: '6px',
                 fontSize: '13px',
                 fontWeight: 600,
-                border: '1px solid rgba(255,255,255,0.25)'
+                border: '1px solid rgba(255,255,255,0.25)',
+                cursor: 'pointer'
               }}
             >
               <Printer size={16} />
@@ -189,11 +215,13 @@ export default function ResultScreen({
                 borderRadius: '6px',
                 fontSize: '13px',
                 fontWeight: 700,
-                boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                cursor: 'pointer',
+                border: 'none'
               }}
             >
               <RotateCcw size={16} />
-              <span>Re-take Test</span>
+              <span>Retake Paper</span>
             </button>
           </div>
         </div>

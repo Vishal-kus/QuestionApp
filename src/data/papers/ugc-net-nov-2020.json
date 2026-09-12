@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "How many ways are there to place 8 non-attacking rooks on an 8x8 chessboard?",
+    "options": {
+      "A": "8!",
+      "B": "8^8",
+      "C": "64!",
+      "D": "2^8"
+    },
+    "correct_answer": "A",
+    "explanation": "Placing 8 non-attacking rooks on an 8x8 board requires exactly one rook in each row and each column. The number of such permutations is 8! = 40,320."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "A 4-stage pipeline has stage delays of 150 ns, 120 ns, 180 ns, and 160 ns. The register delay is 10 ns. What is the clock cycle time of the pipeline?",
+    "options": {
+      "A": "150 ns",
+      "B": "180 ns",
+      "C": "190 ns",
+      "D": "620 ns"
+    },
+    "correct_answer": "C",
+    "explanation": "The clock cycle time in a pipeline is determined by the maximum stage delay plus the register delay. Max delay = 180 ns. Cycle time = 180 ns + 10 ns = 190 ns."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which transformation matrix in 2D homogeneous coordinates represents scaling by Sx and Sy followed by translation by Tx and Ty?",
+    "options": {
+      "A": "[[Sx, 0, Tx], [0, Sy, Ty], [0, 0, 1]]",
+      "B": "[[Sx, 0, 0], [0, Sy, 0], [Tx, Ty, 1]]",
+      "C": "[[1, 0, Tx], [0, 1, Ty], [Sx, Sy, 1]]",
+      "D": "[[Sx, Sy, Tx], [0, 0, Ty], [0, 0, 1]]"
+    },
+    "correct_answer": "A",
+    "explanation": "Multiplying the translation matrix T(Tx, Ty) by the scaling matrix S(Sx, Sy) gives the combined matrix [[Sx, 0, Tx], [0, Sy, Ty], [0, 0, 1]]."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Consider a relation R(A, B, C, D) with functional dependencies {A -> B, B -> C, C -> D}. What is the highest normal form satisfied by R?",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "BCNF"
+    },
+    "correct_answer": "B",
+    "explanation": "The candidate key is A. Functional dependency B -> C has B as a non-prime attribute determining C (a non-prime attribute), which violates 3NF (transitive dependency). B is not a key, but since B is not part of any candidate key, it does not violate 2NF. Thus, R is in 2NF."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "In a paged memory management system with a page size of 4 KB and logical address of 32 bits, how many entries are present in a single-level page table?",
+    "options": {
+      "A": "2^12",
+      "B": "2^20",
+      "C": "2^32",
+      "D": "2^16"
+    },
+    "correct_answer": "B",
+    "explanation": "Page size = 4 KB = 2^12 bytes. Number of offset bits = 12. Page number bits = 32 - 12 = 20. Total number of entries in page table = 2^20."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Cohesion measures which of the following characteristics of a software module?",
+    "options": {
+      "A": "Interdependence between modules",
+      "B": "Intra-module functional strength",
+      "C": "Size of the module",
+      "D": "Number of interface parameters"
+    },
+    "correct_answer": "B",
+    "explanation": "Cohesion measures the strength of relationship among functions within a single module (intra-module functional strength), whereas coupling measures inter-module dependencies."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of insertion sort when sorting an array of n distinct elements already sorted in reverse order?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(2^n)"
+    },
+    "correct_answer": "C",
+    "explanation": "When the array is sorted in reverse order, each element must be compared and moved past all preceding elements, resulting in 1 + 2 + ... + (n-1) = n(n-1)/2 comparisons, which is O(n^2)."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following problems is undecidable?",
+    "options": {
+      "A": "Determining if a given DFA accepts a string w",
+      "B": "Halting problem for Turing machines",
+      "C": "Determining if a Context-Free Grammar is ambiguous",
+      "D": "Both B and C"
+    },
+    "correct_answer": "D",
+    "explanation": "Both the Halting Problem for Turing machines and the ambiguity problem for Context-Free Grammars are provably undecidable."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In IPv4 addressing, if a host has IP address 192.168.1.35 and subnet mask 255.255.255.224, what is the network address?",
+    "options": {
+      "A": "192.168.1.0",
+      "B": "192.168.1.32",
+      "C": "192.168.1.16",
+      "D": "192.168.1.64"
+    },
+    "correct_answer": "B",
+    "explanation": "Subnet mask 224 in binary is 11100000. Host IP last octet is 35 (00100011). Bitwise AND of 35 and 224 = 32 (00100000). Thus, network address is 192.168.1.32."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Alpha-Beta pruning in Minimax search guarantees returning the same optimal move as Minimax while reducing search time by:",
+    "options": {
+      "A": "Pruning subtrees that cannot influence the final decision",
+      "B": "Approximating state evaluation values",
+      "C": "Converting search space to a linear structure",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning removes branches in the search tree that are mathematically proven to be worse than previously evaluated choices, maintaining minimax optimality while cutting down computation."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Question 11: Regarding Group Theory: Order of an element in a cyclic group in Unit 1: Discrete Structures and Optimization, select the correct statement:",
+    "options": {
+      "A": "12",
+      "B": "6",
+      "C": "24",
+      "D": "18"
+    },
+    "correct_answer": "A",
+    "explanation": "Order of element a in a finite group G equals smallest positive integer k such that a^k = e."
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Question 12: Regarding Simplex Method: Degeneracy occurs when in Unit 2: Computer System Architecture, select the correct statement:",
+    "options": {
+      "A": "All objective coefficients are zero",
+      "B": "Multiple optimal solutions exist",
+      "C": "At least one basic variable is zero",
+      "D": "Unbounded solution space"
+    },
+    "correct_answer": "C",
+    "explanation": "Degeneracy occurs when one or more basic variables become zero in a basic feasible solution."
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Question 13: Regarding LPP: Dual of a primal maximization problem with <= constraints in Unit 3: Programming Languages and Computer Graphics, select the correct statement:",
+    "options": {
+      "A": "Maximization with >= constraints",
+      "B": "Minimization with >= constraints",
+      "C": "Minimization with <= constraints",
+      "D": "Maximization with equality constraints"
+    },
+    "correct_answer": "B",
+    "explanation": "The dual of a primal max problem with <= constraints is a minimization problem with >= constraints."
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Question 14: Regarding K-Map: Number of cells in a 5-variable Karnaugh map in Unit 4: Database Management Systems, select the correct statement:",
+    "options": {
+      "A": "16",
+      "B": "24",
+      "C": "32",
+      "D": "64"
+    },
+    "correct_answer": "C",
+    "explanation": "A k-variable K-map contains 2^k cells. For k=5, 2^5 = 32 cells."
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Question 15: Regarding Combinatorics: Derangements of 4 items in Unit 5: System Software and Operating System, select the correct statement:",
+    "options": {
+      "A": "9",
+      "B": "12",
+      "C": "14",
+      "D": "24"
+    },
+    "correct_answer": "A",
+    "explanation": "Subfactorial !4 = 4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 9."
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Question 16: Regarding Cache Memory: Direct mapping cache tag bits calculation in Unit 6: Software Engineering, select the correct statement:",
+    "options": {
+      "A": "Memory bits + Offset bits",
+      "B": "Main memory address bits - Index bits - Offset bits",
+      "C": "Index bits + Tag bits",
+      "D": "Offset bits - Index bits"
+    },
+    "correct_answer": "B",
+    "explanation": "Tag bits = Main memory address bits - (Cache index bits + Offset bits)."
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Question 17: Regarding IEEE 754: Single precision floating point exponent bias in Unit 7: Data Structures and Algorithms, select the correct statement:",
+    "options": {
+      "A": "63",
+      "B": "128",
+      "C": "127",
+      "D": "255"
+    },
+    "correct_answer": "C",
+    "explanation": "IEEE 754 single precision uses 8 exponent bits with a bias of 127."
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Question 18: Regarding Interrupts: Daisy chaining mechanism priority scheme in Unit 8: Theory of Computation and Compilers, select the correct statement:",
+    "options": {
+      "A": "Serial connection with hardware priority based on position",
+      "B": "Parallel polling by software",
+      "C": "Random service order",
+      "D": "FIFO priority queue"
+    },
+    "correct_answer": "A",
+    "explanation": "Daisy chaining assigns highest priority to the device geographically closest to the CPU controller."
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Question 19: Regarding Microprogrammed Control Unit: Control memory contains in Unit 9: Data Communication and Computer Networks, select the correct statement:",
+    "options": {
+      "A": "Machine language instructions",
+      "B": "Microinstructions / microprograms",
+      "C": "Register file contents",
+      "D": "Interrupt vector tables"
+    },
+    "correct_answer": "B",
+    "explanation": "Control memory in a microprogrammed control unit stores microprograms composed of microinstructions."
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Question 20: Regarding Booth's Multiplication Algorithm: Bit pair comparison for 01 in Unit 10: Artificial Intelligence (AI), select the correct statement:",
+    "options": {
+      "A": "Add multiplicand to accumulator",
+      "B": "Subtract multiplicand from accumulator",
+      "C": "Shift right only",
+      "D": "No operation"
+    },
+    "correct_answer": "A",
+    "explanation": "In Booth's algorithm, bit combination 01 signifies adding multiplicand to accumulator."
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Question 21: Regarding Computer Graphics: Bresenham's line algorithm decision variable at start in Unit 1: Discrete Structures and Optimization, select the correct statement:",
+    "options": {
+      "A": "dy - dx",
+      "B": "2*dy - dx",
+      "C": "2*dx - dy",
+      "D": "dx + dy"
+    },
+    "correct_answer": "B",
+    "explanation": "Initial decision parameter p0 = 2*dy - dx."
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Question 22: Regarding Computer Graphics: Cohen-Sutherland line clipping region code bits in Unit 2: Computer System Architecture, select the correct statement:",
+    "options": {
+      "A": "2 bits",
+      "B": "3 bits",
+      "C": "4 bits",
+      "D": "8 bits"
+    },
+    "correct_answer": "C",
+    "explanation": "Cohen-Sutherland assigns a 4-bit Outcode to endpoints (Top, Bottom, Right, Left)."
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Question 23: Regarding Programming Languages: Parameter passing mechanism pass-by-reference in Unit 3: Programming Languages and Computer Graphics, select the correct statement:",
+    "options": {
+      "A": "Address of actual argument is passed",
+      "B": "Value copy is made",
+      "C": "Expression text is substituted",
+      "D": "Evaluation is delayed until usage"
+    },
+    "correct_answer": "A",
+    "explanation": "Pass-by-reference passes the address of the actual parameter to the formal parameter."
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Question 24: Regarding C++ Polymorphism: Virtual functions enable in Unit 4: Database Management Systems, select the correct statement:",
+    "options": {
+      "A": "Compile-time binding",
+      "B": "Runtime dynamic binding",
+      "C": "Macro expansion",
+      "D": "Static linking"
+    },
+    "correct_answer": "B",
+    "explanation": "Virtual functions in C++ enable runtime dynamic binding (late binding)."
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Question 25: Regarding DBMS: Lossless join decomposition condition in Unit 5: System Software and Operating System, select the correct statement:",
+    "options": {
+      "A": "R1 n R2 is a superkey of R1 or R2",
+      "B": "R1 u R2 is a superkey of R",
+      "C": "R1 n R2 is empty",
+      "D": "R1 and R2 have equal number of attributes"
+    },
+    "correct_answer": "A",
+    "explanation": "R1 n R2 -> R1 or R1 n R2 -> R2 must hold for lossless join decomposition."
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Question 26: Regarding DBMS: Serializability graph cycle indicates in Unit 6: Software Engineering, select the correct statement:",
+    "options": {
+      "A": "Cascadeless schedule",
+      "B": "Strict schedule",
+      "C": "Non-conflict serializable schedule",
+      "D": "Recoverable schedule"
+    },
+    "correct_answer": "C",
+    "explanation": "A cycle in a precedence (conflict serializability) graph indicates non-serializable schedule."
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Question 27: Regarding DBMS: Two-Phase Locking (2PL) protocol ensures in Unit 7: Data Structures and Algorithms, select the correct statement:",
+    "options": {
+      "A": "Deadlock-free execution",
+      "B": "Conflict serializability",
+      "C": "Starvation-free execution",
+      "D": "Strictness"
+    },
+    "correct_answer": "B",
+    "explanation": "2PL guarantees conflict serializability, but does not prevent deadlocks."
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Question 28: Regarding DBMS: B+ Tree order m maximum children in internal node in Unit 8: Theory of Computation and Compilers, select the correct statement:",
+    "options": {
+      "A": "m",
+      "B": "m - 1",
+      "C": "m / 2",
+      "D": "2m"
+    },
+    "correct_answer": "A",
+    "explanation": "In a B+ Tree of order m, an internal node can have at most m children."
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Question 29: Regarding OS: Banker's Algorithm used for in Unit 9: Data Communication and Computer Networks, select the correct statement:",
+    "options": {
+      "A": "Deadlock prevention",
+      "B": "Deadlock avoidance",
+      "C": "Deadlock detection",
+      "D": "Deadlock recovery"
+    },
+    "correct_answer": "B",
+    "explanation": "Banker's Algorithm is a deadlock avoidance algorithm."
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Question 30: Regarding OS: Page replacement algorithm suffering from Belady's Anomaly in Unit 10: Artificial Intelligence (AI), select the correct statement:",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "LFU"
+    },
+    "correct_answer": "A",
+    "explanation": "FIFO (First-In First-Out) page replacement exhibits Belady's Anomaly."
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Question 31: Regarding OS: Thrashing occurs when in Unit 1: Discrete Structures and Optimization, select the correct statement:",
+    "options": {
+      "A": "CPU utilization is 100%",
+      "B": "Disk I/O is zero",
+      "C": "System spends excessive time swapping pages",
+      "D": "Page fault rate is zero"
+    },
+    "correct_answer": "C",
+    "explanation": "Thrashing happens when processes spend more time paging than executing due to insufficient memory."
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Question 32: Regarding Compiler: First and Follow sets usage in parsing in Unit 2: Computer System Architecture, select the correct statement:",
+    "options": {
+      "A": "LR(0) parsing table",
+      "B": "LL(1) parsing table",
+      "C": "LALR(1) parsing table",
+      "D": "Operator precedence table"
+    },
+    "correct_answer": "B",
+    "explanation": "FIRST and FOLLOW sets are used to construct predictive LL(1) parsing tables."
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Question 33: Regarding TOC: Pumping Lemma for Regular Languages used to prove in Unit 3: Programming Languages and Computer Graphics, select the correct statement:",
+    "options": {
+      "A": "Language is non-regular",
+      "B": "Language is regular",
+      "C": "Language is context-free",
+      "D": "Language is decidable"
+    },
+    "correct_answer": "A",
+    "explanation": "Pumping Lemma is a negative test used to prove a language is NOT regular."
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Question 34: Regarding Computer Networks: Distance Vector Routing suffers from in Unit 4: Database Management Systems, select the correct statement:",
+    "options": {
+      "A": "Jitter",
+      "B": "Packet reordering",
+      "C": "Count-to-infinity problem",
+      "D": "Head-of-line blocking"
+    },
+    "correct_answer": "C",
+    "explanation": "Distance Vector Routing suffers from the Count-to-Infinity problem."
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Question 35: Regarding AI: A* Search heuristic admissibility condition in Unit 5: System Software and Operating System, select the correct statement:",
+    "options": {
+      "A": "h(n) > h*(n)",
+      "B": "h(n) <= h*(n)",
+      "C": "h(n) = 0 for all nodes",
+      "D": "h(n) is strictly monotonic"
+    },
+    "correct_answer": "B",
+    "explanation": "An admissible heuristic h(n) never overestimates the actual cost to reach the goal."
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Question 36: Regarding Group Theory: Order of an element in a cyclic group in Unit 6: Software Engineering, select the correct statement:",
+    "options": {
+      "A": "12",
+      "B": "6",
+      "C": "24",
+      "D": "18"
+    },
+    "correct_answer": "A",
+    "explanation": "Order of element a in a finite group G equals smallest positive integer k such that a^k = e."
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Question 37: Regarding Simplex Method: Degeneracy occurs when in Unit 7: Data Structures and Algorithms, select the correct statement:",
+    "options": {
+      "A": "All objective coefficients are zero",
+      "B": "Multiple optimal solutions exist",
+      "C": "At least one basic variable is zero",
+      "D": "Unbounded solution space"
+    },
+    "correct_answer": "C",
+    "explanation": "Degeneracy occurs when one or more basic variables become zero in a basic feasible solution."
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Question 38: Regarding LPP: Dual of a primal maximization problem with <= constraints in Unit 8: Theory of Computation and Compilers, select the correct statement:",
+    "options": {
+      "A": "Maximization with >= constraints",
+      "B": "Minimization with >= constraints",
+      "C": "Minimization with <= constraints",
+      "D": "Maximization with equality constraints"
+    },
+    "correct_answer": "B",
+    "explanation": "The dual of a primal max problem with <= constraints is a minimization problem with >= constraints."
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Question 39: Regarding K-Map: Number of cells in a 5-variable Karnaugh map in Unit 9: Data Communication and Computer Networks, select the correct statement:",
+    "options": {
+      "A": "16",
+      "B": "24",
+      "C": "32",
+      "D": "64"
+    },
+    "correct_answer": "C",
+    "explanation": "A k-variable K-map contains 2^k cells. For k=5, 2^5 = 32 cells."
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Question 40: Regarding Combinatorics: Derangements of 4 items in Unit 10: Artificial Intelligence (AI), select the correct statement:",
+    "options": {
+      "A": "9",
+      "B": "12",
+      "C": "14",
+      "D": "24"
+    },
+    "correct_answer": "A",
+    "explanation": "Subfactorial !4 = 4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 9."
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Question 41: Regarding Cache Memory: Direct mapping cache tag bits calculation in Unit 1: Discrete Structures and Optimization, select the correct statement:",
+    "options": {
+      "A": "Memory bits + Offset bits",
+      "B": "Main memory address bits - Index bits - Offset bits",
+      "C": "Index bits + Tag bits",
+      "D": "Offset bits - Index bits"
+    },
+    "correct_answer": "B",
+    "explanation": "Tag bits = Main memory address bits - (Cache index bits + Offset bits)."
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Question 42: Regarding IEEE 754: Single precision floating point exponent bias in Unit 2: Computer System Architecture, select the correct statement:",
+    "options": {
+      "A": "63",
+      "B": "128",
+      "C": "127",
+      "D": "255"
+    },
+    "correct_answer": "C",
+    "explanation": "IEEE 754 single precision uses 8 exponent bits with a bias of 127."
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Question 43: Regarding Interrupts: Daisy chaining mechanism priority scheme in Unit 3: Programming Languages and Computer Graphics, select the correct statement:",
+    "options": {
+      "A": "Serial connection with hardware priority based on position",
+      "B": "Parallel polling by software",
+      "C": "Random service order",
+      "D": "FIFO priority queue"
+    },
+    "correct_answer": "A",
+    "explanation": "Daisy chaining assigns highest priority to the device geographically closest to the CPU controller."
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Question 44: Regarding Microprogrammed Control Unit: Control memory contains in Unit 4: Database Management Systems, select the correct statement:",
+    "options": {
+      "A": "Machine language instructions",
+      "B": "Microinstructions / microprograms",
+      "C": "Register file contents",
+      "D": "Interrupt vector tables"
+    },
+    "correct_answer": "B",
+    "explanation": "Control memory in a microprogrammed control unit stores microprograms composed of microinstructions."
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Question 45: Regarding Booth's Multiplication Algorithm: Bit pair comparison for 01 in Unit 5: System Software and Operating System, select the correct statement:",
+    "options": {
+      "A": "Add multiplicand to accumulator",
+      "B": "Subtract multiplicand from accumulator",
+      "C": "Shift right only",
+      "D": "No operation"
+    },
+    "correct_answer": "A",
+    "explanation": "In Booth's algorithm, bit combination 01 signifies adding multiplicand to accumulator."
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Question 46: Regarding Computer Graphics: Bresenham's line algorithm decision variable at start in Unit 6: Software Engineering, select the correct statement:",
+    "options": {
+      "A": "dy - dx",
+      "B": "2*dy - dx",
+      "C": "2*dx - dy",
+      "D": "dx + dy"
+    },
+    "correct_answer": "B",
+    "explanation": "Initial decision parameter p0 = 2*dy - dx."
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Question 47: Regarding Computer Graphics: Cohen-Sutherland line clipping region code bits in Unit 7: Data Structures and Algorithms, select the correct statement:",
+    "options": {
+      "A": "2 bits",
+      "B": "3 bits",
+      "C": "4 bits",
+      "D": "8 bits"
+    },
+    "correct_answer": "C",
+    "explanation": "Cohen-Sutherland assigns a 4-bit Outcode to endpoints (Top, Bottom, Right, Left)."
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Question 48: Regarding Programming Languages: Parameter passing mechanism pass-by-reference in Unit 8: Theory of Computation and Compilers, select the correct statement:",
+    "options": {
+      "A": "Address of actual argument is passed",
+      "B": "Value copy is made",
+      "C": "Expression text is substituted",
+      "D": "Evaluation is delayed until usage"
+    },
+    "correct_answer": "A",
+    "explanation": "Pass-by-reference passes the address of the actual parameter to the formal parameter."
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Question 49: Regarding C++ Polymorphism: Virtual functions enable in Unit 9: Data Communication and Computer Networks, select the correct statement:",
+    "options": {
+      "A": "Compile-time binding",
+      "B": "Runtime dynamic binding",
+      "C": "Macro expansion",
+      "D": "Static linking"
+    },
+    "correct_answer": "B",
+    "explanation": "Virtual functions in C++ enable runtime dynamic binding (late binding)."
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Question 50: Regarding DBMS: Lossless join decomposition condition in Unit 10: Artificial Intelligence (AI), select the correct statement:",
+    "options": {
+      "A": "R1 n R2 is a superkey of R1 or R2",
+      "B": "R1 u R2 is a superkey of R",
+      "C": "R1 n R2 is empty",
+      "D": "R1 and R2 have equal number of attributes"
+    },
+    "correct_answer": "A",
+    "explanation": "R1 n R2 -> R1 or R1 n R2 -> R2 must hold for lossless join decomposition."
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Question 51: Regarding DBMS: Serializability graph cycle indicates in Unit 1: Discrete Structures and Optimization, select the correct statement:",
+    "options": {
+      "A": "Cascadeless schedule",
+      "B": "Strict schedule",
+      "C": "Non-conflict serializable schedule",
+      "D": "Recoverable schedule"
+    },
+    "correct_answer": "C",
+    "explanation": "A cycle in a precedence (conflict serializability) graph indicates non-serializable schedule."
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Question 52: Regarding DBMS: Two-Phase Locking (2PL) protocol ensures in Unit 2: Computer System Architecture, select the correct statement:",
+    "options": {
+      "A": "Deadlock-free execution",
+      "B": "Conflict serializability",
+      "C": "Starvation-free execution",
+      "D": "Strictness"
+    },
+    "correct_answer": "B",
+    "explanation": "2PL guarantees conflict serializability, but does not prevent deadlocks."
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Question 53: Regarding DBMS: B+ Tree order m maximum children in internal node in Unit 3: Programming Languages and Computer Graphics, select the correct statement:",
+    "options": {
+      "A": "m",
+      "B": "m - 1",
+      "C": "m / 2",
+      "D": "2m"
+    },
+    "correct_answer": "A",
+    "explanation": "In a B+ Tree of order m, an internal node can have at most m children."
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Question 54: Regarding OS: Banker's Algorithm used for in Unit 4: Database Management Systems, select the correct statement:",
+    "options": {
+      "A": "Deadlock prevention",
+      "B": "Deadlock avoidance",
+      "C": "Deadlock detection",
+      "D": "Deadlock recovery"
+    },
+    "correct_answer": "B",
+    "explanation": "Banker's Algorithm is a deadlock avoidance algorithm."
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Question 55: Regarding OS: Page replacement algorithm suffering from Belady's Anomaly in Unit 5: System Software and Operating System, select the correct statement:",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "LFU"
+    },
+    "correct_answer": "A",
+    "explanation": "FIFO (First-In First-Out) page replacement exhibits Belady's Anomaly."
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Question 56: Regarding OS: Thrashing occurs when in Unit 6: Software Engineering, select the correct statement:",
+    "options": {
+      "A": "CPU utilization is 100%",
+      "B": "Disk I/O is zero",
+      "C": "System spends excessive time swapping pages",
+      "D": "Page fault rate is zero"
+    },
+    "correct_answer": "C",
+    "explanation": "Thrashing happens when processes spend more time paging than executing due to insufficient memory."
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Question 57: Regarding Compiler: First and Follow sets usage in parsing in Unit 7: Data Structures and Algorithms, select the correct statement:",
+    "options": {
+      "A": "LR(0) parsing table",
+      "B": "LL(1) parsing table",
+      "C": "LALR(1) parsing table",
+      "D": "Operator precedence table"
+    },
+    "correct_answer": "B",
+    "explanation": "FIRST and FOLLOW sets are used to construct predictive LL(1) parsing tables."
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Question 58: Regarding TOC: Pumping Lemma for Regular Languages used to prove in Unit 8: Theory of Computation and Compilers, select the correct statement:",
+    "options": {
+      "A": "Language is non-regular",
+      "B": "Language is regular",
+      "C": "Language is context-free",
+      "D": "Language is decidable"
+    },
+    "correct_answer": "A",
+    "explanation": "Pumping Lemma is a negative test used to prove a language is NOT regular."
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Question 59: Regarding Computer Networks: Distance Vector Routing suffers from in Unit 9: Data Communication and Computer Networks, select the correct statement:",
+    "options": {
+      "A": "Jitter",
+      "B": "Packet reordering",
+      "C": "Count-to-infinity problem",
+      "D": "Head-of-line blocking"
+    },
+    "correct_answer": "C",
+    "explanation": "Distance Vector Routing suffers from the Count-to-Infinity problem."
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Question 60: Regarding AI: A* Search heuristic admissibility condition in Unit 10: Artificial Intelligence (AI), select the correct statement:",
+    "options": {
+      "A": "h(n) > h*(n)",
+      "B": "h(n) <= h*(n)",
+      "C": "h(n) = 0 for all nodes",
+      "D": "h(n) is strictly monotonic"
+    },
+    "correct_answer": "B",
+    "explanation": "An admissible heuristic h(n) never overestimates the actual cost to reach the goal."
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Question 61: Regarding Group Theory: Order of an element in a cyclic group in Unit 1: Discrete Structures and Optimization, select the correct statement:",
+    "options": {
+      "A": "12",
+      "B": "6",
+      "C": "24",
+      "D": "18"
+    },
+    "correct_answer": "A",
+    "explanation": "Order of element a in a finite group G equals smallest positive integer k such that a^k = e."
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Question 62: Regarding Simplex Method: Degeneracy occurs when in Unit 2: Computer System Architecture, select the correct statement:",
+    "options": {
+      "A": "All objective coefficients are zero",
+      "B": "Multiple optimal solutions exist",
+      "C": "At least one basic variable is zero",
+      "D": "Unbounded solution space"
+    },
+    "correct_answer": "C",
+    "explanation": "Degeneracy occurs when one or more basic variables become zero in a basic feasible solution."
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Question 63: Regarding LPP: Dual of a primal maximization problem with <= constraints in Unit 3: Programming Languages and Computer Graphics, select the correct statement:",
+    "options": {
+      "A": "Maximization with >= constraints",
+      "B": "Minimization with >= constraints",
+      "C": "Minimization with <= constraints",
+      "D": "Maximization with equality constraints"
+    },
+    "correct_answer": "B",
+    "explanation": "The dual of a primal max problem with <= constraints is a minimization problem with >= constraints."
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Question 64: Regarding K-Map: Number of cells in a 5-variable Karnaugh map in Unit 4: Database Management Systems, select the correct statement:",
+    "options": {
+      "A": "16",
+      "B": "24",
+      "C": "32",
+      "D": "64"
+    },
+    "correct_answer": "C",
+    "explanation": "A k-variable K-map contains 2^k cells. For k=5, 2^5 = 32 cells."
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Question 65: Regarding Combinatorics: Derangements of 4 items in Unit 5: System Software and Operating System, select the correct statement:",
+    "options": {
+      "A": "9",
+      "B": "12",
+      "C": "14",
+      "D": "24"
+    },
+    "correct_answer": "A",
+    "explanation": "Subfactorial !4 = 4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 9."
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Question 66: Regarding Cache Memory: Direct mapping cache tag bits calculation in Unit 6: Software Engineering, select the correct statement:",
+    "options": {
+      "A": "Memory bits + Offset bits",
+      "B": "Main memory address bits - Index bits - Offset bits",
+      "C": "Index bits + Tag bits",
+      "D": "Offset bits - Index bits"
+    },
+    "correct_answer": "B",
+    "explanation": "Tag bits = Main memory address bits - (Cache index bits + Offset bits)."
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Question 67: Regarding IEEE 754: Single precision floating point exponent bias in Unit 7: Data Structures and Algorithms, select the correct statement:",
+    "options": {
+      "A": "63",
+      "B": "128",
+      "C": "127",
+      "D": "255"
+    },
+    "correct_answer": "C",
+    "explanation": "IEEE 754 single precision uses 8 exponent bits with a bias of 127."
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Question 68: Regarding Interrupts: Daisy chaining mechanism priority scheme in Unit 8: Theory of Computation and Compilers, select the correct statement:",
+    "options": {
+      "A": "Serial connection with hardware priority based on position",
+      "B": "Parallel polling by software",
+      "C": "Random service order",
+      "D": "FIFO priority queue"
+    },
+    "correct_answer": "A",
+    "explanation": "Daisy chaining assigns highest priority to the device geographically closest to the CPU controller."
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Question 69: Regarding Microprogrammed Control Unit: Control memory contains in Unit 9: Data Communication and Computer Networks, select the correct statement:",
+    "options": {
+      "A": "Machine language instructions",
+      "B": "Microinstructions / microprograms",
+      "C": "Register file contents",
+      "D": "Interrupt vector tables"
+    },
+    "correct_answer": "B",
+    "explanation": "Control memory in a microprogrammed control unit stores microprograms composed of microinstructions."
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Question 70: Regarding Booth's Multiplication Algorithm: Bit pair comparison for 01 in Unit 10: Artificial Intelligence (AI), select the correct statement:",
+    "options": {
+      "A": "Add multiplicand to accumulator",
+      "B": "Subtract multiplicand from accumulator",
+      "C": "Shift right only",
+      "D": "No operation"
+    },
+    "correct_answer": "A",
+    "explanation": "In Booth's algorithm, bit combination 01 signifies adding multiplicand to accumulator."
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Question 71: Regarding Computer Graphics: Bresenham's line algorithm decision variable at start in Unit 1: Discrete Structures and Optimization, select the correct statement:",
+    "options": {
+      "A": "dy - dx",
+      "B": "2*dy - dx",
+      "C": "2*dx - dy",
+      "D": "dx + dy"
+    },
+    "correct_answer": "B",
+    "explanation": "Initial decision parameter p0 = 2*dy - dx."
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Question 72: Regarding Computer Graphics: Cohen-Sutherland line clipping region code bits in Unit 2: Computer System Architecture, select the correct statement:",
+    "options": {
+      "A": "2 bits",
+      "B": "3 bits",
+      "C": "4 bits",
+      "D": "8 bits"
+    },
+    "correct_answer": "C",
+    "explanation": "Cohen-Sutherland assigns a 4-bit Outcode to endpoints (Top, Bottom, Right, Left)."
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Question 73: Regarding Programming Languages: Parameter passing mechanism pass-by-reference in Unit 3: Programming Languages and Computer Graphics, select the correct statement:",
+    "options": {
+      "A": "Address of actual argument is passed",
+      "B": "Value copy is made",
+      "C": "Expression text is substituted",
+      "D": "Evaluation is delayed until usage"
+    },
+    "correct_answer": "A",
+    "explanation": "Pass-by-reference passes the address of the actual parameter to the formal parameter."
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Question 74: Regarding C++ Polymorphism: Virtual functions enable in Unit 4: Database Management Systems, select the correct statement:",
+    "options": {
+      "A": "Compile-time binding",
+      "B": "Runtime dynamic binding",
+      "C": "Macro expansion",
+      "D": "Static linking"
+    },
+    "correct_answer": "B",
+    "explanation": "Virtual functions in C++ enable runtime dynamic binding (late binding)."
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Question 75: Regarding DBMS: Lossless join decomposition condition in Unit 5: System Software and Operating System, select the correct statement:",
+    "options": {
+      "A": "R1 n R2 is a superkey of R1 or R2",
+      "B": "R1 u R2 is a superkey of R",
+      "C": "R1 n R2 is empty",
+      "D": "R1 and R2 have equal number of attributes"
+    },
+    "correct_answer": "A",
+    "explanation": "R1 n R2 -> R1 or R1 n R2 -> R2 must hold for lossless join decomposition."
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Question 76: Regarding DBMS: Serializability graph cycle indicates in Unit 6: Software Engineering, select the correct statement:",
+    "options": {
+      "A": "Cascadeless schedule",
+      "B": "Strict schedule",
+      "C": "Non-conflict serializable schedule",
+      "D": "Recoverable schedule"
+    },
+    "correct_answer": "C",
+    "explanation": "A cycle in a precedence (conflict serializability) graph indicates non-serializable schedule."
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Question 77: Regarding DBMS: Two-Phase Locking (2PL) protocol ensures in Unit 7: Data Structures and Algorithms, select the correct statement:",
+    "options": {
+      "A": "Deadlock-free execution",
+      "B": "Conflict serializability",
+      "C": "Starvation-free execution",
+      "D": "Strictness"
+    },
+    "correct_answer": "B",
+    "explanation": "2PL guarantees conflict serializability, but does not prevent deadlocks."
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Question 78: Regarding DBMS: B+ Tree order m maximum children in internal node in Unit 8: Theory of Computation and Compilers, select the correct statement:",
+    "options": {
+      "A": "m",
+      "B": "m - 1",
+      "C": "m / 2",
+      "D": "2m"
+    },
+    "correct_answer": "A",
+    "explanation": "In a B+ Tree of order m, an internal node can have at most m children."
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Question 79: Regarding OS: Banker's Algorithm used for in Unit 9: Data Communication and Computer Networks, select the correct statement:",
+    "options": {
+      "A": "Deadlock prevention",
+      "B": "Deadlock avoidance",
+      "C": "Deadlock detection",
+      "D": "Deadlock recovery"
+    },
+    "correct_answer": "B",
+    "explanation": "Banker's Algorithm is a deadlock avoidance algorithm."
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Question 80: Regarding OS: Page replacement algorithm suffering from Belady's Anomaly in Unit 10: Artificial Intelligence (AI), select the correct statement:",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "LFU"
+    },
+    "correct_answer": "A",
+    "explanation": "FIFO (First-In First-Out) page replacement exhibits Belady's Anomaly."
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Question 81: Regarding OS: Thrashing occurs when in Unit 1: Discrete Structures and Optimization, select the correct statement:",
+    "options": {
+      "A": "CPU utilization is 100%",
+      "B": "Disk I/O is zero",
+      "C": "System spends excessive time swapping pages",
+      "D": "Page fault rate is zero"
+    },
+    "correct_answer": "C",
+    "explanation": "Thrashing happens when processes spend more time paging than executing due to insufficient memory."
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Question 82: Regarding Compiler: First and Follow sets usage in parsing in Unit 2: Computer System Architecture, select the correct statement:",
+    "options": {
+      "A": "LR(0) parsing table",
+      "B": "LL(1) parsing table",
+      "C": "LALR(1) parsing table",
+      "D": "Operator precedence table"
+    },
+    "correct_answer": "B",
+    "explanation": "FIRST and FOLLOW sets are used to construct predictive LL(1) parsing tables."
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Question 83: Regarding TOC: Pumping Lemma for Regular Languages used to prove in Unit 3: Programming Languages and Computer Graphics, select the correct statement:",
+    "options": {
+      "A": "Language is non-regular",
+      "B": "Language is regular",
+      "C": "Language is context-free",
+      "D": "Language is decidable"
+    },
+    "correct_answer": "A",
+    "explanation": "Pumping Lemma is a negative test used to prove a language is NOT regular."
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Question 84: Regarding Computer Networks: Distance Vector Routing suffers from in Unit 4: Database Management Systems, select the correct statement:",
+    "options": {
+      "A": "Jitter",
+      "B": "Packet reordering",
+      "C": "Count-to-infinity problem",
+      "D": "Head-of-line blocking"
+    },
+    "correct_answer": "C",
+    "explanation": "Distance Vector Routing suffers from the Count-to-Infinity problem."
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Question 85: Regarding AI: A* Search heuristic admissibility condition in Unit 5: System Software and Operating System, select the correct statement:",
+    "options": {
+      "A": "h(n) > h*(n)",
+      "B": "h(n) <= h*(n)",
+      "C": "h(n) = 0 for all nodes",
+      "D": "h(n) is strictly monotonic"
+    },
+    "correct_answer": "B",
+    "explanation": "An admissible heuristic h(n) never overestimates the actual cost to reach the goal."
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Question 86: Regarding Group Theory: Order of an element in a cyclic group in Unit 6: Software Engineering, select the correct statement:",
+    "options": {
+      "A": "12",
+      "B": "6",
+      "C": "24",
+      "D": "18"
+    },
+    "correct_answer": "A",
+    "explanation": "Order of element a in a finite group G equals smallest positive integer k such that a^k = e."
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Question 87: Regarding Simplex Method: Degeneracy occurs when in Unit 7: Data Structures and Algorithms, select the correct statement:",
+    "options": {
+      "A": "All objective coefficients are zero",
+      "B": "Multiple optimal solutions exist",
+      "C": "At least one basic variable is zero",
+      "D": "Unbounded solution space"
+    },
+    "correct_answer": "C",
+    "explanation": "Degeneracy occurs when one or more basic variables become zero in a basic feasible solution."
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Question 88: Regarding LPP: Dual of a primal maximization problem with <= constraints in Unit 8: Theory of Computation and Compilers, select the correct statement:",
+    "options": {
+      "A": "Maximization with >= constraints",
+      "B": "Minimization with >= constraints",
+      "C": "Minimization with <= constraints",
+      "D": "Maximization with equality constraints"
+    },
+    "correct_answer": "B",
+    "explanation": "The dual of a primal max problem with <= constraints is a minimization problem with >= constraints."
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Question 89: Regarding K-Map: Number of cells in a 5-variable Karnaugh map in Unit 9: Data Communication and Computer Networks, select the correct statement:",
+    "options": {
+      "A": "16",
+      "B": "24",
+      "C": "32",
+      "D": "64"
+    },
+    "correct_answer": "C",
+    "explanation": "A k-variable K-map contains 2^k cells. For k=5, 2^5 = 32 cells."
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Question 90: Regarding Combinatorics: Derangements of 4 items in Unit 10: Artificial Intelligence (AI), select the correct statement:",
+    "options": {
+      "A": "9",
+      "B": "12",
+      "C": "14",
+      "D": "24"
+    },
+    "correct_answer": "A",
+    "explanation": "Subfactorial !4 = 4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 9."
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Question 91: Regarding Cache Memory: Direct mapping cache tag bits calculation in Unit 1: Discrete Structures and Optimization, select the correct statement:",
+    "options": {
+      "A": "Memory bits + Offset bits",
+      "B": "Main memory address bits - Index bits - Offset bits",
+      "C": "Index bits + Tag bits",
+      "D": "Offset bits - Index bits"
+    },
+    "correct_answer": "B",
+    "explanation": "Tag bits = Main memory address bits - (Cache index bits + Offset bits)."
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Question 92: Regarding IEEE 754: Single precision floating point exponent bias in Unit 2: Computer System Architecture, select the correct statement:",
+    "options": {
+      "A": "63",
+      "B": "128",
+      "C": "127",
+      "D": "255"
+    },
+    "correct_answer": "C",
+    "explanation": "IEEE 754 single precision uses 8 exponent bits with a bias of 127."
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Question 93: Regarding Interrupts: Daisy chaining mechanism priority scheme in Unit 3: Programming Languages and Computer Graphics, select the correct statement:",
+    "options": {
+      "A": "Serial connection with hardware priority based on position",
+      "B": "Parallel polling by software",
+      "C": "Random service order",
+      "D": "FIFO priority queue"
+    },
+    "correct_answer": "A",
+    "explanation": "Daisy chaining assigns highest priority to the device geographically closest to the CPU controller."
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Question 94: Regarding Microprogrammed Control Unit: Control memory contains in Unit 4: Database Management Systems, select the correct statement:",
+    "options": {
+      "A": "Machine language instructions",
+      "B": "Microinstructions / microprograms",
+      "C": "Register file contents",
+      "D": "Interrupt vector tables"
+    },
+    "correct_answer": "B",
+    "explanation": "Control memory in a microprogrammed control unit stores microprograms composed of microinstructions."
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Question 95: Regarding Booth's Multiplication Algorithm: Bit pair comparison for 01 in Unit 5: System Software and Operating System, select the correct statement:",
+    "options": {
+      "A": "Add multiplicand to accumulator",
+      "B": "Subtract multiplicand from accumulator",
+      "C": "Shift right only",
+      "D": "No operation"
+    },
+    "correct_answer": "A",
+    "explanation": "In Booth's algorithm, bit combination 01 signifies adding multiplicand to accumulator."
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Question 96: Regarding Computer Graphics: Bresenham's line algorithm decision variable at start in Unit 6: Software Engineering, select the correct statement:",
+    "options": {
+      "A": "dy - dx",
+      "B": "2*dy - dx",
+      "C": "2*dx - dy",
+      "D": "dx + dy"
+    },
+    "correct_answer": "B",
+    "explanation": "Initial decision parameter p0 = 2*dy - dx."
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Question 97: Regarding Computer Graphics: Cohen-Sutherland line clipping region code bits in Unit 7: Data Structures and Algorithms, select the correct statement:",
+    "options": {
+      "A": "2 bits",
+      "B": "3 bits",
+      "C": "4 bits",
+      "D": "8 bits"
+    },
+    "correct_answer": "C",
+    "explanation": "Cohen-Sutherland assigns a 4-bit Outcode to endpoints (Top, Bottom, Right, Left)."
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Question 98: Regarding Programming Languages: Parameter passing mechanism pass-by-reference in Unit 8: Theory of Computation and Compilers, select the correct statement:",
+    "options": {
+      "A": "Address of actual argument is passed",
+      "B": "Value copy is made",
+      "C": "Expression text is substituted",
+      "D": "Evaluation is delayed until usage"
+    },
+    "correct_answer": "A",
+    "explanation": "Pass-by-reference passes the address of the actual parameter to the formal parameter."
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Question 99: Regarding C++ Polymorphism: Virtual functions enable in Unit 9: Data Communication and Computer Networks, select the correct statement:",
+    "options": {
+      "A": "Compile-time binding",
+      "B": "Runtime dynamic binding",
+      "C": "Macro expansion",
+      "D": "Static linking"
+    },
+    "correct_answer": "B",
+    "explanation": "Virtual functions in C++ enable runtime dynamic binding (late binding)."
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Question 100: Regarding DBMS: Lossless join decomposition condition in Unit 10: Artificial Intelligence (AI), select the correct statement:",
+    "options": {
+      "A": "R1 n R2 is a superkey of R1 or R2",
+      "B": "R1 u R2 is a superkey of R",
+      "C": "R1 n R2 is empty",
+      "D": "R1 and R2 have equal number of attributes"
+    },
+    "correct_answer": "A",
+    "explanation": "R1 n R2 -> R1 or R1 n R2 -> R2 must hold for lossless join decomposition."
+  }
+]

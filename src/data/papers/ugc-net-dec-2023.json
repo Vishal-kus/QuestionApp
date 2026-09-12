@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "What is the probability that a positive integer selected at random from the set of positive integers not exceeding 100 is divisible by either 2 or 5?",
+    "options": {
+      "A": "10 / 5",
+      "B": "3 / 5",
+      "C": "2 / 5",
+      "D": "1 / 5"
+    },
+    "correct_answer": "B",
+    "explanation": "P(E1 U E2) = P(E1) + P(E2) - P(E1 n E2). E1 = 50 numbers (divisible by 2), E2 = 20 numbers (divisible by 5), E1 n E2 = 10 numbers (divisible by 10). P = (50 + 20 - 10) / 100 = 60 / 100 = 3/5."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which of the following is not a palindromic subsequence of the string \"ababcdabba\"?",
+    "options": {
+      "A": "abcba",
+      "B": "abba",
+      "C": "abbbba",
+      "D": "adba"
+    },
+    "correct_answer": "D",
+    "explanation": "A string is palindromic if it equals its reverse. 'adba' reversed is 'abda', which is not equal to 'adba'. Hence it is not a palindromic subsequence."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which of the following is TRUE regarding searching in tree structures?",
+    "options": {
+      "A": "The cost of searching an AVL tree is O(log n) but that of binary search tree is O(n)",
+      "B": "The cost of searching an AVL tree is O(log n) but that of complete binary tree is O(n log n)",
+      "C": "The cost of searching a binary tree is O(log n) but that of AVL tree is O(n)",
+      "D": "The cost of searching an AVL tree is O(n log n) but that of a binary search tree is O(n)"
+    },
+    "correct_answer": "A",
+    "explanation": "AVL trees are self-balancing binary search trees ensuring guaranteed O(log n) search time, whereas an unbalanced Binary Search Tree (BST) can degrade to O(n) in the worst case."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the result of evaluating the postfix expression \" 43*25*+8- \"?",
+    "options": {
+      "A": "8",
+      "B": "14",
+      "C": "10",
+      "D": "5"
+    },
+    "correct_answer": "B",
+    "explanation": "4 3 * -> 12; 2 5 * -> 10; 12 10 + -> 22; 22 8 - -> 14."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which of the following circuits is used to store one bit of data?",
+    "options": {
+      "A": "Encoder",
+      "B": "Decoder",
+      "C": "Flip-Flop",
+      "D": "Register"
+    },
+    "correct_answer": "C",
+    "explanation": "A Flip-Flop is a basic 1-bit memory cell / sequential circuit element."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Identify the code sequence: 1010, 1011, 1001, 1000",
+    "options": {
+      "A": "BCD",
+      "B": "Excess-3",
+      "C": "Gray",
+      "D": "Excess-3 Gray"
+    },
+    "correct_answer": "C",
+    "explanation": "In Gray code, consecutive numbers differ by exactly one bit. 1010 -> 1011 (1 bit change) -> 1001 (1 bit change) -> 1000 (1 bit change)."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "The microoperation which divides a signed binary number by 2 is:",
+    "options": {
+      "A": "Circular shift",
+      "B": "Logical shift",
+      "C": "Arithmetic shift right",
+      "D": "Arithmetic shift left"
+    },
+    "correct_answer": "C",
+    "explanation": "Arithmetic shift right shifts all bits to the right while preserving the sign bit (MSB), dividing the signed number by 2."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "A program that is used by other routines to accomplish a particular task, is called:",
+    "options": {
+      "A": "Micro program",
+      "B": "Micro operation",
+      "C": "Routine",
+      "D": "Subroutine"
+    },
+    "correct_answer": "D",
+    "explanation": "A subroutine is a sequence of program instructions that performs a specific task, packaged as a unit that can be called repeatedly."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Consider a triangle PQR with coordinates P(0,0), Q(2,2) and R(10,4). If this triangle is to be magnified to four times its size while keeping R(10,4) fixed, then the coordinates of the magnified triangle are:",
+    "options": {
+      "A": "P(-20,-12), Q(-20,-4) and R(10,4)",
+      "B": "P(-30,-12), Q(-22,-4) and R(10,4)",
+      "C": "P(-25,-10), Q(22,-4) and R(10,4)",
+      "D": "P(30,-12), Q(-22,4) and R(10,4)"
+    },
+    "correct_answer": "B",
+    "explanation": "P' = R + 4*(P - R) = (10,4) + 4*(-10,-4) = (-30,-12). Q' = R + 4*(Q - R) = (10,4) + 4*(-8,-2) = (-22,-4). R' = R(10,4)."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which of the following statements is TRUE regarding virtual functions in C++?",
+    "options": {
+      "A": "Virtual functions do not implement polymorphism",
+      "B": "Virtual functions do not permit calling of derived class functions using a base class pointer",
+      "C": "We can never build an object from a class containing a pure virtual function",
+      "D": "Pure virtual function can never have a body"
+    },
+    "correct_answer": "C",
+    "explanation": "A class containing at least one pure virtual function is an abstract class, and abstract classes cannot be instantiated."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the output of the C code:\n#include<stdio.h>\nint main() {\n  int i=3;\n  while (i--) {\n    int i=10;\n    i--;\n    printf(\"%d\", i);\n  }\n  printf(\"%d\", i);\n}",
+    "options": {
+      "A": "990",
+      "B": "9990",
+      "C": "999-1",
+      "D": "99-1"
+    },
+    "correct_answer": "C",
+    "explanation": "Outer while loop runs for outer i = 3, 2, 1 (printing inner i-1 = 9 each time), then exits when outer i reaches -1, printing -1 at the end: 999-1."
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "The Hue of a color is related to its:",
+    "options": {
+      "A": "Luminance",
+      "B": "Saturation",
+      "C": "Incandescence",
+      "D": "Wavelength"
+    },
+    "correct_answer": "D",
+    "explanation": "Hue describes the dominant color family/tone, which is directly determined by the dominant wavelength of light."
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "\"CREATE TABLE T\" in SQL is an example of:",
+    "options": {
+      "A": "Normalization",
+      "B": "DML",
+      "C": "DDL",
+      "D": "Primary key"
+    },
+    "correct_answer": "C",
+    "explanation": "CREATE TABLE is a Data Definition Language (DDL) command in SQL."
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "An Address in main memory is called:",
+    "options": {
+      "A": "Virtual address",
+      "B": "Memory address",
+      "C": "Logical address",
+      "D": "Physical address"
+    },
+    "correct_answer": "D",
+    "explanation": "The physical memory hardware location is addressed using a physical address."
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "A system bus in which each data item is transferred during a time slice known in advance to both unit source and destination is called:",
+    "options": {
+      "A": "MIMD",
+      "B": "DMA",
+      "C": "Asynchronous bus",
+      "D": "Synchronous bus"
+    },
+    "correct_answer": "D",
+    "explanation": "A synchronous bus includes a clock signal that controls operations with pre-determined time slots."
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "What is the output of the C program:\n#include <stdio.h>\n#define SQR(x) (x * x)\nint main() {\n  int a, b=3;\n  a = SQR(b+2);\n  printf(\"%d\", a);\n  return 0;\n}",
+    "options": {
+      "A": "25",
+      "B": "11",
+      "C": "Garbage value",
+      "D": "24"
+    },
+    "correct_answer": "B",
+    "explanation": "Macro expansion without parenthesized arguments yields: b+2 * b+2 = 3 + 2*3 + 2 = 3 + 6 + 2 = 11."
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "The head of a moving head disk with 200 tracks (0 to 199) has just finished a request at track 125, and is currently serving at track 143. The request queue (FIFO) is: 86, 147, 91, 177, 94, 150, 102, 175, 130. What will be total head movements for SCAN?",
+    "options": {
+      "A": "259 cylinders",
+      "B": "169 cylinders",
+      "C": "154 cylinders",
+      "D": "264 cylinders"
+    },
+    "correct_answer": "B",
+    "explanation": "Head moving right (143 -> 199): 199 - 143 = 56. Reverses to lowest request (199 -> 86): 199 - 86 = 113. Total = 56 + 113 = 169 cylinders."
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Given 4GB virtual memory space, 4KB page size, and 5 bytes per page table entry. How many virtual pages does this imply, and what is the total page table size?",
+    "options": {
+      "A": "1048576 (1M) pages and 5MB / 5375 KB approx",
+      "B": "215000 and 40960 bytes",
+      "C": "10750 and 10240 bytes",
+      "D": "43000 and 1024 bytes"
+    },
+    "correct_answer": "A",
+    "explanation": "Number of pages = 4GB / 4KB = 2^32 / 2^12 = 2^20 = 1,048,576 pages. Page table size = 1,048,576 * 5 bytes = 5,242,880 bytes = 5120 KB."
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "In Linux, where are user account details stored?",
+    "options": {
+      "A": "/etc/password",
+      "B": "/root/password",
+      "C": "/etc/passwd",
+      "D": "/root/passwd"
+    },
+    "correct_answer": "C",
+    "explanation": "In Unix/Linux systems, user credentials/account details are maintained in /etc/passwd (and encrypted hashes in /etc/shadow)."
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Hash functions produce message digests which are then encrypted with a sender's private key to obtain a:",
+    "options": {
+      "A": "Public key",
+      "B": "Digital signature",
+      "C": "Cipher text",
+      "D": "Data Encryption Standard"
+    },
+    "correct_answer": "B",
+    "explanation": "A digital signature is created by encrypting the hash (message digest) of a message using the sender's private key."
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Let L = {ab, aa, baa}. Which of the following strings is NOT in L*?",
+    "options": {
+      "A": "abaabaaabaa",
+      "B": "aaaabaaaa",
+      "C": "baaaaabaaaab",
+      "D": "baaaaabaa"
+    },
+    "correct_answer": "C",
+    "explanation": "'baaaaabaaaab' ends with 'b', but all words in L end in 'b' or 'a' in ways that cannot form a trailing single 'b' without an preceding 'a'."
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Let A={a, b} and L=A*. Let X={a^n b^n, n>0}. The languages L U X and X are respectively:",
+    "options": {
+      "A": "Not regular, Regular",
+      "B": "Regular, Regular",
+      "C": "Regular, Not regular",
+      "D": "Not Regular, Not Regular"
+    },
+    "correct_answer": "C",
+    "explanation": "L U X = A* U {a^n b^n} = A* (which is Regular). X = {a^n b^n} requires unbounded memory and is Context-Free (Not Regular)."
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which symbol table implementation provides the minimum average search access time?",
+    "options": {
+      "A": "Linear list",
+      "B": "Search tree",
+      "C": "Hash Table",
+      "D": "Self organization list"
+    },
+    "correct_answer": "C",
+    "explanation": "Hash tables offer O(1) average search time, faster than binary search trees O(log n) or linear lists O(n)."
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Consider grammar E -> E+n | E*n | n. For string n+n*n, the handles in the right-sentential forms of the reduction are:",
+    "options": {
+      "A": "n, E+n and E+n * n",
+      "B": "n, E+n and E+E * n",
+      "C": "n, n+n and n+n * n",
+      "D": "n, E+n and E*n"
+    },
+    "correct_answer": "D",
+    "explanation": "Reductions step-by-step: n -> E, then E+n -> E, then E*n -> E. The handles are n, E+n, and E*n."
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which data structure is typically used to implement a hash table?",
+    "options": {
+      "A": "Linked list",
+      "B": "Array",
+      "C": "Binary Tree",
+      "D": "Stack"
+    },
+    "correct_answer": "B",
+    "explanation": "A hash table uses an underlying array indexed by hash key modulo table size."
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Which collision resolution technique involves maintaining a linked list of collided keys?",
+    "options": {
+      "A": "Linear probing",
+      "B": "Quadratic probing",
+      "C": "Chaining",
+      "D": "Double hashing"
+    },
+    "correct_answer": "C",
+    "explanation": "Separate chaining resolves collisions by storing all key-value pairs mapping to the same bucket in a linked list."
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "Consider functions f(n) = 3*n^(sqrt(n)), g(n) = 2^(sqrt(n)*log2(n)), h(n) = n!. Which of the following is true?",
+    "options": {
+      "A": "h(n) is O(f(n))",
+      "B": "h(n) is O(g(n))",
+      "C": "g(n) is not O(f(n))",
+      "D": "f(n) is O(g(n))"
+    },
+    "correct_answer": "D",
+    "explanation": "g(n) = 2^(sqrt(n)*log2(n)) = (2^(log2(n)))^sqrt(n) = n^sqrt(n). Thus f(n) = 3 * n^sqrt(n) is theta(g(n)), so f(n) = O(g(n))."
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "2-3-4 trees are B-trees of order 4. They are isometric to which trees?",
+    "options": {
+      "A": "AVL",
+      "B": "AA",
+      "C": "2-3",
+      "D": "Red-Black"
+    },
+    "correct_answer": "D",
+    "explanation": "Red-Black trees are binary tree representations isometric to 2-3-4 B-trees."
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "The average time required to search a storage location in memory and obtain its contents is called:",
+    "options": {
+      "A": "Access time",
+      "B": "Latency time",
+      "C": "Response time",
+      "D": "Reading time"
+    },
+    "correct_answer": "A",
+    "explanation": "Access time is the total delay between requesting data from memory and receiving it."
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "One of the primary advantages of generating intermediate code in compilers is to:",
+    "options": {
+      "A": "Make parsing and semantic analysis simpler",
+      "B": "Improve error recovery and error reporting",
+      "C": "Increase the chances of reusing the machine-independent code optimizer across target architectures",
+      "D": "Improve register allocation"
+    },
+    "correct_answer": "C",
+    "explanation": "Machine-independent intermediate code allows front-end reusability and portable optimization across multiple target CPU architectures."
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "The sum of minimum and maximum number of final states for a Deterministic Finite Automaton (DFA) having 'P' states is:",
+    "options": {
+      "A": "P",
+      "B": "P-1",
+      "C": "P+1",
+      "D": "P+2"
+    },
+    "correct_answer": "C",
+    "explanation": "Minimum final states = 1 (Min=1 for non-empty language acceptance). Maximum final states = P (all states final). Sum = P + 1."
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 6: Software Engineering",
+    "question": "A test suite consists of:",
+    "options": {
+      "A": "Set of defect cases",
+      "B": "Set of boundary cases",
+      "C": "Set of test cases",
+      "D": "Set of nest cases"
+    },
+    "correct_answer": "C",
+    "explanation": "A test suite is a collection / set of test cases intended to test a software program."
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "A multiplexer combines four 100 Kbps channels using a time slot of 2 bits. What is the output bit rate?",
+    "options": {
+      "A": "100 Kbps",
+      "B": "200 Kbps",
+      "C": "400 Kbps",
+      "D": "1000 Kbps"
+    },
+    "correct_answer": "C",
+    "explanation": "Total bit rate = 4 channels * 100 Kbps = 400 Kbps."
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which of the following is NOT a field in the TCP header?",
+    "options": {
+      "A": "Sequence Number",
+      "B": "Checksum",
+      "C": "Fragmentation offset",
+      "D": "Window size"
+    },
+    "correct_answer": "C",
+    "explanation": "Fragmentation Offset is an IP header field, not a TCP header field."
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In bit-stuffing protocols (like HDLC), each frame begins and ends with the flag pattern (hexadecimal):",
+    "options": {
+      "A": "0x8C",
+      "B": "0x6F",
+      "C": "0xFF",
+      "D": "0x7E"
+    },
+    "correct_answer": "D",
+    "explanation": "The HDLC flag byte is 01111110 (0x7E)."
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Level-0 DFD is also known as:",
+    "options": {
+      "A": "Use case Diagram",
+      "B": "Sequence Diagram",
+      "C": "Context Diagram",
+      "D": "Prototype Diagram"
+    },
+    "correct_answer": "C",
+    "explanation": "A Level-0 Data Flow Diagram (DFD) provides an overview of the system as a single process interacting with external entities, called a Context Diagram."
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "What is the generic structure of a Multi-Agent System (MAS)?",
+    "options": {
+      "A": "Single-agent with multiple objectives",
+      "B": "Multiagents with single objectives",
+      "C": "Multiagents with diverse objectives and communication abilities",
+      "D": "Multiagent with two objectives"
+    },
+    "correct_answer": "C",
+    "explanation": "MAS consists of multiple autonomous agents that possess individual/diverse objectives and interact via communication protocols."
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "A point of a fuzzy set A at which membership value mu_A(x) = 0.5 is called:",
+    "options": {
+      "A": "Core",
+      "B": "Support",
+      "C": "Crossover point",
+      "D": "Alpha-cut"
+    },
+    "correct_answer": "C",
+    "explanation": "The crossover point of a fuzzy set A is the point x in X at which mu_A(x) = 0.5."
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In a GA optimization problem, fitness f(x) = x^2 - 4x + 4. Given population {1.5, 2.0, 3.0, 4.5}, what is the fitness value of x = 4.5?",
+    "options": {
+      "A": "2.25",
+      "B": "6.0",
+      "C": "0.0",
+      "D": "6.25"
+    },
+    "correct_answer": "D",
+    "explanation": "f(4.5) = (4.5)^2 - 4*(4.5) + 4 = 20.25 - 18 + 4 = 6.25."
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In a feed-forward neural network with sigmoid activation, given weights and inputs [0.5, 0.8, 0.2, 0.6], what is the output rounded to two decimals?",
+    "options": {
+      "A": "[0.62, 0.68]",
+      "B": "[0.72, 0.78]",
+      "C": "[0.82, 0.88]",
+      "D": "[0.92, 0.98]"
+    },
+    "correct_answer": "A",
+    "explanation": "Calculating hidden layer outputs via sigmoid and projecting to output layer yields [0.62, 0.68]."
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "If universe of discourse consists of all real numbers, which of the predicate logic statements are true?",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(A), (C) and (D) Only",
+      "C": "(A), (B) and (D) Only",
+      "D": "(A), (B), (C) and (D) Only"
+    },
+    "correct_answer": "D",
+    "explanation": "All given statements regarding real numbers (existence of identity 0, properties of signs and squares) hold true."
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "If universe of discourse is the set of integers, which statements are TRUE?\n(A) Ax Ey (x < y)\n(B) Ax Ey (x < y^2)\n(C) Ex Ay (x*y = y)\n(D) Ex Ey (n+m=4 and n-m=1)",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(B) and (C) Only",
+      "C": "(C), (D) and (E) Only",
+      "D": "(C) and (E) Only"
+    },
+    "correct_answer": "B",
+    "explanation": "(B) holds as squares grow arbitrarily large; (C) holds for identity element x=1."
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "If N x N relation R on N^2 is defined by <x,y> R <u,v> iff x*v = y*u, then R is:",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(B) and (C) Only",
+      "C": "(A), (C) and (D) Only",
+      "D": "(A), (B) and (C) Only"
+    },
+    "correct_answer": "D",
+    "explanation": "R is an equivalence relation (Reflexive: x*y=y*x; Symmetric: u*y=v*x; Transitive)."
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "The interface(s) that provide I/O transfer of data directly to and from memory unit peripherals is/are:",
+    "options": {
+      "A": "(A) Only",
+      "B": "(B) Only",
+      "C": "(A) and (B) Only",
+      "D": "(C) and (D) Only"
+    },
+    "correct_answer": "C",
+    "explanation": "Both DMA (Direct Memory Access) and IOP (Input-Output Processor) transfer data directly to/from memory without CPU intervention."
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which of the following are main memory components?",
+    "options": {
+      "A": "(A) and (C) Only",
+      "B": "(B) and (C) Only",
+      "C": "(C) and (D) Only",
+      "D": "(A), (B) and (C) Only"
+    },
+    "correct_answer": "B",
+    "explanation": "In computer architecture hierarchy, Cache and RAM are semiconductor primary/main memory."
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following propositional formulas are tautologies?",
+    "options": {
+      "A": "(A) Only",
+      "B": "(B) Only",
+      "C": "(A) and (B) Only",
+      "D": "(C) and (D) Only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statements (A) and (B) evaluate to True (1) under all truth assignments."
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Consider three points P1(1,2,0), P2(3,6,20), P3(2,4,6) and viewpoint C(0,0,-10). Which options are correct?",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(A), (C) and (D) Only",
+      "C": "(B), (C) and (D) Only",
+      "D": "(A), (B) and (D) Only"
+    },
+    "correct_answer": "B",
+    "explanation": "Points lie on the same line ray from C; closer points obscure farther ones along the viewing direction."
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which statements regarding C++ Constructors are CORRECT?\n(A) Constructors are invoked automatically upon object creation.\n(B) Constructors do not have return types.\n(C) Constructors cannot be inherited.\n(D) Constructors can be declared as virtual.",
+    "options": {
+      "A": "(A), (B) and (D) Only",
+      "B": "(A), (B) and (C) Only",
+      "C": "(B), (C) and (D) Only",
+      "D": "(A), (C) and (D) Only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statements A, B, C are correct. Constructors CANNOT be virtual in C++."
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which of the following statements regarding transaction concurrency are CORRECT?",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(A), (B) and (C) Only",
+      "C": "(A), (B) and (D) Only",
+      "D": "(B) and (C) Only"
+    },
+    "correct_answer": "B",
+    "explanation": "A (Granularity is item size), B (Operations conflict if different transactions access same item with at least one write), C (Conflict equivalence) are correct."
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which of the following statements are NOT CORRECT?\n(A) First record in block is actor record.\n(C) Searching is harder in B+ tree than B-tree.\n(D) Extendible hashing directory size is array 2d-1.",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(A), (C) and (D) Only",
+      "C": "(A), (B) and (D) Only",
+      "D": "(A), (B), (C) and (D) Only"
+    },
+    "correct_answer": "B",
+    "explanation": "A is wrong (it is called anchor record), C is wrong (B+ trees are faster/easier due to leaf level links), D is wrong (directory size is 2^d)."
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which statements are NOT CORRECT about NUMA architecture?",
+    "options": {
+      "A": "(A) and (C) Only",
+      "B": "(B) and (D) Only",
+      "C": "(A) and (E) Only",
+      "D": "(C) and (D) Only"
+    },
+    "correct_answer": "D",
+    "explanation": "Statement C is wrong (local memory access is FASTER than remote in NUMA) and D is wrong."
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Indexed/grouped file allocation is useful because:",
+    "options": {
+      "A": "(A) Only",
+      "B": "(B) and (C) Only",
+      "C": "(B) Only",
+      "D": "(A), (B) and (D) Only"
+    },
+    "correct_answer": "D",
+    "explanation": "Indexed allocation supports both direct and sequential access, uses entire blocks for data, and prevents external fragmentation."
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which of the following process synchronization statements are CORRECT?",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(B) and (C) Only",
+      "C": "(B) and (D) Only",
+      "D": "(B) and (E) Only"
+    },
+    "correct_answer": "C",
+    "explanation": "Spinlocks use busy waiting (B), and Critical region is code accessing shared memory (D)."
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Three address codes can be represented in special structures known as:",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(A), (B) and (D) Only",
+      "C": "(B) and (C) Only",
+      "D": "(B), (C) and (D) Only"
+    },
+    "correct_answer": "B",
+    "explanation": "Three-address code data structures are Quadruples, Triples, and Indirect Triples."
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the statements regarding Finite State Machines with output are CORRECT?",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(A), (B) and (C) Only",
+      "C": "(B) and (D) Only",
+      "D": "(A), (B) and (D) Only"
+    },
+    "correct_answer": "B",
+    "explanation": "A, B, C are correct. Moore and Mealy machines are equivalent finite state machines with output."
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "For P(x): x = x^2 with integers as universe of discourse, which have true truth values?",
+    "options": {
+      "A": "(A), (B) and (E) Only",
+      "B": "(A), (B) and (C) Only",
+      "C": "(A), (B) and (D) Only",
+      "D": "(B), (C) and (D) Only"
+    },
+    "correct_answer": "C",
+    "explanation": "P(0): 0=0^2 (True), P(1): 1=1^2 (True), Ex P(x): holds for x=0,1 (True)."
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which statements are true if universe of discourse is integers?\n(A) An (n^2 >= 0)\n(B) En (n^2 = 2)\n(C) An (n^2 >= n)\n(D) En (n < 0)",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(B) and (C) Only",
+      "C": "(C) and (D) Only",
+      "D": "(A) and (D) Only"
+    },
+    "correct_answer": "D",
+    "explanation": "(A) n^2 >= 0 is true for all integers. (D) Negative integers exist (e.g. n = -1)."
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the given undirected graph structures are trees?",
+    "options": {
+      "A": "(A) and (B) only",
+      "B": "(A), (B) and (D) only",
+      "C": "(A) and (D) only",
+      "D": "(A), (B), (C) and (D) only"
+    },
+    "correct_answer": "A",
+    "explanation": "Graphs (A) and (B) are connected and acyclic with n=6 vertices and 5 edges."
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which of the following are examples of CSMA channel sensing methods?",
+    "options": {
+      "A": "(A), (B) and (D) Only",
+      "B": "(A), (C) and (D) Only",
+      "C": "(B), (C) and (D) Only",
+      "D": "(A), (B) and (C) Only"
+    },
+    "correct_answer": "B",
+    "explanation": "CSMA channel sensing strategies are 1-persistent, Non-persistent, and p-persistent."
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 6: Software Engineering",
+    "question": "The selection of Spiral Model is based on which requirement characteristics?",
+    "options": {
+      "A": "(C) Only",
+      "B": "(B) Only",
+      "C": "(B) and (D) Only",
+      "D": "(A) and (C) Only"
+    },
+    "correct_answer": "C",
+    "explanation": "Spiral model is chosen for high risk, complex projects where requirements change often (B) and are complex (D)."
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "The primary responsibility/work done by UDP is:",
+    "options": {
+      "A": "(A) and (D) Only",
+      "B": "(C) Only",
+      "C": "(D) Only",
+      "D": "(B) and (C) Only"
+    },
+    "correct_answer": "C",
+    "explanation": "UDP is a connectionless protocol whose primary function is segment multiplexing/demultiplexing and transmission without congestion/flow control."
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which of the following statements are NOT CORRECT regarding network routing protocols?",
+    "options": {
+      "A": "(A), (D) and (E) Only",
+      "B": "(A) and (B) Only",
+      "C": "(B) and (C) Only",
+      "D": "(B), (C) and (E) Only"
+    },
+    "correct_answer": "A",
+    "explanation": "OSPF is link-state (not distance vector), RIP is distance-vector (not link-state)."
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which of the following digital signal encoding statements are CORRECT?",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(A), (C), (D), and (E) Only",
+      "C": "(B), (C) and (D) Only",
+      "D": "(A), (B), (C), and (E) Only"
+    },
+    "correct_answer": "C",
+    "explanation": "NRZ-L and NRZ-I have average signal rate N/2 (B), Manchester combines RZ and NRZ-L (C), and both NRZ schemes suffer from DC components (D)."
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which of the following are commonly used parsing techniques in NLP for syntactic analysis?",
+    "options": {
+      "A": "(A), (C), (D), (E) Only",
+      "B": "(B), (C), (D), (E) Only",
+      "C": "(A), (B), (C), (E) Only",
+      "D": "(A) and (B) Only"
+    },
+    "correct_answer": "C",
+    "explanation": "Top-down, Bottom-up, Dependency parsing, and Earley parsing are syntactic parsers (Statistical MT is machine translation)."
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In Alpha-Beta pruning, which statements regarding cut-off procedures are correct?",
+    "options": {
+      "A": "(A), (C), (D) Only",
+      "B": "(B), (C), (D) Only",
+      "C": "(A), (B), (D) Only",
+      "D": "(C), (B) Only"
+    },
+    "correct_answer": "C",
+    "explanation": "Alpha-beta pruning eliminates subtrees outside bounds (A), saves computation time (B), and initializes alpha=-inf, beta=+inf at root (D)."
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Match Set Theory Operations:\n(A) phi n {phi}\n(B) {phi} n {phi}\n(C) {phi, {phi}} - phi\n(D) phi U {{phi}}",
+    "options": {
+      "A": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+      "B": "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)",
+      "C": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+      "D": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)"
+    },
+    "correct_answer": "D",
+    "explanation": "A matches I (empty set), B matches II ({phi}), C matches IV ({phi, {phi}}), D matches III ({{phi}})."
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Match Assembly Instructions:\n(a) SZA\n(b) SKI\n(c) SNA\n(d) ISZ",
+    "options": {
+      "A": "(a)-(II), (b)-(IV), (c)-(I), (d)-(III)",
+      "B": "(a)-(IV), (b)-(III), (c)-(II), (d)-(I)",
+      "C": "(a)-(IV), (b)-(II), (c)-(I), (d)-(III)",
+      "D": "(a)-(III), (b)-(IV), (c)-(II), (d)-(I)"
+    },
+    "correct_answer": "B",
+    "explanation": "SZA: Skip if AC zero (IV); SKI: Skip if input flag on (III); SNA: Skip if AC negative (II); ISZ: Increment memory and skip if zero (I)."
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Match Computer Graphics Algorithms:\na. Bresenham\nb. Cohen-Sutherland\nc. Sutherland-Hodgeman\nd. Z-Buffer",
+    "options": {
+      "A": "(a)-(III), (b)-(II), (c)-(IV), (d)-(I)",
+      "B": "(a)-(II), (b)-(III), (c)-(I), (d)-(IV)",
+      "C": "(a)-(II), (b)-(III), (c)-(IV), (d)-(I)",
+      "D": "(a)-(II), (b)-(IV), (c)-(III), (d)-(I)"
+    },
+    "correct_answer": "C",
+    "explanation": "Bresenham -> Line drawing (II); Cohen-Sutherland -> Line clipping (III); Sutherland-Hodgeman -> Polygon clipping (IV); Z-Buffer -> Hidden surface removal (I)."
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Match Normal Forms definition:\na. BCNF iff\nb. 5NF iff\nc. 1NF iff\nd. 4NF iff",
+    "options": {
+      "A": "(a)-(III), (b)-(II), (c)-(I), (d)-(IV)",
+      "B": "(a)-(IV), (b)-(I), (c)-(II), (d)-(III)",
+      "C": "(a)-(II), (b)-(III), (c)-(IV), (d)-(I)",
+      "D": "(a)-(IV), (b)-(I), (c)-(III), (d)-(II)"
+    },
+    "correct_answer": "B",
+    "explanation": "BCNF -> every FD implied by candidate keys (IV); 5NF -> every JD implied by candidate keys (I); 1NF -> atomic domains (II); 4NF -> every MVD implied by candidate keys (III)."
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Match OS Concepts:\na. LRU\nb. Demand cleaning\nc. Long-term scheduling\nd. Medium-term scheduling",
+    "options": {
+      "A": "(a)-(I), (b)-(III), (c)-(IV), (d)-(II)",
+      "B": "(a)-(II), (b)-(I), (c)-(IV), (d)-(III)",
+      "C": "(a)-(III), (b)-(II), (c)-(I), (d)-(IV)",
+      "D": "(a)-(IV), (b)-(II), (c)-(III), (d)-(I)"
+    },
+    "correct_answer": "B",
+    "explanation": "LRU -> replaces page unreferenced longest (II); Demand cleaning -> writes page when selected for replacement (I); Long-term -> job pool to execute (IV); Medium-term -> process memory swapping (III)."
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Match Compiler Phases to input:\na. Syntax tree\nb. Intermediate representation\nc. Token stream\nd. Character stream",
+    "options": {
+      "A": "(a)-(IV), (b)-(III), (c)-(I), (d)-(II)",
+      "B": "(a)-(II), (b)-(I), (c)-(IV), (d)-(III)",
+      "C": "(a)-(II), (b)-(IV), (c)-(I), (d)-(III)",
+      "D": "(a)-(IV), (b)-(I), (c)-(II), (d)-(III)"
+    },
+    "correct_answer": "B",
+    "explanation": "Syntax tree -> Semantic analyzer (II); Intermediate rep -> Code generator (I); Token stream -> Syntax analyzer (IV); Character stream -> Lexical analyzer (III)."
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Match Logical Equivalences:\na. P ^ (P -> Q)\nb. ~(P v Q) -> (P ^ Q)\nc. P -> Q\nd. P v (Q ^ R)",
+    "options": {
+      "A": "(a)-(I), (b)-(II), (c)-(III), (d)-(IV)",
+      "B": "(a)-(II), (b)-(I), (c)-(III), (d)-(IV)",
+      "C": "(a)-(III), (b)-(I), (c)-(II), (d)-(IV)",
+      "D": "(a)-(IV), (b)-(III), (c)-(II), (d)-(I)"
+    },
+    "correct_answer": "B",
+    "explanation": "P ^ (P -> Q) = (P ^ ~P) v (P ^ Q) (II); ~(P v Q) -> (P ^ Q) = P v Q (I); P -> Q = ~P v Q (III); P v (Q ^ R) = (P v Q) ^ (P v R) (IV)."
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Match Search Algorithms:\na. Greedy Best first search\nb. A*\nc. Recursive best-first search\nd. SMA*",
+    "options": {
+      "A": "(a)-(II), (b)-(IV), (c)-(I), (d)-(III)",
+      "B": "(a)-(II), (b)-(III), (c)-(I), (d)-(IV)",
+      "C": "(a)-(III), (b)-(II), (c)-(IV), (d)-(I)",
+      "D": "(a)-(III), (b)-(IV), (c)-(II), (d)-(I)"
+    },
+    "correct_answer": "A",
+    "explanation": "Greedy BFS -> Incomplete in finite space (II); A* -> Exponential space complexity (IV); RBFS -> Linear space O(d) (I); SMA* -> Memory bounded optimal (III)."
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Match Cryptography concepts:\na. Monoalphabetic cipher\nb. DES\nc. Stream Cipher\nd. Polyalphabetic cipher",
+    "options": {
+      "A": "(a)-(III), (b)-(I), (c)-(IV), (d)-(II)",
+      "B": "(a)-(III), (b)-(IV), (c)-(II), (d)-(I)",
+      "C": "(a)-(I), (b)-(III), (c)-(IV), (d)-(II)",
+      "D": "(a)-(II), (b)-(I), (c)-(IV), (d)-(III)"
+    },
+    "correct_answer": "A",
+    "explanation": "Monoalphabetic -> 1-to-1 relationship (III); DES -> Round keys (I); Stream cipher -> Feedback mechanism/LFSR (IV); Polyalphabetic -> 1-to-many relationship (II)."
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Match AI Search Space Complexities:\na. Hill climbing\nb. Best first search\nc. A* Search\nd. Depth first search",
+    "options": {
+      "A": "(a)-(III), (b)-(I), (c)-(IV), (d)-(II)",
+      "B": "(a)-(II), (b)-(I), (c)-(IV), (d)-(III)",
+      "C": "(a)-(II), (b)-(IV), (c)-(I), (d)-(III)",
+      "D": "(a)-(I), (b)-(III), (c)-(II), (d)-(I)"
+    },
+    "correct_answer": "A",
+    "explanation": "Hill climbing -> O(1) space (III); Best first -> O(b^d) (I); A* -> O(b^m) (IV); DFS -> O(b*d) (II)."
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Arrange in ascending order of value:\n(a) Remainder of 49^16 mod 17\n(b) Remainder of 2^446 mod 9\n(c) Remainder of 155^17 mod 17\n(d) Last digit of 7^45",
+    "options": {
+      "A": "(a), (b), (c), (d)",
+      "B": "(a), (b), (d), (c)",
+      "C": "(a), (c), (b), (d)",
+      "D": "(d), (c), (b), (a)"
+    },
+    "correct_answer": "C",
+    "explanation": "(a) 49^16 mod 17 = 1 (Fermat's theorem); (c) 155^17 mod 17 = 155 mod 17 = 2; (b) 2^446 mod 9 = 4; (d) 7^45 mod 10 = 7. Ascending order: 1, 2, 4, 7 => (a), (c), (b), (d)."
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Arrange instruction execution steps in correct sequence:\n(A) Calculate effective address\n(B) Execute instruction\n(C) Fetch instruction\n(D) Fetch operand\n(E) Decode instruction",
+    "options": {
+      "A": "(C),(E),(D),(A),(B)",
+      "B": "(C),(E),(A),(D),(B)",
+      "C": "(A),(B),(C),(E),(D)",
+      "D": "(A),(B),(C),(D),(E)"
+    },
+    "correct_answer": "B",
+    "explanation": "Instruction Cycle: Fetch instruction (C) -> Decode instruction (E) -> Calculate effective address (A) -> Fetch operand (D) -> Execute instruction (B)."
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Given code: int arr[]={0,1,2,3,4}; int i=1, *ptr=arr+2; Arrange output of print statements in increasing order:\n(a) ptr[i]\n(b) ptr[i+1]\n(c) ptr[-i]\n(d) ptr[-i+1]",
+    "options": {
+      "A": "(c), (a), (b), (d)",
+      "B": "(c), (d), (a), (b)",
+      "C": "(d), (a), (b), (c)",
+      "D": "(a), (b), (d), (c)"
+    },
+    "correct_answer": "B",
+    "explanation": "ptr points to arr[2]=2. (c) ptr[-1]=arr[1]=1; (d) ptr[0]=arr[2]=2; (a) ptr[1]=arr[3]=3; (b) ptr[2]=arr[4]=4. Values: 1, 2, 3, 4 => (c), (d), (a), (b)."
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Arrange OO Analysis and Design steps in proper sequence:\n(a) Interaction diagrams\n(b) State chart and object diagram\n(c) Use case and activity diagram\n(d) Component and deployment diagram\n(e) Class diagram",
+    "options": {
+      "A": "(e) -> (b) -> (a) -> (c) -> (d)",
+      "B": "(b) -> (a) -> (e) -> (d) -> (c)",
+      "C": "(e) -> (c) -> (b) -> (d) -> (a)",
+      "D": "(c) -> (a) -> (e) -> (b) -> (d)"
+    },
+    "correct_answer": "D",
+    "explanation": "Use case/activity diagram (c) -> Interaction diagram (a) -> Class diagram (e) -> State chart (b) -> Component/deployment diagram (d)."
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Arrange Linux Kernel interrupt protection levels in order of increasing priority:\n(a) user mode programs\n(b) bottom half interrupt handlers\n(c) kernel system service routines\n(d) top half interrupt handlers",
+    "options": {
+      "A": "(a),(b),(d),(c)",
+      "B": "(a),(c),(b),(d)",
+      "C": "(a),(c),(d),(b)",
+      "D": "(d), (a), (c), (b)"
+    },
+    "correct_answer": "B",
+    "explanation": "Increasing priority: User mode (a) < System service routines (c) < Bottom halves (b) < Top half interrupt handlers (d)."
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Arrange compiler execution phases in order:\n(a) Target code generation\n(b) Syntax Analysis\n(c) Code optimization\n(d) Semantic Analysis\n(e) Lexical Analysis",
+    "options": {
+      "A": "(b), (e), (d), (a), (c)",
+      "B": "(e), (d), (b), (a), (c)",
+      "C": "(e), (b), (d), (c), (a)",
+      "D": "(b),(d),(e),(a),(c)"
+    },
+    "correct_answer": "C",
+    "explanation": "Phases: Lexical Analysis (e) -> Syntax Analysis (b) -> Semantic Analysis (d) -> Code Optimization (c) -> Target Code Generation (a)."
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Arrange prototyping software model steps in correct sequence:\n(a) Customer Evaluation\n(b) Quick design\n(c) Requirements\n(d) Implement\n(e) Design",
+    "options": {
+      "A": "(c) -> (a) -> (d) -> (b) -> (e)",
+      "B": "(b) -> (c) -> (a) -> (d) -> (e)",
+      "C": "(c) -> (b) -> (d) -> (a) -> (e)",
+      "D": "(e) -> (b) -> (c) -> (d) -> (a)"
+    },
+    "correct_answer": "C",
+    "explanation": "Requirements gathering (c) -> Quick design (b) -> Prototype implementation (d) -> Customer evaluation (a) -> Final design/refinement (e)."
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Arrange Genetic Algorithm encoding strategies in correct order from initial representation:\n(a) Binary Encoding\n(b) Real valued Encoding\n(c) Permutation Encoding\n(d) Gray coding",
+    "options": {
+      "A": "(d),(b),(a),(c)",
+      "B": "(b),(d),(a),(c)",
+      "C": "(c),(d),(a),(b)",
+      "D": "(b),(c),(a),(d)"
+    },
+    "correct_answer": "C",
+    "explanation": "Permutation encoding (c) -> Gray coding (d) -> Binary encoding (a) -> Real valued encoding (b)."
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Arrange DHCP IP lease renewal steps in correct sequence:\n(a) Client sends DHCPREQUEST\n(b) Server sends DHCPACK\n(c) Client checks lease timer\n(d) Server updates lease database",
+    "options": {
+      "A": "(a),(b),(c),(d)",
+      "B": "(c),(d),(b),(a)",
+      "C": "(c),(b),(a),(d)",
+      "D": "(c), (a),(b),(d)"
+    },
+    "correct_answer": "D",
+    "explanation": "Client checks timer (c) -> sends DHCPREQUEST (a) -> server responds DHCPACK (b) -> server updates database (d)."
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Arrange K-Means clustering steps in correct sequence:\n(a) Randomly initialize centroids\n(b) Assign points to nearest centroid\n(c) Update centroids based on mean\n(d) Specify number of clusters K\n(e) Repeat until convergence",
+    "options": {
+      "A": "(d),(a),(b),(c),(e)",
+      "B": "(a),(b),(c),(d),(e)",
+      "C": "(c),(b),(a),(d),(e)",
+      "D": "(d),(c),(a),(b),(e)"
+    },
+    "correct_answer": "A",
+    "explanation": "Specify K (d) -> Initialize centroids (a) -> Assign points (b) -> Update centroids (c) -> Repeat until convergence (e)."
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Statement I: If H is a non-empty finite subset of group G closed under multiplication, then H is a subgroup.\nStatement II: There exists no homomorphism from (Z,+) to (Q,+).",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is a classic theorem (a non-empty finite subset closed under operation is a subgroup). Statement II is false because identity mapping f(x)=x is a valid homomorphism."
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Statement I: Friend function and friend class member functions directly access private/protected data.\nStatement II: Friend function accesses private data through base class member functions.",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements describe C++ friend function permissions and access rules accurately."
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Statement I: A thread is a dispatchable unit of work that does not execute sequentially and is not interruptible.\nStatement II: It is not possible to alter thread behavior by altering context when thread is suspended.",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "B",
+    "explanation": "Both statements are false. Threads execute sequentially, are interruptible, and suspended thread contexts can be altered."
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Statement I: In Reuse Oriented Model, modification of old system parts appropriate to new requirements is done.\nStatement II: Integration of modified parts is impossible in new systems.",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement I is correct (reuse software engineering adapts existing modules). Statement II is false (integration into new systems is the primary goal)."
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Statement I: In datagram networks, routers hold state information about connections.\nStatement II: In virtual circuit networks, each virtual circuit requires router table space per connection.",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "correct_answer": "D",
+    "explanation": "Statement I is false (datagram IP networks are connectionless/stateless). Statement II is true (virtual circuits maintain connection state tables)."
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "For relational database decomposition R(A,B,C,D) with FDs F = {A->B, B->C, C->D}, which statement is true regarding dependency preservation and losslessness?",
+    "options": {
+      "A": "Lossy and Dependency Preserving",
+      "B": "Lossless and Not Dependency Preserving",
+      "C": "Lossless and Dependency Preserving",
+      "D": "Lossy and Not Dependency Preserving"
+    },
+    "correct_answer": "C",
+    "explanation": "The canonical BCNF/3NF decomposition along functional dependency chains preserves all dependencies and guarantees lossless join."
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which concurrency control protocol guarantees strict serializability and prevents cascading aborts?",
+    "options": {
+      "A": "Basic 2PL",
+      "B": "Timestamp Ordering",
+      "C": "Thomas Write Rule",
+      "D": "Strict 2PL"
+    },
+    "correct_answer": "D",
+    "explanation": "Strict 2PL holds all exclusive locks until transaction commit/abort, preventing dirty reads and cascading rollbacks."
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In a Transportation Problem with m sources and n destinations, a basic feasible solution contains at most how many non-zero allocations?",
+    "options": {
+      "A": "m * n",
+      "B": "m + n - 1",
+      "C": "m + n",
+      "D": "m + n + 1"
+    },
+    "correct_answer": "B",
+    "explanation": "A non-degenerate basic feasible solution to an m x n transportation problem contains exactly m + n - 1 independent allocations."
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In Linear Programming, the dual of a Primal Maximization problem with '<=' constraints is a:",
+    "options": {
+      "A": "Minimization problem with '>=' constraints",
+      "B": "Maximization problem with '>=' constraints",
+      "C": "Minimization problem with '<=' constraints",
+      "D": "Unconstrained Optimization problem"
+    },
+    "correct_answer": "A",
+    "explanation": "Primal Max Z with '<=' constraints converts to Dual Min W with '>=' constraints."
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "What is the minimum cost in a standard LPP assignment problem given optimal allocation values?",
+    "options": {
+      "A": "205",
+      "B": "250",
+      "C": "330",
+      "D": "200"
+    },
+    "correct_answer": "A",
+    "explanation": "Summing optimal cell costs yields total minimum cost = 205."
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Given relations X(S, Si, C) and Y(S, P, D). What is the number of tuples produced by natural join X * Y?",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "3",
+      "D": "6"
+    },
+    "correct_answer": "C",
+    "explanation": "Matching the common join attribute S between X and Y yields 3 matching tuples."
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "What is the resulting relation schema and tuples of Natural Join X * Y on common attribute S?",
+    "options": {
+      "A": "Schema with (S, Si, C, P, D) and matching tuples",
+      "B": "Schema with (S, Si, C, P, D) and 3 tuples",
+      "C": "Single tuple relation",
+      "D": "None of these"
+    },
+    "correct_answer": "B",
+    "explanation": "The natural join combines matching rows across relations X and Y on attribute S, outputting 3 tuples."
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which of the following joins is used to retain all tuples from both relations X and Y, inserting NULLs for unmatched attributes?",
+    "options": {
+      "A": "Left outer join",
+      "B": "Right outer join",
+      "C": "Natural join",
+      "D": "Full outer join"
+    },
+    "correct_answer": "D",
+    "explanation": "Full Outer Join keeps all tuples from both left and right relations, padding missing values with NULL."
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Number of tuples obtained by applying right outer join on relations X (4 tuples) and Y (4 tuples) where all 4 Y tuples match or remain present is:",
+    "options": {
+      "A": "16",
+      "B": "5",
+      "C": "3",
+      "D": "4"
+    },
+    "correct_answer": "D",
+    "explanation": "Right outer join retains all tuples from the right relation Y (4 tuples)."
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Number of tuples obtained by applying cartesian product (X x Y) over relation X (4 tuples) and relation Y (4 tuples) is:",
+    "options": {
+      "A": "16",
+      "B": "12",
+      "C": "04",
+      "D": "32"
+    },
+    "correct_answer": "A",
+    "explanation": "Cartesian product tuple count = |X| * |Y| = 4 * 4 = 16 tuples."
+  }
+]

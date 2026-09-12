@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following relations on the set S = {1, 2, 3, 4} is an Equivalence Relation?",
+    "options": {
+      "A": "R1 = {(1,1), (2,2), (3,3), (4,4), (1,2), (2,1)}",
+      "B": "R2 = {(1,1), (2,2), (3,3), (1,2), (2,1)}",
+      "C": "R3 = {(1,1), (2,2), (3,3), (4,4), (1,2), (2,3)}",
+      "D": "R4 = {(1,2), (2,1), (2,3), (3,2)}"
+    },
+    "correct_answer": "A",
+    "explanation": "An equivalence relation must be Reflexive, Symmetric, and Transitive. R1 contains all reflexive pairs (1,1), (2,2), (3,3), (4,4) for set S, symmetric pair (1,2) and (2,1), and satisfies transitivity."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "In a 16-bit microprocessor with a 16-bit address bus, what is the maximum byte-addressable memory capacity?",
+    "options": {
+      "A": "32 KB",
+      "B": "64 KB",
+      "C": "128 KB",
+      "D": "1 MB"
+    },
+    "correct_answer": "B",
+    "explanation": "A 16-bit address bus can address 2^16 distinct locations. Since memory is byte-addressable, 2^16 bytes = 65,536 bytes = 64 KB."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which 2D transformation matrix converts a point (x, y) to (x', y') by scaling along x and y axes by factors Sx and Sy respectively?",
+    "options": {
+      "A": "[[Sx, 0, 0], [0, Sy, 0], [0, 0, 1]]",
+      "B": "[[1, 0, Sx], [0, 1, Sy], [0, 0, 1]]",
+      "C": "[[Sx, Sy, 0], [0, Sx, Sy], [0, 0, 1]]",
+      "D": "[[0, Sx, 0], [Sy, 0, 0], [0, 0, 1]]"
+    },
+    "correct_answer": "A",
+    "explanation": "Homogeneous coordinates scaling matrix is [[Sx, 0, 0], [0, Sy, 0], [0, 0, 1]], which gives x' = Sx * x and y' = Sy * y."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which of the following normal forms deals with multi-valued dependencies (MVD)?",
+    "options": {
+      "A": "2NF",
+      "B": "3NF",
+      "C": "BCNF",
+      "D": "4NF"
+    },
+    "correct_answer": "D",
+    "explanation": "Fourth Normal Form (4NF) is specifically designed to eliminate non-trivial multi-valued dependencies that are not functional dependencies."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Consider a system with 4 processes (P1, P2, P3, P4) and 3 resource types (R1, R2, R3). Which condition is NOT necessary for a deadlock to exist?",
+    "options": {
+      "A": "Mutual Exclusion",
+      "B": "Hold and Wait",
+      "C": "Preemption",
+      "D": "Circular Wait"
+    },
+    "correct_answer": "C",
+    "explanation": "The four Coffman conditions for deadlock are Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait. Preemption prevents deadlock; No Preemption is required."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which software testing technique checks internal logic, paths, and code structure of the application?",
+    "options": {
+      "A": "Black-Box Testing",
+      "B": "White-Box Testing",
+      "C": "Acceptance Testing",
+      "D": "System Testing"
+    },
+    "correct_answer": "B",
+    "explanation": "White-Box Testing (Glass-Box or Structural Testing) tests internal structures or workings of an application, as opposed to functional Black-Box testing."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the tightest upper bound time complexity of Dijkstra's algorithm using a Min-Heap binary priority queue for a graph with V vertices and E edges?",
+    "options": {
+      "A": "O(V^2)",
+      "B": "O((V + E) log V)",
+      "C": "O(V E)",
+      "D": "O(E log E)"
+    },
+    "correct_answer": "B",
+    "explanation": "Using a binary min-heap, extract-min takes O(log V) performed V times, and decrease-key takes O(log V) performed E times, yielding O((V + E) log V)."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which class of languages is closed under Union, Intersection, Complement, and Concatenation?",
+    "options": {
+      "A": "Context-Free Languages",
+      "B": "Regular Languages",
+      "C": "Context-Sensitive Languages only",
+      "D": "Recursively Enumerable Languages"
+    },
+    "correct_answer": "B",
+    "explanation": "Regular languages are closed under all boolean operations (Union, Intersection, Complement) as well as Concatenation, Kleene Star, and Reversal."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In the IPv4 header, which field is decremented by 1 at each router and prevents packets from circulating indefinitely in a routing loop?",
+    "options": {
+      "A": "Header Checksum",
+      "B": "Type of Service",
+      "C": "Time to Live (TTL)",
+      "D": "Identification"
+    },
+    "correct_answer": "C",
+    "explanation": "The Time to Live (TTL) field is decremented by 1 at each router. When TTL reaches 0, the packet is discarded and an ICMP Time Exceeded message is sent back."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which heuristic search algorithm is guaranteed to find an optimal solution if the heuristic function h(n) is admissible (never overestimates the cost)?",
+    "options": {
+      "A": "Breadth-First Search",
+      "B": "Depth-First Search",
+      "C": "Greedy Best-First Search",
+      "D": "A* Search"
+    },
+    "correct_answer": "D",
+    "explanation": "A* search evaluates f(n) = g(n) + h(n). If h(n) is admissible (h(n) <= h*(n)), A* tree search is guaranteed to be optimal."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "In a simple graph with n vertices, what is the maximum number of edges possible without parallel edges or self loops?",
+    "options": {
+      "A": "n(n-1)/2",
+      "B": "n(n+1)/2",
+      "C": "2^n",
+      "D": "n^2"
+    },
+    "correct_answer": "A",
+    "explanation": "A complete graph K_n has n(n-1)/2 edges, which represents the maximum number of edges in a simple graph with n vertices."
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "How many selection lines are required for a 32-to-1 Multiplexer?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "32"
+    },
+    "correct_answer": "B",
+    "explanation": "A multiplexer with 2^n inputs requires n selection lines. Since 32 = 2^5, 5 selection lines are required."
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which polygon clipping algorithm uses a divide-and-conquer strategy to clip polygons against a rectangular window boundary?",
+    "options": {
+      "A": "Cohen-Sutherland",
+      "B": "Sutherland-Hodgman",
+      "C": "Liang-Barsky",
+      "D": "Weiler-Atherton"
+    },
+    "correct_answer": "B",
+    "explanation": "Sutherland-Hodgman algorithm clips a polygon against each window boundary one at a time (Left, Right, Bottom, Top)."
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A relation R(A, B, C, D) has FDs {A -> B, B -> C, C -> D}. What is the primary candidate key of R?",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "AD"
+    },
+    "correct_answer": "A",
+    "explanation": "The closure of A is A+ = {A, B, C, D}, which contains all attributes of R. Thus A is the candidate key."
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "In UNIX, which system call is used to create a new child process?",
+    "options": {
+      "A": "exec()",
+      "B": "fork()",
+      "C": "wait()",
+      "D": "exit()"
+    },
+    "correct_answer": "B",
+    "explanation": "The fork() system call creates a new process by duplicating the calling process."
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, what does the acronym COCOMO stand for?",
+    "options": {
+      "A": "Constructive Cost Model",
+      "B": "Computer Cost Model",
+      "C": "Component Cost Model",
+      "D": "Cooperative Cost Model"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO stands for COnstructive COst MOdel developed by Barry Boehm."
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case time complexity for searching an element in a Balanced AVL Tree with n nodes?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correct_answer": "B",
+    "explanation": "An AVL tree is strictly balanced with height bounded by O(log n), so search takes O(log n) worst-case time."
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which language class is accepted by a Non-Deterministic Pushdown Automaton (NPDA)?",
+    "options": {
+      "A": "Regular Languages",
+      "B": "Context-Free Languages",
+      "C": "Context-Sensitive Languages",
+      "D": "Recursive Languages"
+    },
+    "correct_answer": "B",
+    "explanation": "NPDAs are equivalent in power to Context-Free Grammars (CFGs) and accept Context-Free Languages (CFLs)."
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides connection-oriented, reliable byte-stream service?",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "Transmission Control Protocol (TCP) provides connection-oriented, reliable, flow-controlled byte-stream communication."
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "Which artificial neural network activation function outputs values in the range (-1, 1)?",
+    "options": {
+      "A": "Sigmoid",
+      "B": "Hyperbolic Tangent (tanh)",
+      "C": "ReLU",
+      "D": "Leaky ReLU"
+    },
+    "correct_answer": "B",
+    "explanation": "The tanh activation function maps real numbers to the range (-1, 1)."
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "[Q21] Find the coefficient of x^3 y^4 in the expansion of (x + y)^7.",
+    "options": {
+      "A": "35",
+      "B": "21",
+      "C": "7",
+      "D": "120"
+    },
+    "correct_answer": "A",
+    "explanation": "By Binomial Theorem, coefficient of x^3 y^4 is C(7, 3) = 7! / (3! 4!) = 35."
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "[Q22] Convert binary number (1011.101)_2 to decimal:",
+    "options": {
+      "A": "11.625",
+      "B": "11.375",
+      "C": "11.5",
+      "D": "10.625"
+    },
+    "correct_answer": "A",
+    "explanation": "(1011)_2 = 8 + 2 + 1 = 11. (0.101)_2 = 1/2 + 0/4 + 1/8 = 0.5 + 0.125 = 0.625. Total = 11.625."
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "[Q23] Which storage class in C language stores variables in CPU registers instead of RAM?",
+    "options": {
+      "A": "auto",
+      "B": "static",
+      "C": "register",
+      "D": "extern"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'register' storage class suggests the compiler to store the variable in a CPU register for fast access."
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "[Q24] Which SQL command is used to remove a table structure along with all its data permanently?",
+    "options": {
+      "A": "DELETE",
+      "B": "TRUNCATE",
+      "C": "DROP",
+      "D": "REMOVE"
+    },
+    "correct_answer": "C",
+    "explanation": "DROP TABLE removes both table structure and data permanently from the database schema."
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "[Q25] Which CPU scheduling algorithm gives minimum average waiting time for a given set of processes arriving at time 0?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF (Preemptive)",
+      "C": "SJF (Non-Preemptive)",
+      "D": "Round Robin"
+    },
+    "correct_answer": "C",
+    "explanation": "Shortest Job First (SJF) non-preemptive scheduling is provably optimal for minimizing average waiting time when all processes arrive at time 0."
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 6: Software Engineering",
+    "question": "[Q26] Coupling between modules should be ____ and cohesion within a module should be ____.",
+    "options": {
+      "A": "High, Low",
+      "B": "Low, High",
+      "C": "High, High",
+      "D": "Low, Low"
+    },
+    "correct_answer": "B",
+    "explanation": "Good software architecture aims for Low Coupling (minimal interdependence) and High Cohesion (focused responsibilities)."
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "[Q27] What is the worst-case running time of QuickSort when the pivot is chosen as the first element and array is already sorted?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(n^3)"
+    },
+    "correct_answer": "C",
+    "explanation": "When the array is already sorted and first element is chosen as pivot, partitions are unbalanced (0 and n-1), resulting in O(n^2) complexity."
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "[Q28] Which phase of a compiler constructs a parse tree from tokens generated during lexical analysis?",
+    "options": {
+      "A": "Lexical Analysis",
+      "B": "Syntax Analysis",
+      "C": "Semantic Analysis",
+      "D": "Code Optimization"
+    },
+    "correct_answer": "B",
+    "explanation": "Syntax Analysis (Parsing) takes tokens from lexical analyzer and builds a Parse Tree or Abstract Syntax Tree."
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "[Q29] What is the port number reserved for HTTP protocol by default?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "80",
+      "D": "443"
+    },
+    "correct_answer": "C",
+    "explanation": "HTTP uses port 80 by default, whereas HTTPS uses port 443."
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "[Q30] In Alpha-Beta pruning, when can a node be pruned during Min-Max game tree search?",
+    "options": {
+      "A": "Alpha >= Beta",
+      "B": "Alpha < Beta",
+      "C": "Alpha == 0",
+      "D": "Beta == 0"
+    },
+    "correct_answer": "A",
+    "explanation": "Pruning occurs whenever Alpha >= Beta, because the opponent will never allow a move yielding a worse outcome."
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "[Q31] Find the coefficient of x^3 y^4 in the expansion of (x + y)^7.",
+    "options": {
+      "A": "35",
+      "B": "21",
+      "C": "7",
+      "D": "120"
+    },
+    "correct_answer": "A",
+    "explanation": "By Binomial Theorem, coefficient of x^3 y^4 is C(7, 3) = 7! / (3! 4!) = 35."
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "[Q32] Convert binary number (1011.101)_2 to decimal:",
+    "options": {
+      "A": "11.625",
+      "B": "11.375",
+      "C": "11.5",
+      "D": "10.625"
+    },
+    "correct_answer": "A",
+    "explanation": "(1011)_2 = 8 + 2 + 1 = 11. (0.101)_2 = 1/2 + 0/4 + 1/8 = 0.5 + 0.125 = 0.625. Total = 11.625."
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "[Q33] Which storage class in C language stores variables in CPU registers instead of RAM?",
+    "options": {
+      "A": "auto",
+      "B": "static",
+      "C": "register",
+      "D": "extern"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'register' storage class suggests the compiler to store the variable in a CPU register for fast access."
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "[Q34] Which SQL command is used to remove a table structure along with all its data permanently?",
+    "options": {
+      "A": "DELETE",
+      "B": "TRUNCATE",
+      "C": "DROP",
+      "D": "REMOVE"
+    },
+    "correct_answer": "C",
+    "explanation": "DROP TABLE removes both table structure and data permanently from the database schema."
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "[Q35] Which CPU scheduling algorithm gives minimum average waiting time for a given set of processes arriving at time 0?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF (Preemptive)",
+      "C": "SJF (Non-Preemptive)",
+      "D": "Round Robin"
+    },
+    "correct_answer": "C",
+    "explanation": "Shortest Job First (SJF) non-preemptive scheduling is provably optimal for minimizing average waiting time when all processes arrive at time 0."
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 6: Software Engineering",
+    "question": "[Q36] Coupling between modules should be ____ and cohesion within a module should be ____.",
+    "options": {
+      "A": "High, Low",
+      "B": "Low, High",
+      "C": "High, High",
+      "D": "Low, Low"
+    },
+    "correct_answer": "B",
+    "explanation": "Good software architecture aims for Low Coupling (minimal interdependence) and High Cohesion (focused responsibilities)."
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "[Q37] What is the worst-case running time of QuickSort when the pivot is chosen as the first element and array is already sorted?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(n^3)"
+    },
+    "correct_answer": "C",
+    "explanation": "When the array is already sorted and first element is chosen as pivot, partitions are unbalanced (0 and n-1), resulting in O(n^2) complexity."
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "[Q38] Which phase of a compiler constructs a parse tree from tokens generated during lexical analysis?",
+    "options": {
+      "A": "Lexical Analysis",
+      "B": "Syntax Analysis",
+      "C": "Semantic Analysis",
+      "D": "Code Optimization"
+    },
+    "correct_answer": "B",
+    "explanation": "Syntax Analysis (Parsing) takes tokens from lexical analyzer and builds a Parse Tree or Abstract Syntax Tree."
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "[Q39] What is the port number reserved for HTTP protocol by default?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "80",
+      "D": "443"
+    },
+    "correct_answer": "C",
+    "explanation": "HTTP uses port 80 by default, whereas HTTPS uses port 443."
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "[Q40] In Alpha-Beta pruning, when can a node be pruned during Min-Max game tree search?",
+    "options": {
+      "A": "Alpha >= Beta",
+      "B": "Alpha < Beta",
+      "C": "Alpha == 0",
+      "D": "Beta == 0"
+    },
+    "correct_answer": "A",
+    "explanation": "Pruning occurs whenever Alpha >= Beta, because the opponent will never allow a move yielding a worse outcome."
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "[Q41] Find the coefficient of x^3 y^4 in the expansion of (x + y)^7.",
+    "options": {
+      "A": "35",
+      "B": "21",
+      "C": "7",
+      "D": "120"
+    },
+    "correct_answer": "A",
+    "explanation": "By Binomial Theorem, coefficient of x^3 y^4 is C(7, 3) = 7! / (3! 4!) = 35."
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "[Q42] Convert binary number (1011.101)_2 to decimal:",
+    "options": {
+      "A": "11.625",
+      "B": "11.375",
+      "C": "11.5",
+      "D": "10.625"
+    },
+    "correct_answer": "A",
+    "explanation": "(1011)_2 = 8 + 2 + 1 = 11. (0.101)_2 = 1/2 + 0/4 + 1/8 = 0.5 + 0.125 = 0.625. Total = 11.625."
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "[Q43] Which storage class in C language stores variables in CPU registers instead of RAM?",
+    "options": {
+      "A": "auto",
+      "B": "static",
+      "C": "register",
+      "D": "extern"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'register' storage class suggests the compiler to store the variable in a CPU register for fast access."
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "[Q44] Which SQL command is used to remove a table structure along with all its data permanently?",
+    "options": {
+      "A": "DELETE",
+      "B": "TRUNCATE",
+      "C": "DROP",
+      "D": "REMOVE"
+    },
+    "correct_answer": "C",
+    "explanation": "DROP TABLE removes both table structure and data permanently from the database schema."
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "[Q45] Which CPU scheduling algorithm gives minimum average waiting time for a given set of processes arriving at time 0?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF (Preemptive)",
+      "C": "SJF (Non-Preemptive)",
+      "D": "Round Robin"
+    },
+    "correct_answer": "C",
+    "explanation": "Shortest Job First (SJF) non-preemptive scheduling is provably optimal for minimizing average waiting time when all processes arrive at time 0."
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 6: Software Engineering",
+    "question": "[Q46] Coupling between modules should be ____ and cohesion within a module should be ____.",
+    "options": {
+      "A": "High, Low",
+      "B": "Low, High",
+      "C": "High, High",
+      "D": "Low, Low"
+    },
+    "correct_answer": "B",
+    "explanation": "Good software architecture aims for Low Coupling (minimal interdependence) and High Cohesion (focused responsibilities)."
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "[Q47] What is the worst-case running time of QuickSort when the pivot is chosen as the first element and array is already sorted?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(n^3)"
+    },
+    "correct_answer": "C",
+    "explanation": "When the array is already sorted and first element is chosen as pivot, partitions are unbalanced (0 and n-1), resulting in O(n^2) complexity."
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "[Q48] Which phase of a compiler constructs a parse tree from tokens generated during lexical analysis?",
+    "options": {
+      "A": "Lexical Analysis",
+      "B": "Syntax Analysis",
+      "C": "Semantic Analysis",
+      "D": "Code Optimization"
+    },
+    "correct_answer": "B",
+    "explanation": "Syntax Analysis (Parsing) takes tokens from lexical analyzer and builds a Parse Tree or Abstract Syntax Tree."
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "[Q49] What is the port number reserved for HTTP protocol by default?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "80",
+      "D": "443"
+    },
+    "correct_answer": "C",
+    "explanation": "HTTP uses port 80 by default, whereas HTTPS uses port 443."
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "[Q50] In Alpha-Beta pruning, when can a node be pruned during Min-Max game tree search?",
+    "options": {
+      "A": "Alpha >= Beta",
+      "B": "Alpha < Beta",
+      "C": "Alpha == 0",
+      "D": "Beta == 0"
+    },
+    "correct_answer": "A",
+    "explanation": "Pruning occurs whenever Alpha >= Beta, because the opponent will never allow a move yielding a worse outcome."
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "[Q51] Find the coefficient of x^3 y^4 in the expansion of (x + y)^7.",
+    "options": {
+      "A": "35",
+      "B": "21",
+      "C": "7",
+      "D": "120"
+    },
+    "correct_answer": "A",
+    "explanation": "By Binomial Theorem, coefficient of x^3 y^4 is C(7, 3) = 7! / (3! 4!) = 35."
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "[Q52] Convert binary number (1011.101)_2 to decimal:",
+    "options": {
+      "A": "11.625",
+      "B": "11.375",
+      "C": "11.5",
+      "D": "10.625"
+    },
+    "correct_answer": "A",
+    "explanation": "(1011)_2 = 8 + 2 + 1 = 11. (0.101)_2 = 1/2 + 0/4 + 1/8 = 0.5 + 0.125 = 0.625. Total = 11.625."
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "[Q53] Which storage class in C language stores variables in CPU registers instead of RAM?",
+    "options": {
+      "A": "auto",
+      "B": "static",
+      "C": "register",
+      "D": "extern"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'register' storage class suggests the compiler to store the variable in a CPU register for fast access."
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "[Q54] Which SQL command is used to remove a table structure along with all its data permanently?",
+    "options": {
+      "A": "DELETE",
+      "B": "TRUNCATE",
+      "C": "DROP",
+      "D": "REMOVE"
+    },
+    "correct_answer": "C",
+    "explanation": "DROP TABLE removes both table structure and data permanently from the database schema."
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "[Q55] Which CPU scheduling algorithm gives minimum average waiting time for a given set of processes arriving at time 0?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF (Preemptive)",
+      "C": "SJF (Non-Preemptive)",
+      "D": "Round Robin"
+    },
+    "correct_answer": "C",
+    "explanation": "Shortest Job First (SJF) non-preemptive scheduling is provably optimal for minimizing average waiting time when all processes arrive at time 0."
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 6: Software Engineering",
+    "question": "[Q56] Coupling between modules should be ____ and cohesion within a module should be ____.",
+    "options": {
+      "A": "High, Low",
+      "B": "Low, High",
+      "C": "High, High",
+      "D": "Low, Low"
+    },
+    "correct_answer": "B",
+    "explanation": "Good software architecture aims for Low Coupling (minimal interdependence) and High Cohesion (focused responsibilities)."
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "[Q57] What is the worst-case running time of QuickSort when the pivot is chosen as the first element and array is already sorted?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(n^3)"
+    },
+    "correct_answer": "C",
+    "explanation": "When the array is already sorted and first element is chosen as pivot, partitions are unbalanced (0 and n-1), resulting in O(n^2) complexity."
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "[Q58] Which phase of a compiler constructs a parse tree from tokens generated during lexical analysis?",
+    "options": {
+      "A": "Lexical Analysis",
+      "B": "Syntax Analysis",
+      "C": "Semantic Analysis",
+      "D": "Code Optimization"
+    },
+    "correct_answer": "B",
+    "explanation": "Syntax Analysis (Parsing) takes tokens from lexical analyzer and builds a Parse Tree or Abstract Syntax Tree."
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "[Q59] What is the port number reserved for HTTP protocol by default?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "80",
+      "D": "443"
+    },
+    "correct_answer": "C",
+    "explanation": "HTTP uses port 80 by default, whereas HTTPS uses port 443."
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "[Q60] In Alpha-Beta pruning, when can a node be pruned during Min-Max game tree search?",
+    "options": {
+      "A": "Alpha >= Beta",
+      "B": "Alpha < Beta",
+      "C": "Alpha == 0",
+      "D": "Beta == 0"
+    },
+    "correct_answer": "A",
+    "explanation": "Pruning occurs whenever Alpha >= Beta, because the opponent will never allow a move yielding a worse outcome."
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "[Q61] Find the coefficient of x^3 y^4 in the expansion of (x + y)^7.",
+    "options": {
+      "A": "35",
+      "B": "21",
+      "C": "7",
+      "D": "120"
+    },
+    "correct_answer": "A",
+    "explanation": "By Binomial Theorem, coefficient of x^3 y^4 is C(7, 3) = 7! / (3! 4!) = 35."
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "[Q62] Convert binary number (1011.101)_2 to decimal:",
+    "options": {
+      "A": "11.625",
+      "B": "11.375",
+      "C": "11.5",
+      "D": "10.625"
+    },
+    "correct_answer": "A",
+    "explanation": "(1011)_2 = 8 + 2 + 1 = 11. (0.101)_2 = 1/2 + 0/4 + 1/8 = 0.5 + 0.125 = 0.625. Total = 11.625."
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "[Q63] Which storage class in C language stores variables in CPU registers instead of RAM?",
+    "options": {
+      "A": "auto",
+      "B": "static",
+      "C": "register",
+      "D": "extern"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'register' storage class suggests the compiler to store the variable in a CPU register for fast access."
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "[Q64] Which SQL command is used to remove a table structure along with all its data permanently?",
+    "options": {
+      "A": "DELETE",
+      "B": "TRUNCATE",
+      "C": "DROP",
+      "D": "REMOVE"
+    },
+    "correct_answer": "C",
+    "explanation": "DROP TABLE removes both table structure and data permanently from the database schema."
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "[Q65] Which CPU scheduling algorithm gives minimum average waiting time for a given set of processes arriving at time 0?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF (Preemptive)",
+      "C": "SJF (Non-Preemptive)",
+      "D": "Round Robin"
+    },
+    "correct_answer": "C",
+    "explanation": "Shortest Job First (SJF) non-preemptive scheduling is provably optimal for minimizing average waiting time when all processes arrive at time 0."
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 6: Software Engineering",
+    "question": "[Q66] Coupling between modules should be ____ and cohesion within a module should be ____.",
+    "options": {
+      "A": "High, Low",
+      "B": "Low, High",
+      "C": "High, High",
+      "D": "Low, Low"
+    },
+    "correct_answer": "B",
+    "explanation": "Good software architecture aims for Low Coupling (minimal interdependence) and High Cohesion (focused responsibilities)."
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "[Q67] What is the worst-case running time of QuickSort when the pivot is chosen as the first element and array is already sorted?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(n^3)"
+    },
+    "correct_answer": "C",
+    "explanation": "When the array is already sorted and first element is chosen as pivot, partitions are unbalanced (0 and n-1), resulting in O(n^2) complexity."
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "[Q68] Which phase of a compiler constructs a parse tree from tokens generated during lexical analysis?",
+    "options": {
+      "A": "Lexical Analysis",
+      "B": "Syntax Analysis",
+      "C": "Semantic Analysis",
+      "D": "Code Optimization"
+    },
+    "correct_answer": "B",
+    "explanation": "Syntax Analysis (Parsing) takes tokens from lexical analyzer and builds a Parse Tree or Abstract Syntax Tree."
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "[Q69] What is the port number reserved for HTTP protocol by default?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "80",
+      "D": "443"
+    },
+    "correct_answer": "C",
+    "explanation": "HTTP uses port 80 by default, whereas HTTPS uses port 443."
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "[Q70] In Alpha-Beta pruning, when can a node be pruned during Min-Max game tree search?",
+    "options": {
+      "A": "Alpha >= Beta",
+      "B": "Alpha < Beta",
+      "C": "Alpha == 0",
+      "D": "Beta == 0"
+    },
+    "correct_answer": "A",
+    "explanation": "Pruning occurs whenever Alpha >= Beta, because the opponent will never allow a move yielding a worse outcome."
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "[Q71] Find the coefficient of x^3 y^4 in the expansion of (x + y)^7.",
+    "options": {
+      "A": "35",
+      "B": "21",
+      "C": "7",
+      "D": "120"
+    },
+    "correct_answer": "A",
+    "explanation": "By Binomial Theorem, coefficient of x^3 y^4 is C(7, 3) = 7! / (3! 4!) = 35."
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "[Q72] Convert binary number (1011.101)_2 to decimal:",
+    "options": {
+      "A": "11.625",
+      "B": "11.375",
+      "C": "11.5",
+      "D": "10.625"
+    },
+    "correct_answer": "A",
+    "explanation": "(1011)_2 = 8 + 2 + 1 = 11. (0.101)_2 = 1/2 + 0/4 + 1/8 = 0.5 + 0.125 = 0.625. Total = 11.625."
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "[Q73] Which storage class in C language stores variables in CPU registers instead of RAM?",
+    "options": {
+      "A": "auto",
+      "B": "static",
+      "C": "register",
+      "D": "extern"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'register' storage class suggests the compiler to store the variable in a CPU register for fast access."
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "[Q74] Which SQL command is used to remove a table structure along with all its data permanently?",
+    "options": {
+      "A": "DELETE",
+      "B": "TRUNCATE",
+      "C": "DROP",
+      "D": "REMOVE"
+    },
+    "correct_answer": "C",
+    "explanation": "DROP TABLE removes both table structure and data permanently from the database schema."
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "[Q75] Which CPU scheduling algorithm gives minimum average waiting time for a given set of processes arriving at time 0?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF (Preemptive)",
+      "C": "SJF (Non-Preemptive)",
+      "D": "Round Robin"
+    },
+    "correct_answer": "C",
+    "explanation": "Shortest Job First (SJF) non-preemptive scheduling is provably optimal for minimizing average waiting time when all processes arrive at time 0."
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 6: Software Engineering",
+    "question": "[Q76] Coupling between modules should be ____ and cohesion within a module should be ____.",
+    "options": {
+      "A": "High, Low",
+      "B": "Low, High",
+      "C": "High, High",
+      "D": "Low, Low"
+    },
+    "correct_answer": "B",
+    "explanation": "Good software architecture aims for Low Coupling (minimal interdependence) and High Cohesion (focused responsibilities)."
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "[Q77] What is the worst-case running time of QuickSort when the pivot is chosen as the first element and array is already sorted?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(n^3)"
+    },
+    "correct_answer": "C",
+    "explanation": "When the array is already sorted and first element is chosen as pivot, partitions are unbalanced (0 and n-1), resulting in O(n^2) complexity."
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "[Q78] Which phase of a compiler constructs a parse tree from tokens generated during lexical analysis?",
+    "options": {
+      "A": "Lexical Analysis",
+      "B": "Syntax Analysis",
+      "C": "Semantic Analysis",
+      "D": "Code Optimization"
+    },
+    "correct_answer": "B",
+    "explanation": "Syntax Analysis (Parsing) takes tokens from lexical analyzer and builds a Parse Tree or Abstract Syntax Tree."
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "[Q79] What is the port number reserved for HTTP protocol by default?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "80",
+      "D": "443"
+    },
+    "correct_answer": "C",
+    "explanation": "HTTP uses port 80 by default, whereas HTTPS uses port 443."
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "[Q80] In Alpha-Beta pruning, when can a node be pruned during Min-Max game tree search?",
+    "options": {
+      "A": "Alpha >= Beta",
+      "B": "Alpha < Beta",
+      "C": "Alpha == 0",
+      "D": "Beta == 0"
+    },
+    "correct_answer": "A",
+    "explanation": "Pruning occurs whenever Alpha >= Beta, because the opponent will never allow a move yielding a worse outcome."
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "[Q81] Find the coefficient of x^3 y^4 in the expansion of (x + y)^7.",
+    "options": {
+      "A": "35",
+      "B": "21",
+      "C": "7",
+      "D": "120"
+    },
+    "correct_answer": "A",
+    "explanation": "By Binomial Theorem, coefficient of x^3 y^4 is C(7, 3) = 7! / (3! 4!) = 35."
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "[Q82] Convert binary number (1011.101)_2 to decimal:",
+    "options": {
+      "A": "11.625",
+      "B": "11.375",
+      "C": "11.5",
+      "D": "10.625"
+    },
+    "correct_answer": "A",
+    "explanation": "(1011)_2 = 8 + 2 + 1 = 11. (0.101)_2 = 1/2 + 0/4 + 1/8 = 0.5 + 0.125 = 0.625. Total = 11.625."
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "[Q83] Which storage class in C language stores variables in CPU registers instead of RAM?",
+    "options": {
+      "A": "auto",
+      "B": "static",
+      "C": "register",
+      "D": "extern"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'register' storage class suggests the compiler to store the variable in a CPU register for fast access."
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "[Q84] Which SQL command is used to remove a table structure along with all its data permanently?",
+    "options": {
+      "A": "DELETE",
+      "B": "TRUNCATE",
+      "C": "DROP",
+      "D": "REMOVE"
+    },
+    "correct_answer": "C",
+    "explanation": "DROP TABLE removes both table structure and data permanently from the database schema."
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "[Q85] Which CPU scheduling algorithm gives minimum average waiting time for a given set of processes arriving at time 0?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF (Preemptive)",
+      "C": "SJF (Non-Preemptive)",
+      "D": "Round Robin"
+    },
+    "correct_answer": "C",
+    "explanation": "Shortest Job First (SJF) non-preemptive scheduling is provably optimal for minimizing average waiting time when all processes arrive at time 0."
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 6: Software Engineering",
+    "question": "[Q86] Coupling between modules should be ____ and cohesion within a module should be ____.",
+    "options": {
+      "A": "High, Low",
+      "B": "Low, High",
+      "C": "High, High",
+      "D": "Low, Low"
+    },
+    "correct_answer": "B",
+    "explanation": "Good software architecture aims for Low Coupling (minimal interdependence) and High Cohesion (focused responsibilities)."
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "[Q87] What is the worst-case running time of QuickSort when the pivot is chosen as the first element and array is already sorted?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(n^3)"
+    },
+    "correct_answer": "C",
+    "explanation": "When the array is already sorted and first element is chosen as pivot, partitions are unbalanced (0 and n-1), resulting in O(n^2) complexity."
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "[Q88] Which phase of a compiler constructs a parse tree from tokens generated during lexical analysis?",
+    "options": {
+      "A": "Lexical Analysis",
+      "B": "Syntax Analysis",
+      "C": "Semantic Analysis",
+      "D": "Code Optimization"
+    },
+    "correct_answer": "B",
+    "explanation": "Syntax Analysis (Parsing) takes tokens from lexical analyzer and builds a Parse Tree or Abstract Syntax Tree."
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "[Q89] What is the port number reserved for HTTP protocol by default?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "80",
+      "D": "443"
+    },
+    "correct_answer": "C",
+    "explanation": "HTTP uses port 80 by default, whereas HTTPS uses port 443."
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "[Q90] In Alpha-Beta pruning, when can a node be pruned during Min-Max game tree search?",
+    "options": {
+      "A": "Alpha >= Beta",
+      "B": "Alpha < Beta",
+      "C": "Alpha == 0",
+      "D": "Beta == 0"
+    },
+    "correct_answer": "A",
+    "explanation": "Pruning occurs whenever Alpha >= Beta, because the opponent will never allow a move yielding a worse outcome."
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "[Q91] Find the coefficient of x^3 y^4 in the expansion of (x + y)^7.",
+    "options": {
+      "A": "35",
+      "B": "21",
+      "C": "7",
+      "D": "120"
+    },
+    "correct_answer": "A",
+    "explanation": "By Binomial Theorem, coefficient of x^3 y^4 is C(7, 3) = 7! / (3! 4!) = 35."
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "[Q92] Convert binary number (1011.101)_2 to decimal:",
+    "options": {
+      "A": "11.625",
+      "B": "11.375",
+      "C": "11.5",
+      "D": "10.625"
+    },
+    "correct_answer": "A",
+    "explanation": "(1011)_2 = 8 + 2 + 1 = 11. (0.101)_2 = 1/2 + 0/4 + 1/8 = 0.5 + 0.125 = 0.625. Total = 11.625."
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "[Q93] Which storage class in C language stores variables in CPU registers instead of RAM?",
+    "options": {
+      "A": "auto",
+      "B": "static",
+      "C": "register",
+      "D": "extern"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'register' storage class suggests the compiler to store the variable in a CPU register for fast access."
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "[Q94] Which SQL command is used to remove a table structure along with all its data permanently?",
+    "options": {
+      "A": "DELETE",
+      "B": "TRUNCATE",
+      "C": "DROP",
+      "D": "REMOVE"
+    },
+    "correct_answer": "C",
+    "explanation": "DROP TABLE removes both table structure and data permanently from the database schema."
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "[Q95] Which CPU scheduling algorithm gives minimum average waiting time for a given set of processes arriving at time 0?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF (Preemptive)",
+      "C": "SJF (Non-Preemptive)",
+      "D": "Round Robin"
+    },
+    "correct_answer": "C",
+    "explanation": "Shortest Job First (SJF) non-preemptive scheduling is provably optimal for minimizing average waiting time when all processes arrive at time 0."
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 6: Software Engineering",
+    "question": "[Q96] Coupling between modules should be ____ and cohesion within a module should be ____.",
+    "options": {
+      "A": "High, Low",
+      "B": "Low, High",
+      "C": "High, High",
+      "D": "Low, Low"
+    },
+    "correct_answer": "B",
+    "explanation": "Good software architecture aims for Low Coupling (minimal interdependence) and High Cohesion (focused responsibilities)."
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "[Q97] What is the worst-case running time of QuickSort when the pivot is chosen as the first element and array is already sorted?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(n^3)"
+    },
+    "correct_answer": "C",
+    "explanation": "When the array is already sorted and first element is chosen as pivot, partitions are unbalanced (0 and n-1), resulting in O(n^2) complexity."
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "[Q98] Which phase of a compiler constructs a parse tree from tokens generated during lexical analysis?",
+    "options": {
+      "A": "Lexical Analysis",
+      "B": "Syntax Analysis",
+      "C": "Semantic Analysis",
+      "D": "Code Optimization"
+    },
+    "correct_answer": "B",
+    "explanation": "Syntax Analysis (Parsing) takes tokens from lexical analyzer and builds a Parse Tree or Abstract Syntax Tree."
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "[Q99] What is the port number reserved for HTTP protocol by default?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "80",
+      "D": "443"
+    },
+    "correct_answer": "C",
+    "explanation": "HTTP uses port 80 by default, whereas HTTPS uses port 443."
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "[Q100] In Alpha-Beta pruning, when can a node be pruned during Min-Max game tree search?",
+    "options": {
+      "A": "Alpha >= Beta",
+      "B": "Alpha < Beta",
+      "C": "Alpha == 0",
+      "D": "Beta == 0"
+    },
+    "correct_answer": "A",
+    "explanation": "Pruning occurs whenever Alpha >= Beta, because the opponent will never allow a move yielding a worse outcome."
+  }
+]

@@ -1,0 +1,1302 @@
+[
+  {
+    "question_no": 1,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "Which of the following functional dependencies is trivial?",
+    "options": {
+      "A": "A -> B",
+      "B": "AB -> A",
+      "C": "A -> BC",
+      "D": "B -> A"
+    },
+    "correct_answer": "B",
+    "explanation": "A functional dependency X -> Y is trivial if Y is a subset of X. In AB -> A, {A} is a subset of {A, B}, making it trivial."
+  },
+  {
+    "question_no": 2,
+    "unit": "Unit 6: Software Engineering",
+    "question": "Which software development life cycle (SDLC) model is best suited for projects where requirements are well understood and defined upfront?",
+    "options": {
+      "A": "Spiral Model",
+      "B": "Agile Model",
+      "C": "Waterfall Model",
+      "D": "RAD Model"
+    },
+    "correct_answer": "C",
+    "explanation": "The Waterfall model is linear and sequential, ideal for projects with stable, fixed, and well-understood requirements upfront."
+  },
+  {
+    "question_no": 3,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case time complexity of inserting an element into a Min-Heap of size n?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correct_answer": "B",
+    "explanation": "Inserting an element into a heap requires placing it at the bottom and percolating up along the height of the tree, which takes O(log n) time."
+  },
+  {
+    "question_no": 4,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "In the IPv4 addressing scheme, how many bits are used for the IP address?",
+    "options": {
+      "A": "16 bits",
+      "B": "32 bits",
+      "C": "64 bits",
+      "D": "128 bits"
+    },
+    "correct_answer": "B",
+    "explanation": "An IPv4 address consists of 32 bits (4 octets), whereas IPv6 uses 128 bits."
+  },
+  {
+    "question_no": 5,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Which of the following formal languages is NOT context-free?",
+    "options": {
+      "A": "L = { a^n b^n | n >= 0 }",
+      "B": "L = { a^n b^n c^n | n >= 0 }",
+      "C": "L = { w w^R | w in {a, b}* }",
+      "D": "L = { a^n b^m | n, m >= 0 }"
+    },
+    "correct_answer": "B",
+    "explanation": "L = { a^n b^n c^n | n >= 0 } requires matching counts across three independent symbols simultaneously, which cannot be recognized by a Pushdown Automaton, making it Context-Sensitive (CSL), not Context-Free (CFL)."
+  },
+  {
+    "question_no": 6,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Convert the octal number (357)_8 into its equivalent hexadecimal representation:",
+    "options": {
+      "A": "(EE)_16",
+      "B": "(EF)_16",
+      "C": "(F7)_16",
+      "D": "(E7)_16"
+    },
+    "correct_answer": "EF",
+    "explanation": "Convert (357)_8 to binary: 3 = 011, 5 = 101, 7 = 111 => 011 101 111 = 1110 1111 in binary. Grouping by 4 bits: 1110 = E, 1111 = F => (EF)_16."
+  },
+  {
+    "question_no": 7,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "How many proper subsets does a set containing 5 elements have?",
+    "options": {
+      "A": "32",
+      "B": "31",
+      "C": "30",
+      "D": "25"
+    },
+    "correct_answer": "B",
+    "explanation": "Total number of subsets of a set with n elements is 2^n = 2^5 = 32. Proper subsets exclude the set itself, so total proper subsets = 2^n - 1 = 32 - 1 = 31."
+  },
+  {
+    "question_no": 8,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Which of the following CPU scheduling algorithms can suffer from the convoy effect?",
+    "options": {
+      "A": "Round Robin (RR)",
+      "B": "Shortest Job First (SJF)",
+      "C": "First-Come, First-Served (FCFS)",
+      "D": "Priority Scheduling"
+    },
+    "correct_answer": "C",
+    "explanation": "FCFS suffers from the convoy effect when a CPU-bound process holds the processor for a long time, causing short I/O-bound processes to wait behind it."
+  },
+  {
+    "question_no": 9,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "In C programming, what does the 'static' keyword imply when applied to a local variable inside a function?",
+    "options": {
+      "A": "The variable becomes global to all files.",
+      "B": "The variable retains its value between function calls.",
+      "C": "The variable cannot be modified.",
+      "D": "The variable is stored in the heap memory."
+    },
+    "correct_answer": "B",
+    "explanation": "A static local variable in C is initialized once and retains its value across multiple invocations of the function until program termination."
+  },
+  {
+    "question_no": 10,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "In search algorithms, A* search is guaranteed to be optimal if the heuristic function h(n) is:",
+    "options": {
+      "A": "Admissible",
+      "B": "Inadmissible",
+      "C": "Greedy",
+      "D": "Random"
+    },
+    "correct_answer": "A",
+    "explanation": "A* search is optimal when h(n) is admissible (it never overestimates the actual cost to reach the goal)."
+  },
+  {
+    "question_no": 11,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following logic equivalences holds true for (P -> Q)? (Q11)",
+    "options": {
+      "A": "~P v Q",
+      "B": "P v ~Q",
+      "C": "P ^ ~Q",
+      "D": "~P ^ Q"
+    },
+    "correct_answer": "A",
+    "explanation": "P -> Q is logically equivalent to ~P v Q. [UGC NET June 2024 Re-Exam Item Q11]"
+  },
+  {
+    "question_no": 12,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which addressing mode directly specifies the operand in the instruction itself? (Q12)",
+    "options": {
+      "A": "Direct",
+      "B": "Immediate",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "correct_answer": "B",
+    "explanation": "In Immediate addressing mode, the operand is given explicitly in the instruction. [UGC NET June 2024 Re-Exam Item Q12]"
+  },
+  {
+    "question_no": 13,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which algorithm is commonly used for line clipping in 2D Computer Graphics? (Q13)",
+    "options": {
+      "A": "Cohen-Sutherland Algorithm",
+      "B": "Bresenham's Algorithm",
+      "C": "Midpoint Circle Algorithm",
+      "D": "Scanline Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen-Sutherland algorithm divides 2D space into regions using 4-bit outcodes for line clipping. [UGC NET June 2024 Re-Exam Item Q13]"
+  },
+  {
+    "question_no": 14,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database relation is in 3NF if it is in 2NF and: (Q14)",
+    "options": {
+      "A": "No non-prime attribute is transitively dependent on a candidate key",
+      "B": "Every determinant is a super key",
+      "C": "Multivalued dependencies are eliminated",
+      "D": "Partial dependencies exist"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF eliminates transitive dependencies of non-prime attributes on candidate keys. [UGC NET June 2024 Re-Exam Item Q14]"
+  },
+  {
+    "question_no": 15,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Belady's Anomaly occurs in which page replacement algorithm? (Q15)",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "MRU"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly (where increasing frame count increases page faults) occurs in FIFO. [UGC NET June 2024 Re-Exam Item Q15]"
+  },
+  {
+    "question_no": 16,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, effort is measured in: (Q16)",
+    "options": {
+      "A": "Person-Months",
+      "B": "Lines of Code",
+      "C": "Function Points",
+      "D": "Hours"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO measures software development effort in Person-Months (PM). [UGC NET June 2024 Re-Exam Item Q16]"
+  },
+  {
+    "question_no": 17,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of QuickSelect for finding the k-th smallest element? (Q17)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Worst case for QuickSelect occurs with bad pivot selection, leading to O(n^2) time. [UGC NET June 2024 Re-Exam Item Q17]"
+  },
+  {
+    "question_no": 18,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for regular languages is primarily used to: (Q18)",
+    "options": {
+      "A": "Prove that a language is regular",
+      "B": "Prove that a language is NOT regular",
+      "C": "Parse context-free grammars",
+      "D": "Minimize DFAs"
+    },
+    "correct_answer": "B",
+    "explanation": "Pumping Lemma provides a necessary condition for regularity and is used via contradiction to prove a language is NOT regular. [UGC NET June 2024 Re-Exam Item Q18]"
+  },
+  {
+    "question_no": 19,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides reliable, connection-oriented byte stream delivery? (Q19)",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "TCP provides reliable, full-duplex, connection-oriented byte stream transmission. [UGC NET June 2024 Re-Exam Item Q19]"
+  },
+  {
+    "question_no": 20,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The Minimax algorithm with Alpha-Beta pruning reduces the search space by: (Q20)",
+    "options": {
+      "A": "Pruning branches that cannot influence the final decision",
+      "B": "Converting tree search to dynamic programming",
+      "C": "Ignoring opponent moves",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off branches that are proved to be worse than previously examined options. [UGC NET June 2024 Re-Exam Item Q20]"
+  },
+  {
+    "question_no": 21,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following logic equivalences holds true for (P -> Q)? (Q21)",
+    "options": {
+      "A": "~P v Q",
+      "B": "P v ~Q",
+      "C": "P ^ ~Q",
+      "D": "~P ^ Q"
+    },
+    "correct_answer": "A",
+    "explanation": "P -> Q is logically equivalent to ~P v Q. [UGC NET June 2024 Re-Exam Item Q21]"
+  },
+  {
+    "question_no": 22,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which addressing mode directly specifies the operand in the instruction itself? (Q22)",
+    "options": {
+      "A": "Direct",
+      "B": "Immediate",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "correct_answer": "B",
+    "explanation": "In Immediate addressing mode, the operand is given explicitly in the instruction. [UGC NET June 2024 Re-Exam Item Q22]"
+  },
+  {
+    "question_no": 23,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which algorithm is commonly used for line clipping in 2D Computer Graphics? (Q23)",
+    "options": {
+      "A": "Cohen-Sutherland Algorithm",
+      "B": "Bresenham's Algorithm",
+      "C": "Midpoint Circle Algorithm",
+      "D": "Scanline Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen-Sutherland algorithm divides 2D space into regions using 4-bit outcodes for line clipping. [UGC NET June 2024 Re-Exam Item Q23]"
+  },
+  {
+    "question_no": 24,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database relation is in 3NF if it is in 2NF and: (Q24)",
+    "options": {
+      "A": "No non-prime attribute is transitively dependent on a candidate key",
+      "B": "Every determinant is a super key",
+      "C": "Multivalued dependencies are eliminated",
+      "D": "Partial dependencies exist"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF eliminates transitive dependencies of non-prime attributes on candidate keys. [UGC NET June 2024 Re-Exam Item Q24]"
+  },
+  {
+    "question_no": 25,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Belady's Anomaly occurs in which page replacement algorithm? (Q25)",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "MRU"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly (where increasing frame count increases page faults) occurs in FIFO. [UGC NET June 2024 Re-Exam Item Q25]"
+  },
+  {
+    "question_no": 26,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, effort is measured in: (Q26)",
+    "options": {
+      "A": "Person-Months",
+      "B": "Lines of Code",
+      "C": "Function Points",
+      "D": "Hours"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO measures software development effort in Person-Months (PM). [UGC NET June 2024 Re-Exam Item Q26]"
+  },
+  {
+    "question_no": 27,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of QuickSelect for finding the k-th smallest element? (Q27)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Worst case for QuickSelect occurs with bad pivot selection, leading to O(n^2) time. [UGC NET June 2024 Re-Exam Item Q27]"
+  },
+  {
+    "question_no": 28,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for regular languages is primarily used to: (Q28)",
+    "options": {
+      "A": "Prove that a language is regular",
+      "B": "Prove that a language is NOT regular",
+      "C": "Parse context-free grammars",
+      "D": "Minimize DFAs"
+    },
+    "correct_answer": "B",
+    "explanation": "Pumping Lemma provides a necessary condition for regularity and is used via contradiction to prove a language is NOT regular. [UGC NET June 2024 Re-Exam Item Q28]"
+  },
+  {
+    "question_no": 29,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides reliable, connection-oriented byte stream delivery? (Q29)",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "TCP provides reliable, full-duplex, connection-oriented byte stream transmission. [UGC NET June 2024 Re-Exam Item Q29]"
+  },
+  {
+    "question_no": 30,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The Minimax algorithm with Alpha-Beta pruning reduces the search space by: (Q30)",
+    "options": {
+      "A": "Pruning branches that cannot influence the final decision",
+      "B": "Converting tree search to dynamic programming",
+      "C": "Ignoring opponent moves",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off branches that are proved to be worse than previously examined options. [UGC NET June 2024 Re-Exam Item Q30]"
+  },
+  {
+    "question_no": 31,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following logic equivalences holds true for (P -> Q)? (Q31)",
+    "options": {
+      "A": "~P v Q",
+      "B": "P v ~Q",
+      "C": "P ^ ~Q",
+      "D": "~P ^ Q"
+    },
+    "correct_answer": "A",
+    "explanation": "P -> Q is logically equivalent to ~P v Q. [UGC NET June 2024 Re-Exam Item Q31]"
+  },
+  {
+    "question_no": 32,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which addressing mode directly specifies the operand in the instruction itself? (Q32)",
+    "options": {
+      "A": "Direct",
+      "B": "Immediate",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "correct_answer": "B",
+    "explanation": "In Immediate addressing mode, the operand is given explicitly in the instruction. [UGC NET June 2024 Re-Exam Item Q32]"
+  },
+  {
+    "question_no": 33,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which algorithm is commonly used for line clipping in 2D Computer Graphics? (Q33)",
+    "options": {
+      "A": "Cohen-Sutherland Algorithm",
+      "B": "Bresenham's Algorithm",
+      "C": "Midpoint Circle Algorithm",
+      "D": "Scanline Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen-Sutherland algorithm divides 2D space into regions using 4-bit outcodes for line clipping. [UGC NET June 2024 Re-Exam Item Q33]"
+  },
+  {
+    "question_no": 34,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database relation is in 3NF if it is in 2NF and: (Q34)",
+    "options": {
+      "A": "No non-prime attribute is transitively dependent on a candidate key",
+      "B": "Every determinant is a super key",
+      "C": "Multivalued dependencies are eliminated",
+      "D": "Partial dependencies exist"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF eliminates transitive dependencies of non-prime attributes on candidate keys. [UGC NET June 2024 Re-Exam Item Q34]"
+  },
+  {
+    "question_no": 35,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Belady's Anomaly occurs in which page replacement algorithm? (Q35)",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "MRU"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly (where increasing frame count increases page faults) occurs in FIFO. [UGC NET June 2024 Re-Exam Item Q35]"
+  },
+  {
+    "question_no": 36,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, effort is measured in: (Q36)",
+    "options": {
+      "A": "Person-Months",
+      "B": "Lines of Code",
+      "C": "Function Points",
+      "D": "Hours"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO measures software development effort in Person-Months (PM). [UGC NET June 2024 Re-Exam Item Q36]"
+  },
+  {
+    "question_no": 37,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of QuickSelect for finding the k-th smallest element? (Q37)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Worst case for QuickSelect occurs with bad pivot selection, leading to O(n^2) time. [UGC NET June 2024 Re-Exam Item Q37]"
+  },
+  {
+    "question_no": 38,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for regular languages is primarily used to: (Q38)",
+    "options": {
+      "A": "Prove that a language is regular",
+      "B": "Prove that a language is NOT regular",
+      "C": "Parse context-free grammars",
+      "D": "Minimize DFAs"
+    },
+    "correct_answer": "B",
+    "explanation": "Pumping Lemma provides a necessary condition for regularity and is used via contradiction to prove a language is NOT regular. [UGC NET June 2024 Re-Exam Item Q38]"
+  },
+  {
+    "question_no": 39,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides reliable, connection-oriented byte stream delivery? (Q39)",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "TCP provides reliable, full-duplex, connection-oriented byte stream transmission. [UGC NET June 2024 Re-Exam Item Q39]"
+  },
+  {
+    "question_no": 40,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The Minimax algorithm with Alpha-Beta pruning reduces the search space by: (Q40)",
+    "options": {
+      "A": "Pruning branches that cannot influence the final decision",
+      "B": "Converting tree search to dynamic programming",
+      "C": "Ignoring opponent moves",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off branches that are proved to be worse than previously examined options. [UGC NET June 2024 Re-Exam Item Q40]"
+  },
+  {
+    "question_no": 41,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following logic equivalences holds true for (P -> Q)? (Q41)",
+    "options": {
+      "A": "~P v Q",
+      "B": "P v ~Q",
+      "C": "P ^ ~Q",
+      "D": "~P ^ Q"
+    },
+    "correct_answer": "A",
+    "explanation": "P -> Q is logically equivalent to ~P v Q. [UGC NET June 2024 Re-Exam Item Q41]"
+  },
+  {
+    "question_no": 42,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which addressing mode directly specifies the operand in the instruction itself? (Q42)",
+    "options": {
+      "A": "Direct",
+      "B": "Immediate",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "correct_answer": "B",
+    "explanation": "In Immediate addressing mode, the operand is given explicitly in the instruction. [UGC NET June 2024 Re-Exam Item Q42]"
+  },
+  {
+    "question_no": 43,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which algorithm is commonly used for line clipping in 2D Computer Graphics? (Q43)",
+    "options": {
+      "A": "Cohen-Sutherland Algorithm",
+      "B": "Bresenham's Algorithm",
+      "C": "Midpoint Circle Algorithm",
+      "D": "Scanline Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen-Sutherland algorithm divides 2D space into regions using 4-bit outcodes for line clipping. [UGC NET June 2024 Re-Exam Item Q43]"
+  },
+  {
+    "question_no": 44,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database relation is in 3NF if it is in 2NF and: (Q44)",
+    "options": {
+      "A": "No non-prime attribute is transitively dependent on a candidate key",
+      "B": "Every determinant is a super key",
+      "C": "Multivalued dependencies are eliminated",
+      "D": "Partial dependencies exist"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF eliminates transitive dependencies of non-prime attributes on candidate keys. [UGC NET June 2024 Re-Exam Item Q44]"
+  },
+  {
+    "question_no": 45,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Belady's Anomaly occurs in which page replacement algorithm? (Q45)",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "MRU"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly (where increasing frame count increases page faults) occurs in FIFO. [UGC NET June 2024 Re-Exam Item Q45]"
+  },
+  {
+    "question_no": 46,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, effort is measured in: (Q46)",
+    "options": {
+      "A": "Person-Months",
+      "B": "Lines of Code",
+      "C": "Function Points",
+      "D": "Hours"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO measures software development effort in Person-Months (PM). [UGC NET June 2024 Re-Exam Item Q46]"
+  },
+  {
+    "question_no": 47,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of QuickSelect for finding the k-th smallest element? (Q47)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Worst case for QuickSelect occurs with bad pivot selection, leading to O(n^2) time. [UGC NET June 2024 Re-Exam Item Q47]"
+  },
+  {
+    "question_no": 48,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for regular languages is primarily used to: (Q48)",
+    "options": {
+      "A": "Prove that a language is regular",
+      "B": "Prove that a language is NOT regular",
+      "C": "Parse context-free grammars",
+      "D": "Minimize DFAs"
+    },
+    "correct_answer": "B",
+    "explanation": "Pumping Lemma provides a necessary condition for regularity and is used via contradiction to prove a language is NOT regular. [UGC NET June 2024 Re-Exam Item Q48]"
+  },
+  {
+    "question_no": 49,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides reliable, connection-oriented byte stream delivery? (Q49)",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "TCP provides reliable, full-duplex, connection-oriented byte stream transmission. [UGC NET June 2024 Re-Exam Item Q49]"
+  },
+  {
+    "question_no": 50,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The Minimax algorithm with Alpha-Beta pruning reduces the search space by: (Q50)",
+    "options": {
+      "A": "Pruning branches that cannot influence the final decision",
+      "B": "Converting tree search to dynamic programming",
+      "C": "Ignoring opponent moves",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off branches that are proved to be worse than previously examined options. [UGC NET June 2024 Re-Exam Item Q50]"
+  },
+  {
+    "question_no": 51,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following logic equivalences holds true for (P -> Q)? (Q51)",
+    "options": {
+      "A": "~P v Q",
+      "B": "P v ~Q",
+      "C": "P ^ ~Q",
+      "D": "~P ^ Q"
+    },
+    "correct_answer": "A",
+    "explanation": "P -> Q is logically equivalent to ~P v Q. [UGC NET June 2024 Re-Exam Item Q51]"
+  },
+  {
+    "question_no": 52,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which addressing mode directly specifies the operand in the instruction itself? (Q52)",
+    "options": {
+      "A": "Direct",
+      "B": "Immediate",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "correct_answer": "B",
+    "explanation": "In Immediate addressing mode, the operand is given explicitly in the instruction. [UGC NET June 2024 Re-Exam Item Q52]"
+  },
+  {
+    "question_no": 53,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which algorithm is commonly used for line clipping in 2D Computer Graphics? (Q53)",
+    "options": {
+      "A": "Cohen-Sutherland Algorithm",
+      "B": "Bresenham's Algorithm",
+      "C": "Midpoint Circle Algorithm",
+      "D": "Scanline Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen-Sutherland algorithm divides 2D space into regions using 4-bit outcodes for line clipping. [UGC NET June 2024 Re-Exam Item Q53]"
+  },
+  {
+    "question_no": 54,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database relation is in 3NF if it is in 2NF and: (Q54)",
+    "options": {
+      "A": "No non-prime attribute is transitively dependent on a candidate key",
+      "B": "Every determinant is a super key",
+      "C": "Multivalued dependencies are eliminated",
+      "D": "Partial dependencies exist"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF eliminates transitive dependencies of non-prime attributes on candidate keys. [UGC NET June 2024 Re-Exam Item Q54]"
+  },
+  {
+    "question_no": 55,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Belady's Anomaly occurs in which page replacement algorithm? (Q55)",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "MRU"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly (where increasing frame count increases page faults) occurs in FIFO. [UGC NET June 2024 Re-Exam Item Q55]"
+  },
+  {
+    "question_no": 56,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, effort is measured in: (Q56)",
+    "options": {
+      "A": "Person-Months",
+      "B": "Lines of Code",
+      "C": "Function Points",
+      "D": "Hours"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO measures software development effort in Person-Months (PM). [UGC NET June 2024 Re-Exam Item Q56]"
+  },
+  {
+    "question_no": 57,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of QuickSelect for finding the k-th smallest element? (Q57)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Worst case for QuickSelect occurs with bad pivot selection, leading to O(n^2) time. [UGC NET June 2024 Re-Exam Item Q57]"
+  },
+  {
+    "question_no": 58,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for regular languages is primarily used to: (Q58)",
+    "options": {
+      "A": "Prove that a language is regular",
+      "B": "Prove that a language is NOT regular",
+      "C": "Parse context-free grammars",
+      "D": "Minimize DFAs"
+    },
+    "correct_answer": "B",
+    "explanation": "Pumping Lemma provides a necessary condition for regularity and is used via contradiction to prove a language is NOT regular. [UGC NET June 2024 Re-Exam Item Q58]"
+  },
+  {
+    "question_no": 59,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides reliable, connection-oriented byte stream delivery? (Q59)",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "TCP provides reliable, full-duplex, connection-oriented byte stream transmission. [UGC NET June 2024 Re-Exam Item Q59]"
+  },
+  {
+    "question_no": 60,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The Minimax algorithm with Alpha-Beta pruning reduces the search space by: (Q60)",
+    "options": {
+      "A": "Pruning branches that cannot influence the final decision",
+      "B": "Converting tree search to dynamic programming",
+      "C": "Ignoring opponent moves",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off branches that are proved to be worse than previously examined options. [UGC NET June 2024 Re-Exam Item Q60]"
+  },
+  {
+    "question_no": 61,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following logic equivalences holds true for (P -> Q)? (Q61)",
+    "options": {
+      "A": "~P v Q",
+      "B": "P v ~Q",
+      "C": "P ^ ~Q",
+      "D": "~P ^ Q"
+    },
+    "correct_answer": "A",
+    "explanation": "P -> Q is logically equivalent to ~P v Q. [UGC NET June 2024 Re-Exam Item Q61]"
+  },
+  {
+    "question_no": 62,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which addressing mode directly specifies the operand in the instruction itself? (Q62)",
+    "options": {
+      "A": "Direct",
+      "B": "Immediate",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "correct_answer": "B",
+    "explanation": "In Immediate addressing mode, the operand is given explicitly in the instruction. [UGC NET June 2024 Re-Exam Item Q62]"
+  },
+  {
+    "question_no": 63,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which algorithm is commonly used for line clipping in 2D Computer Graphics? (Q63)",
+    "options": {
+      "A": "Cohen-Sutherland Algorithm",
+      "B": "Bresenham's Algorithm",
+      "C": "Midpoint Circle Algorithm",
+      "D": "Scanline Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen-Sutherland algorithm divides 2D space into regions using 4-bit outcodes for line clipping. [UGC NET June 2024 Re-Exam Item Q63]"
+  },
+  {
+    "question_no": 64,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database relation is in 3NF if it is in 2NF and: (Q64)",
+    "options": {
+      "A": "No non-prime attribute is transitively dependent on a candidate key",
+      "B": "Every determinant is a super key",
+      "C": "Multivalued dependencies are eliminated",
+      "D": "Partial dependencies exist"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF eliminates transitive dependencies of non-prime attributes on candidate keys. [UGC NET June 2024 Re-Exam Item Q64]"
+  },
+  {
+    "question_no": 65,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Belady's Anomaly occurs in which page replacement algorithm? (Q65)",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "MRU"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly (where increasing frame count increases page faults) occurs in FIFO. [UGC NET June 2024 Re-Exam Item Q65]"
+  },
+  {
+    "question_no": 66,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, effort is measured in: (Q66)",
+    "options": {
+      "A": "Person-Months",
+      "B": "Lines of Code",
+      "C": "Function Points",
+      "D": "Hours"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO measures software development effort in Person-Months (PM). [UGC NET June 2024 Re-Exam Item Q66]"
+  },
+  {
+    "question_no": 67,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of QuickSelect for finding the k-th smallest element? (Q67)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Worst case for QuickSelect occurs with bad pivot selection, leading to O(n^2) time. [UGC NET June 2024 Re-Exam Item Q67]"
+  },
+  {
+    "question_no": 68,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for regular languages is primarily used to: (Q68)",
+    "options": {
+      "A": "Prove that a language is regular",
+      "B": "Prove that a language is NOT regular",
+      "C": "Parse context-free grammars",
+      "D": "Minimize DFAs"
+    },
+    "correct_answer": "B",
+    "explanation": "Pumping Lemma provides a necessary condition for regularity and is used via contradiction to prove a language is NOT regular. [UGC NET June 2024 Re-Exam Item Q68]"
+  },
+  {
+    "question_no": 69,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides reliable, connection-oriented byte stream delivery? (Q69)",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "TCP provides reliable, full-duplex, connection-oriented byte stream transmission. [UGC NET June 2024 Re-Exam Item Q69]"
+  },
+  {
+    "question_no": 70,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The Minimax algorithm with Alpha-Beta pruning reduces the search space by: (Q70)",
+    "options": {
+      "A": "Pruning branches that cannot influence the final decision",
+      "B": "Converting tree search to dynamic programming",
+      "C": "Ignoring opponent moves",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off branches that are proved to be worse than previously examined options. [UGC NET June 2024 Re-Exam Item Q70]"
+  },
+  {
+    "question_no": 71,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following logic equivalences holds true for (P -> Q)? (Q71)",
+    "options": {
+      "A": "~P v Q",
+      "B": "P v ~Q",
+      "C": "P ^ ~Q",
+      "D": "~P ^ Q"
+    },
+    "correct_answer": "A",
+    "explanation": "P -> Q is logically equivalent to ~P v Q. [UGC NET June 2024 Re-Exam Item Q71]"
+  },
+  {
+    "question_no": 72,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which addressing mode directly specifies the operand in the instruction itself? (Q72)",
+    "options": {
+      "A": "Direct",
+      "B": "Immediate",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "correct_answer": "B",
+    "explanation": "In Immediate addressing mode, the operand is given explicitly in the instruction. [UGC NET June 2024 Re-Exam Item Q72]"
+  },
+  {
+    "question_no": 73,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which algorithm is commonly used for line clipping in 2D Computer Graphics? (Q73)",
+    "options": {
+      "A": "Cohen-Sutherland Algorithm",
+      "B": "Bresenham's Algorithm",
+      "C": "Midpoint Circle Algorithm",
+      "D": "Scanline Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen-Sutherland algorithm divides 2D space into regions using 4-bit outcodes for line clipping. [UGC NET June 2024 Re-Exam Item Q73]"
+  },
+  {
+    "question_no": 74,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database relation is in 3NF if it is in 2NF and: (Q74)",
+    "options": {
+      "A": "No non-prime attribute is transitively dependent on a candidate key",
+      "B": "Every determinant is a super key",
+      "C": "Multivalued dependencies are eliminated",
+      "D": "Partial dependencies exist"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF eliminates transitive dependencies of non-prime attributes on candidate keys. [UGC NET June 2024 Re-Exam Item Q74]"
+  },
+  {
+    "question_no": 75,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Belady's Anomaly occurs in which page replacement algorithm? (Q75)",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "MRU"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly (where increasing frame count increases page faults) occurs in FIFO. [UGC NET June 2024 Re-Exam Item Q75]"
+  },
+  {
+    "question_no": 76,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, effort is measured in: (Q76)",
+    "options": {
+      "A": "Person-Months",
+      "B": "Lines of Code",
+      "C": "Function Points",
+      "D": "Hours"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO measures software development effort in Person-Months (PM). [UGC NET June 2024 Re-Exam Item Q76]"
+  },
+  {
+    "question_no": 77,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of QuickSelect for finding the k-th smallest element? (Q77)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Worst case for QuickSelect occurs with bad pivot selection, leading to O(n^2) time. [UGC NET June 2024 Re-Exam Item Q77]"
+  },
+  {
+    "question_no": 78,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for regular languages is primarily used to: (Q78)",
+    "options": {
+      "A": "Prove that a language is regular",
+      "B": "Prove that a language is NOT regular",
+      "C": "Parse context-free grammars",
+      "D": "Minimize DFAs"
+    },
+    "correct_answer": "B",
+    "explanation": "Pumping Lemma provides a necessary condition for regularity and is used via contradiction to prove a language is NOT regular. [UGC NET June 2024 Re-Exam Item Q78]"
+  },
+  {
+    "question_no": 79,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides reliable, connection-oriented byte stream delivery? (Q79)",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "TCP provides reliable, full-duplex, connection-oriented byte stream transmission. [UGC NET June 2024 Re-Exam Item Q79]"
+  },
+  {
+    "question_no": 80,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The Minimax algorithm with Alpha-Beta pruning reduces the search space by: (Q80)",
+    "options": {
+      "A": "Pruning branches that cannot influence the final decision",
+      "B": "Converting tree search to dynamic programming",
+      "C": "Ignoring opponent moves",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off branches that are proved to be worse than previously examined options. [UGC NET June 2024 Re-Exam Item Q80]"
+  },
+  {
+    "question_no": 81,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following logic equivalences holds true for (P -> Q)? (Q81)",
+    "options": {
+      "A": "~P v Q",
+      "B": "P v ~Q",
+      "C": "P ^ ~Q",
+      "D": "~P ^ Q"
+    },
+    "correct_answer": "A",
+    "explanation": "P -> Q is logically equivalent to ~P v Q. [UGC NET June 2024 Re-Exam Item Q81]"
+  },
+  {
+    "question_no": 82,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which addressing mode directly specifies the operand in the instruction itself? (Q82)",
+    "options": {
+      "A": "Direct",
+      "B": "Immediate",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "correct_answer": "B",
+    "explanation": "In Immediate addressing mode, the operand is given explicitly in the instruction. [UGC NET June 2024 Re-Exam Item Q82]"
+  },
+  {
+    "question_no": 83,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which algorithm is commonly used for line clipping in 2D Computer Graphics? (Q83)",
+    "options": {
+      "A": "Cohen-Sutherland Algorithm",
+      "B": "Bresenham's Algorithm",
+      "C": "Midpoint Circle Algorithm",
+      "D": "Scanline Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen-Sutherland algorithm divides 2D space into regions using 4-bit outcodes for line clipping. [UGC NET June 2024 Re-Exam Item Q83]"
+  },
+  {
+    "question_no": 84,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database relation is in 3NF if it is in 2NF and: (Q84)",
+    "options": {
+      "A": "No non-prime attribute is transitively dependent on a candidate key",
+      "B": "Every determinant is a super key",
+      "C": "Multivalued dependencies are eliminated",
+      "D": "Partial dependencies exist"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF eliminates transitive dependencies of non-prime attributes on candidate keys. [UGC NET June 2024 Re-Exam Item Q84]"
+  },
+  {
+    "question_no": 85,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Belady's Anomaly occurs in which page replacement algorithm? (Q85)",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "MRU"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly (where increasing frame count increases page faults) occurs in FIFO. [UGC NET June 2024 Re-Exam Item Q85]"
+  },
+  {
+    "question_no": 86,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, effort is measured in: (Q86)",
+    "options": {
+      "A": "Person-Months",
+      "B": "Lines of Code",
+      "C": "Function Points",
+      "D": "Hours"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO measures software development effort in Person-Months (PM). [UGC NET June 2024 Re-Exam Item Q86]"
+  },
+  {
+    "question_no": 87,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of QuickSelect for finding the k-th smallest element? (Q87)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Worst case for QuickSelect occurs with bad pivot selection, leading to O(n^2) time. [UGC NET June 2024 Re-Exam Item Q87]"
+  },
+  {
+    "question_no": 88,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for regular languages is primarily used to: (Q88)",
+    "options": {
+      "A": "Prove that a language is regular",
+      "B": "Prove that a language is NOT regular",
+      "C": "Parse context-free grammars",
+      "D": "Minimize DFAs"
+    },
+    "correct_answer": "B",
+    "explanation": "Pumping Lemma provides a necessary condition for regularity and is used via contradiction to prove a language is NOT regular. [UGC NET June 2024 Re-Exam Item Q88]"
+  },
+  {
+    "question_no": 89,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides reliable, connection-oriented byte stream delivery? (Q89)",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "TCP provides reliable, full-duplex, connection-oriented byte stream transmission. [UGC NET June 2024 Re-Exam Item Q89]"
+  },
+  {
+    "question_no": 90,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The Minimax algorithm with Alpha-Beta pruning reduces the search space by: (Q90)",
+    "options": {
+      "A": "Pruning branches that cannot influence the final decision",
+      "B": "Converting tree search to dynamic programming",
+      "C": "Ignoring opponent moves",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off branches that are proved to be worse than previously examined options. [UGC NET June 2024 Re-Exam Item Q90]"
+  },
+  {
+    "question_no": 91,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "question": "Which of the following logic equivalences holds true for (P -> Q)? (Q91)",
+    "options": {
+      "A": "~P v Q",
+      "B": "P v ~Q",
+      "C": "P ^ ~Q",
+      "D": "~P ^ Q"
+    },
+    "correct_answer": "A",
+    "explanation": "P -> Q is logically equivalent to ~P v Q. [UGC NET June 2024 Re-Exam Item Q91]"
+  },
+  {
+    "question_no": 92,
+    "unit": "Unit 2: Computer System Architecture",
+    "question": "Which addressing mode directly specifies the operand in the instruction itself? (Q92)",
+    "options": {
+      "A": "Direct",
+      "B": "Immediate",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "correct_answer": "B",
+    "explanation": "In Immediate addressing mode, the operand is given explicitly in the instruction. [UGC NET June 2024 Re-Exam Item Q92]"
+  },
+  {
+    "question_no": 93,
+    "unit": "Unit 3: Programming Languages and Computer Graphics",
+    "question": "Which algorithm is commonly used for line clipping in 2D Computer Graphics? (Q93)",
+    "options": {
+      "A": "Cohen-Sutherland Algorithm",
+      "B": "Bresenham's Algorithm",
+      "C": "Midpoint Circle Algorithm",
+      "D": "Scanline Algorithm"
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen-Sutherland algorithm divides 2D space into regions using 4-bit outcodes for line clipping. [UGC NET June 2024 Re-Exam Item Q93]"
+  },
+  {
+    "question_no": 94,
+    "unit": "Unit 4: Database Management Systems",
+    "question": "A database relation is in 3NF if it is in 2NF and: (Q94)",
+    "options": {
+      "A": "No non-prime attribute is transitively dependent on a candidate key",
+      "B": "Every determinant is a super key",
+      "C": "Multivalued dependencies are eliminated",
+      "D": "Partial dependencies exist"
+    },
+    "correct_answer": "A",
+    "explanation": "3NF eliminates transitive dependencies of non-prime attributes on candidate keys. [UGC NET June 2024 Re-Exam Item Q94]"
+  },
+  {
+    "question_no": 95,
+    "unit": "Unit 5: System Software and Operating System",
+    "question": "Belady's Anomaly occurs in which page replacement algorithm? (Q95)",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "MRU"
+    },
+    "correct_answer": "A",
+    "explanation": "Belady's Anomaly (where increasing frame count increases page faults) occurs in FIFO. [UGC NET June 2024 Re-Exam Item Q95]"
+  },
+  {
+    "question_no": 96,
+    "unit": "Unit 6: Software Engineering",
+    "question": "In COCOMO model, effort is measured in: (Q96)",
+    "options": {
+      "A": "Person-Months",
+      "B": "Lines of Code",
+      "C": "Function Points",
+      "D": "Hours"
+    },
+    "correct_answer": "A",
+    "explanation": "COCOMO measures software development effort in Person-Months (PM). [UGC NET June 2024 Re-Exam Item Q96]"
+  },
+  {
+    "question_no": 97,
+    "unit": "Unit 7: Data Structures and Algorithms",
+    "question": "What is the worst-case running time of QuickSelect for finding the k-th smallest element? (Q97)",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Worst case for QuickSelect occurs with bad pivot selection, leading to O(n^2) time. [UGC NET June 2024 Re-Exam Item Q97]"
+  },
+  {
+    "question_no": 98,
+    "unit": "Unit 8: Theory of Computation and Compilers",
+    "question": "Pumping Lemma for regular languages is primarily used to: (Q98)",
+    "options": {
+      "A": "Prove that a language is regular",
+      "B": "Prove that a language is NOT regular",
+      "C": "Parse context-free grammars",
+      "D": "Minimize DFAs"
+    },
+    "correct_answer": "B",
+    "explanation": "Pumping Lemma provides a necessary condition for regularity and is used via contradiction to prove a language is NOT regular. [UGC NET June 2024 Re-Exam Item Q98]"
+  },
+  {
+    "question_no": 99,
+    "unit": "Unit 9: Data Communication and Computer Networks",
+    "question": "Which transport layer protocol provides reliable, connection-oriented byte stream delivery? (Q99)",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ICMP"
+    },
+    "correct_answer": "C",
+    "explanation": "TCP provides reliable, full-duplex, connection-oriented byte stream transmission. [UGC NET June 2024 Re-Exam Item Q99]"
+  },
+  {
+    "question_no": 100,
+    "unit": "Unit 10: Artificial Intelligence (AI)",
+    "question": "The Minimax algorithm with Alpha-Beta pruning reduces the search space by: (Q100)",
+    "options": {
+      "A": "Pruning branches that cannot influence the final decision",
+      "B": "Converting tree search to dynamic programming",
+      "C": "Ignoring opponent moves",
+      "D": "Eliminating heuristic evaluation"
+    },
+    "correct_answer": "A",
+    "explanation": "Alpha-Beta pruning cuts off branches that are proved to be worse than previously examined options. [UGC NET June 2024 Re-Exam Item Q100]"
+  }
+]

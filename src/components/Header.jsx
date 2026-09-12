@@ -1,12 +1,27 @@
 import React from 'react';
-import { BookOpen, HelpCircle, FileText, User } from 'lucide-react';
+import { BookOpen, HelpCircle, FileText, User, Home } from 'lucide-react';
 
 export default function Header({ 
   candidateName, 
   onOpenQuestionPaper, 
   onOpenInstructions,
-  inExam = false 
+  inExam = false,
+  paper,
+  onGoHome,
+  currentScreen = 'HOME'
 }) {
+  const handleLogoClick = () => {
+    if (onGoHome) {
+      if (inExam) {
+        if (window.confirm('Are you sure you want to exit the current examination and return to all papers? Your test progress will be lost.')) {
+          onGoHome();
+        }
+      } else {
+        onGoHome();
+      }
+    }
+  };
+
   return (
     <header style={{
       backgroundColor: '#ffffff',
@@ -28,11 +43,16 @@ export default function Header({
       }}>
         {/* Left Branding - NTA Replica Logo */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '10px'
-          }}>
+          <div 
+            onClick={handleLogoClick}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              cursor: onGoHome ? 'pointer' : 'default'
+            }}
+            title={onGoHome ? 'Go to Home / All Papers' : ''}
+          >
             {/* Custom SVG Emblem */}
             <div style={{
               width: '42px',
@@ -113,12 +133,35 @@ export default function Header({
               borderRadius: '50%',
               backgroundColor: '#2563eb'
             }} />
-            UGC NET 2025 CBT Portal
+            {paper ? paper.shortTitle : 'UGC NET CBT Portal'}
           </div>
         </div>
 
         {/* Right Action Helpers */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          {currentScreen !== 'HOME' && onGoHome && (
+            <button
+              id="header-btn-all-papers"
+              onClick={handleLogoClick}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '6px 12px',
+                backgroundColor: '#ffffff',
+                color: '#004d73',
+                borderRadius: '6px',
+                fontSize: '12px',
+                fontWeight: 700,
+                border: '1px solid #cbd5e1',
+                cursor: 'pointer'
+              }}
+              title="Return to paper selection"
+            >
+              <Home size={14} color="#004d73" />
+              <span>All Papers</span>
+            </button>
+          )}
           {inExam && onOpenQuestionPaper && (
             <button
               id="header-btn-question-paper"
