@@ -15,6 +15,11 @@ import practiceSet2 from './practice-set-2.json';
 import practiceSet3 from './practice-set-3.json';
 import practiceSet4 from './practice-set-4.json';
 import practiceSet5 from './practice-set-5.json';
+import finalRealMock1 from './final-real-mock-1.json';
+import finalRealMock2 from './final-real-mock-2.json';
+import finalRealMock3 from './final-real-mock-3.json';
+import finalRealMock4 from './final-real-mock-4.json';
+import finalRealMock5 from './final-real-mock-5.json';
 
 // Attach source paper name to each question so students know its origin
 const attachPaperSource = (questions, paperTitle) => {
@@ -313,6 +318,96 @@ export const PAPERS = [
     description: 'Grand Final Mock Test. High-probability final rehearsal mock test reproducing the exact exam environment, weightage, and standard syllabus balance.',
     topics: ['All 10 Units', 'Set Functions', 'System Architecture', 'Compilers', 'Computer Networks'],
     questions: attachPaperSource(practiceSet5, 'Practice Set 5 (Grand Final Mock)')
+  },
+  {
+    id: 'final-real-mock-1',
+    title: 'Final Real Mock Test - Part 1: Comprehensive Simulation',
+    shortTitle: 'Final Real Mock 1',
+    year: '2025',
+    session: 'Real Mock Part 1',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • REAL MOCK 1',
+    badgeVariant: 'warning',
+    isNew: true,
+    category: 'final_mock',
+    totalQuestions: finalRealMock1.length,
+    totalMarks: finalRealMock1.length * 2,
+    durationMinutes: 120,
+    description: 'Final Real Mock Test (Part 1). Authentic 100-question NTA simulation balancing logic, architecture, algorithms, TOC, and networking.',
+    topics: ['All 10 Units', 'Graph Theory', 'Cache Associativity', 'Z-Buffer', 'Normal Forms', 'Pumping Lemma'],
+    questions: attachPaperSource(finalRealMock1, 'Final Real Mock Test Part 1')
+  },
+  {
+    id: 'final-real-mock-2',
+    title: 'Final Real Mock Test - Part 2: High-Yield Grand Simulation',
+    shortTitle: 'Final Real Mock 2',
+    year: '2025',
+    session: 'Real Mock Part 2',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • REAL MOCK 2',
+    badgeVariant: 'purple',
+    isNew: true,
+    category: 'final_mock',
+    totalQuestions: finalRealMock2.length,
+    totalMarks: finalRealMock2.length * 2,
+    durationMinutes: 120,
+    description: 'Final Real Mock Test (Part 2). Curated high-yield test highlighting discrete structures, 3D projections, transaction serializability, and RSA cryptography.',
+    topics: ['All 10 Units', 'Planar Graphs', 'Pipeline Stalls', 'Relational Calculus', 'Deadlock Conditions', 'TCP Congestion'],
+    questions: attachPaperSource(finalRealMock2, 'Final Real Mock Test Part 2')
+  },
+  {
+    id: 'final-real-mock-3',
+    title: 'Final Real Mock Test - Part 3: Core Concepts & Formulas Mock',
+    shortTitle: 'Final Real Mock 3',
+    year: '2025',
+    session: 'Real Mock Part 3',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • REAL MOCK 3',
+    badgeVariant: 'primary',
+    isNew: true,
+    category: 'final_mock',
+    totalQuestions: finalRealMock3.length,
+    totalMarks: finalRealMock3.length * 2,
+    durationMinutes: 120,
+    description: 'Final Real Mock Test (Part 3). Deep conceptual mock test emphasizing mathematical structures, pipeline hazard analysis, BCNF decomposition, and A* search.',
+    topics: ['All 10 Units', 'Posets & Lattices', 'Set-Associative Cache', 'B+ Trees', 'Cyclomatic Complexity', 'Alpha-Beta Pruning'],
+    questions: attachPaperSource(finalRealMock3, 'Final Real Mock Test Part 3')
+  },
+  {
+    id: 'final-real-mock-4',
+    title: 'Final Real Mock Test - Part 4: Speed & Accuracy Mastery Mock',
+    shortTitle: 'Final Real Mock 4',
+    year: '2025',
+    session: 'Real Mock Part 4',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • REAL MOCK 4',
+    badgeVariant: 'success',
+    isNew: true,
+    category: 'final_mock',
+    totalQuestions: finalRealMock4.length,
+    totalMarks: finalRealMock4.length * 2,
+    durationMinutes: 120,
+    description: 'Final Real Mock Test (Part 4). Calibrated speed and elimination practice matching recent NTA question statement and match-list weightage.',
+    topics: ['All 10 Units', 'Recurrence Relations', 'Paging & TLB', 'Chomsky Hierarchy', 'IP Subnetting', 'Naive Bayes'],
+    questions: attachPaperSource(finalRealMock4, 'Final Real Mock Test Part 4')
+  },
+  {
+    id: 'final-real-mock-5',
+    title: 'Final Real Mock Test - Part 5: Grand All-India Final Rehearsal',
+    shortTitle: 'Final Real Mock 5',
+    year: '2025',
+    session: 'Real Mock Part 5',
+    subject: 'Computer Science & Applications (Paper II)',
+    badge: 'NEW • REAL MOCK 5',
+    badgeVariant: 'primary',
+    isNew: true,
+    category: 'final_mock',
+    totalQuestions: finalRealMock5.length,
+    totalMarks: finalRealMock5.length * 2,
+    durationMinutes: 120,
+    description: 'Final Real Mock Test (Part 5). The ultimate rehearsal mock test covering full 10-unit syllabus with tricky calculations, edge cases, and reasoning.',
+    topics: ['All 10 Units', 'Handshaking Lemma', 'RISC vs CISC', 'Transaction Isolation', 'Matrix Chain Multiplication', 'CYK Algorithm'],
+    questions: attachPaperSource(finalRealMock5, 'Final Real Mock Test Part 5')
   }
 ];
 

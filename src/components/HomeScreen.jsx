@@ -33,9 +33,10 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
     return allPapers.filter((paper) => {
       // Tab filter
       if (selectedFilter === 'NEW' && !paper.isNew) return false;
+      if (selectedFilter === 'FINAL_MOCKS' && paper.category !== 'final_mock') return false;
       if (selectedFilter === 'PRACTICE_SETS' && paper.category !== 'practice') return false;
       if (selectedFilter === 'RECENT' && !['2025', '2024'].includes(paper.year)) return false;
-      if (selectedFilter === 'PYQ' && (paper.category === 'practice' || paper.id === 'ugc-net-2025-mock')) return false;
+      if (selectedFilter === 'PYQ' && (paper.category === 'practice' || paper.category === 'final_mock' || paper.id === 'ugc-net-2025-mock')) return false;
 
       // Search query
       if (searchQuery.trim()) {
@@ -165,6 +166,31 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
             </button>
 
             <button
+              id="btn-hero-final-mocks"
+              onClick={() => setSelectedFilter('FINAL_MOCKS')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '10px',
+                padding: '13px 22px',
+                borderRadius: '8px',
+                backgroundColor: '#ea580c',
+                color: '#ffffff',
+                fontSize: '14px',
+                fontWeight: 800,
+                boxShadow: '0 4px 14px rgba(234, 88, 12, 0.4)',
+                transition: 'all 0.2s ease',
+                cursor: 'pointer',
+                border: 'none'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+            >
+              <Flame size={17} />
+              <span>Final Real Mock Series (5)</span>
+            </button>
+
+            <button
               id="btn-hero-practice-sets"
               onClick={() => setSelectedFilter('PRACTICE_SETS')}
               style={{
@@ -244,7 +270,7 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
             </div>
             <div>
               <div style={{ fontSize: '11px', opacity: 0.85, fontWeight: 700, letterSpacing: '0.5px' }}>TOTAL QUESTION SETS</div>
-              <div style={{ fontSize: '20px', fontWeight: 800 }}>{allPapers.length} Official Sets</div>
+              <div style={{ fontSize: '20px', fontWeight: 800 }}>{allPapers.length} Question Sets</div>
             </div>
           </div>
 
@@ -330,6 +356,21 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
                     10 Units • Instant Solutions
                   </span>
                 </>
+              ) : selectedFilter === 'FINAL_MOCKS' ? (
+                <>
+                  <span>🔥 Final Real Mock Test Series (Parts 1 - 5)</span>
+                  <span style={{
+                    fontSize: '12px',
+                    fontWeight: 700,
+                    color: '#ea580c',
+                    backgroundColor: '#fff7ed',
+                    padding: '3px 10px',
+                    borderRadius: '12px',
+                    border: '1px solid #fed7aa'
+                  }}>
+                    5 Full Sets • 500 Questions
+                  </span>
+                </>
               ) : selectedFilter === 'PRACTICE_SETS' ? (
                 <>
                   <span>5 Specialized High-Yield Practice Sets</span>
@@ -365,6 +406,8 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
             <p style={{ fontSize: '13px', color: '#64748b', margin: '4px 0 0' }}>
               {selectedFilter === 'TOPIC'
                 ? 'Practice any unit with questions pooled from all papers. Instant correct/wrong check and full explanation on click.'
+                : selectedFilter === 'FINAL_MOCKS'
+                ? '5 authentic, high-probability real mock test papers (Parts 1 to 5) mirroring the exact 100-question NTA UGC NET Paper II standard balance.'
                 : selectedFilter === 'PRACTICE_SETS'
                 ? '5 targeted 100-question papers: Numerical Heavy, Match List / Statements, Advanced Mock, Speed & Accuracy, and Grand Final Mock.'
                 : 'Select an official NTA paper to experience the timed 2-hour Computer Based Test simulator.'}
@@ -432,6 +475,7 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
 
           {[
             { id: 'ALL', label: `All Papers (${allPapers.length})` },
+            { id: 'FINAL_MOCKS', label: '🔥 Final Real Mock Series (5)', highlightOrange: true },
             { id: 'PRACTICE_SETS', label: '⚡ Specialized Practice Sets (5)', highlightPurple: true },
             { id: 'TOPIC', label: '🎯 Topic-wise Practice (All 10 Units)', highlightGreen: true },
             { id: 'NEW', label: '✨ Newly Added' },
@@ -440,6 +484,7 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
             const isActive = selectedFilter === tab.id;
             const isGreen = tab.highlightGreen;
             const isPurple = tab.highlightPurple;
+            const isOrange = tab.highlightOrange;
             return (
               <button
                 key={tab.id}
@@ -452,18 +497,22 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
                   fontWeight: isActive ? 700 : 600,
                   cursor: 'pointer',
                   border: isActive
-                    ? (isGreen ? '1.5px solid #16a34a' : isPurple ? '1.5px solid #7c3aed' : '1.5px solid #0284c7')
+                    ? (isGreen ? '1.5px solid #16a34a' : isPurple ? '1.5px solid #7c3aed' : isOrange ? '1.5px solid #ea580c' : '1.5px solid #0284c7')
                     : isGreen
                     ? '1.5px solid #86efac'
                     : isPurple
                     ? '1.5px solid #ddd6fe'
+                    : isOrange
+                    ? '1.5px solid #fed7aa'
                     : '1px solid #e2e8f0',
                   backgroundColor: isActive
-                    ? (isGreen ? '#16a34a' : isPurple ? '#7c3aed' : '#0284c7')
+                    ? (isGreen ? '#16a34a' : isPurple ? '#7c3aed' : isOrange ? '#ea580c' : '#0284c7')
                     : isGreen
                     ? '#f0fdf4'
                     : isPurple
                     ? '#f5f3ff'
+                    : isOrange
+                    ? '#fff7ed'
                     : '#ffffff',
                   color: isActive
                     ? '#ffffff'
@@ -471,6 +520,8 @@ export default function HomeScreen({ onSelectPaper, onOpenInstructions, onStartP
                     ? '#15803d'
                     : isPurple
                     ? '#6d28d9'
+                    : isOrange
+                    ? '#c2410c'
                     : '#475569',
                   transition: 'all 0.15s ease',
                   boxShadow: isActive ? '0 2px 6px rgba(0, 0, 0, 0.15)' : 'none'
