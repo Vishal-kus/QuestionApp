@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   BookOpen,
   CheckCircle2,
@@ -15,7 +15,9 @@ import {
   ExternalLink,
   ShieldCheck,
   Check,
-  X
+  X,
+  Bot,
+  Copy
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { TOPIC_UNITS, getQuestionsByUnit, getAllPaperQuestions } from '../data/papers/papersRegistry';
@@ -49,6 +51,9 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
+
+  // Toast Notification for Ask AI
+  const [toastMessage, setToastMessage] = useState(null);
 
   // Load / reload question pool whenever selectedUnit changes
   useEffect(() => {
@@ -129,11 +134,54 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Ask AI (Gemini) handler
+  const handleAskAI = async () => {
+    if (!currentQuestion) return;
+
+    const promptText = `Please explain this UGC NET Computer Science question to me like I am a complete beginner who has never studied this concept before:
+
+Subject Unit: ${currentQuestion.unit || 'Computer Science'}
+Question:
+${currentQuestion.question}
+
+Options:
+A. ${currentQuestion.options?.A || ''}
+B. ${currentQuestion.options?.B || ''}
+C. ${currentQuestion.options?.C || ''}
+D. ${currentQuestion.options?.D || ''}
+
+${currentQuestion.correct_answer ? `Official Correct Answer: Option ${currentQuestion.correct_answer}` : ''}
+${currentQuestion.explanation ? `Official Solution / Explanation: ${currentQuestion.explanation}` : ''}
+
+Please teach this in an extremely simple, easy-to-understand manner:
+1. What is this question actually asking in simple, plain English?
+2. Explain the fundamental core concept(s) from scratch using an everyday intuitive real-world analogy.
+3. Walk through each option step-by-step and explain why it is correct or incorrect.
+4. Provide a quick summary or mnemonic so I can never forget this concept again.`;
+
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(promptText);
+        setToastMessage('✨ Question copied to clipboard! Just press Ctrl+V in the new Gemini tab to get a simple explanation.');
+      } else {
+        setToastMessage('✨ Opening Gemini in a new tab...');
+      }
+    } catch (err) {
+      setToastMessage('✨ Opening Gemini in a new tab...');
+    }
+
+    // Open Gemini in a new tab
+    window.open('https://gemini.google.com/app', '_blank');
+
+    // Auto-dismiss toast after 6 seconds
+    setTimeout(() => {
+      setToastMessage(null);
+    }, 6000);
+  };
+
   const accuracy = (correctCount + incorrectCount) > 0
     ? Math.round((correctCount / (correctCount + incorrectCount)) * 100)
     : 0;
-
-  const currentUnitMeta = TOPIC_UNITS.find((u) => u.unit === selectedUnit);
 
   return (
     <div style={{
@@ -142,8 +190,48 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
       padding: '24px 20px 80px',
       display: 'flex',
       flexDirection: 'column',
-      gap: '24px'
+      gap: '24px',
+      position: 'relative'
     }}>
+      {/* Toast Notification for Ask AI */}
+      {toastMessage && (
+        <div style={{
+          position: 'fixed',
+          top: '20px',
+          right: '20px',
+          zIndex: 9999,
+          backgroundColor: '#1e1b4b',
+          color: '#ffffff',
+          padding: '14px 20px',
+          borderRadius: '10px',
+          boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)',
+          border: '1px solid #6366f1',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px',
+          maxWidth: '440px',
+          animation: 'fadeIn 0.3s ease-out'
+        }}>
+          <Sparkles size={20} color="#a5b4fc" style={{ flexShrink: 0 }} />
+          <div style={{ fontSize: '13px', lineHeight: 1.4, flex: 1 }}>
+            {toastMessage}
+          </div>
+          <button
+            onClick={() => setToastMessage(null)}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: '#94a3b8',
+              cursor: 'pointer',
+              padding: '2px',
+              display: 'flex'
+            }}
+          >
+            <X size={16} />
+          </button>
+        </div>
+      )}
+
       {/* Top Header & Unit Selector Bar */}
       <div style={{
         backgroundColor: '#ffffff',
@@ -338,7 +426,7 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
             flexWrap: 'wrap',
             gap: '10px'
           }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
               <span style={{
                 backgroundColor: '#0284c7',
                 color: '#ffffff',
@@ -357,24 +445,58 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
               }}>
                 {currentQuestion.unit}
               </span>
+
+              {/* Source Paper Origin Tag */}
+              <span style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '5px',
+                fontSize: '11px',
+                fontWeight: 700,
+                padding: '3px 9px',
+                borderRadius: '6px',
+                backgroundColor: '#eff6ff',
+                border: '1px solid #bfdbfe',
+                color: '#1e40af'
+              }}>
+                <span>Source:</span>
+                <strong>{currentQuestion.sourcePaper || currentQuestion.paper || 'Official UGC NET'}</strong>
+              </span>
             </div>
 
-            {/* Source Paper Origin Tag */}
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              fontSize: '11px',
-              fontWeight: 700,
-              padding: '4px 10px',
-              borderRadius: '6px',
-              backgroundColor: '#eff6ff',
-              border: '1px solid #bfdbfe',
-              color: '#1e40af'
-            }}>
-              <span>Source:</span>
-              <strong>{currentQuestion.sourcePaper || currentQuestion.paper || 'Official UGC NET'}</strong>
-            </div>
+            {/* Ask AI (Gemini) Action Button */}
+            <button
+              id="btn-ask-ai-gemini-header"
+              onClick={handleAskAI}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '7px',
+                padding: '6px 14px',
+                borderRadius: '20px',
+                background: 'linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%)',
+                color: '#ffffff',
+                fontSize: '12px',
+                fontWeight: 800,
+                border: 'none',
+                cursor: 'pointer',
+                boxShadow: '0 2px 8px rgba(124, 58, 237, 0.35)',
+                transition: 'transform 0.15s, box-shadow 0.15s'
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(124, 58, 237, 0.45)';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(124, 58, 237, 0.35)';
+              }}
+              title="Open Gemini in new tab with beginner-friendly explanation prompt copied"
+            >
+              <Sparkles size={14} />
+              <span>Ask AI (Gemini)</span>
+              <ExternalLink size={12} style={{ opacity: 0.8 }} />
+            </button>
           </div>
 
           {/* Question Content */}
@@ -413,21 +535,18 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
 
                 if (isAnswered) {
                   if (isCorrectOption) {
-                    // Correct answer is always green
                     bgColor = '#f0fdf4';
                     borderColor = '#22c55e';
                     textColor = '#14532d';
                     indicatorBg = '#22c55e';
                     indicatorColor = '#ffffff';
                   } else if (isSelected && !isCorrectOption) {
-                    // User's wrong pick is red
                     bgColor = '#fef2f2';
                     borderColor = '#ef4444';
                     textColor = '#7f1d1d';
                     indicatorBg = '#ef4444';
                     indicatorColor = '#ffffff';
                   } else {
-                    // Other unselected options dim
                     bgColor = '#f8fafc';
                     borderColor = '#f1f5f9';
                     textColor = '#64748b';
@@ -596,22 +715,62 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
                 {currentQuestion.explanation && (
                   <div style={{
                     backgroundColor: '#fffbeb',
-                    borderRadius: '8px',
+                    borderRadius: '10px',
                     border: '1px solid #fef3c7',
-                    padding: '16px 20px'
+                    padding: '18px 20px'
                   }}>
                     <div style={{
                       display: 'flex',
                       alignItems: 'center',
-                      gap: '6px',
-                      color: '#b45309',
-                      fontSize: '13px',
-                      fontWeight: 800,
-                      marginBottom: '8px'
+                      justifyContent: 'space-between',
+                      flexWrap: 'wrap',
+                      gap: '8px',
+                      marginBottom: '10px'
                     }}>
-                      <Lightbulb size={16} />
-                      <span>STEP-BY-STEP EXPLANATION & RATIONALE</span>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        color: '#b45309',
+                        fontSize: '13px',
+                        fontWeight: 800
+                      }}>
+                        <Lightbulb size={16} />
+                        <span>STEP-BY-STEP EXPLANATION & RATIONALE</span>
+                      </div>
+
+                      {/* Ask AI Helper in Explanation Box */}
+                      <button
+                        id="btn-ask-ai-gemini-explanation"
+                        onClick={handleAskAI}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '6px',
+                          padding: '4px 10px',
+                          borderRadius: '6px',
+                          backgroundColor: '#ffffff',
+                          border: '1px solid #fcd34d',
+                          color: '#7c3aed',
+                          fontSize: '11px',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                          transition: 'all 0.15s ease'
+                        }}
+                        onMouseOver={(e) => {
+                          e.currentTarget.style.backgroundColor = '#ede9fe';
+                        }}
+                        onMouseOut={(e) => {
+                          e.currentTarget.style.backgroundColor = '#ffffff';
+                        }}
+                        title="Don't understand this explanation? Ask Gemini to explain in simple terms"
+                      >
+                        <Sparkles size={12} color="#7c3aed" />
+                        <span>Still confused? Ask AI (Gemini)</span>
+                        <ExternalLink size={10} />
+                      </button>
                     </div>
+
                     <div style={{
                       fontSize: '13px',
                       lineHeight: 1.65,
@@ -637,15 +796,49 @@ export default function PracticeScreen({ initialUnit, onBackToHome }) {
             flexWrap: 'wrap',
             gap: '12px'
           }}>
-            <div style={{ fontSize: '12px', color: '#64748b' }}>
+            <div style={{ fontSize: '12px', color: '#64748b', display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
               {!isAnswered ? (
-                <span>👉 Click any option above to check your answer and view the solution immediately.</span>
+                <span>👉 Click any option above to verify and see the step-by-step solution immediately.</span>
               ) : (
-                <span>Click <strong>Next Question</strong> to fetch another question from all other sets.</span>
+                <span>Click <strong>Next Question</strong> to pull another question from all other sets.</span>
               )}
             </div>
 
-            <div style={{ display: 'flex', gap: '10px' }}>
+            <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+              {/* Ask AI secondary button */}
+              <button
+                id="btn-ask-ai-gemini-bottom"
+                onClick={handleAskAI}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  padding: '9px 16px',
+                  borderRadius: '8px',
+                  backgroundColor: '#ffffff',
+                  border: '1.5px solid #c7d2fe',
+                  color: '#4f46e5',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease'
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = '#f5f3ff';
+                  e.currentTarget.style.borderColor = '#818cf8';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = '#ffffff';
+                  e.currentTarget.style.borderColor = '#c7d2fe';
+                }}
+                title="Explain question in simple beginner terms on Gemini"
+              >
+                <Sparkles size={15} color="#6366f1" />
+                <span>Ask AI (Gemini)</span>
+                <ExternalLink size={12} color="#6366f1" />
+              </button>
+
+              {/* Next Question button */}
               <button
                 id="btn-practice-next"
                 onClick={handleNextQuestion}
