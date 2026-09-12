@@ -7,6 +7,7 @@ import ResultScreen from './components/ResultScreen';
 import PracticeScreen from './components/PracticeScreen';
 import QuestionPaperModal from './components/QuestionPaperModal';
 import InstructionsModal from './components/InstructionsModal';
+import Footer from './components/Footer';
 import { getDefaultPaper } from './data/papers/papersRegistry';
 
 // Robust Fisher-Yates shuffle algorithm to mix questions on each attempt
@@ -165,6 +166,11 @@ export default function App() {
         isOpen={isInstructionsOpen}
         onClose={() => setIsInstructionsOpen(false)}
       />
+
+      {/* Official Footer with Topic Analysis */}
+      {currentScreen !== 'EXAM' && (
+        <Footer onSelectUnit={handleStartPractice} />
+      )}
     </div>
   );
 }
